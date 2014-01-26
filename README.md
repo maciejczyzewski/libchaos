@@ -18,6 +18,8 @@ Retter is engine of RTR0, cryptographic hash function.
     <th>Go</th>
     <th>Perl</th>
     <th>Haskell</th>
+    <th>D</th>
+    <th>R</th>
   </tr>
   <tr>
     <td>RTR0</td>
@@ -30,10 +32,14 @@ Retter is engine of RTR0, cryptographic hash function.
     <td>✕</td>
     <td>✕</td>
     <td>✕</td>
+    <td>✕</td>
+    <td>✕</td>
   </tr>
   <tr>
     <td>RTR1</td>
     
+    <td>-</td>
+    <td>-</td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
