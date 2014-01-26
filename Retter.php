@@ -125,3 +125,5 @@ class Retter {
 /* Defining the current series of code */
 class RTR0 extends Retter {}
 
+var_dump(RTR0::hash('Festing'));
+
