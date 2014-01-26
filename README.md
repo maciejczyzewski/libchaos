@@ -1,5 +1,6 @@
-Retter
-======
+<p align="center">
+ 	<img src="https://raw.github.com/MaciejCzyzewski/Retter/gh-pages/Retter.png" alt="Retter"/>
+</p>
 
 Retter is engine of RTR0, cryptographic hash function.
 
