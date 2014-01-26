@@ -53,10 +53,10 @@ class Retter {
         $length = count($chunks);
 
         /* Create a drawers with sample values */
-        $A = 0x428a2f98;
-        $B = 0xefbe4786;
-        $C = 0xbef9a3f7;
-        $D = 0xab1c5ed5;
+        $A = 0xa7537e82;
+        $B = 0xbd3af235;
+        $C = 0x2ad7d2bb;
+        $D = 0xeb86d391;
 
         /* Addition of free bits */
         $chunks[0] = $A;    // First
@@ -104,12 +104,14 @@ class Retter {
                 if( ($round[$j] == 12) || ($round[$j] == 1)
                  || ($round[$j] == 14) || ($round[$j] == 3)  ){ $D += $sand >> 1; }
             }
+
+            //echo "[$i] "; var_dump($sand);
         }
 
 /********************************** STEP 3 ************************************/
 
         /* Calculate checksum for final values */
-        $S = $A + $B + $C + $D;
+        $S = $A << $B + $C >> $D;
 
         /* Creating four small hashes with checksum */
         $h[0] = sprintf('%08x', $A ^ $S);
