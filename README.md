@@ -2,7 +2,7 @@
  	<img src="https://raw.github.com/MaciejCzyzewski/Retter/gh-pages/Retter.png" alt="Retter"/>
 </p>
 
-Retter is engine of RTR0, cryptographic hash function.
+Retter is engine of RTR series, cryptographic hash function.
 
 ### Implementations
 
