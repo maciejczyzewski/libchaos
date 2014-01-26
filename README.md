@@ -12,7 +12,7 @@ Retter is engine of RTR series, cryptographic hash function.
     
     <th>PHP</th>
     <th>Javascript</th>
-    <th>C</th>
+    <th>C++</th>
     <th>Python</th>
     <th>Ruby</th>
     <th>Go</th>
