@@ -17,11 +17,13 @@ Retter is engine of RTR0, cryptographic hash function.
     <th>Ruby</th>
     <th>Go</th>
     <th>Perl</th>
+    <th>Haskell</th>
   </tr>
   <tr>
     <td>RTR0</td>
     
     <td>✓</td>
+    <td>✕</td>
     <td>✕</td>
     <td>✕</td>
     <td>✕</td>
@@ -39,10 +41,13 @@ Retter is engine of RTR0, cryptographic hash function.
     <td>-</td>
     <td>-</td>
     <td>-</td>
+    <td>-</td>
   </tr>
 </table>
 
 ### Examples
+
+#### RTR0
 
 ```php
 RTR0::hash('');
