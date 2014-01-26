@@ -33,7 +33,7 @@
 
 ### RTR0
 
-This function producing a 128-bit (16-byte) hash value. Variable is fixed-length output.
+This function is producing a 128-bit (16-byte) hash value. Variable is fixed-length output.
 
 #### Pseudocode
 
