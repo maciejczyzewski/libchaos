@@ -6,11 +6,41 @@ Retter is engine of RTR0, cryptographic hash function.
 
 ### Implementations
 
-- **[✓]** PHP
-- **[✕]** Javascript
-- **[✕]** C
-- **[✕]** Python
-- **[✕]** Ruby
+<table width="100%">
+  <tr>
+    <th width="100%">Series</th>
+    
+    <th>PHP</th>
+    <th>Javascript</th>
+    <th>C</th>
+    <th>Python</th>
+    <th>Ruby</th>
+    <th>Go</th>
+    <th>Perl</th>
+  </tr>
+  <tr>
+    <td>RTR0</td>
+    
+    <td>✓</td>
+    <td>✕</td>
+    <td>✕</td>
+    <td>✕</td>
+    <td>✕</td>
+    <td>✕</td>
+    <td>✕</td>
+  </tr>
+  <tr>
+    <td>RTR1</td>
+    
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+</table>
 
 ### Examples
 
