@@ -37,6 +37,7 @@ This function producing a 128-bit (16-byte) hash value. Variable is fixed-length
 
 #### Pseudocode
 
+```
 1) Prepare
     a) Unpack data to ascii chunks (Starting from 1)
     c) Create a drawers with sample values
@@ -90,6 +91,7 @@ This function producing a 128-bit (16-byte) hash value. Variable is fixed-length
         h[3] = sprintf('%08x', D ^ S)
     c) Returns 128-bit (16-byte) final hash
         return h[0] . h[1] . h[2] . h[3]
+```
 
 ### Examples
 
