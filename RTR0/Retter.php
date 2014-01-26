@@ -111,7 +111,7 @@ class Retter {
 /********************************** STEP 3 ************************************/
 
         /* Calculate checksum for final values */
-        $S = $A << $B + $C >> $D;
+        $S = $A << $B ^ $C >> $D;
 
         /* Creating four small hashes with checksum */
         $h[0] = sprintf('%08x', $A ^ $S);
