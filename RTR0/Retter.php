@@ -117,7 +117,7 @@ class Retter {
         $h[2] = sprintf('%08x', $C ^ $S);
         $h[3] = sprintf('%08x', $D ^ $S);
 
-        /* Returns 124 bit, 32 hex final hash */
+        /* Returns 128-bit (16-byte) final hash */
         return $h[0] . $h[1] . $h[2] . $h[3];
     }
 }
