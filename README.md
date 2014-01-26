@@ -71,6 +71,10 @@ RTR0::hash('Festing');
 // string(32) "7dd924d8e3a15de431ce748a2a33b790"
 ```
 
+#### RTR1
+
+The future successor...
+
 ### Attacks
 
 Not yet found.
