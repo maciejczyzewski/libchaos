@@ -83,7 +83,7 @@ This function is producing a 128-bit (16-byte) hash value. Variable is fixed-len
                      || (round[j] == 14) || (round[j] == 3)  ){ D += sand >> 1 }
 3) Final hash
     a) Calculate checksum for final values
-        S = A + B + C + D
+        S = A << B ^ C >> D
     b) Creating four small hashes with checksum
         h[0] = sprintf('%08x', A ^ S)
         h[1] = sprintf('%08x', B ^ S)
