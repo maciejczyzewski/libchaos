@@ -41,10 +41,10 @@ This function is producing a 128-bit (16-byte) hash value. Variable is fixed-len
 1) Prepare
     a) Unpack data to ascii chunks (Starting from 1)
     c) Create a drawers with sample values
-        A = 0x428a2f98
-        B = 0xefbe4786
-        C = 0xbef9a3f7
-        D = 0xab1c5ed5
+        A = 0xa7537e82
+        B = 0xbd3af235
+        C = 0x2ad7d2bb
+        D = 0xeb86d391
     b) Addition of free bits
         chunks[0] = A // First
         chunks[]  = B // length - 2
