@@ -6,7 +6,7 @@
     
     <th>PHP</th>
     <th>Javascript</th>
-    <th>C++</th>
+    <th>C</th>
     <th>Python</th>
     <th>Ruby</th>
     <th>Go</th>
@@ -18,9 +18,9 @@
   <tr>
     <td>RTR0</td>
     
+    <td>✕</td>
+    <td>✕</td>
     <td>✓</td>
-    <td>✕</td>
-    <td>✕</td>
     <td>✕</td>
     <td>✕</td>
     <td>✕</td>
@@ -41,14 +41,14 @@ Language used in this example is PHP.
 
 ```php
 RTR0::hash('');
-// string(32) "0997af115a5af21fcdb7d291cfce8a72"
+// string(32) "e26ad9d937e6309fbdc655edd3c784ad"
 
 RTR0::hash('Retter');
-// string(32) "8ce505146e4bff2edbe8e02e01a3c065"
+// string(32) "2e82ec63e3f605ac65d6685e1fd7b99f"
 
 RTR0::hash('Testing');
-// string(32) "d1c7a5399e2c26eb324a49f8a0d7c7de"
+// string(32) "578cb8a598f193ef1ed0349944d367de"
 
 RTR0::hash('Festing');
-// string(32) "7e3b6054e247cf107c24fb82faf0fdde"
+// string(32) "f764739940f09b42be10f7ace40f466d"
 ```
