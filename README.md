@@ -55,20 +55,20 @@ Retter is engine of RTR series, cryptographic hash function.
 
 #### RTR0
 
-This function is producing a 128-bit (16-byte) hash value. Variable is fixed-length output. <a href="https://github.com/MaciejCzyzewski/Retter/tree/master/RTR0">More informations.</a>
+This function is producing a 160-bit (20-byte) hash value. Variable is fixed-length output. <a href="https://github.com/MaciejCzyzewski/Retter/tree/master/RTR0">More informations.</a>
 
 ```php
 RTR0::hash('');
-// string(32) "e26ad9d937e6309fbdc655edd3c784ad"
+// string(40) "e26ad9d937e6309fbdc655edd3c784adf810e0b9"
 
 RTR0::hash('Retter');
-// string(32) "2e82ec63e3f605ac65d6685e1fd7b99f"
+// string(40) "2e82ec63e3f605ac65d6685e1fd7b99f20b8d583"
 
 RTR0::hash('Testing');
-// string(32) "578cb8a598f193ef1ed0349944d367de"
+// string(40) "578cb8a598f193ef1ed0349944d367de5da243ca"
 
 RTR0::hash('Festing');
-// string(32) "f764739940f09b42be10f7ace40f466d"
+// string(40) "f764739940f09b42be10f7ace40f466dfd3e6a79"
 ```
 
 #### RTR1
