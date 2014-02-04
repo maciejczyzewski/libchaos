@@ -70,7 +70,7 @@ void RTR0(const uint8_t *initial_message, size_t initial_length, uint8_t *result
     /* Declaration of algorithm values */
     uint32_t words[16];
     uint32_t left, right, sand;
-    uint32_t A = 0xf7537e82, B = 0xbd3af235, C = 0x2ad7d2bb, D = 0xeb86d391, S;
+    uint32_t A = 0xf7537e82, B = 0xbd3af235, C = 0x2ad7d2bb, D = 0xeb86d391, E = 0xd76aa478, S;
   
     /* Calculate new length */
     for (length = initial_length + 1; length % (512 / 8) != 448 / 8; length++)
@@ -118,6 +118,7 @@ void RTR0(const uint8_t *initial_message, size_t initial_length, uint8_t *result
             B += sand;
             C += sand;
             D += sand;
+            E += sand;
         }
 
         /* Calculate checksum for final values */
@@ -129,14 +130,16 @@ void RTR0(const uint8_t *initial_message, size_t initial_length, uint8_t *result
         B = B ^ S;
         C = C ^ S;
         D = D ^ S;
+        E = E ^ S;
     }
  
     /* Releasing memory */
     free(message);
  
-    /* Returns 128-bit (16-byte) final hash in table */
+    /* Returns 160-bit (20-byte) final hash in table */
     PUT_ULONG_LE(A, result, 0);
     PUT_ULONG_LE(B, result + 4, 0);
     PUT_ULONG_LE(C, result + 8, 0);
     PUT_ULONG_LE(D, result + 12, 0);
+    PUT_ULONG_LE(E, result + 16, 0);
 }
