@@ -59,16 +59,16 @@ This function is producing a 160-bit (20-byte) hash value. Variable is fixed-len
 
 ```php
 RTR0::hash('');
-// string(40) "e26ad9d937e6309fbdc655edd3c784adf810e0b9"
+// string(40) "f58e6b727a62233b4203f551047a721144cfaa94"
 
 RTR0::hash('Retter');
-// string(40) "2e82ec63e3f605ac65d6685e1fd7b99f20b8d583"
+// string(40) "7377bc6d704488272c8297960b02626dafb3c9c1"
 
 RTR0::hash('Testing');
-// string(40) "578cb8a598f193ef1ed0349944d367de5da243ca"
+// string(40) "4efaf06a90b5908e874992855525e33e2cf8885d"
 
 RTR0::hash('Festing');
-// string(40) "f764739940f09b42be10f7ace40f466dfd3e6a79"
+// string(40) "b6f05082b04bbaa72597777a4fc283f52ccbd19e"
 ```
 
 #### RTR1
