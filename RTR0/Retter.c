@@ -3,7 +3,7 @@
 /******************************************************************************/
 /*                                                                            */
 /*    RTR0 (Retter engine) static class for C                                 */
-/*    implemented and designed by Maciej Czyżewski                            */
+/*    implemented and designed by Maciej A. Czyzewski                         */
 /*    specification from http://maciejczyzewski.github.io/                    */
 /*                                                                            */
 /*    © Copyright 2014 Developer's Network. All rights reserved.              */
