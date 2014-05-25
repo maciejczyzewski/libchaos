@@ -36,7 +36,7 @@
 #define GET_ULONG_LE(n, b, i)                           \
 {                                                       \
     (n) = ( (unsigned long) (b)[(i)    ]       )        \
-        | ( (unsigned long) (b)[(i) + 1] <<  8 )        \
+        | ( (unsigned long) (b)[(i) + 1] << 8  )        \
         | ( (unsigned long) (b)[(i) + 2] << 16 )        \
         | ( (unsigned long) (b)[(i) + 3] << 24 );       \
 }
@@ -46,7 +46,7 @@
 #define PUT_ULONG_LE(n, b, i)                           \
 {                                                       \
     (b)[(i)    ] = (unsigned char) ( (n)       );       \
-    (b)[(i) + 1] = (unsigned char) ( (n) >>  8 );       \
+    (b)[(i) + 1] = (unsigned char) ( (n) >> 8  );       \
     (b)[(i) + 2] = (unsigned char) ( (n) >> 16 );       \
     (b)[(i) + 3] = (unsigned char) ( (n) >> 24 );       \
 }
@@ -98,20 +98,20 @@ void RTR0(const uint8_t *initial_message, size_t initial_length, uint8_t *result
     /* Process the message in successive 512-bit chunks */
     for(offset = 0; offset < length; offset += (512 / 8))
     { 
-        for (i = 0; i <= 16; i++)
+        for (i = 0; i < 16; i++)
         {
             /* Get little endian */
             GET_ULONG_LE(words[i], message + offset + i * 4, 0);
         }
  
-        for (i = 1; i <= 16; i++)
+        for (i = 1; i < 16; i++)
         {
             /* Combining depending with neighbour value */
-            words[i] ^= words[i-1] << 1 | i;
+            words[i] ^= words[i - 1] << 1 | i;
  
             /* Calculate sand for rotated values */
-            sand = LEFTROTATE(words[i], words[i-1]) ^ RIGHTROTATE(words[i-1], words[i]);
-
+            sand = LEFTROTATE(words[i], words[i - 1]) ^ RIGHTROTATE(words[i - 1], words[i]);
+ 
             /* Addition sand to the appropriate drawers */
             if( i % 4 == 0 )
                 A += sand;
@@ -121,13 +121,13 @@ void RTR0(const uint8_t *initial_message, size_t initial_length, uint8_t *result
                 C += sand;
             if( i % 4 == 3 )
                 D += sand;
-
+ 
             E += sand;
         }
  
         /* Calculate checksum for final values */
         S = A << B ^ C >> D;
-        S += words[16] ^ E;
+        S += words[15] ^ E;
  
         /* Addition checksum to the appropriate drawers */
         A = A ^ S;
@@ -136,7 +136,7 @@ void RTR0(const uint8_t *initial_message, size_t initial_length, uint8_t *result
         D = D ^ S;
         E = E ^ S;
     }
-
+ 
     /* Releasing memory */
     free(message);
  
@@ -146,4 +146,55 @@ void RTR0(const uint8_t *initial_message, size_t initial_length, uint8_t *result
     PUT_ULONG_LE(C, result + 8, 0);
     PUT_ULONG_LE(D, result + 12, 0);
     PUT_ULONG_LE(E, result + 16, 0);
+}
+ 
+/******************************************************************************/
+ 
+/*
+ * This section is only for tests. Does not belong to implementations
+ */
+int main(int argc, char **argv)
+{
+    /* Declaration of variables */
+    char *message = argv[1];
+    uint8_t result[20];
+    size_t length, i;
+ 
+    /* Rules (only for CLI) */
+    if (argc < 2) {
+        printf("usage: %s 'string'\n", argv[0]);
+        return 1;
+    }
+ 
+    /* Generating hash */
+    length = strlen(message);
+    RTR0((uint8_t*)message, length, result);
+ 
+    /* Output: Hash */
+    for (i = 0; i < 20; i++)
+        printf("%2.2x", result[i]);
+    puts("");
+ 
+    /* Output: Table of hex */
+    for(i = 0; i < 20; i++)
+    {
+        printf("0x%02x%c ", result[i], (i < 19) ? ',' : ' ');
+        if((i & 3) == 3)
+            printf("\n");
+    }
+ 
+    /**
+     Input:
+        The quick brown fox jumps over the lazy dog
+     Output:
+        cdcc2b31333452d6816b88805aecf6d48c838729
+        0xcd, 0xcc, 0x2b, 0x31, 
+        0x33, 0x34, 0x52, 0xd6, 
+        0x81, 0x6b, 0x88, 0x80, 
+        0x5a, 0xec, 0xf6, 0xd4, 
+        0x8c, 0x83, 0x87, 0x29 
+    **/
+ 
+    /* End */
+    return 0;
 }
