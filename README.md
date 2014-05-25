@@ -78,3 +78,8 @@ The future successor...
 ### Attacks
 
 Not yet found.
+
+### Thanks
+
+* Dongxia Bai, Tsinghua University in China
+* Mike Sharov (@msharov)
