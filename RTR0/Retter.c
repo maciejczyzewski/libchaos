@@ -38,7 +38,11 @@
     (n) = ( (unsigned long) (b)[(i)    ]       )        \
         | ( (unsigned long) (b)[(i) + 1] << 8  )        \
         | ( (unsigned long) (b)[(i) + 2] << 16 )        \
-        | ( (unsigned long) (b)[(i) + 3] << 24 );       \
+        | ( (unsigned long) (b)[(i) + 3] << 24 )        \
+        | ( (unsigned long) (b)[(i) + 4] << 32 )        \
+        | ( (unsigned long) (b)[(i) + 5] << 40 )        \
+        | ( (unsigned long) (b)[(i) + 6] << 48 )        \
+        | ( (unsigned long) (b)[(i) + 7] << 56 );       \
 }
 #endif
  
@@ -49,11 +53,15 @@
     (b)[(i) + 1] = (unsigned char) ( (n) >> 8  );       \
     (b)[(i) + 2] = (unsigned char) ( (n) >> 16 );       \
     (b)[(i) + 3] = (unsigned char) ( (n) >> 24 );       \
+    (b)[(i) + 4] = (unsigned char) ( (n) >> 32 );       \
+    (b)[(i) + 5] = (unsigned char) ( (n) >> 40 );       \
+    (b)[(i) + 6] = (unsigned char) ( (n) >> 48 );       \
+    (b)[(i) + 7] = (unsigned char) ( (n) >> 56 );       \
 }
 #endif
  
-#define LEFTROTATE(x, c) (((x) << (c)) | ((x) >> (32 - (c))))
-#define RIGHTROTATE(x, c) (((x) >> (c)) | ((x) << (32 - (c))))
+#define LEFTROTATE(x, c) (((x) << (c)) | ((x) >> (64 - (c))))
+#define RIGHTROTATE(x, c) (((x) >> (c)) | ((x) << (64 - (c))))
  
 /*
  * Implementation of RTR0 cryptographic hash function
@@ -68,9 +76,9 @@ void RTR0(const uint8_t *initial_message, size_t initial_length, uint8_t *result
     uint8_t *message = NULL; 
  
     /* Declaration of algorithm values */
-    uint32_t words[16];
-    uint32_t left, right, sand;
-    uint32_t A = 0xf7537e82, B = 0xbd3af235, C = 0x2ad7d2bb, D = 0xeb86d391, E = 0xd76aa478, S;
+    uint64_t words[16];
+    uint64_t left, right, sand;
+    uint64_t A = 0xf7537e82, B = 0xbd3af235, C = 0x2ad7d2bb, D = 0xeb86d391, E = 0xd76aa478, S;
  
     /* Calculate new length */
     for (length = initial_length + 1; length % (512 / 8) != 448 / 8; length++)
@@ -108,7 +116,7 @@ void RTR0(const uint8_t *initial_message, size_t initial_length, uint8_t *result
         {
             /* Combining depending with neighbour value */
             words[i] ^= words[i - 1] << 1 | i;
- 
+    
             /* Calculate sand for rotated values */
             sand = LEFTROTATE(words[i], words[i - 1]) ^ RIGHTROTATE(words[i - 1], words[i]);
  
@@ -136,7 +144,7 @@ void RTR0(const uint8_t *initial_message, size_t initial_length, uint8_t *result
         D = D ^ S;
         E = E ^ S;
     }
- 
+
     /* Releasing memory */
     free(message);
  
