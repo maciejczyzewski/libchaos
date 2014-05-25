@@ -30,7 +30,7 @@
 #include <stdint.h>
  
 /*
- * 32-bit integer manipulation macros (little endian)
+ * 64-bit integer manipulation macros (little endian)
  */
 #ifndef GET_ULONG_LE
 #define GET_ULONG_LE(n, b, i)                           \
@@ -38,11 +38,7 @@
     (n) = ( (unsigned long) (b)[(i)    ]       )        \
         | ( (unsigned long) (b)[(i) + 1] << 8  )        \
         | ( (unsigned long) (b)[(i) + 2] << 16 )        \
-        | ( (unsigned long) (b)[(i) + 3] << 24 )        \
-        | ( (unsigned long) (b)[(i) + 4] << 32 )        \
-        | ( (unsigned long) (b)[(i) + 5] << 40 )        \
-        | ( (unsigned long) (b)[(i) + 6] << 48 )        \
-        | ( (unsigned long) (b)[(i) + 7] << 56 );       \
+        | ( (unsigned long) (b)[(i) + 3] << 24 );       \
 }
 #endif
  
@@ -53,10 +49,6 @@
     (b)[(i) + 1] = (unsigned char) ( (n) >> 8  );       \
     (b)[(i) + 2] = (unsigned char) ( (n) >> 16 );       \
     (b)[(i) + 3] = (unsigned char) ( (n) >> 24 );       \
-    (b)[(i) + 4] = (unsigned char) ( (n) >> 32 );       \
-    (b)[(i) + 5] = (unsigned char) ( (n) >> 40 );       \
-    (b)[(i) + 6] = (unsigned char) ( (n) >> 48 );       \
-    (b)[(i) + 7] = (unsigned char) ( (n) >> 56 );       \
 }
 #endif
  
