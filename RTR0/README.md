@@ -41,14 +41,14 @@ Language used in this example is PHP.
 
 ```php
 RTR0::hash('');
-// string(40) "f58e6b727a62233b4203f551047a721144cfaa94"
+// string(40) "cf7a017ad356e74c7a6b31663d0eb6668f7fc011"
 
 RTR0::hash('Retter');
-// string(40) "7377bc6d704488272c8297960b02626dafb3c9c1"
+// string(40) "e688dc562ac6cc1d995a73dc8dc53c313e7e30ae"
 
 RTR0::hash('Testing');
-// string(40) "4efaf06a90b5908e874992855525e33e2cf8885d"
+// string(40) "701d77c5134db266faa0563f0c7b9a7b8c0d7b48"
 
 RTR0::hash('Festing');
-// string(40) "b6f05082b04bbaa72597777a4fc283f52ccbd19e"
+// string(40) "561e7edbb15e6ec0041c832fa43177c59e7f3969"
 ```
