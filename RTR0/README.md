@@ -33,7 +33,7 @@
 
 ### RTR0
 
-This function is producing a 160-bit (20-byte) hash value. Variable is fixed-length output.
+This function is producing a 320-bit (40-byte) hash value. Variable is fixed-length output.
 
 ### Examples
 
@@ -41,14 +41,14 @@ Language used in this example is PHP.
 
 ```php
 RTR0::hash('');
-// string(40) "cf7a017ad356e74c7a6b31663d0eb6668f7fc011"
+// string(80) "40a81bda28f1d49984b9146496a295962434ab47b321721a934bddd2be9beffb794000000088ce03"
 
 RTR0::hash('Retter');
-// string(40) "e688dc562ac6cc1d995a73dc8dc53c313e7e30ae"
+// string(40) "bf9a450867b0e43620e7bbef2bc766b909317522fb10be93e6242772697405e090b13ec83d9f333f"
 
 RTR0::hash('Testing');
-// string(40) "701d77c5134db266faa0563f0c7b9a7b8c0d7b48"
+// string(40) "fab2556f28e9b50e811ae4e550c0c12a68778eab65ca59da5e83b6c400e7bdfefacf18c1702149d7"
 
 RTR0::hash('Festing');
-// string(40) "561e7edbb15e6ec0041c832fa43177c59e7f3969"
+// string(40) "61876ea5a5cdeab4317ee8ae1f5ba270ccaa5b5ede3ca02756a9570529e4ebedfa598aafccaa3713"
 ```
