@@ -23,12 +23,12 @@
 /*    Foundation, 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA       */
 /*                                                                            */
 /**** Version 0.0.1 ***********************************************************/
- 
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <stdint.h>
- 
+
 /*
  * 64-bit integer manipulation macros (little endian)
  */
@@ -38,10 +38,14 @@
     (n) = ( (unsigned long) (b)[(i)    ]       )        \
         | ( (unsigned long) (b)[(i) + 1] << 8  )        \
         | ( (unsigned long) (b)[(i) + 2] << 16 )        \
-        | ( (unsigned long) (b)[(i) + 3] << 24 );       \
+        | ( (unsigned long) (b)[(i) + 3] << 24 )        \
+        | ( (unsigned long) (b)[(i) + 4] << 32 )        \
+        | ( (unsigned long) (b)[(i) + 5] << 40 )        \
+        | ( (unsigned long) (b)[(i) + 6] << 48 )        \
+        | ( (unsigned long) (b)[(i) + 7] << 56 );       \
 }
 #endif
- 
+
 #ifndef PUT_ULONG_LE
 #define PUT_ULONG_LE(n, b, i)                           \
 {                                                       \
@@ -49,86 +53,93 @@
     (b)[(i) + 1] = (unsigned char) ( (n) >> 8  );       \
     (b)[(i) + 2] = (unsigned char) ( (n) >> 16 );       \
     (b)[(i) + 3] = (unsigned char) ( (n) >> 24 );       \
+    (b)[(i) + 4] = (unsigned char) ( (n) >> 32 );       \
+    (b)[(i) + 5] = (unsigned char) ( (n) >> 40 );       \
+    (b)[(i) + 6] = (unsigned char) ( (n) >> 48 );       \
+    (b)[(i) + 7] = (unsigned char) ( (n) >> 56 );       \
 }
 #endif
- 
+
 #define LEFTROTATE(x, c) (((x) << (c)) | ((x) >> (64 - (c))))
 #define RIGHTROTATE(x, c) (((x) >> (c)) | ((x) << (64 - (c))))
- 
+
 /*
  * Implementation of RTR0 cryptographic hash function
  * Example: RTR0((uint8_t*)message, length, result);
  */ 
-void RTR0(const uint8_t *initial_message, size_t initial_length, uint8_t *result)
-{
+void RTR0(const uint8_t *initial_message,
+          size_t initial_length,
+          uint8_t *result) {
     /* Declaration of variables */
     size_t length, offset, i;
- 
+
     /* Declaration of message */
-    uint8_t *message = NULL; 
- 
+    uint8_t *message = NULL;
+
     /* Declaration of algorithm values */
-    uint64_t words[16];
-    uint64_t left, right, sand;
-    uint64_t A = 0xf7537e82, B = 0xbd3af235, C = 0x2ad7d2bb, D = 0xeb86d391, E = 0xd76aa478, S;
- 
+    uint64_t A = 0xd76aa478f57c0faf,
+             B = 0xe8c7b7564787c62a,
+             C = 0x242070dba8304613,
+             D = 0xc1bdceeefd469501,
+             E = 0x698098d86b901122,
+             S, words[8], tmp;
+
     /* Calculate new length */
-    for (length = initial_length + 1; length % (512 / 8) != 448 / 8; length++)
-        ;
- 
+    for (length = initial_length + 1;
+         length % (512 / 8) != 448 / 8;
+         length++) {}
+
     /* Prepare message */
     message = (uint8_t*) malloc(length + 8);
- 
+
     /* Copy block of memory */
     memcpy(message, initial_message, initial_length);
- 
+
     /* Append "1" bit */
     message[initial_length] = 0x80;
- 
+
     /* Append "0" bits */
     for (offset = initial_length + 1; offset < length; offset++)
         message[offset] = 0;
- 
+
     /* Append the len in bits at the end of the buffer */
     PUT_ULONG_LE(initial_length * 8, message + length, 0);
- 
+
     /* Initial_len >> 29 == initial_len * 8 >> 32, but avoids overflow */
     PUT_ULONG_LE(initial_length >> 29, message + length + 4, 0);
- 
+
     /* Process the message in successive 512-bit chunks */
-    for(offset = 0; offset < length; offset += (512 / 8))
-    { 
-        for (i = 0; i < 16; i++)
-        {
+    for (offset = 0; offset < length; offset += (512 / 8)) {
+        for (i = 0; i < 8; i++) {
             /* Get little endian */
-            GET_ULONG_LE(words[i], message + offset + i * 4, 0);
+            GET_ULONG_LE(words[i], message + offset + i * 8, 0);
         }
- 
-        for (i = 1; i < 16; i++)
-        {
+
+        for (i = 1; i < 8; i++) {
             /* Combining depending with neighbour value */
-            words[i] ^= words[i - 1] << 1 | i;
-    
+            words[i] = (words[i] ^ (words[i - 1] << 1 | i));
+
             /* Calculate sand for rotated values */
-            sand = LEFTROTATE(words[i], words[i - 1]) ^ RIGHTROTATE(words[i - 1], words[i]);
- 
+            tmp = LEFTROTATE(words[i], words[i - 1])
+                ^ RIGHTROTATE(words[i - 1], words[i]);
+
             /* Addition sand to the appropriate drawers */
-            if( i % 4 == 0 )
-                A += sand;
-            if( i % 4 == 1 )
-                B += sand;
-            if( i % 4 == 2 )
-                C += sand;
-            if( i % 4 == 3 )
-                D += sand;
- 
-            E += sand;
+            if ( i % 4 == 0 )
+                A += tmp;
+            if ( i % 4 == 1 )
+                B += tmp;
+            if ( i % 4 == 2 )
+                C += tmp;
+            if ( i % 4 == 3 )
+                D += tmp;
+
+            E += tmp;
         }
- 
+
         /* Calculate checksum for final values */
         S = A << B ^ C >> D;
-        S += words[15] ^ E;
- 
+        S += words[7] ^ E;
+
         /* Addition checksum to the appropriate drawers */
         A = A ^ S;
         B = B ^ S;
@@ -139,11 +150,11 @@ void RTR0(const uint8_t *initial_message, size_t initial_length, uint8_t *result
 
     /* Releasing memory */
     free(message);
- 
-    /* Returns 160-bit (20-byte) final hash in table */
+
+    /* Returns 320-bit (40-byte) final hash in table */
     PUT_ULONG_LE(A, result, 0);
-    PUT_ULONG_LE(B, result + 4, 0);
-    PUT_ULONG_LE(C, result + 8, 0);
-    PUT_ULONG_LE(D, result + 12, 0);
-    PUT_ULONG_LE(E, result + 16, 0);
+    PUT_ULONG_LE(B, result + 8, 0);
+    PUT_ULONG_LE(C, result + 16, 0);
+    PUT_ULONG_LE(D, result + 24, 0);
+    PUT_ULONG_LE(E, result + 32, 0);
 }
