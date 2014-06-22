@@ -6,11 +6,11 @@
 
 Cryptographic collection.
 
-### Introduction
+## Introduction
 
 It's a engine of RTR series, cryptographic hash function.
 
-### Implementations
+## Implementations
 
 <table width="100%">
   <tr>
@@ -57,9 +57,9 @@ It's a engine of RTR series, cryptographic hash function.
   </tr>
 </table>
 
-### Series
+## Series
 
-#### RTR0
+### RTR0
 
 This function is producing a 320-bit (40-byte) hash value. Variable is fixed-length output. <a href="https://github.com/MaciejCzyzewski/Retter/tree/master/RTR0">More informations.</a>
 
@@ -77,15 +77,15 @@ RTR0::hash('Festing');
 // string(80) "61876ea5a5cdeab4317ee8ae1f5ba270ccaa5b5ede3ca02756a9570529e4ebedfa598aafccaa3713"
 ```
 
-#### RTR1
+### RTR1
 
 The future successor...
 
-### Attacks
+## Attacks
 
 Not yet found.
 
-### Thanks
+## Thanks
 
 * Dongxia Bai, Tsinghua University in China
 * Mike Sharov (@msharov)
