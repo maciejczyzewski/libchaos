@@ -83,7 +83,7 @@ The future successor...
 
 ## Attacks
 
-Not yet found.
+Not yet found... :muscle:
 
 ## Thanks
 
