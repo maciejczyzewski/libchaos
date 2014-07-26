@@ -1,5 +1,5 @@
 <p align="center">
- 	<img src="https://raw.github.com/MaciejCzyzewski/Retter/gh-pages/Retter.png" alt="Retter"/>
+    <img src="https://raw.github.com/MaciejCzyzewski/retter/master/screenshot-1.png" alt="retter"/>
 </p>
 
 # retter
@@ -61,7 +61,7 @@ It's a engine of RTR series, cryptographic hash function.
 
 ### RTR0
 
-This function is producing a 320-bit (40-byte) hash value. Variable is fixed-length output. <a href="https://github.com/MaciejCzyzewski/Retter/tree/master/RTR0">More informations.</a>
+This function is producing a 320-bit (40-byte) hash value. Variable is fixed-length output. <a href="https://github.com/MaciejCzyzewski/retter/tree/master/RTR0">More informations.</a>
 
 ```php
 RTR0::hash('');
@@ -83,7 +83,17 @@ The future successor...
 
 ## Attacks
 
-Not yet found.
+Not yet found... :muscle:
+
+## Contributing
+
+Please feel free to contribute to this project! Pull requests and feature requests welcome! :v:
+
+[![Gitter chat](https://badges.gitter.im/MaciejCzyzewski/retter.png)](https://gitter.im/MaciejCzyzewski/retter)
+
+## License
+
+See LICENSE file in this repository.
 
 ## Thanks
 
