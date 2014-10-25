@@ -15,7 +15,7 @@ It's a engine of RTR series, cryptographic hash function.
 <table width="100%">
   <tr>
     <th width="100%">Series</th>
-    
+
     <th>PHP</th>
     <th>Javascript</th>
     <th>C</th>
@@ -29,7 +29,7 @@ It's a engine of RTR series, cryptographic hash function.
   </tr>
   <tr>
     <td>RTR0</td>
-    
+
     <td>✕</td>
     <td>✕</td>
     <td>✓</td>
@@ -43,7 +43,7 @@ It's a engine of RTR series, cryptographic hash function.
   </tr>
   <tr>
     <td>RTR1</td>
-    
+
     <td>-</td>
     <td>-</td>
     <td>-</td>
@@ -88,8 +88,6 @@ Not yet found... :muscle:
 ## Contributing
 
 Please feel free to contribute to this project! Pull requests and feature requests welcome! :v:
-
-[![Gitter chat](https://badges.gitter.im/MaciejCzyzewski/retter.png)](https://gitter.im/MaciejCzyzewski/retter)
 
 ## License
 
