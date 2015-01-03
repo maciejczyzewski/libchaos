@@ -61,13 +61,15 @@ A cryptographic hash function is a hash function which is considered practically
     <th>Name</th>
     <th>Length</th>
     <th>Type</th>
+    <th>Speed</th>
     <th>Authors</th>
-    <th width="50%">Information</th>
+    <th>Information</th>
   </tr>
   <tr>
     <td>MD5</td>
     <td>128 bits</td>
     <td>Merkle-Damgård construction</td>
+    <td>255 MiB/Second</td>
     <td>Ronald Rivest</td>
     <td><a href="/MD5">more</a></td>
   </tr>
