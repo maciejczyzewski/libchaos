@@ -16,15 +16,16 @@ BLA BLA BLA BLA BLA BLA BLA
 
 #### Further reading:
 
-- [Definitions](#definitions): bla bla bla bla bla
-- [List of hash functions](#list-of-hash-functions): bla bla bla bla bla
-  - [Cyclic redundancy checks](#cyclic-redundancy-checks): bla bla bla
-  - [Checksums](#checksums): bla bla bla
-  - [Non-cryptographic hash functions](#non-cryptographic-hash-functions): bla bla bla
-  - [Cryptographic hash functions](#cryptographic-hash-functions): bla bla bla
-- [Tools](#tools): bla bla bla
-- [Libraries](#libraries): bla bla bla bla
-- [Articles](#articles): bla bla bla
+- [Definitions](#definitions): The basic statements.
+- [List of hash functions](#list-of-hash-functions): The set of all known functions.
+  - [Cyclic redundancy checks](#cyclic-redundancy-checks): List of cyclic redundancy checks functions.
+  - [Checksums](#checksums): List of checksums functions.
+  - [Non-cryptographic hash functions](#non-cryptographic-hash-functions): List of non-cryptographic hash functions functions.
+  - [Cryptographic hash functions](#cryptographic-hash-functions): List of cryptographic hash functions functions.
+- [Tools](#tools): Collection of cryptanalysis apparatus.
+- [Libraries](#libraries): List of security/crypto libraries.
+- [Articles](#articles): Pages related to cryptography.
+- [Contributing](#contributing): Explanation of how you can join the project.
 
 ## Definitions
 
@@ -61,7 +62,7 @@ A cryptographic hash function is a hash function which is considered practically
     <th>Name</th>
     <th>Length</th>
     <th>Type</th>
-    <th>Speed</th>
+    <th>Published</th>
     <th>Authors</th>
     <th>Information</th>
   </tr>
@@ -69,7 +70,7 @@ A cryptographic hash function is a hash function which is considered practically
     <td>BLAKE</td>
     <td>256 bits or 512 bits</td>
     <td>HAIFA structure</td>
-    <td>--</td>
+    <td>2008</td>
     <td>Jean-Philippe Aumasson, Luca Henzen, Willi Meier, Raphael C.-W. Phan</td>
     <td><a href="/BLAKE">more</a></td>
   </tr>
@@ -77,7 +78,7 @@ A cryptographic hash function is a hash function which is considered practically
     <td>ECOH</td>
     <td>224 to 512 bits</td>
     <td>hash</td>
-    <td>--</td>
+    <td>2008</td>
     <td>Daniel R. L. Brown, Matt Campagna, Rene Struik</td>
     <td><a href="/ECOH">more</a></td>
   </tr>
@@ -85,7 +86,7 @@ A cryptographic hash function is a hash function which is considered practically
     <td>FSB</td>
     <td>160 to 512 bits</td>
     <td>hash</td>
-    <td>--</td>
+    <td>2003</td>
     <td>Daniel Augot, Matthieu Finiasz, Nicolas Sendrier</td>
     <td><a href="/FSB">more</a></td>
   </tr>
@@ -93,7 +94,7 @@ A cryptographic hash function is a hash function which is considered practically
     <td>GOST</td>
     <td>256 bits</td>
     <td>hash</td>
-    <td>--</td>
+    <td>1994-05-23</td>
     <td>FAPSI and VNIIstandart</td>
     <td><a href="/GOST">more</a></td>
   </tr>
@@ -113,13 +114,20 @@ A cryptographic hash function is a hash function which is considered practically
     <td>--</td>
     <td><a href="/HAS-160">more</a></td>
   </tr>
-
+  <tr>
+    <td>HAVAL</td>
+    <td>128 to 256 bits</td>
+    <td>hash</td>
+    <td>1992</td>
+    <td>Yuliang Zheng, Josef Pieprzyk, Jennifer Seberry</td>
+    <td><a href="/HAVAL">more</a></td>
+  </tr>
 
   <tr>
     <td>MD5</td>
     <td>128 bits</td>
     <td>Merkle-Damgård construction</td>
-    <td>6.8 Cycles Per Byte</td>
+    <td>April 1992</td>
     <td>Ronald Rivest</td>
     <td><a href="/MD5">more</a></td>
   </tr>
@@ -306,6 +314,10 @@ Sage is a free open-source mathematics software system licensed under the GPL. I
 - [Lecture Notes on Cryptography](http://cseweb.ucsd.edu/~mihir/papers/gb.pdf)
 - [Cryptograpy Lecture Notes](http://www1.cs.columbia.edu/~zeph/4261/lectures/)
 - [Non-Cryptographic Hash Function Zoo](http://floodyberry.com/noncryptohashzoo/)
+
+## Contributing
+
+Please feel free to contribute to this project! Pull requests and feature requests welcome! :v:
 
 ## Thanks
 
