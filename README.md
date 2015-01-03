@@ -58,11 +58,11 @@ A cryptographic hash function is a hash function which is considered practically
 
 <table width="100%">
   <tr>
-    <th width="50%">Name</th>
+    <th>Name</th>
     <th>Length</th>
     <th>Type</th>
     <th>Authors</th>
-    <th>Information</th>
+    <th width="50%">Information</th>
   </tr>
   <tr>
     <td>MD5</td>
