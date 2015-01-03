@@ -28,7 +28,11 @@ BLA BLA BLA BLA BLA BLA BLA
 
 ## Definitions
 
-BLA BLA BLA BLA BLA
+__Avalanche__ - a measure of how the output bits change based on each input bit. Ideally each input bit will affect each output bit with 1/2 probability.
+
+Realistically, many hash functions do not achieve perfect avalanche and are still useable for many sets of keys.
+
+__Cipher__ - an algorithm for performing encryption or decryption—a series of well-defined steps that can be followed as a procedure.
 
 ## List of hash functions
 
@@ -38,42 +42,41 @@ For each function are included: __description__, __implementations__ and __mater
 
 ### Cyclic redundancy checks
 
+A cyclic redundancy check (CRC) is an error-detecting code commonly used in digital networks and storage devices to detect accidental changes to raw data.
+
 ### Checksums
+
+A checksum or hash sum is a small-size datum from an arbitrary block of digital data for the purpose of detecting errors which may have been introduced during its transmission or storage.
 
 ### Non-cryptographic hash functions
 
+A cryptographic hash function is a hash function which is considered practically impossible to invert, that is, to recreate the input data from its hash value alone.
+
 ### Cryptographic hash functions
+
+A cryptographic hash function is a hash function which is considered practically impossible to invert, that is, to recreate the input data from its hash value alone.
 
 <table width="100%">
   <tr>
     <th width="100%">Name</th>
     <th>Length</th>
-
-    <th>C</th>
-    <th>Javascript</th>
-    <th>Python</th>
-    <th>Ruby</th>
-    <th>PHP</th>
+    <th>Type</th>
+    <th>Authors</th>
+    <th>Information</th>
   </tr>
   <tr>
     <td>MD5</td>
     <td>128 bits</td>
-
-    <td>✓</td>
-    <td>✕</td>
-    <td>✕</td>
-    <td>✕</td>
-    <td>✕</td>
+    <td>Merkle-Damgård construction</td>
+    <td>Ronald Rivest</td>
+    <td><a href="/MD5">more</a></td>
   </tr>
   <tr>
-    <td>MD66</td>
+    <td>MD5</td>
     <td>128 bits</td>
-
-    <td>✕</td>
-    <td>✕</td>
-    <td>✓</td>
-    <td>✕</td>
-    <td>✕</td>
+    <td>Merkle-Damgård construction</td>
+    <td>Ronald Rivest</td>
+    <td><a href="/MD5">more</a></td>
   </tr>
 </table>
 
@@ -225,6 +228,11 @@ Sage is a free open-source mathematics software system licensed under the GPL. I
   + [AESLib](https://github.com/DavyLandman/AESLib): arduino Library for AES Encryption (source based on avr-crypto-lib).
   + [crypto-algorithms](https://github.com/B-Con/crypto-algorithms): basic implementations of standard cryptography algorithms, like AES and SHA-1.
   + [sha3sum](https://github.com/maandree/sha3sum): SHA-3 and Keccak checksum utility.
+  + [cryptlib](http://www.cryptlib.com/): an open source cross-platform software security toolkit library.
+  + [Nettle](http://www.lysator.liu.se/~nisse/nettle/): a cryptographic library that is designed to fit easily in more or less any context.
++ C++
+  + [Crypto++](http://www.cryptopp.com/): is a free and open source C++ class library of cryptographic algorithms and schemes.
+  + [NaCl](http://nacl.cr.yp.to/): high-speed software library for network communication, encryption, decryption, signatures, etc.
 + Javascript
   + [jsHashes](https://github.com/h2non/jshashes): pure JavaScript implementation of the most extended hash algorithms.
   + [javascript-crypto-library](https://github.com/clipperz/javascript-crypto-library): provides web developers with an extensive and efficient set of cryptographic functions.
@@ -240,6 +248,8 @@ Sage is a free open-source mathematics software system licensed under the GPL. I
   + [CocoaSecurity](https://github.com/kelp404/CocoaSecurity): encrypt/Decrypt: AES. Hash: MD5, SHA(SHA1, SHA224, SHA256, SHA384, SHA512). Encode/Decode: Base64, Hex.
 + Rust
   + [rust-crypto](https://github.com/DaGenix/rust-crypto): a (mostly) pure-Rust implementation of various cryptographic algorithms.
++ Java
+  + [Bouncy Castle](http://bouncycastle.org/): a collection of APIs used in cryptography. It includes APIs for both the Java and the C# programming languages.
 
 ## Articles
 
@@ -250,6 +260,7 @@ Sage is a free open-source mathematics software system licensed under the GPL. I
 - [Bloom filters, fast and simple](http://maciejczyzewski.me/2014/10/18/bloom-filters-fast-and-simple.html)
 - [Lecture Notes on Cryptography](http://cseweb.ucsd.edu/~mihir/papers/gb.pdf)
 - [Cryptograpy Lecture Notes](http://www1.cs.columbia.edu/~zeph/4261/lectures/)
+- [Non-Cryptographic Hash Function Zoo](http://floodyberry.com/noncryptohashzoo/)
 
 ## Thanks
 
