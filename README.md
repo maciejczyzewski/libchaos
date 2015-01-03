@@ -66,17 +66,34 @@ A cryptographic hash function is a hash function which is considered practically
     <th>Information</th>
   </tr>
   <tr>
-    <td>MD5</td>
-    <td>128 bits</td>
-    <td>Merkle-Damgård construction</td>
-    <td>255 MiB/Second</td>
-    <td>Ronald Rivest</td>
-    <td><a href="/MD5">more</a></td>
+    <td>BLAKE</td>
+    <td>256 bits or 512 bits</td>
+    <td>HAIFA structure</td>
+    <td>--</td>
+    <td>Jean-Philippe Aumasson, Luca Henzen, Willi Meier, Raphael C.-W. Phan</td>
+    <td><a href="/BLAKE">more</a></td>
+  </tr>
+  <tr>
+    <td>ECOH</td>
+    <td>224 to 512 bits</td>
+    <td>hash</td>
+    <td>--</td>
+    <td>Daniel R. L. Brown, Matt Campagna, Rene Struik</td>
+    <td><a href="/ECOH">more</a></td>
+  </tr>
+  <tr>
+    <td>ECOH</td>
+    <td>224 to 512 bits</td>
+    <td>hash</td>
+    <td>--</td>
+    <td>Daniel R. L. Brown, Matt Campagna, Rene Struik</td>
+    <td><a href="/ECOH">more</a></td>
   </tr>
   <tr>
     <td>MD5</td>
     <td>128 bits</td>
     <td>Merkle-Damgård construction</td>
+    <td>255 MiB/Second</td>
     <td>Ronald Rivest</td>
     <td><a href="/MD5">more</a></td>
   </tr>
