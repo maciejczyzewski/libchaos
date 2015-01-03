@@ -16,18 +16,25 @@ BLA BLA BLA BLA BLA BLA BLA
 
 #### Further reading:
 
-- [List of hash functions](#list of hash functions): bla bla bla bla bla
-  - [Cyclic redundancy checks](#cyclic redundancy checks): bla bla bla
+- [Definitions](#definitions): bla bla bla bla bla
+- [List of hash functions](#list-of-hash-functions): bla bla bla bla bla
+  - [Cyclic redundancy checks](#cyclic-redundancy-checks): bla bla bla
   - [Checksums](#checksums): bla bla bla
-  - [Non-cryptographic hash functions](#non-cryptographic hash functions): bla bla bla
-  - [Cryptographic hash functions](#cryptographic hash functions): bla bla bla
+  - [Non-cryptographic hash functions](#non-cryptographic-hash-functions): bla bla bla
+  - [Cryptographic hash functions](#cryptographic-hash-functions): bla bla bla
 - [Tools](#tools): bla bla bla
 - [Libraries](#libraries): bla bla bla bla
 - [Articles](#articles): bla bla bla
 
+## Definitions
+
+BLA BLA BLA BLA BLA
+
 ## List of hash functions
 
 This is a list of hash functions, including cyclic redundancy checks, checksum functions, and cryptographic hash functions.
+
+For each function are included: __description__, __implementations__ and __materials__.
 
 ### Cyclic redundancy checks
 
@@ -188,18 +195,9 @@ SYMAES is a software tool that generates a system of polynomials in GF(2), corre
 _Tools for the algebraic cryptanalysis of cryptographic primitives._
 
 * __Authors__ - Martin Albrecht
-* __Download__ - [http://bitbucket.org/malb/algebraic_attacks](http://bitbucket.org/malb/algebraic_attacks)
+* __Download__ - [https://bitbucket.org/malb/research-snippets/src](https://bitbucket.org/malb/research-snippets/src)
 
 Algebraic cryptanalysis of cryptographic primitives such as block ciphers, stream ciphers and hash functions usually proceeds in two steps.
-
-### Hybrid Approach
-
-_Hybrid Approach for Solving Multivariate Polynomial Systems over Finite Fields._
-
-* __Authors__ - Luk Bettale, Jean-Charles Faugère, Ludovic Perret
-* __Download__ - [http://www-polsys.lip6.fr/~bettale/hybrid/](http://www-polsys.lip6.fr/~bettale/hybrid/)
-
-The Hybrid Approach is an improved approach to solve multivariate systems over finite fields. Our approach is a tradeoff between exhaustive search and Gröbner bases Techniques.
 
 ### Grain of Salt
 
@@ -230,6 +228,9 @@ Sage is a free open-source mathematics software system licensed under the GPL. I
   + [jsHashes](https://github.com/h2non/jshashes): pure JavaScript implementation of the most extended hash algorithms.
   + [javascript-crypto-library](https://github.com/clipperz/javascript-crypto-library): provides web developers with an extensive and efficient set of cryptographic functions.
   + [cryptojs](https://github.com/gwjjeff/cryptojs): provide standard and secure cryptographic algorithms for NodeJS.
+  + [hmacsha1.js](https://gist.github.com/macton/1743087): a JavaScript implementation of the Secure Hash Algorithm, SHA-1, as defined.
++ Clojure
+  + [pandect](https://github.com/xsc/pandect): fast and easy-to-use Message Digest, Checksum and HMAC library for Clojure.
 
 ## Articles
 
@@ -237,6 +238,8 @@ Sage is a free open-source mathematics software system licensed under the GPL. I
 - [Differential Cryptanalysis of MD5](http://www.nada.kth.se/utbildning/grukth/exjobb/rapportlistor/2009/rapporter09/ekera_martin_09008.pdf)
 - [Cryptography - Wikibooks](http://en.wikibooks.org/wiki/Cryptography)
 - [Universal One-Way Hash Functions and their Cryptographic Applications](http://www.wisdom.weizmann.ac.il/~naor/PAPERS/uowhf.pdf)
+- [Bloom filters, fast and simple](http://maciejczyzewski.me/2014/10/18/bloom-filters-fast-and-simple.html)
+- [Lecture Notes on Cryptography](http://cseweb.ucsd.edu/~mihir/papers/gb.pdf)
 
 ## Thanks
 
