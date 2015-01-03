@@ -82,18 +82,44 @@ A cryptographic hash function is a hash function which is considered practically
     <td><a href="/ECOH">more</a></td>
   </tr>
   <tr>
-    <td>ECOH</td>
-    <td>224 to 512 bits</td>
+    <td>FSB</td>
+    <td>160 to 512 bits</td>
     <td>hash</td>
     <td>--</td>
-    <td>Daniel R. L. Brown, Matt Campagna, Rene Struik</td>
-    <td><a href="/ECOH">more</a></td>
+    <td>Daniel Augot, Matthieu Finiasz, Nicolas Sendrier</td>
+    <td><a href="/FSB">more</a></td>
   </tr>
+  <tr>
+    <td>GOST</td>
+    <td>256 bits</td>
+    <td>hash</td>
+    <td>--</td>
+    <td>FAPSI and VNIIstandart</td>
+    <td><a href="/GOST">more</a></td>
+  </tr>
+  <tr>
+    <td>Grøstl</td>
+    <td>256 to 512 bits</td>
+    <td>hash</td>
+    <td>--</td>
+    <td>Praveen Gauravaram, Lars Knudsen, Krystian Matusiewicz, Florian Mendel, Christian Rechberger, Martin Schläffer, Søren S. Thomsen</td>
+    <td><a href="/Grøstl">more</a></td>
+  </tr>
+  <tr>
+    <td>HAS-160</td>
+    <td>160 bits</td>
+    <td>hash</td>
+    <td>--</td>
+    <td>--</td>
+    <td><a href="/HAS-160">more</a></td>
+  </tr>
+
+
   <tr>
     <td>MD5</td>
     <td>128 bits</td>
     <td>Merkle-Damgård construction</td>
-    <td>255 MiB/Second</td>
+    <td>6.8 Cycles Per Byte</td>
     <td>Ronald Rivest</td>
     <td><a href="/MD5">more</a></td>
   </tr>
