@@ -25,7 +25,7 @@ A 2013 attack by Xie Tao, Fanbao Liu, and Dengguo Feng breaks MD5 collision resi
 ## Materials
 
 - rfc1321.pdf - The MD5 Message-Digest Algorithm
-- stevens.pdf - Cryptanalysis of MD5 and SHA-1 - SHARCS 2012
+- stevens.pdf - Cryptanalysis of MD5 and SHA-1 (SHARCS 2012)
 - Wang05a.pdf - How to Break MD5 and Other Hash Functions
 
 ## Pseudocode
