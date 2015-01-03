@@ -224,6 +224,7 @@ Sage is a free open-source mathematics software system licensed under the GPL. I
   + [libsodium](https://github.com/jedisct1/libsodium): a modern and easy-to-use crypto library.
   + [AESLib](https://github.com/DavyLandman/AESLib): arduino Library for AES Encryption (source based on avr-crypto-lib).
   + [crypto-algorithms](https://github.com/B-Con/crypto-algorithms): basic implementations of standard cryptography algorithms, like AES and SHA-1.
+  + [sha3sum](https://github.com/maandree/sha3sum): SHA-3 and Keccak checksum utility.
 + Javascript
   + [jsHashes](https://github.com/h2non/jshashes): pure JavaScript implementation of the most extended hash algorithms.
   + [javascript-crypto-library](https://github.com/clipperz/javascript-crypto-library): provides web developers with an extensive and efficient set of cryptographic functions.
@@ -231,6 +232,14 @@ Sage is a free open-source mathematics software system licensed under the GPL. I
   + [hmacsha1.js](https://gist.github.com/macton/1743087): a JavaScript implementation of the Secure Hash Algorithm, SHA-1, as defined.
 + Clojure
   + [pandect](https://github.com/xsc/pandect): fast and easy-to-use Message Digest, Checksum and HMAC library for Clojure.
++ ActionScript
+  + [as3corelib](https://github.com/mikechambers/as3corelib): an ActionScript 3 Library that contains a number of classes and utilities.
++ Ruby
+  + [BozoCrack](https://github.com/juuso/BozoCrack): a silly & effective MD5 cracker in Ruby.
++ Objective-c
+  + [CocoaSecurity](https://github.com/kelp404/CocoaSecurity): encrypt/Decrypt: AES. Hash: MD5, SHA(SHA1, SHA224, SHA256, SHA384, SHA512). Encode/Decode: Base64, Hex.
++ Rust
+  + [rust-crypto](https://github.com/DaGenix/rust-crypto): a (mostly) pure-Rust implementation of various cryptographic algorithms.
 
 ## Articles
 
@@ -240,6 +249,7 @@ Sage is a free open-source mathematics software system licensed under the GPL. I
 - [Universal One-Way Hash Functions and their Cryptographic Applications](http://www.wisdom.weizmann.ac.il/~naor/PAPERS/uowhf.pdf)
 - [Bloom filters, fast and simple](http://maciejczyzewski.me/2014/10/18/bloom-filters-fast-and-simple.html)
 - [Lecture Notes on Cryptography](http://cseweb.ucsd.edu/~mihir/papers/gb.pdf)
+- [Cryptograpy Lecture Notes](http://www1.cs.columbia.edu/~zeph/4261/lectures/)
 
 ## Thanks
 
