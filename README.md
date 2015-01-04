@@ -49,6 +49,42 @@ For each function are included: __description__, __implementations__ and __mater
 
 A cyclic redundancy check (CRC) is an error-detecting code commonly used in digital networks and storage devices to detect accidental changes to raw data.
 
+<table width="100%">
+  <tr>
+    <th>Name</th>
+    <th>Length</th>
+    <th>Type</th>
+    <th>Published</th>
+    <th>Authors</th>
+    <th>Information</th>
+  </tr>
+
+  <tr>
+    <td>CRC</td>
+    <td>16, 32, 64 bits</td>
+    <td>--</td>
+    <td>1961</td>
+    <td>W. Wesley Peterson</td>
+    <td><a href="/CRC">more</a></td>
+  </tr>
+  <tr>
+    <td>BSD</td>
+    <td>16 bits</td>
+    <td>CRC</td>
+    <td>--</td>
+    <td>--</td>
+    <td><a href="/BSD">more</a></td>
+  </tr>
+  <tr>
+    <td>SYSV</td>
+    <td>16 bits</td>
+    <td>CRC</td>
+    <td>--</td>
+    <td>--</td>
+    <td><a href="/SYSV">more</a></td>
+  </tr>
+</table>
+
 ### Checksums
 
 A checksum or hash sum is a small-size datum from an arbitrary block of digital data for the purpose of detecting errors which may have been introduced during its transmission or storage.
@@ -64,6 +100,22 @@ A checksum or hash sum is a small-size datum from an arbitrary block of digital 
   </tr>
 
   <tr>
+    <td>Luhn algorithm</td>
+    <td>4 bits</td>
+    <td>sum</td>
+    <td>1954</td>
+    <td>Hans Peter Luhn</td>
+    <td><a href="/Luhn algorithm">more</a></td>
+  </tr>
+  <tr>
+    <td>Verhoeff algorithm</td>
+    <td>4 bits</td>
+    <td>sum</td>
+    <td>1969</td>
+    <td>Jacobus Verhoeff</td>
+    <td><a href="/Verhoeff algorithm">more</a></td>
+  </tr>
+  <tr>
     <td>Fletcher</td>
     <td>4, 8, 16, 32 bits</td>
     <td>sum</td>
@@ -78,6 +130,14 @@ A checksum or hash sum is a small-size datum from an arbitrary block of digital 
     <td>1995</td>
     <td>Mark Adler</td>
     <td><a href="/Adler-32">more</a></td>
+  </tr>
+  <tr>
+    <td>Damm algorithm</td>
+    <td>1 decimal digit</td>
+    <td>Quasigroup operation</td>
+    <td>2004</td>
+    <td>H. Michael Damm</td>
+    <td><a href="/Damm algorithm">more</a></td>
   </tr>
 </table>
 
