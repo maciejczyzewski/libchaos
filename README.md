@@ -94,7 +94,7 @@ A cryptographic hash function is a hash function which is considered practically
     <td>GOST</td>
     <td>256 bits</td>
     <td>hash</td>
-    <td>1994-05-23</td>
+    <td>1994</td>
     <td>FAPSI and VNIIstandart</td>
     <td><a href="/GOST">more</a></td>
   </tr>
@@ -122,7 +122,30 @@ A cryptographic hash function is a hash function which is considered practically
     <td>Yuliang Zheng, Josef Pieprzyk, Jennifer Seberry</td>
     <td><a href="/HAVAL">more</a></td>
   </tr>
-
+  <tr>
+    <td>JH</td>
+    <td>512 bits</td>
+    <td>hash</td>
+    <td>--</td>
+    <td>Hongjun Wu</td>
+    <td><a href="/JH">more</a></td>
+  </tr>
+  <tr>
+    <td>MD2</td>
+    <td>128 bits</td>
+    <td>hash</td>
+    <td>August 1989</td>
+    <td>Ronald Rivest</td>
+    <td><a href="/MD2">more</a></td>
+  </tr>
+  <tr>
+    <td>MD4</td>
+    <td>128 bits</td>
+    <td>hash</td>
+    <td>October 1990</td>
+    <td>Ronald Rivest</td>
+    <td><a href="/MD4">more</a></td>
+  </tr>
   <tr>
     <td>MD5</td>
     <td>128 bits</td>
@@ -130,6 +153,110 @@ A cryptographic hash function is a hash function which is considered practically
     <td>April 1992</td>
     <td>Ronald Rivest</td>
     <td><a href="/MD5">more</a></td>
+  </tr>
+  <tr>
+    <td>MD6</td>
+    <td>128 bits</td>
+    <td>Merkle tree NLFSR</td>
+    <td>2008</td>
+    <td>Ronald Rivest, Benjamin Agre, Dan Bailey, Sarah Cheng, Christopher Crutchfield, Yevgeniy Dodis, Kermin Fleming, Asif Khan, Jayant Krishnamurthy, Yuncheng Lin, Leo Reyzin, Emily Shen, Jim Sukha, Eran Tromer, Yiqun Lisa Yin</td>
+    <td><a href="/MD6">more</a></td>
+  </tr>
+  <tr>
+    <td>RadioGatún</td>
+    <td>Up to 1216 bits</td>
+    <td>hash</td>
+    <td>2006</td>
+    <td>Guido Bertoni, Joan Daemen, Michaël Peeters, Gilles Van Assche</td>
+    <td><a href="/RadioGatún">more</a></td>
+  </tr>
+  <tr>
+    <td>RIPEMD</td>
+    <td>128 bits</td>
+    <td>hash</td>
+    <td>1996</td>
+    <td>Hans Dobbertin, Antoon Bosselaers and Bart Preneel</td>
+    <td><a href="/RIPEMD">more</a></td>
+  </tr>
+  <tr>
+    <td>SHA-1</td>
+    <td>160 bits</td>
+    <td>Merkle-Damgård construction</td>
+    <td>1995</td>
+    <td>National Security Agency</td>
+    <td><a href="/SHA-1">more</a></td>
+  </tr>
+  <tr>
+    <td>SHA-2</td>
+    <td>224, 256, 384, or 512 bits</td>
+    <td>Merkle-Damgård construction</td>
+    <td>2001</td>
+    <td>National Security Agency</td>
+    <td><a href="/SHA-2">more</a></td>
+  </tr>
+  <tr>
+    <td>SHA-3 (Keccak)</td>
+    <td>arbitrary</td>
+    <td>Sponge function</td>
+    <td>2012</td>
+    <td>Guido Bertoni, Joan Daemen, Michaël Peeters, Gilles Van Assche</td>
+    <td><a href="/SHA-3">more</a></td>
+  </tr>
+  <tr>
+    <td>Skein</td>
+    <td>arbitrary</td>
+    <td>Unique Block Iteration</td>
+    <td>2010</td>
+    <td>Bruce Schneier, Niels Ferguson</td>
+    <td><a href="/Skein">more</a></td>
+  </tr>
+  <tr>
+    <td>SipHash</td>
+    <td>64 bits</td>
+    <td>non-collision-resistant PRF</td>
+    <td>2012</td>
+    <td>Jean-Philippe Aumasson, Daniel J. Bernstein</td>
+    <td><a href="/SipHash">more</a></td>
+  </tr>
+  <tr>
+    <td>Snefru</td>
+    <td>128 or 256 bits</td>
+    <td>hash</td>
+    <td>1990</td>
+    <td>Ralph Merkle</td>
+    <td><a href="/Snefru">more</a></td>
+  </tr>
+  <tr>
+    <td>Spectral Hash</td>
+    <td>512 bits</td>
+    <td>Wide Pipe Merkle-Damgård construction</td>
+    <td>2009</td>
+    <td>Gokay Saldamlı, Cevahir Demirkıran, Megan Maguire, Carl Minden, Jacob Topper, Alex Troesch, Cody Walker, Çetin Kaya Koç</td>
+    <td><a href="/Spectral Hash">more</a></td>
+  </tr>
+  <tr>
+    <td>SWIFFT</td>
+    <td>512 bits</td>
+    <td>hash</td>
+    <td>2008</td>
+    <td>Vadim Lyubashevsky, Daniele Micciancio, Chris Peikert, Alon Rosen</td>
+    <td><a href="/SWIFFT">more</a></td>
+  </tr>
+  <tr>
+    <td>Tiger</td>
+    <td>192 bits</td>
+    <td>Merkle-Damgård construction</td>
+    <td>1996</td>
+    <td>Ross Anderson, Eli Biham</td>
+    <td><a href="/Tiger">more</a></td>
+  </tr>
+  <tr>
+    <td>Whirlpool</td>
+    <td>512 bits</td>
+    <td>hash</td>
+    <td>2000</td>
+    <td>Vincent Rijmen, Paulo S. L. M. Barreto</td>
+    <td><a href="/Whirlpool">more</a></td>
   </tr>
 </table>
 
