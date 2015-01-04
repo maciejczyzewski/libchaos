@@ -15,7 +15,7 @@ Yuliang Zheng, Josef Pieprzyk, and Jennifer Seberry
 
 ## Cryptanalysis
 
-Research has uncovered weaknesses which make further use of HAVAL (at least the variant with 128 bits and 3 passes with 2^6 operations) questionable. On 17 August 2004, collisions for HAVAL (128 bits, 3 passes) were announced by Xiaoyun Wang, Dengguo Feng, Xuejia Lai, and Hongbo Yu
+Research has uncovered weaknesses which make further use of HAVAL (at least the variant with 128 bits and 3 passes with 2^6 operations) questionable. On 17 August 2004, collisions for HAVAL (128 bits, 3 passes) were announced by Xiaoyun Wang, Dengguo Feng, Xuejia Lai, and Hongbo Yu.
 
 ## Implementations
 

@@ -668,6 +668,7 @@ Sage is a free open-source mathematics software system licensed under the GPL. I
 - [What is the difference between a Hash Function and a Cryptographic Hash Function?](http://security.stackexchange.com/questions/11839/what-is-the-difference-between-a-hash-function-and-a-cryptographic-hash-function)
 - [Whats the difference between MAC vs hash](http://security.stackexchange.com/questions/1873/whats-the-difference-between-mac-vs-hash?rq=1)
 - [Dr. Dobbs article](http://www.burtleburtle.net/bob/hash/doobs.html)
+- [Attacks on Hash Functions and Applications](https://marc-stevens.nl/research/papers/PhD%20Thesis%20Marc%20Stevens%20-%20Attacks%20on%20Hash%20Functions%20and%20Applications.pdf)
 - [Which hashing algorithm is best for uniqueness and speed?](http://programmers.stackexchange.com/questions/49550/which-hashing-algorithm-is-best-for-uniqueness-and-speed)
 
 ## Contributing

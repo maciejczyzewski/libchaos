@@ -15,7 +15,7 @@ Bob Jenkins
 ## Implementations
 
 - jenkins.c
-- tests.c
+- jenkinstest.c
 
 ## Materials
 
