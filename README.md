@@ -19,6 +19,7 @@ BLA BLA BLA BLA BLA BLA BLA
 - [Definitions](#definitions): The basic statements.
 - [List of hash functions](#list-of-hash-functions): The set of all known functions.
   - [Cyclic redundancy checks](#cyclic-redundancy-checks): List of cyclic redundancy checks functions.
+  - [Message authentication codes](#message-authentication-codes): List of message authentication code functions.
   - [Checksums](#checksums): List of checksums functions.
   - [Non-cryptographic hash functions](#non-cryptographic-hash-functions): List of non-cryptographic hash functions functions.
   - [Cryptographic hash functions](#cryptographic-hash-functions): List of cryptographic hash functions functions.
@@ -29,15 +30,23 @@ BLA BLA BLA BLA BLA BLA BLA
 
 ## Definitions
 
+### Hash functions
+
 __Hash function__ - any function that can be used to map digital data of arbitrary size to digital data of fixed size, with slight differences in input data producing very big differences in output data.
 
 _Used in: Database, Filters, Hash tables, Unique identifiers, Passwords, Diff utility, and File system_
 
-__Cipher__ - an algorithm for performing encryption or decryption—a series of well-defined steps that can be followed as a procedure.
+__Message authentication code (often MAC)__ - a short piece of information used to authenticate a message and to provide integrity and authenticity assurances on the message.
 
 __Avalanche__ - a measure of how the output bits change based on each input bit. Ideally each input bit will affect each output bit with 1/2 probability.
 
 Realistically, many hash functions do not achieve perfect avalanche and are still useable for many sets of keys.
+
+### Ciphers
+
+__Cipher__ - an algorithm for performing encryption or decryption—a series of well-defined steps that can be followed as a procedure.
+
+__Block cipher__ - a deterministic algorithm operating on fixed-length groups of bits, called blocks, with an unvarying transformation that is specified by a symmetric key.
 
 ## List of hash functions
 
@@ -47,7 +56,7 @@ For each function are included: __description__, __implementations__ and __mater
 
 ### Cyclic redundancy checks
 
-A cyclic redundancy check (CRC) is an error-detecting code commonly used in digital networks and storage devices to detect accidental changes to raw data.
+A __cyclic redundancy check__ (often __CRC__) is an error-detecting code commonly used in digital networks and storage devices to detect accidental changes to raw data.
 
 <table width="100%">
   <tr>
@@ -85,9 +94,13 @@ A cyclic redundancy check (CRC) is an error-detecting code commonly used in digi
   </tr>
 </table>
 
+### Message authentication codes
+
+A __message authentication code__ (often __MAC__) is a short piece of information used to authenticate a message and to provide integrity and authenticity assurances on the message.
+
 ### Checksums
 
-A checksum or hash sum is a small-size datum from an arbitrary block of digital data for the purpose of detecting errors which may have been introduced during its transmission or storage.
+A __checksum__ or __hash sum__ is a small-size datum from an arbitrary block of digital data for the purpose of detecting errors which may have been introduced during its transmission or storage.
 
 <table width="100%">
   <tr>
@@ -143,7 +156,7 @@ A checksum or hash sum is a small-size datum from an arbitrary block of digital 
 
 ### Non-cryptographic hash functions
 
-A cryptographic hash function is a hash function which is considered practically impossible to invert, that is, to recreate the input data from its hash value alone.
+A __non-cryptographic hash function__ is a hash function which is sometimes possible to invert.
 
 <table width="100%">
   <tr>
@@ -207,7 +220,7 @@ A cryptographic hash function is a hash function which is considered practically
 
 ### Cryptographic hash functions
 
-A cryptographic hash function is a hash function which is considered practically impossible to invert, that is, to recreate the input data from its hash value alone.
+A __cryptographic hash function__ is a hash function which is considered practically impossible to invert, that is, to recreate the input data from its hash value alone.
 
 <table width="100%">
   <tr>
@@ -333,7 +346,7 @@ A cryptographic hash function is a hash function which is considered practically
   </tr>
   <tr>
     <td>BLAKE</td>
-    <td>256 bits or 512 bits</td>
+    <td>256 or 512 bits</td>
     <td>HAIFA structure</td>
     <td>2008</td>
     <td>Jean-Philippe Aumasson, Luca Henzen, Willi Meier, Raphael C.-W. Phan</td>
@@ -412,6 +425,16 @@ A cryptographic hash function is a hash function which is considered practically
     <td><a href="/SipHash">more</a></td>
   </tr>
 </table>
+
+## List of ciphers
+
+### Symmetric-key algorithms
+
+// NOT NOW PLS
+
+### Asymmetric key algorithms
+
+// NOT NOW PLS
 
 ## Tools
 
@@ -597,6 +620,7 @@ Sage is a free open-source mathematics software system licensed under the GPL. I
 - [Non-Cryptographic Hash Function Zoo](http://floodyberry.com/noncryptohashzoo/)
 - [What is the difference between a Hash Function and a Cryptographic Hash Function?](http://security.stackexchange.com/questions/11839/what-is-the-difference-between-a-hash-function-and-a-cryptographic-hash-function)
 - [Whats the difference between MAC vs hash](http://security.stackexchange.com/questions/1873/whats-the-difference-between-mac-vs-hash?rq=1)
+- [Dr. Dobbs article](http://www.burtleburtle.net/bob/hash/doobs.html)
 - [Which hashing algorithm is best for uniqueness and speed?](http://programmers.stackexchange.com/questions/49550/which-hashing-algorithm-is-best-for-uniqueness-and-speed)
 
 ## Contributing
