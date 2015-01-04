@@ -1,0 +1,79 @@
+/* RadioGatún reference code
+ * Public domain
+ * For more information on RadioGatún, please refer to 
+ * http://radiogatun.noekeon.org/
+*/
+#define ROR(a, b, word_size) (((a) >> ((b)%word_size)) | ((a) << ((word_size-((b)%word_size))%word_size)))
+
+#define roundmacro(a, b, Bptr, word_size)  \
+   b[(3*((Bptr     )%13))  ] ^= a[ 1] ^ in[INptr  ]; \
+   b[(3*((Bptr +  1)%13))+1] ^= a[ 2]; \
+   b[(3*((Bptr +  2)%13))+2] ^= a[ 3]; \
+   b[(3*((Bptr +  3)%13))  ] ^= a[ 4]; \
+   b[(3*((Bptr +  4)%13))+1] ^= a[ 5]; \
+   b[(3*((Bptr +  5)%13))+2] ^= a[ 6]; \
+   b[(3*((Bptr +  6)%13))  ] ^= a[ 7]; \
+   b[(3*((Bptr +  7)%13))+1] ^= a[ 8]; \
+   b[(3*((Bptr +  8)%13))+2] ^= a[ 9]; \
+   b[(3*((Bptr +  9)%13))  ] ^= a[10]; \
+   b[(3*((Bptr + 10)%13))+1] ^= a[11]; \
+   b[(3*((Bptr + 11)%13))+2] ^= a[12]; \
+   a[16]         ^= in[INptr  ]; \
+   a[17]         ^= in[INptr+1]; \
+   b[(3*Bptr)+1] ^= in[INptr+1]; \
+   a[18]         ^= in[INptr+2]; \
+   b[(3*Bptr)+2] ^= in[INptr+2]; \
+   A[ 0] = ROR(a[ 0]^(a[ 1]|(~a[ 2])),  0, word_size); \
+   A[ 1] = ROR(a[ 1]^(a[ 2]|(~a[ 3])), 66, word_size); \
+   A[ 2] = ROR(a[ 2]^(a[ 3]|(~a[ 4])),  6, word_size); \
+   A[ 3] = ROR(a[ 3]^(a[ 4]|(~a[ 5])),105, word_size); \
+   A[ 4] = ROR(a[ 4]^(a[ 5]|(~a[ 6])), 21, word_size); \
+   A[ 5] = ROR(a[ 5]^(a[ 6]|(~a[ 7])),153, word_size); \
+   A[ 6] = ROR(a[ 6]^(a[ 7]|(~a[ 8])), 45, word_size); \
+   A[ 7] = ROR(a[ 7]^(a[ 8]|(~a[ 9])),  1, word_size); \
+   A[ 8] = ROR(a[ 8]^(a[ 9]|(~a[10])), 78, word_size); \
+   A[ 9] = ROR(a[ 9]^(a[10]|(~a[11])), 10, word_size); \
+   A[10] = ROR(a[10]^(a[11]|(~a[12])),120, word_size); \
+   A[11] = ROR(a[11]^(a[12]|(~a[13])), 28, word_size); \
+   A[12] = ROR(a[12]^(a[13]|(~a[14])),171, word_size); \
+   A[13] = ROR(a[13]^(a[14]|(~a[15])), 55, word_size); \
+   A[14] = ROR(a[14]^(a[15]|(~a[16])),  3, word_size); \
+   A[15] = ROR(a[15]^(a[16]|(~a[17])), 91, word_size); \
+   A[16] = ROR(a[16]^(a[17]|(~a[18])), 15, word_size); \
+   A[17] = ROR(a[17]^(a[18]|(~a[ 0])),136, word_size); \
+   A[18] = ROR(a[18]^(a[ 0]|(~a[ 1])), 36, word_size); \
+   a[ 0] = A[ 0]^A[ 7]^A[ 9] ^ 1; \
+   a[ 1] = A[ 7]^A[14]^A[16]; \
+   a[ 2] = A[14]^A[ 2]^A[ 4]; \
+   a[ 3] = A[ 2]^A[ 9]^A[11]; \
+   a[ 4] = A[ 9]^A[16]^A[18]; \
+   a[ 5] = A[16]^A[ 4]^A[ 6]; \
+   a[ 6] = A[ 4]^A[11]^A[13]; \
+   a[ 7] = A[11]^A[18]^A[ 1]; \
+   a[ 8] = A[18]^A[ 6]^A[ 8]; \
+   a[ 9] = A[ 6]^A[13]^A[15]; \
+   a[10] = A[13]^A[ 1]^A[ 3]; \
+   a[11] = A[ 1]^A[ 8]^A[10]; \
+   a[12] = A[ 8]^A[15]^A[17]; \
+   a[13] = A[15]^A[ 3]^A[ 5] ^ b[(3*((Bptr+12)%13))  ]; \
+   a[14] = A[ 3]^A[10]^A[12] ^ b[(3*((Bptr+12)%13))+1]; \
+   a[15] = A[10]^A[17]^A[ 0] ^ b[(3*((Bptr+12)%13))+2]; \
+   a[16] = A[17]^A[ 5]^A[ 7]; \
+   a[17] = A[ 5]^A[12]^A[14]; \
+   a[18] = A[12]^A[ 0]^A[ 2]; \
+   INptr += 3;
+
+#define multiroundmacro(a, b, word_size) \
+  roundmacro(a, b, 0, word_size);  \
+  roundmacro(a, b,12, word_size); \
+  roundmacro(a, b,11, word_size); \
+  roundmacro(a, b,10, word_size); \
+  roundmacro(a, b, 9, word_size); \
+  roundmacro(a, b, 8, word_size); \
+  roundmacro(a, b, 7, word_size); \
+  roundmacro(a, b, 6, word_size); \
+  roundmacro(a, b, 5, word_size); \
+  roundmacro(a, b, 4, word_size); \
+  roundmacro(a, b, 3, word_size); \
+  roundmacro(a, b, 2, word_size); \
+  roundmacro(a, b, 1, word_size);

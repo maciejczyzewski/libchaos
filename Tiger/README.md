@@ -21,6 +21,7 @@ Florian Mendel et al. have improved upon these attacks by describing a collision
 
 ## Implementations
 
+- Makefile
 - sboxes.c
 - testtiger.c
 - tiger.c
