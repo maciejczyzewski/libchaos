@@ -31,21 +31,13 @@ BLA BLA BLA BLA BLA BLA BLA
 
 __Hash function__ - any function that can be used to map digital data of arbitrary size to digital data of fixed size, with slight differences in input data producing very big differences in output data.
 
+_Used in: Database, Filters, Hash tables, Unique identifiers, Passwords, Diff utility, and File system_
+
 __Cipher__ - an algorithm for performing encryption or decryption—a series of well-defined steps that can be followed as a procedure.
 
 __Avalanche__ - a measure of how the output bits change based on each input bit. Ideally each input bit will affect each output bit with 1/2 probability.
 
 Realistically, many hash functions do not achieve perfect avalanche and are still useable for many sets of keys.
-
-#### Used in:
-
-- Database
-- Filters
-- Hash tables
-- Unique identifiers
-- Passwords
-- Diff utility
-- File system
 
 ## List of hash functions
 
@@ -60,6 +52,34 @@ A cyclic redundancy check (CRC) is an error-detecting code commonly used in digi
 ### Checksums
 
 A checksum or hash sum is a small-size datum from an arbitrary block of digital data for the purpose of detecting errors which may have been introduced during its transmission or storage.
+
+<table width="100%">
+  <tr>
+    <th>Name</th>
+    <th>Length</th>
+    <th>Type</th>
+    <th>Published</th>
+    <th>Authors</th>
+    <th>Information</th>
+  </tr>
+
+  <tr>
+    <td>Fletcher</td>
+    <td>4, 8, 16, 32 bits</td>
+    <td>sum</td>
+    <td>1970</td>
+    <td>John Gould Fletcher</td>
+    <td><a href="/Fletcher">more</a></td>
+  </tr>
+  <tr>
+    <td>Adler-32</td>
+    <td>32 bits</td>
+    <td>sum</td>
+    <td>1995</td>
+    <td>Mark Adler</td>
+    <td><a href="/Adler-32">more</a></td>
+  </tr>
+</table>
 
 ### Non-cryptographic hash functions
 
