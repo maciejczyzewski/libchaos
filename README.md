@@ -16,13 +16,16 @@ BLA BLA BLA BLA BLA BLA BLA
 
 #### Further reading:
 
-- [Definitions](#definitions): The basic statements.
+- [Definitions](#definitions): Basic concepts.
 - [List of hash functions](#list-of-hash-functions): The set of all known functions.
   - [Cyclic redundancy checks](#cyclic-redundancy-checks): List of cyclic redundancy checks functions.
-  - [Message authentication codes](#message-authentication-codes): List of message authentication code functions.
   - [Checksums](#checksums): List of checksums functions.
   - [Non-cryptographic hash functions](#non-cryptographic-hash-functions): List of non-cryptographic hash functions functions.
   - [Cryptographic hash functions](#cryptographic-hash-functions): List of cryptographic hash functions functions.
+  - [Message authentication codes](#message-authentication-codes): List of message authentication code functions.
+- [List of ciphers](#list-of-ciphers): The set of all known ciphers.
+  - [Symmetric key algorithms](#symmetric-key-algorithms):
+  - [Asymmetric key algorithms](#asymmetric-key-algorithms):
 - [Tools](#tools): Collection of cryptanalysis apparatus.
 - [Libraries](#libraries): List of security/crypto libraries.
 - [Articles](#articles): Pages related to cryptography.
@@ -34,19 +37,21 @@ BLA BLA BLA BLA BLA BLA BLA
 
 __Hash function__ - any function that can be used to map digital data of arbitrary size to digital data of fixed size, with slight differences in input data producing very big differences in output data.
 
-_Used in: Database, Filters, Hash tables, Unique identifiers, Passwords, Diff utility, and File system_
-
-__Message authentication code (often MAC)__ - a short piece of information used to authenticate a message and to provide integrity and authenticity assurances on the message.
+_Used in: Database, Filters, Hash tables, Unique identifiers, Passwords, Diff utilities, and File system_
 
 __Avalanche__ - a measure of how the output bits change based on each input bit. Ideally each input bit will affect each output bit with 1/2 probability.
 
-Realistically, many hash functions do not achieve perfect avalanche and are still useable for many sets of keys.
+_Realistically, many hash functions do not achieve perfect avalanche and are still useable for many sets of keys._
 
 ### Ciphers
 
 __Cipher__ - an algorithm for performing encryption or decryption—a series of well-defined steps that can be followed as a procedure.
 
+_There are 2 types of key algorithms: Symmetric and Asymmetric_
+
 __Block cipher__ - a deterministic algorithm operating on fixed-length groups of bits, called blocks, with an unvarying transformation that is specified by a symmetric key.
+
+_It can also be continuous stream of symbols. (stream ciphers)_
 
 ## List of hash functions
 
@@ -93,10 +98,6 @@ A __cyclic redundancy check__ (often __CRC__) is an error-detecting code commonl
     <td><a href="/SYSV">more</a></td>
   </tr>
 </table>
-
-### Message authentication codes
-
-A __message authentication code__ (often __MAC__) is a short piece of information used to authenticate a message and to provide integrity and authenticity assurances on the message.
 
 ### Checksums
 
@@ -426,9 +427,53 @@ A __cryptographic hash function__ is a hash function which is considered practic
   </tr>
 </table>
 
+### Message authentication codes
+
+A __message authentication code__ (often __MAC__) is a short piece of information used to authenticate a message and to provide integrity and authenticity assurances on the message.
+
+<table width="100%">
+  <tr>
+    <th>Name</th>
+    <th>Published</th>
+    <th>Authors</th>
+    <th>Information</th>
+  </tr>
+
+  <tr>
+    <td>HMAC</td>
+    <td>1996</td>
+    <td>Mihir Bellare, Ran Canetti, Hugo Krawczyk</td>
+    <td><a href="http://tools.ietf.org/html/rfc2104">specification</a></td>
+  </tr>
+  <tr>
+    <td>UMAC</td>
+    <td>1999</td>
+    <td>John Black, Shai Halevi, Hugo Krawczyk, Ted Krovetz, Phillip Rogaway</td>
+    <td><a href="http://www.fastcrypto.org/vmac/draft-krovetz-vmac-01.txt">specification</a></td>
+  </tr>
+  <tr>
+    <td>OMAC</td>
+    <td>2002</td>
+    <td>Tetsu Iwata, Kaoru Kurosawa</td>
+    <td><a href="http://csrc.nist.gov/groups/ST/toolkit/BCM/documents/proposedmodes/omac/omac-spec.pdf">specification</a></td>
+  </tr>
+  <tr>
+    <td>CMAC</td>
+    <td>2003</td>
+    <td>John Black, Phillip Rogaway</td>
+    <td><a href="http://web.cs.ucdavis.edu/~rogaway/papers/3k.pdf">specification</a></td>
+  </tr>
+  <tr>
+    <td>VMAC</td>
+    <td>2007</td>
+    <td>Ted Krovetz, Wei Dai</td>
+    <td><a href="http://www.fastcrypto.org/vmac/draft-krovetz-vmac-01.txt">specification</a></td>
+  </tr>
+</table>
+
 ## List of ciphers
 
-### Symmetric-key algorithms
+### Symmetric key algorithms
 
 // NOT NOW PLS
 
@@ -589,6 +634,7 @@ Sage is a free open-source mathematics software system licensed under the GPL. I
   + [Nettle](http://www.lysator.liu.se/~nisse/nettle/): a cryptographic library that is designed to fit easily in more or less any context.
 + C++
   + [Crypto++](http://www.cryptopp.com/): is a free and open source C++ class library of cryptographic algorithms and schemes.
+  + [HElib](https://github.com/shaih/HElib): an Implementation of homomorphic encryption.
   + [NaCl](http://nacl.cr.yp.to/): high-speed software library for network communication, encryption, decryption, signatures, etc.
 + Javascript
   + [jsHashes](https://github.com/h2non/jshashes): pure JavaScript implementation of the most extended hash algorithms.
@@ -602,6 +648,7 @@ Sage is a free open-source mathematics software system licensed under the GPL. I
 + Ruby
   + [BozoCrack](https://github.com/juuso/BozoCrack): a silly & effective MD5 cracker in Ruby.
 + Objective-c
+  + [RNCryptor](https://github.com/RNCryptor/RNCryptor): CCCryptor (AES encryption) wrappers for iOS and Mac.
   + [CocoaSecurity](https://github.com/kelp404/CocoaSecurity): encrypt/Decrypt: AES. Hash: MD5, SHA(SHA1, SHA224, SHA256, SHA384, SHA512). Encode/Decode: Base64, Hex.
 + Rust
   + [rust-crypto](https://github.com/DaGenix/rust-crypto): a (mostly) pure-Rust implementation of various cryptographic algorithms.
