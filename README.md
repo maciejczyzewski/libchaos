@@ -299,7 +299,7 @@ A __cryptographic hash function__ is a hash function which is considered practic
   </tr>
   <tr>
     <td>RIPEMD</td>
-    <td>128 bits</td>
+    <td>128, 160, 256, 320 bits</td>
     <td>hash</td>
     <td>1996</td>
     <td>Hans Dobbertin, Antoon Bosselaers and Bart Preneel</td>
@@ -308,7 +308,7 @@ A __cryptographic hash function__ is a hash function which is considered practic
   <tr>
     <td>Whirlpool</td>
     <td>512 bits</td>
-    <td>hash</td>
+    <td>Miyaguchi-Preneel</td>
     <td>2000</td>
     <td>Vincent Rijmen, Paulo S. L. M. Barreto</td>
     <td><a href="/Whirlpool">more</a></td>

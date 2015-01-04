@@ -23,6 +23,7 @@ In 2008, an attack was published that breaks the full-round GOST hash function. 
 - gosthash.c
 - gosthash.h
 - gosttest.c
+- Makefile
 
 ## Materials
 
