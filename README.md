@@ -6,7 +6,7 @@
 
 ---
 
-**NOTE:** If you see mistakes or would like to expand the list. Feel free to contribute to this project!
+**NOTE:** If you see mistakes or would like to expand the list. Feel free to contribute to this project! It is still in the process of creating...
 
 ---
 
@@ -20,12 +20,12 @@ BLA BLA BLA BLA BLA BLA BLA
 - [List of hash functions](#list-of-hash-functions): The set of all known functions.
   - [Cyclic redundancy checks](#cyclic-redundancy-checks): List of cyclic redundancy checks functions.
   - [Checksums](#checksums): List of checksums functions.
-  - [Non-cryptographic hash functions](#non-cryptographic-hash-functions): List of non-cryptographic hash functions functions.
-  - [Cryptographic hash functions](#cryptographic-hash-functions): List of cryptographic hash functions functions.
+  - [Non-cryptographic hash functions](#non-cryptographic-hash-functions): List of non-cryptographic hash functions.
+  - [Cryptographic hash functions](#cryptographic-hash-functions): List of cryptographic hash functions.
   - [Message authentication codes](#message-authentication-codes): List of message authentication code functions.
 - [List of ciphers](#list-of-ciphers): The set of all known ciphers.
-  - [Symmetric key algorithms](#symmetric-key-algorithms):
-  - [Asymmetric key algorithms](#asymmetric-key-algorithms):
+  - [Symmetric key algorithms](#symmetric-key-algorithms): List of symmetric key algorithms.
+  - [Asymmetric key algorithms](#asymmetric-key-algorithms): List of asymmetric key algorithms.
 - [Tools](#tools): Collection of cryptanalysis apparatus.
 - [Libraries](#libraries): List of security/crypto libraries.
 - [Articles](#articles): Pages related to cryptography.
@@ -475,11 +475,11 @@ A __message authentication code__ (often __MAC__) is a short piece of informatio
 
 ### Symmetric key algorithms
 
-// NOT NOW PLS
+Not ready yet...
 
 ### Asymmetric key algorithms
 
-// NOT NOW PLS
+Not ready yet...
 
 ## Tools
 
