@@ -66,6 +66,119 @@ A cryptographic hash function is a hash function which is considered practically
     <th>Authors</th>
     <th>Information</th>
   </tr>
+
+  <tr>
+    <td>MD2</td>
+    <td>128 bits</td>
+    <td>hash</td>
+    <td>1989</td>
+    <td>Ronald Rivest</td>
+    <td><a href="/MD2">more</a></td>
+  </tr>
+  <tr>
+    <td>Snefru</td>
+    <td>128 or 256 bits</td>
+    <td>hash</td>
+    <td>1990</td>
+    <td>Ralph Merkle</td>
+    <td><a href="/Snefru">more</a></td>
+  </tr>
+  <tr>
+    <td>MD4</td>
+    <td>128 bits</td>
+    <td>hash</td>
+    <td>1990</td>
+    <td>Ronald Rivest</td>
+    <td><a href="/MD4">more</a></td>
+  </tr>
+  <tr>
+    <td>HAVAL</td>
+    <td>128 to 256 bits</td>
+    <td>hash</td>
+    <td>1992</td>
+    <td>Yuliang Zheng, Josef Pieprzyk, Jennifer Seberry</td>
+    <td><a href="/HAVAL">more</a></td>
+  </tr>
+  <tr>
+    <td>MD5</td>
+    <td>128 bits</td>
+    <td>Merkle-Damgård construction</td>
+    <td>1992</td>
+    <td>Ronald Rivest</td>
+    <td><a href="/MD5">more</a></td>
+  </tr>
+  <tr>
+    <td>GOST</td>
+    <td>256 bits</td>
+    <td>hash</td>
+    <td>1994</td>
+    <td>FAPSI and VNIIstandart</td>
+    <td><a href="/GOST">more</a></td>
+  </tr>
+  <tr>
+    <td>SHA-1</td>
+    <td>160 bits</td>
+    <td>Merkle-Damgård construction</td>
+    <td>1995</td>
+    <td>National Security Agency</td>
+    <td><a href="/SHA-1">more</a></td>
+  </tr>
+  <tr>
+    <td>Tiger</td>
+    <td>192 bits</td>
+    <td>Merkle-Damgård construction</td>
+    <td>1996</td>
+    <td>Ross Anderson, Eli Biham</td>
+    <td><a href="/Tiger">more</a></td>
+  </tr>
+  <tr>
+    <td>RIPEMD</td>
+    <td>128 bits</td>
+    <td>hash</td>
+    <td>1996</td>
+    <td>Hans Dobbertin, Antoon Bosselaers and Bart Preneel</td>
+    <td><a href="/RIPEMD">more</a></td>
+  </tr>
+  <tr>
+    <td>Whirlpool</td>
+    <td>512 bits</td>
+    <td>hash</td>
+    <td>2000</td>
+    <td>Vincent Rijmen, Paulo S. L. M. Barreto</td>
+    <td><a href="/Whirlpool">more</a></td>
+  </tr>
+  <tr>
+    <td>SHA-2</td>
+    <td>224, 256, 384, or 512 bits</td>
+    <td>Merkle-Damgård construction</td>
+    <td>2001</td>
+    <td>National Security Agency</td>
+    <td><a href="/SHA-2">more</a></td>
+  </tr>
+  <tr>
+    <td>HAS-160</td>
+    <td>160 bits</td>
+    <td>hash</td>
+    <td>2002</td>
+    <td>--</td>
+    <td><a href="/HAS-160">more</a></td>
+  </tr>
+  <tr>
+    <td>FSB</td>
+    <td>160 to 512 bits</td>
+    <td>hash</td>
+    <td>2003</td>
+    <td>Daniel Augot, Matthieu Finiasz, Nicolas Sendrier</td>
+    <td><a href="/FSB">more</a></td>
+  </tr>
+  <tr>
+    <td>RadioGatún</td>
+    <td>Up to 1216 bits</td>
+    <td>hash</td>
+    <td>2006</td>
+    <td>Guido Bertoni, Joan Daemen, Michaël Peeters, Gilles Van Assche</td>
+    <td><a href="/RadioGatún">more</a></td>
+  </tr>
   <tr>
     <td>BLAKE</td>
     <td>256 bits or 512 bits</td>
@@ -83,76 +196,20 @@ A cryptographic hash function is a hash function which is considered practically
     <td><a href="/ECOH">more</a></td>
   </tr>
   <tr>
-    <td>FSB</td>
-    <td>160 to 512 bits</td>
-    <td>hash</td>
-    <td>2003</td>
-    <td>Daniel Augot, Matthieu Finiasz, Nicolas Sendrier</td>
-    <td><a href="/FSB">more</a></td>
-  </tr>
-  <tr>
-    <td>GOST</td>
-    <td>256 bits</td>
-    <td>hash</td>
-    <td>1994</td>
-    <td>FAPSI and VNIIstandart</td>
-    <td><a href="/GOST">more</a></td>
-  </tr>
-  <tr>
     <td>Grøstl</td>
     <td>256 to 512 bits</td>
     <td>hash</td>
-    <td>--</td>
+    <td>2008</td>
     <td>Praveen Gauravaram, Lars Knudsen, Krystian Matusiewicz, Florian Mendel, Christian Rechberger, Martin Schläffer, Søren S. Thomsen</td>
     <td><a href="/Grøstl">more</a></td>
-  </tr>
-  <tr>
-    <td>HAS-160</td>
-    <td>160 bits</td>
-    <td>hash</td>
-    <td>--</td>
-    <td>--</td>
-    <td><a href="/HAS-160">more</a></td>
-  </tr>
-  <tr>
-    <td>HAVAL</td>
-    <td>128 to 256 bits</td>
-    <td>hash</td>
-    <td>1992</td>
-    <td>Yuliang Zheng, Josef Pieprzyk, Jennifer Seberry</td>
-    <td><a href="/HAVAL">more</a></td>
   </tr>
   <tr>
     <td>JH</td>
     <td>512 bits</td>
     <td>hash</td>
-    <td>--</td>
+    <td>2008</td>
     <td>Hongjun Wu</td>
     <td><a href="/JH">more</a></td>
-  </tr>
-  <tr>
-    <td>MD2</td>
-    <td>128 bits</td>
-    <td>hash</td>
-    <td>August 1989</td>
-    <td>Ronald Rivest</td>
-    <td><a href="/MD2">more</a></td>
-  </tr>
-  <tr>
-    <td>MD4</td>
-    <td>128 bits</td>
-    <td>hash</td>
-    <td>October 1990</td>
-    <td>Ronald Rivest</td>
-    <td><a href="/MD4">more</a></td>
-  </tr>
-  <tr>
-    <td>MD5</td>
-    <td>128 bits</td>
-    <td>Merkle-Damgård construction</td>
-    <td>April 1992</td>
-    <td>Ronald Rivest</td>
-    <td><a href="/MD5">more</a></td>
   </tr>
   <tr>
     <td>MD6</td>
@@ -163,68 +220,12 @@ A cryptographic hash function is a hash function which is considered practically
     <td><a href="/MD6">more</a></td>
   </tr>
   <tr>
-    <td>RadioGatún</td>
-    <td>Up to 1216 bits</td>
+    <td>SWIFFT</td>
+    <td>512 bits</td>
     <td>hash</td>
-    <td>2006</td>
-    <td>Guido Bertoni, Joan Daemen, Michaël Peeters, Gilles Van Assche</td>
-    <td><a href="/RadioGatún">more</a></td>
-  </tr>
-  <tr>
-    <td>RIPEMD</td>
-    <td>128 bits</td>
-    <td>hash</td>
-    <td>1996</td>
-    <td>Hans Dobbertin, Antoon Bosselaers and Bart Preneel</td>
-    <td><a href="/RIPEMD">more</a></td>
-  </tr>
-  <tr>
-    <td>SHA-1</td>
-    <td>160 bits</td>
-    <td>Merkle-Damgård construction</td>
-    <td>1995</td>
-    <td>National Security Agency</td>
-    <td><a href="/SHA-1">more</a></td>
-  </tr>
-  <tr>
-    <td>SHA-2</td>
-    <td>224, 256, 384, or 512 bits</td>
-    <td>Merkle-Damgård construction</td>
-    <td>2001</td>
-    <td>National Security Agency</td>
-    <td><a href="/SHA-2">more</a></td>
-  </tr>
-  <tr>
-    <td>SHA-3 (Keccak)</td>
-    <td>arbitrary</td>
-    <td>Sponge function</td>
-    <td>2012</td>
-    <td>Guido Bertoni, Joan Daemen, Michaël Peeters, Gilles Van Assche</td>
-    <td><a href="/SHA-3">more</a></td>
-  </tr>
-  <tr>
-    <td>Skein</td>
-    <td>arbitrary</td>
-    <td>Unique Block Iteration</td>
-    <td>2010</td>
-    <td>Bruce Schneier, Niels Ferguson</td>
-    <td><a href="/Skein">more</a></td>
-  </tr>
-  <tr>
-    <td>SipHash</td>
-    <td>64 bits</td>
-    <td>non-collision-resistant PRF</td>
-    <td>2012</td>
-    <td>Jean-Philippe Aumasson, Daniel J. Bernstein</td>
-    <td><a href="/SipHash">more</a></td>
-  </tr>
-  <tr>
-    <td>Snefru</td>
-    <td>128 or 256 bits</td>
-    <td>hash</td>
-    <td>1990</td>
-    <td>Ralph Merkle</td>
-    <td><a href="/Snefru">more</a></td>
+    <td>2008</td>
+    <td>Vadim Lyubashevsky, Daniele Micciancio, Chris Peikert, Alon Rosen</td>
+    <td><a href="/SWIFFT">more</a></td>
   </tr>
   <tr>
     <td>Spectral Hash</td>
@@ -235,28 +236,28 @@ A cryptographic hash function is a hash function which is considered practically
     <td><a href="/Spectral Hash">more</a></td>
   </tr>
   <tr>
-    <td>SWIFFT</td>
-    <td>512 bits</td>
-    <td>hash</td>
-    <td>2008</td>
-    <td>Vadim Lyubashevsky, Daniele Micciancio, Chris Peikert, Alon Rosen</td>
-    <td><a href="/SWIFFT">more</a></td>
+    <td>Skein</td>
+    <td>arbitrary</td>
+    <td>Unique Block Iteration</td>
+    <td>2010</td>
+    <td>Bruce Schneier, Niels Ferguson</td>
+    <td><a href="/Skein">more</a></td>
   </tr>
   <tr>
-    <td>Tiger</td>
-    <td>192 bits</td>
-    <td>Merkle-Damgård construction</td>
-    <td>1996</td>
-    <td>Ross Anderson, Eli Biham</td>
-    <td><a href="/Tiger">more</a></td>
+    <td>SHA-3 (Keccak)</td>
+    <td>arbitrary</td>
+    <td>Sponge function</td>
+    <td>2012</td>
+    <td>Guido Bertoni, Joan Daemen, Michaël Peeters, Gilles Van Assche</td>
+    <td><a href="/SHA-3">more</a></td>
   </tr>
   <tr>
-    <td>Whirlpool</td>
-    <td>512 bits</td>
-    <td>hash</td>
-    <td>2000</td>
-    <td>Vincent Rijmen, Paulo S. L. M. Barreto</td>
-    <td><a href="/Whirlpool">more</a></td>
+    <td>SipHash</td>
+    <td>64 bits</td>
+    <td>non-collision-resistant PRF</td>
+    <td>2012</td>
+    <td>Jean-Philippe Aumasson, Daniel J. Bernstein</td>
+    <td><a href="/SipHash">more</a></td>
   </tr>
 </table>
 
