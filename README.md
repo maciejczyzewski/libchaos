@@ -62,7 +62,7 @@ A cyclic redundancy check (CRC) is an error-detecting code commonly used in digi
   <tr>
     <td>CRC</td>
     <td>16, 32, 64 bits</td>
-    <td>--</td>
+    <td>cyclic codes</td>
     <td>1961</td>
     <td>W. Wesley Peterson</td>
     <td><a href="/CRC">more</a></td>
