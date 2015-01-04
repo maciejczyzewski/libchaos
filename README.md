@@ -53,6 +53,66 @@ A checksum or hash sum is a small-size datum from an arbitrary block of digital 
 
 A cryptographic hash function is a hash function which is considered practically impossible to invert, that is, to recreate the input data from its hash value alone.
 
+<table width="100%">
+  <tr>
+    <th>Name</th>
+    <th>Length</th>
+    <th>Type</th>
+    <th>Published</th>
+    <th>Authors</th>
+    <th>Information</th>
+  </tr>
+
+  <tr>
+    <td>Zobrist hashing</td>
+    <td>variable</td>
+    <td>xor</td>
+    <td>1969</td>
+    <td>Albert Lindsey Zobrist</td>
+    <td><a href="/Zobrist hashing">more</a></td>
+  </tr>
+  <tr>
+    <td>Pearson hashing</td>
+    <td>8 bits</td>
+    <td>xor/table</td>
+    <td>1990</td>
+    <td>Peter K. Pearson</td>
+    <td><a href="/Pearson hashing">more</a></td>
+  </tr>
+  <tr>
+    <td>FNV</td>
+    <td>32, 64, 128, 256, 512, or 1024 bits</td>
+    <td>xor/product or product/xor</td>
+    <td>1991</td>
+    <td>Glenn Fowler, Landon Curt Noll, Phong Vo</td>
+    <td><a href="/FNV">more</a></td>
+  </tr>
+  <tr>
+    <td>Jenkins</td>
+    <td>32 or 64 bits</td>
+    <td>xor/addition</td>
+    <td>1997</td>
+    <td>Bob Jenkins</td>
+    <td><a href="/Jenkins">more</a></td>
+  </tr>
+  <tr>
+    <td>MurmurHash</td>
+    <td>32, 64, or 128 bits</td>
+    <td>product/rotation</td>
+    <td>2008</td>
+    <td>Austin Appleby</td>
+    <td><a href="/MurmurHash">more</a></td>
+  </tr>
+  <tr>
+    <td>CityHash</td>
+    <td>64, 128, or 256 bits</td>
+    <td>product/rotation</td>
+    <td>2010</td>
+    <td>Geoff Pike and Jyrki Alakuijala</td>
+    <td><a href="/CityHash">more</a></td>
+  </tr>
+</table>
+
 ### Cryptographic hash functions
 
 A cryptographic hash function is a hash function which is considered practically impossible to invert, that is, to recreate the input data from its hash value alone.
@@ -444,6 +504,7 @@ Sage is a free open-source mathematics software system licensed under the GPL. I
 - [Non-Cryptographic Hash Function Zoo](http://floodyberry.com/noncryptohashzoo/)
 - [What is the difference between a Hash Function and a Cryptographic Hash Function?](http://security.stackexchange.com/questions/11839/what-is-the-difference-between-a-hash-function-and-a-cryptographic-hash-function)
 - [Whats the difference between MAC vs hash](http://security.stackexchange.com/questions/1873/whats-the-difference-between-mac-vs-hash?rq=1)
+- [Which hashing algorithm is best for uniqueness and speed?](http://programmers.stackexchange.com/questions/49550/which-hashing-algorithm-is-best-for-uniqueness-and-speed)
 
 ## Contributing
 
