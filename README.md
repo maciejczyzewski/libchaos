@@ -105,7 +105,7 @@ A checksum or hash sum is a small-size datum from an arbitrary block of digital 
     <td>sum</td>
     <td>1954</td>
     <td>Hans Peter Luhn</td>
-    <td><a href="/Luhn algorithm">more</a></td>
+    <td><a href="/Luhn">more</a></td>
   </tr>
   <tr>
     <td>Verhoeff algorithm</td>
@@ -113,7 +113,7 @@ A checksum or hash sum is a small-size datum from an arbitrary block of digital 
     <td>sum</td>
     <td>1969</td>
     <td>Jacobus Verhoeff</td>
-    <td><a href="/Verhoeff algorithm">more</a></td>
+    <td><a href="/Verhoeff">more</a></td>
   </tr>
   <tr>
     <td>Fletcher</td>
@@ -137,7 +137,7 @@ A checksum or hash sum is a small-size datum from an arbitrary block of digital 
     <td>Quasigroup operation</td>
     <td>2004</td>
     <td>H. Michael Damm</td>
-    <td><a href="/Damm algorithm">more</a></td>
+    <td><a href="/Damm">more</a></td>
   </tr>
 </table>
 
@@ -161,7 +161,7 @@ A cryptographic hash function is a hash function which is considered practically
     <td>xor</td>
     <td>1969</td>
     <td>Albert Lindsey Zobrist</td>
-    <td><a href="/Zobrist hashing">more</a></td>
+    <td><a href="/Zobrist">more</a></td>
   </tr>
   <tr>
     <td>Pearson hashing</td>
@@ -169,7 +169,7 @@ A cryptographic hash function is a hash function which is considered practically
     <td>xor/table</td>
     <td>1990</td>
     <td>Peter K. Pearson</td>
-    <td><a href="/Pearson hashing">more</a></td>
+    <td><a href="/Pearson">more</a></td>
   </tr>
   <tr>
     <td>FNV</td>
@@ -200,7 +200,7 @@ A cryptographic hash function is a hash function which is considered practically
     <td>64, 128, or 256 bits</td>
     <td>product/rotation</td>
     <td>2010</td>
-    <td>Geoff Pike and Jyrki Alakuijala</td>
+    <td>Geoff Pike, Jyrki Alakuijala</td>
     <td><a href="/CityHash">more</a></td>
   </tr>
 </table>
@@ -385,7 +385,7 @@ A cryptographic hash function is a hash function which is considered practically
     <td>Wide Pipe Merkle-Damgård construction</td>
     <td>2009</td>
     <td>Gokay Saldamlı, Cevahir Demirkıran, Megan Maguire, Carl Minden, Jacob Topper, Alex Troesch, Cody Walker, Çetin Kaya Koç</td>
-    <td><a href="/Spectral Hash">more</a></td>
+    <td><a href="/Spectral">more</a></td>
   </tr>
   <tr>
     <td>Skein</td>
@@ -615,7 +615,7 @@ Anyone can create a function. You can add to this list a function that is not yo
 * __Implementations__ - Example implementation (C, C++).
 * __Pseudocode__ - Outline of the algorithm.
 
-_Add it to the appropriate section in the README.md and create a new directory as have other functions._
+_Add it to the appropriate section in the README.md and create a new directory as have other functions. (ex. Pearson hashing)_
 
 ## Thanks
 
