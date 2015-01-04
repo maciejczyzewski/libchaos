@@ -29,11 +29,23 @@ BLA BLA BLA BLA BLA BLA BLA
 
 ## Definitions
 
+__Hash function__ - any function that can be used to map digital data of arbitrary size to digital data of fixed size, with slight differences in input data producing very big differences in output data.
+
 __Cipher__ - an algorithm for performing encryption or decryption—a series of well-defined steps that can be followed as a procedure.
 
 __Avalanche__ - a measure of how the output bits change based on each input bit. Ideally each input bit will affect each output bit with 1/2 probability.
 
 Realistically, many hash functions do not achieve perfect avalanche and are still useable for many sets of keys.
+
+#### Used in:
+
+- Database
+- Filters
+- Hash tables
+- Unique identifiers
+- Passwords
+- Diff utility
+- File system
 
 ## List of hash functions
 
