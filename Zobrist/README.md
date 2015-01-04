@@ -18,7 +18,7 @@ Albert Lindsey Zobrist
 
 ## Materials
 
-- [http://research.cs.wisc.edu/techreports/1970/TR88.pdf](http://research.cs.wisc.edu/techreports/1970/TR88.pdf)
+- [A new hashing method with application for game playing](http://research.cs.wisc.edu/techreports/1970/TR88.pdf)
 - [Zobrist keys](http://web.archive.org/web/20070822204038/http://www.seanet.com/~brucemo/topics/zobrist.htm)
 
 ## Pseudocode

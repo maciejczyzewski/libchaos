@@ -6,7 +6,7 @@ The MD5 message-digest algorithm is a widely used cryptographic hash function pr
 
 * __First published__ - April 1992
 * __Series__ - MD2, MD4, MD5, MD6
-* __Digest sizes__ - 128 bit
+* __Digest sizes__ - 128 bits
 * __Structure__ - Merkle–Damgård construction
 * __Rounds__ - 4
 
