@@ -264,7 +264,7 @@ A cryptographic hash function is a hash function which is considered practically
     <td>256 bits</td>
     <td>hash</td>
     <td>1994</td>
-    <td>FAPSI and VNIIstandart</td>
+    <td>FAPSI</td>
     <td><a href="/GOST">more</a></td>
   </tr>
   <tr>
@@ -312,7 +312,7 @@ A cryptographic hash function is a hash function which is considered practically
     <td>160 bits</td>
     <td>hash</td>
     <td>2002</td>
-    <td>--</td>
+    <td>Korean</td>
     <td><a href="/HAS-160">more</a></td>
   </tr>
   <tr>
@@ -561,6 +561,7 @@ Sage is a free open-source mathematics software system licensed under the GPL. I
   + [AESLib](https://github.com/DavyLandman/AESLib): arduino Library for AES Encryption (source based on avr-crypto-lib).
   + [crypto-algorithms](https://github.com/B-Con/crypto-algorithms): basic implementations of standard cryptography algorithms, like AES and SHA-1.
   + [sha3sum](https://github.com/maandree/sha3sum): SHA-3 and Keccak checksum utility.
+  + [RHash](https://github.com/rhash/RHash): great utility for computing hash sums.
   + [cryptlib](http://www.cryptlib.com/): an open source cross-platform software security toolkit library.
   + [Nettle](http://www.lysator.liu.se/~nisse/nettle/): a cryptographic library that is designed to fit easily in more or less any context.
 + C++
