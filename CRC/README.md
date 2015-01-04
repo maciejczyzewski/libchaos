@@ -5,7 +5,7 @@ A cyclic redundancy check (CRC) is an error-detecting code commonly used in digi
 ## Informations
 
 * __First published__ - 1961
-* __Series__ - CRC-<number>
+* __Series__ - CRC-(number)
 * __Digest sizes__ - 8, 16, 32, 64 bits
 * __Structure__ - cyclic codes
 
