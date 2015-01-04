@@ -6,7 +6,7 @@
 
 ---
 
-**NOTE:** retter is not yet finished!!!
+**NOTE:** If you see mistakes or would like to expand the list. Feel free to contribute to this project!
 
 ---
 
@@ -29,11 +29,11 @@ BLA BLA BLA BLA BLA BLA BLA
 
 ## Definitions
 
+__Cipher__ - an algorithm for performing encryption or decryption—a series of well-defined steps that can be followed as a procedure.
+
 __Avalanche__ - a measure of how the output bits change based on each input bit. Ideally each input bit will affect each output bit with 1/2 probability.
 
 Realistically, many hash functions do not achieve perfect avalanche and are still useable for many sets of keys.
-
-__Cipher__ - an algorithm for performing encryption or decryption—a series of well-defined steps that can be followed as a procedure.
 
 ## List of hash functions
 
@@ -442,10 +442,26 @@ Sage is a free open-source mathematics software system licensed under the GPL. I
 - [Lecture Notes on Cryptography](http://cseweb.ucsd.edu/~mihir/papers/gb.pdf)
 - [Cryptograpy Lecture Notes](http://www1.cs.columbia.edu/~zeph/4261/lectures/)
 - [Non-Cryptographic Hash Function Zoo](http://floodyberry.com/noncryptohashzoo/)
+- [What is the difference between a Hash Function and a Cryptographic Hash Function?](http://security.stackexchange.com/questions/11839/what-is-the-difference-between-a-hash-function-and-a-cryptographic-hash-function)
+- [Whats the difference between MAC vs hash](http://security.stackexchange.com/questions/1873/whats-the-difference-between-mac-vs-hash?rq=1)
 
 ## Contributing
 
 Please feel free to contribute to this project! Pull requests and feature requests welcome! :v:
+
+### New hash function
+
+Anyone can create a function. You can add to this list a function that is not yours but it already exists. To make your own, remember that the following conditions are must met.
+
+* __Unique name__ - That which does not exist yet.
+* __Informations__ - Date of creation, structure, first published, series, etc.
+* __Authors__ - Everyone who worked on it.
+* __Cryptanalysis__ -  The disadvantages, advantages.
+* __Materials__ - Your research, documents.
+* __Implementations__ - Example implementation (C, C++).
+* __Pseudocode__ - Outline of the algorithm.
+
+_Add it to the appropriate section in the README.md and create a new directory as have other functions._
 
 ## Thanks
 
