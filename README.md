@@ -79,7 +79,7 @@ A __cyclic redundancy check__ (often __CRC__) is an error-detecting code commonl
     <td>cyclic codes</td>
     <td>1961</td>
     <td>W. Wesley Peterson</td>
-    <td><a href="/CRC">more</a></td>
+    <td><a href="/CRC">more [⬆]</a></td>
   </tr>
   <tr>
     <td>BSD</td>
@@ -87,7 +87,7 @@ A __cyclic redundancy check__ (often __CRC__) is an error-detecting code commonl
     <td>CRC</td>
     <td>--</td>
     <td>--</td>
-    <td><a href="/BSD">more</a></td>
+    <td><a href="/BSD">more [⬆]</a></td>
   </tr>
   <tr>
     <td>SYSV</td>
@@ -95,7 +95,7 @@ A __cyclic redundancy check__ (often __CRC__) is an error-detecting code commonl
     <td>CRC</td>
     <td>--</td>
     <td>--</td>
-    <td><a href="/SYSV">more</a></td>
+    <td><a href="/SYSV">more [⬆]</a></td>
   </tr>
 </table>
 
@@ -119,7 +119,7 @@ A __checksum__ or __hash sum__ is a small-size datum from an arbitrary block of 
     <td>sum</td>
     <td>1954</td>
     <td>Hans Peter Luhn</td>
-    <td><a href="/Luhn">more</a></td>
+    <td><a href="/Luhn">more [⬆]</a></td>
   </tr>
   <tr>
     <td>Verhoeff algorithm</td>
@@ -127,7 +127,7 @@ A __checksum__ or __hash sum__ is a small-size datum from an arbitrary block of 
     <td>sum</td>
     <td>1969</td>
     <td>Jacobus Verhoeff</td>
-    <td><a href="/Verhoeff">more</a></td>
+    <td><a href="/Verhoeff">more [⬆]</a></td>
   </tr>
   <tr>
     <td>Fletcher</td>
@@ -135,7 +135,7 @@ A __checksum__ or __hash sum__ is a small-size datum from an arbitrary block of 
     <td>sum</td>
     <td>1970</td>
     <td>John Gould Fletcher</td>
-    <td><a href="/Fletcher">more</a></td>
+    <td><a href="/Fletcher">more [⬆]</a></td>
   </tr>
   <tr>
     <td>Adler-32</td>
@@ -143,7 +143,7 @@ A __checksum__ or __hash sum__ is a small-size datum from an arbitrary block of 
     <td>sum</td>
     <td>1995</td>
     <td>Mark Adler</td>
-    <td><a href="/Adler-32">more</a></td>
+    <td><a href="/Adler-32">more [⬆]</a></td>
   </tr>
   <tr>
     <td>Damm algorithm</td>
@@ -151,7 +151,7 @@ A __checksum__ or __hash sum__ is a small-size datum from an arbitrary block of 
     <td>Quasigroup operation</td>
     <td>2004</td>
     <td>H. Michael Damm</td>
-    <td><a href="/Damm">more</a></td>
+    <td><a href="/Damm">more [⬆]</a></td>
   </tr>
 </table>
 
@@ -175,7 +175,7 @@ A __non-cryptographic hash function__ is a hash function which is sometimes poss
     <td>xor</td>
     <td>1969</td>
     <td>Albert Lindsey Zobrist</td>
-    <td><a href="/Zobrist">more</a></td>
+    <td><a href="/Zobrist">more [⬆]</a></td>
   </tr>
   <tr>
     <td>Pearson hashing</td>
@@ -183,7 +183,7 @@ A __non-cryptographic hash function__ is a hash function which is sometimes poss
     <td>xor/table</td>
     <td>1990</td>
     <td>Peter K. Pearson</td>
-    <td><a href="/Pearson">more</a></td>
+    <td><a href="/Pearson">more [⬆]</a></td>
   </tr>
   <tr>
     <td>FNV</td>
@@ -191,7 +191,7 @@ A __non-cryptographic hash function__ is a hash function which is sometimes poss
     <td>xor/product or product/xor</td>
     <td>1991</td>
     <td>Glenn Fowler, Landon Curt Noll, Phong Vo</td>
-    <td><a href="/FNV">more</a></td>
+    <td><a href="/FNV">more [⬆]</a></td>
   </tr>
   <tr>
     <td>Jenkins</td>
@@ -199,7 +199,7 @@ A __non-cryptographic hash function__ is a hash function which is sometimes poss
     <td>xor/addition</td>
     <td>1997</td>
     <td>Bob Jenkins</td>
-    <td><a href="/Jenkins">more</a></td>
+    <td><a href="/Jenkins">more [⬆]</a></td>
   </tr>
   <tr>
     <td>MurmurHash</td>
@@ -207,7 +207,7 @@ A __non-cryptographic hash function__ is a hash function which is sometimes poss
     <td>product/rotation</td>
     <td>2008</td>
     <td>Austin Appleby</td>
-    <td><a href="/MurmurHash">more</a></td>
+    <td><a href="/MurmurHash">more [⬆]</a></td>
   </tr>
   <tr>
     <td>CityHash</td>
@@ -215,7 +215,7 @@ A __non-cryptographic hash function__ is a hash function which is sometimes poss
     <td>product/rotation</td>
     <td>2010</td>
     <td>Geoff Pike, Jyrki Alakuijala</td>
-    <td><a href="/CityHash">more</a></td>
+    <td><a href="/CityHash">more [⬆]</a></td>
   </tr>
 </table>
 
@@ -239,7 +239,7 @@ A __cryptographic hash function__ is a hash function which is considered practic
     <td>hash</td>
     <td>1989</td>
     <td>Ronald Rivest</td>
-    <td><a href="/MD2">more</a></td>
+    <td><a href="/MD2">more [⬆]</a></td>
   </tr>
   <tr>
     <td>Snefru</td>
@@ -247,7 +247,7 @@ A __cryptographic hash function__ is a hash function which is considered practic
     <td>hash</td>
     <td>1990</td>
     <td>Ralph Merkle</td>
-    <td><a href="/Snefru">more</a></td>
+    <td><a href="/Snefru">more [⬆]</a></td>
   </tr>
   <tr>
     <td>MD4</td>
@@ -255,7 +255,7 @@ A __cryptographic hash function__ is a hash function which is considered practic
     <td>hash</td>
     <td>1990</td>
     <td>Ronald Rivest</td>
-    <td><a href="/MD4">more</a></td>
+    <td><a href="/MD4">more [⬆]</a></td>
   </tr>
   <tr>
     <td>HAVAL</td>
@@ -263,7 +263,7 @@ A __cryptographic hash function__ is a hash function which is considered practic
     <td>hash</td>
     <td>1992</td>
     <td>Yuliang Zheng, Josef Pieprzyk, Jennifer Seberry</td>
-    <td><a href="/HAVAL">more</a></td>
+    <td><a href="/HAVAL">more [⬆]</a></td>
   </tr>
   <tr>
     <td>MD5</td>
@@ -271,7 +271,7 @@ A __cryptographic hash function__ is a hash function which is considered practic
     <td>Merkle-Damgård construction</td>
     <td>1992</td>
     <td>Ronald Rivest</td>
-    <td><a href="/MD5">more</a></td>
+    <td><a href="/MD5">more [⬆]</a></td>
   </tr>
   <tr>
     <td>GOST</td>
@@ -279,7 +279,7 @@ A __cryptographic hash function__ is a hash function which is considered practic
     <td>hash</td>
     <td>1994</td>
     <td>FAPSI</td>
-    <td><a href="/GOST">more</a></td>
+    <td><a href="/GOST">more [⬆]</a></td>
   </tr>
   <tr>
     <td>SHA-1</td>
@@ -287,7 +287,7 @@ A __cryptographic hash function__ is a hash function which is considered practic
     <td>Merkle-Damgård construction</td>
     <td>1995</td>
     <td>National Security Agency</td>
-    <td><a href="/SHA-1">more</a></td>
+    <td><a href="/SHA-1">more [⬆]</a></td>
   </tr>
   <tr>
     <td>Tiger</td>
@@ -295,7 +295,7 @@ A __cryptographic hash function__ is a hash function which is considered practic
     <td>Merkle-Damgård construction</td>
     <td>1996</td>
     <td>Ross Anderson, Eli Biham</td>
-    <td><a href="/Tiger">more</a></td>
+    <td><a href="/Tiger">more [⬆]</a></td>
   </tr>
   <tr>
     <td>RIPEMD</td>
@@ -303,7 +303,7 @@ A __cryptographic hash function__ is a hash function which is considered practic
     <td>hash</td>
     <td>1996</td>
     <td>Hans Dobbertin, Antoon Bosselaers and Bart Preneel</td>
-    <td><a href="/RIPEMD">more</a></td>
+    <td><a href="/RIPEMD">more [⬆]</a></td>
   </tr>
   <tr>
     <td>Whirlpool</td>
@@ -311,7 +311,7 @@ A __cryptographic hash function__ is a hash function which is considered practic
     <td>Miyaguchi-Preneel</td>
     <td>2000</td>
     <td>Vincent Rijmen, Paulo S. L. M. Barreto</td>
-    <td><a href="/Whirlpool">more</a></td>
+    <td><a href="/Whirlpool">more [⬆]</a></td>
   </tr>
   <tr>
     <td>SHA-2</td>
@@ -319,7 +319,7 @@ A __cryptographic hash function__ is a hash function which is considered practic
     <td>Merkle-Damgård construction</td>
     <td>2001</td>
     <td>National Security Agency</td>
-    <td><a href="/SHA-2">more</a></td>
+    <td><a href="/SHA-2">more [⬆]</a></td>
   </tr>
   <tr>
     <td>HAS-160</td>
@@ -327,7 +327,7 @@ A __cryptographic hash function__ is a hash function which is considered practic
     <td>hash</td>
     <td>2002</td>
     <td>Korean</td>
-    <td><a href="/HAS-160">more</a></td>
+    <td><a href="/HAS-160">more [⬆]</a></td>
   </tr>
   <tr>
     <td>FSB</td>
@@ -335,7 +335,7 @@ A __cryptographic hash function__ is a hash function which is considered practic
     <td>hash</td>
     <td>2003</td>
     <td>Daniel Augot, Matthieu Finiasz, Nicolas Sendrier</td>
-    <td><a href="/FSB">more</a></td>
+    <td><a href="/FSB">more [⬆]</a></td>
   </tr>
   <tr>
     <td>RadioGatún</td>
@@ -343,7 +343,7 @@ A __cryptographic hash function__ is a hash function which is considered practic
     <td>hash</td>
     <td>2006</td>
     <td>Guido Bertoni, Joan Daemen, Michaël Peeters, Gilles Van Assche</td>
-    <td><a href="/RadioGatún">more</a></td>
+    <td><a href="/RadioGatún">more [⬆]</a></td>
   </tr>
   <tr>
     <td>BLAKE</td>
@@ -351,7 +351,7 @@ A __cryptographic hash function__ is a hash function which is considered practic
     <td>HAIFA structure</td>
     <td>2008</td>
     <td>Jean-Philippe Aumasson, Luca Henzen, Willi Meier, Raphael C.-W. Phan</td>
-    <td><a href="/BLAKE">more</a></td>
+    <td><a href="/BLAKE">more [⬆]</a></td>
   </tr>
   <tr>
     <td>ECOH</td>
@@ -359,7 +359,7 @@ A __cryptographic hash function__ is a hash function which is considered practic
     <td>hash</td>
     <td>2008</td>
     <td>Daniel R. L. Brown, Matt Campagna, Rene Struik</td>
-    <td><a href="/ECOH">more</a></td>
+    <td><a href="/ECOH">more [⬆]</a></td>
   </tr>
   <tr>
     <td>Grøstl</td>
@@ -367,7 +367,7 @@ A __cryptographic hash function__ is a hash function which is considered practic
     <td>hash</td>
     <td>2008</td>
     <td>Praveen Gauravaram, Lars Knudsen, Krystian Matusiewicz, Florian Mendel, Christian Rechberger, Martin Schläffer, Søren S. Thomsen</td>
-    <td><a href="/Grøstl">more</a></td>
+    <td><a href="/Grøstl">more [⬆]</a></td>
   </tr>
   <tr>
     <td>JH</td>
@@ -375,7 +375,7 @@ A __cryptographic hash function__ is a hash function which is considered practic
     <td>hash</td>
     <td>2008</td>
     <td>Hongjun Wu</td>
-    <td><a href="/JH">more</a></td>
+    <td><a href="/JH">more [⬆]</a></td>
   </tr>
   <tr>
     <td>MD6</td>
@@ -383,7 +383,7 @@ A __cryptographic hash function__ is a hash function which is considered practic
     <td>Merkle tree NLFSR</td>
     <td>2008</td>
     <td>Ronald Rivest, Benjamin Agre, Dan Bailey, Sarah Cheng, Christopher Crutchfield, Yevgeniy Dodis, Kermin Fleming, Asif Khan, Jayant Krishnamurthy, Yuncheng Lin, Leo Reyzin, Emily Shen, Jim Sukha, Eran Tromer, Yiqun Lisa Yin</td>
-    <td><a href="/MD6">more</a></td>
+    <td><a href="/MD6">more [⬆]</a></td>
   </tr>
   <tr>
     <td>SWIFFT</td>
@@ -391,7 +391,7 @@ A __cryptographic hash function__ is a hash function which is considered practic
     <td>hash</td>
     <td>2008</td>
     <td>Vadim Lyubashevsky, Daniele Micciancio, Chris Peikert, Alon Rosen</td>
-    <td><a href="/SWIFFT">more</a></td>
+    <td><a href="/SWIFFT">more [⬆]</a></td>
   </tr>
   <tr>
     <td>Spectral Hash</td>
@@ -399,7 +399,7 @@ A __cryptographic hash function__ is a hash function which is considered practic
     <td>Wide Pipe Merkle-Damgård construction</td>
     <td>2009</td>
     <td>Gokay Saldamlı, Cevahir Demirkıran, Megan Maguire, Carl Minden, Jacob Topper, Alex Troesch, Cody Walker, Çetin Kaya Koç</td>
-    <td><a href="/Spectral">more</a></td>
+    <td><a href="/Spectral">more [⬆]</a></td>
   </tr>
   <tr>
     <td>Skein</td>
@@ -407,7 +407,7 @@ A __cryptographic hash function__ is a hash function which is considered practic
     <td>Unique Block Iteration</td>
     <td>2010</td>
     <td>Bruce Schneier, Niels Ferguson</td>
-    <td><a href="/Skein">more</a></td>
+    <td><a href="/Skein">more [⬆]</a></td>
   </tr>
   <tr>
     <td>SHA-3 (Keccak)</td>
@@ -415,7 +415,7 @@ A __cryptographic hash function__ is a hash function which is considered practic
     <td>Sponge function</td>
     <td>2012</td>
     <td>Guido Bertoni, Joan Daemen, Michaël Peeters, Gilles Van Assche</td>
-    <td><a href="/SHA-3">more</a></td>
+    <td><a href="/SHA-3">more [⬆]</a></td>
   </tr>
   <tr>
     <td>SipHash</td>
@@ -423,7 +423,7 @@ A __cryptographic hash function__ is a hash function which is considered practic
     <td>non-collision-resistant PRF</td>
     <td>2012</td>
     <td>Jean-Philippe Aumasson, Daniel J. Bernstein</td>
-    <td><a href="/SipHash">more</a></td>
+    <td><a href="/SipHash">more [⬆]</a></td>
   </tr>
 </table>
 
