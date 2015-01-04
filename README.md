@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://raw.github.com/MaciejCzyzewski/retter/master/retter.png" width="128" alt="retter" /><br />
   retter, upholds cryptography<br />
-  It's a collection of the most important things.
+  It's a collection of hash functions, ciphers, tools, libraries, and materials related to cryptography.
 </p>
 
 ---
@@ -12,7 +12,17 @@
 
 #### About
 
-BLA BLA BLA BLA BLA BLA BLA
+[1] Celem tego projektu jest propagowanie oraz rozwijanie kryptografii.
+
+[2] Zawiera on w sobie kolekcję dotychczas znanych: narzędzi, bibliotek, artykułów, materiałów, funkcji haszujących oraz szyfrów.
+
+[3a] Jeśli wynajdziesz jakąś nową funkcję haszującą albo szyfr, lub napiszesz artykuł związany z kryptografią. --> [3b] Retter jest odpowiednim miejscem aby tym się pochwalić oraz przedyskutować.
+
+[x] Kolekcja funkcji haszujących, szyfrów, narzędzi, bibliotek i materiałów związanych z kryptografią.
+
+---
+
+[x] A collection of hash functions, ciphers, tools, libraries, and materials related to cryptography.
 
 #### Further reading:
 
@@ -692,4 +702,4 @@ _Add it to the appropriate section in the README.md and create a new directory a
 ## Thanks
 
 * Dongxia Bai, Tsinghua University in China
-* Mike Sharov (@msharov)
+* Mike Sharov ([@msharov](https://github.com/msharov))
