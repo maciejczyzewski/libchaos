@@ -235,7 +235,7 @@ A __non-cryptographic hash function__ is a hash function which is sometimes poss
 
 ### Cryptographic hash functions
 
-A __cryptographic hash function__ is a hash function which is considered practically impossible to invert, that is, to recreate the input data from its hash value alone.
+A __cryptographic hash function__ is a hash function which is designed to be difficult to invert, that is, given an arbitrary hash value it should be hard to find an input that hashes to the same value.
 
 <table width="100%">
   <tr>
