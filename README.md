@@ -16,9 +16,9 @@ The purpose of this project is to promote and develop cryptography.
 
 It includes the collection of known tools, libraries, articles, materials, hash functions, and ciphers.
 
-__If you invent a new hash function or ciphers, or write an paper related to cryptography just add it here. That is the right place.__
+Also it's a place for people who share an interest in cryptography and want to discuss about it.
 
-See [contributing section in README.md](#contributing)
+__If you invent a new hash function or ciphers, or write an paper related to cryptography just add it here. That is the right place. See [contributing section in README.md](#contributing)__
 
 #### Further reading:
 
@@ -693,7 +693,7 @@ Anyone can create a function. You can add to this list a function that is not yo
 * __Implementations__ - Example implementation (C, C++).
 * __Pseudocode__ - Outline of the algorithm.
 
-_Add it to the appropriate section in the README.md and create a new directory as have other functions. (ex. Pearson hashing)_
+_Add it to the appropriate section in the README.md and create a new directory as have other functions. (ex. <a href="/Pearson">Pearson hashing</a>)_
 
 ## Thanks
 
