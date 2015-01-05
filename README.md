@@ -683,7 +683,7 @@ Please feel free to contribute to this project! Pull requests and feature reques
 
 ### New hash function
 
-Anyone can create a function. You can add to this list a function that is not yours but it already exists. To make your own, remember that the following conditions are must met.
+Anyone can create a function. You can add to this list a function that is not yours but it already exists. To make your own, remember that the following conditions must be met.
 
 * __Unique name__ - That which does not exist yet.
 * __Informations__ - Date of creation, structure, first published, series, etc.
@@ -699,3 +699,4 @@ _Add it to the appropriate section in the README.md and create a new directory a
 
 * Dongxia Bai, Tsinghua University in China
 * Mike Sharov ([@msharov](https://github.com/msharov))
+* Others who have written tons of material!!!
