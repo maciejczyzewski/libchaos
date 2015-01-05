@@ -644,7 +644,9 @@ Sage is a free open-source mathematics software system licensed under the GPL. I
   + [NaCl](http://nacl.cr.yp.to/): high-speed software library for network communication, encryption, decryption, signatures, etc.
 + Python
   + [pycrypto](https://www.dlitz.net/software/pycrypto/): Widely used package containing various cryptographic modules and functions
-  + [Standard Library Cryptographic Services](https://docs.python.org/2/library/crypto.html): A set of utilities included with Python.
+  + [Py2 Standard Library Cryptographic Services](https://docs.python.org/2/library/crypto.html): A set of utilities included with Python 2. Attention! Some modules are deprecated (`md5` and `sha`).
+  + [Py3 Standard Library Cryptographic Services](https://docs.python.org/3.4/library/crypto.html): A set of utilities included with Python 3. Some API changes (`md5` and `sha` were moved inside the `hashlib` module).
+
 + Javascript
   + [jsHashes](https://github.com/h2non/jshashes): pure JavaScript implementation of the most extended hash algorithms.
   + [javascript-crypto-library](https://github.com/clipperz/javascript-crypto-library): provides web developers with an extensive and efficient set of cryptographic functions.
