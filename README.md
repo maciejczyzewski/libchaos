@@ -12,17 +12,13 @@
 
 #### About
 
-[1] Celem tego projektu jest propagowanie oraz rozwijanie kryptografii.
+The purpose of this project is to promote and develop cryptography.
 
-[2] Zawiera on w sobie kolekcję dotychczas znanych: narzędzi, bibliotek, artykułów, materiałów, funkcji haszujących oraz szyfrów.
+It includes the collection of known tools, libraries, articles, materials, hash functions, and ciphers.
 
-[3a] Jeśli wynajdziesz jakąś nową funkcję haszującą albo szyfr, lub napiszesz artykuł związany z kryptografią. --> [3b] Retter jest odpowiednim miejscem aby tym się pochwalić oraz przedyskutować.
+__If you invent a new hash function or ciphers, or write an paper related to cryptography just add it here. That is the right place.__
 
-[x] Kolekcja funkcji haszujących, szyfrów, narzędzi, bibliotek i materiałów związanych z kryptografią.
-
----
-
-[x] A collection of hash functions, ciphers, tools, libraries, and materials related to cryptography.
+See [contributing section in README.md](#contributing)
 
 #### Further reading:
 
