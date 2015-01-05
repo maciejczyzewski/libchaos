@@ -642,6 +642,8 @@ Sage is a free open-source mathematics software system licensed under the GPL. I
   + [Crypto++](http://www.cryptopp.com/): is a free and open source C++ class library of cryptographic algorithms and schemes.
   + [HElib](https://github.com/shaih/HElib): an Implementation of homomorphic encryption.
   + [NaCl](http://nacl.cr.yp.to/): high-speed software library for network communication, encryption, decryption, signatures, etc.
++ C#
+  + [Data.HashFunction](https://github.com/brandondahler/Data.HashFunction): Common interface library to non-cryptographic hash functions with numerous implementations.
 + Javascript
   + [jsHashes](https://github.com/h2non/jshashes): pure JavaScript implementation of the most extended hash algorithms.
   + [javascript-crypto-library](https://github.com/clipperz/javascript-crypto-library): provides web developers with an extensive and efficient set of cryptographic functions.
