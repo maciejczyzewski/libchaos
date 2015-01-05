@@ -223,6 +223,14 @@ A __non-cryptographic hash function__ is a hash function which is sometimes poss
     <td>Geoff Pike, Jyrki Alakuijala</td>
     <td><a href="/CityHash">more [⬆]</a></td>
   </tr>
+  <tr>
+    <td>xxHash</td>
+    <td>32, 64 bits</td>
+    <td>product/rotation</td>
+    <td>2012</td>
+    <td>Yann Collet</td>
+    <td><a href="/xxHash">more [⬆]</a></td>
+  </tr>
 </table>
 
 ### Cryptographic hash functions
