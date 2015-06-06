@@ -439,6 +439,14 @@ A __cryptographic hash function__ is a hash function which is designed to be dif
     <td>Jean-Philippe Aumasson, Daniel J. Bernstein</td>
     <td><a href="/SipHash">more [⬆]</a></td>
   </tr>
+  <tr>
+    <td>NCG</td>
+    <td>arbitrary</td>
+    <td>state matrix</td>
+    <td>2015</td>
+    <td>Maciej A. Czyzewski</td>
+    <td><a href="/NCG">more [⬆]</a></td>
+  </tr>
 </table>
 
 ### Message authentication codes
