@@ -1,7 +1,8 @@
 <p align="center">
   <img src="https://raw.github.com/MaciejCzyzewski/retter/master/retter.png" width="128" alt="retter" /><br />
   retter, upholds cryptography<br />
-  It's a collection of hash functions, ciphers, tools, libraries, and materials related to cryptography.
+  It's a collection of hash functions, ciphers, tools, libraries, and materials related to cryptography.<br /><br />
+  <a href="https://github.com/sindresorhus/awesome"><img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome"></a>
 </p>
 
 ---
