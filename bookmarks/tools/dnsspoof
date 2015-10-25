@@ -1,0 +1,5 @@
+name: dnsspoof
+description: DNS spoofer. Drops DNS responses from the router and replaces it with
+  the spoofed DNS response.
+website: https://github.com/DanMcInerney/dnsspoof
+labels: Network

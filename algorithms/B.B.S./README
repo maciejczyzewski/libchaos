@@ -1,0 +1,20 @@
+name: B.B.S.
+description: "Blum Blum Shub is a pseudorandom number generator proposed in 1986 by Lenore Blum, Manuel Blum and Michael Shub that is derived from Michael O. Rabin's oblivious transfer mapping."
+information:
+  published: "1986"
+  sizes: arbitrary
+  structure: Transfer mapping
+authors:
+- Lenore Blum
+- Manuel Blum
+- Michael Shub
+labels: Symmetric-Key Primitives, Stream Ciphers, Pseudorandom Generators
+cryptanalysis: 'There is a proof reducing its security to the computational difficulty of solving the Quadratic residuosity problem. A serious problem is very slow computing.'
+materials:
+- title: How to find the exact period of Blum-Blum-Shub random number generator?
+  url: http://cstheory.stackexchange.com/questions/10779/how-to-find-the-exact-period-of-blum-blum-shub-random-number-generator
+- title: Randomness Tests
+  url: http://www.ciphersbyritter.com/NEWS2/TESTSBBS.HTM
+- title: Concrete Security of the Blum-Blum-Shub Pseudorandom Generator
+  url: http://www.win.tue.nl/~berry/papers/ima05bbs.pdf
+secure: "+"

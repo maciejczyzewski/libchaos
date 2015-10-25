@@ -1,0 +1,5 @@
+name: Windows IPC Fuzzing Tools
+description: Tools used to fuzz applications that use Windows Interprocess Communication
+  mechanisms.
+website: https://isecpartners.com/tools/application-security/windows-ipc-fuzzing-tools.aspx
+labels: Fuzzing

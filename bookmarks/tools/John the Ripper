@@ -1,0 +1,4 @@
+name: John the Ripper
+description: Fast password cracker.
+website: http://www.openwall.com/john/
+labels: Crackers

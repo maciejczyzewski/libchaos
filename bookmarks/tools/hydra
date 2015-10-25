@@ -1,0 +1,4 @@
+name: hydra
+description: Is a brute force password cracking tool.
+website: https://github.com/vanhauser-thc/thc-hydra
+labels: Crackers

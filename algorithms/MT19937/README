@@ -1,0 +1,18 @@
+name: Mersenne Twister
+description: 'The Mersenne Twister is a pseudorandom number generator (PRNG). Its name derives from the fact that its period length is chosen to be a Mersenne prime.'
+information:
+  published: "1997"
+  sizes: 64 bits
+  period: (2^19937)-1
+  structure: Mersenne primes
+authors:
+- Makoto Matsumoto
+- Takuji Nishimura
+labels: Pseudorandom Generators
+cryptanalysis: ''
+materials:
+- title: Mersenne Twister Home Page
+  url: http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/emt.html
+- title: Papers on random number generation
+  url: http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/ARTICLES/earticles.html
+secure: +

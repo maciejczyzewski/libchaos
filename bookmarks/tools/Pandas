@@ -1,0 +1,5 @@
+name: Pandas
+description: Library providing high-performance, easy-to-use data structures and data
+  analysis tools.
+website: http://pandas.pydata.org/
+labels: Others

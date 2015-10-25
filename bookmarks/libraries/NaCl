@@ -1,0 +1,4 @@
+name: NaCl
+description: High-speed software library for network communication, encryption, decryption, signatures, etc.
+website: http://nacl.cr.yp.to/
+labels: C++

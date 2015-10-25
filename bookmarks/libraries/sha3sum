@@ -1,0 +1,4 @@
+name: sha3sum
+description: SHA-3 and Keccak checksum utility.
+website: https://github.com/maandree/sha3sum
+labels: C

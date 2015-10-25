@@ -1,0 +1,26 @@
+
+=== CONTRIBUTING ==============================================================
+
+  In project we use "gitflow" branching model, first you should learn about it.
+
+  http://nvie.com/posts/a-successful-git-branching-model/
+
+  Anonymous PRs will be rejected. Changes that are not properly done will be
+  rejected. Changes that bring false statements will be rejected.
+
+  Seamlessly will be accepted: grammar changes, new bookmarks/algorithms, fixes
+
+  Name of commit should look like:              [<type>]: <title>
+
+  + Type: added, modified, deleted, fixed
+  + Title: type a short, meaningful commit message that describes the changes
+
+  COMMAND                   DESCRIPTION
+
+  ./bootstrap.sh            Checks project structure
+  ./bootstrap.sh build      Builds project to README.html
+  ./bootstrap.sh lint       Lints source code from tools/
+
+                                                                     Good luck!
+                                                                       M. A. C.
+

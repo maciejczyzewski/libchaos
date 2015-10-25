@@ -1,0 +1,3 @@
+name: Advanced Topics in Cryptography
+description: The topics covered in this course include interactive proofs, zero-knowledge proofs, zero-knowledge proofs of knowledge, non-interactive zero-knowledge proofs, secure protocols, two-party secure computation, multiparty secure computation, and chosen-ciphertext security.
+website: http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-876j-advanced-topics-in-cryptography-spring-2003/

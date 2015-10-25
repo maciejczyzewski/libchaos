@@ -1,0 +1,19 @@
+name: Zobrist Hashing
+description: ' Zobrist hashing is a hash function construction used in computer programs
+  that play abstract board games, such as chess and Go, to implement transposition
+  tables, a special kind of hash table that is indexed by a board position and used
+  to avoid analyzing the same position more than once.'
+information:
+  published: '1969'
+  sizes: variable
+  structure: xor
+authors:
+- Albert Lindsey Zobrist
+labels: Symmetric-Key Primitives, Signatures, Identification Primitives
+cryptanalysis: ''
+materials:
+- title: A new hashing method with application for game playing
+  url: http://research.cs.wisc.edu/techreports/1970/TR88.pdf
+- title: Zobrist keys
+  url: http://web.archive.org/web/20070822204038/http://www.seanet.com/~brucemo/topics/zobrist.htm
+secure: +

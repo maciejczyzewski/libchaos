@@ -1,0 +1,4 @@
+name: mass-deauth
+description: A script for 802.11 mass-deauthentication.
+website: https://github.com/Andy-Maclachlan/mass-deauth
+labels: DoS & DDoS

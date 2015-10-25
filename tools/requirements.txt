@@ -1,0 +1,4 @@
+docopt==0.6.2
+flake8==2.4.1
+PyYAML==3.11
+Jinja2==2.8

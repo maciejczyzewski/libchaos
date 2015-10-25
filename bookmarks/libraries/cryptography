@@ -1,0 +1,5 @@
+name: cryptography
+description: A package designed to expose cryptographic primitives and recipes to
+  Python developers.
+website: https://github.com/pyca/cryptography
+labels: Python

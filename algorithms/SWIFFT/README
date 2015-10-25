@@ -1,0 +1,23 @@
+name: SWIFFT
+description: ' In cryptography, SWIFFT is a collection of provably secure hash functions.
+  It is based on the concept of the Fast Fourier Transform (FFT). SWIFFT is not the
+  first hash function based on FFT, but it sets itself apart by providing a mathematical
+  proof of its security. It also uses the LLL basis reduction algorithm.'
+information:
+  published: '2008'
+  sizes: 512 bits
+  structure: hash
+authors:
+- Vadim Lyubashevsky
+- Daniele Micciancio
+- Chris Peikert
+- Alon Rosen
+labels: Unkeyed Primitives, Hash Functions (MDCs)
+cryptanalysis: ' Known working attacks are: Generalized Birthday Attack, which takes
+  2^106 operations and inversion attacks which takes 2^448 operations for a standard
+  parameter choice. This is usually considered to be enough to render an attack by
+  an adversary infeasible.'
+materials:
+- title: 'SWIFFT: A Modest Proposal for FFT Hashing'
+  url: http://www.eecs.harvard.edu/~alon/PAPERS/lattices/swifft.pdf
+secure: '!'

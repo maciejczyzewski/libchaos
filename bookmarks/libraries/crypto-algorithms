@@ -1,0 +1,5 @@
+name: crypto-algorithms
+description: Basic implementations of standard cryptography algorithms, like AES and
+  SHA-1.
+website: https://github.com/B-Con/crypto-algorithms
+labels: C

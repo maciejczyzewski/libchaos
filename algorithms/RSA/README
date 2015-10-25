@@ -1,0 +1,15 @@
+name: RSA
+description: 'RSA is one of the first practical public-key cryptosystems and is widely used for secure data transmission. In such a cryptosystem, the encryption key is public and differs from the decryption key which is kept secret.'
+information:
+  published: "1977"
+  structure: factoring problem
+authors:
+- Ron Rivest
+- Adi Shamir
+- Leonard Adleman
+labels: Public-Key Primitives, Public-Key Ciphers
+cryptanalysis: ''
+materials:
+- title: RSA Cryptography Standard
+  url: http://www.emc.com/emc-plus/rsa-labs/standards-initiatives/pkcs-rsa-cryptography-standard.htm
+secure: +

@@ -1,0 +1,4 @@
+name: dieharder
+description: A Random Number Test Suite.
+website: http://www.phy.duke.edu/~rgb/General/dieharder.php
+labels: Others

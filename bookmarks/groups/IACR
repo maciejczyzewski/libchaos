@@ -1,0 +1,11 @@
+abbreviation: IACR
+name: International Association for Cryptologic Research
+website: http://www.iacr.org/
+description: Is a non-profit scientific organization whose purpose is to further research in cryptology and related fields. Cryptology is the science and practice of designing computation and communication systems which are secure in the presence of adversaries.
+links:
+  - title: Cryptology ePrint Archive
+    url: http://eprint.iacr.org/
+  - title: Conferences and Workshops
+    url: http://www.iacr.org/meetings/
+  - title: Membership Services
+    url: http://www.iacr.org/iacrmem/

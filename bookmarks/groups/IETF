@@ -1,0 +1,11 @@
+abbreviation: IETF
+name: Internet Engineering Task Force
+website: https://www.ietf.org/
+description: The mission of the IETF is to make the Internet work better by producing high quality, relevant technical documents that influence the way people design, use, and manage the Internet.
+links:
+  - title: Getting Started in the IETF
+    url: https://www.ietf.org/newcomers.html
+  - title: Archives - Request for Comments (RFC)
+    url: http://www.faqs.org/rfcs/
+  - title: Tools Pages
+    url: https://tools.ietf.org/

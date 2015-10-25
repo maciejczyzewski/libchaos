@@ -1,0 +1,4 @@
+name: as3corelib
+description: An ActionScript 3 Library that contains a number of classes and utilities.
+website: https://github.com/mikechambers/as3corelib
+labels: ActionScript

@@ -1,0 +1,5 @@
+name: cryptonite
+description: A collection of cryptographic primitives including AES, RSA, ChaCha20,
+  Poly1305, Ed25519 and SCrypt.
+website: https://hackage.haskell.org/package/cryptonite
+labels: Haskell

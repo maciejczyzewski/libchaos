@@ -1,0 +1,18 @@
+name: !!python/str "Fowler\u2013Noll\u2013Vo Hash Function"
+description: ' The basis of the FNV hash algorithm was taken from an idea sent as
+  reviewer comments to the IEEE POSIX P1003.2 committee by Glenn Fowler and Phong
+  Vo in 1991. In a subsequent ballot round, Landon Curt Noll improved on their algorithm.'
+information:
+  published: '1991'
+  sizes: 32, 64, 128, 256, 512, or 1024 bits
+  structure: xor/product or product/xor
+authors:
+- Glenn Fowler
+- Landon Curt Noll
+- Phong Vo
+labels: Unkeyed Primitives, Hash Functions (MDCs)
+cryptanalysis: ''
+materials:
+- title: FNV Hash
+  url: http://www.isthe.com/chongo/tech/comp/fnv/index.html
+secure: +

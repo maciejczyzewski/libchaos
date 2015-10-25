@@ -1,0 +1,5 @@
+name: Nettle
+description: A cryptographic library that is designed to fit easily in more or less
+  any context.
+website: http://www.lysator.liu.se/~nisse/nettle/
+labels: C

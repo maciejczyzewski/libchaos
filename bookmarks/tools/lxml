@@ -1,0 +1,5 @@
+name: lxml
+description: Most feature-rich and easy-to-use library for working with XML and HTML
+  in the Python language.
+website: http://lxml.de/
+labels: Others

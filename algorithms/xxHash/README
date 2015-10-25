@@ -1,0 +1,15 @@
+name: xxHash
+description: ' xxHash is an Extremely fast Hash algorithm, running at RAM speed limits.'
+information:
+  published: '2012'
+  sizes: 32, 64 bits
+authors:
+- Yann Collet
+labels: Unkeyed Primitives, Hash Functions (MDCs), Random Sequences
+cryptanalysis: ''
+materials:
+- title: Test suite evaluating Hash quality
+  url: https://code.google.com/p/xxhash/wiki/xxh32
+- title: xxHash website
+  url: https://code.google.com/p/xxhash/
+secure: +

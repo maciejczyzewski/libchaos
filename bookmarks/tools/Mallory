@@ -1,0 +1,5 @@
+name: Mallory
+description: Extensible TCP/UDP man-in-the-middle proxy, supports modifying non-standard
+  protocols on the fly.
+website: https://bitbucket.org/IntrepidusGroup/mallory
+labels: Network

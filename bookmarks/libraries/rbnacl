@@ -1,0 +1,4 @@
+name: rbnacl
+description: Ruby binding to the Networking and Cryptography (NaCl) library.
+website: https://github.com/cryptosphere/rbnacl
+labels: Ruby

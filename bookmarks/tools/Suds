@@ -1,0 +1,4 @@
+name: Suds
+description: Lightweight SOAP client for consuming Web Services.
+website: https://fedorahosted.org/suds/
+labels: Others

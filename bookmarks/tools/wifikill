@@ -1,0 +1,4 @@
+name: wifikill
+description: A python program to kick people off of wifi.
+website: https://github.com/roglew/wifikill
+labels: DoS & DDoS

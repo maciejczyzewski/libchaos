@@ -1,0 +1,16 @@
+name: Jenkins Hash Function
+description: ' The Jenkins hash functions are a collection of (non-cryptographic)
+  hash functions for multi-byte. They can be used also as checksums to detect accidental
+  data corruption or detect identical records in a database.'
+information:
+  published: '1997'
+  sizes: 32 or 64 bits
+  structure: xor/addition
+authors:
+- Bob Jenkins
+labels: Unkeyed Primitives, Hash Functions (MDCs), Checksums
+cryptanalysis: ''
+materials:
+- title: Dr. Dobbs article
+  url: http://www.burtleburtle.net/bob/hash/doobs.html
+secure: +

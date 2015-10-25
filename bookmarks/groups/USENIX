@@ -1,0 +1,11 @@
+abbreviation: USENIX
+name: Advanced Computing Systems Association
+website: https://www.usenix.org/
+description: Since 1975, the USENIX Association has brought together the community of engineers, system administrators, scientists, and technicians working on the cutting edge of the computing world.
+links:
+  - title: Conferences and Workshops
+    url: https://www.usenix.org/conferences
+  - title: Archives - Publications
+    url: https://www.usenix.org/publications
+  - title: Membership Services
+    url: https://www.usenix.org/membership-services

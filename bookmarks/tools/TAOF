@@ -1,0 +1,5 @@
+name: TAOF
+description: (The Art of Fuzzing) including ProxyFuzz, a man-in-the-middle non-deterministic
+  network fuzzer.
+website: http://sourceforge.net/projects/taof/
+labels: Fuzzing

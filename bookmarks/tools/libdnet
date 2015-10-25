@@ -1,0 +1,5 @@
+name: libdnet
+description: Low-level networking routines, including interface lookup and Ethernet
+  frame transmission.
+website: http://code.google.com/p/libdnet/
+labels: Network

@@ -1,0 +1,18 @@
+name: SipHash
+description: ' SipHash is an Add-Rotate-Xor (ARX) based family of pseudorandom functions
+  created by Jean-Philippe Aumasson and Daniel J. Bernstein in 2012.'
+information:
+  published: '2012'
+  sizes: 64 bits
+  structure: non-collision-resistant PRF
+authors:
+- Jean-Philippe Aumasson
+- Daniel J. Bernstein
+labels: Symmetric-Key Primitives, Hash Functions (MACs), Pseudorandom Sequences, Pseudorandom Function Family, Pseudorandom Generators
+cryptanalysis: ''
+materials:
+- title: SipHash website
+  url: https://131002.net/siphash/
+- title: High-speed pseudorandom function
+  url: https://github.com/veorq/SipHash
+secure: +

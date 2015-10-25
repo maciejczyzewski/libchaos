@@ -1,0 +1,18 @@
+name: Snefru
+description: ' Snefru is a cryptographic hash function which supports 128-bit and
+  256-bit output. It was named after the Egyptian Pharaoh Sneferu, continuing the
+  tradition of the Khufu and Khafre block ciphers.'
+information:
+  published: '1990'
+  sizes: 128 or 256 bits
+  structure: hash
+authors:
+- Ralph Merkle
+labels: Unkeyed Primitives, Hash Functions (MDCs)
+cryptanalysis: ''
+materials:
+- title: Snefru Website
+  url: http://ehash.iaik.tugraz.at/wiki/Snefru-n
+- title: Source Code
+  url: ftp://ftp.kfki.hu/pub/packages/security/COAST/crypto/snefru/
+secure: +

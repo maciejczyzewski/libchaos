@@ -1,0 +1,25 @@
+name: MD5
+description: ' The MD5 message-digest algorithm is a widely used cryptographic hash
+  function producing a 128-bit (16-byte) hash value, typically expressed in text format
+  as a 32 digit hexadecimal number. MD5 has been utilized in a wide variety of cryptographic
+  applications, and is also commonly used to verify data integrity.'
+information:
+  published: April 1992
+  rounds: '4'
+  series: MD2, MD4, MD5, MD6
+  sizes: 128 bits
+  structure: !!python/str "Merkle\u2013Damg\xE5rd construction"
+authors:
+- Ronald Rivest
+labels: Unkeyed Primitives, Hash Functions (MDCs)
+cryptanalysis: ' A 2013 attack by Xie Tao, Fanbao Liu, and Dengguo Feng breaks MD5
+  collision resistance in 2^18 time. This attack runs in less than a second on a regular
+  computer.'
+materials:
+- title: The MD5 Message-Digest Algorithm
+  url: https://www.ietf.org/rfc/rfc1321.txt
+- title: Cryptanalysis of MD5 and SHA-1 (SHARCS 2012)
+  url: http://2012.sharcs.org/slides/stevens.pdf
+- title: How to Break MD5 and Other Hash Functions
+  url: http://merlot.usc.edu/csac-f06/papers/Wang05a.pdf
+secure: '!'

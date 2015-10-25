@@ -1,0 +1,5 @@
+name: Powerfuzzer
+description: Highly automated and fully customizable web fuzzer (HTTP protocol based
+  application fuzzer).
+website: http://www.powerfuzzer.com/
+labels: Fuzzing

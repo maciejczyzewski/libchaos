@@ -1,0 +1,7345 @@
+<html>
+<head>
+
+<style>pre { width: 617px; margin: 0 auto; line-height: 18px; margin-bottom: 2em; } blockquote { background: #eee; padding: 10px; } ol { -webkit-column-count: 1; -moz-column-count: 1; column-count: 1; } ol.IB > li { display: inline-block; width: 100%; } h4 { border-bottom: 2px solid black; } .TC { text-align: center; } @media (min-width: 750px) { ol { -webkit-column-count: 3; -moz-column-count: 3; column-count: 3; } } fieldset { border: 2px solid black; border-style: dashed; }</style>
+
+<meta charset="utf-8" />
+
+<title>RETTER: Cryptography & Security moves fast. Keep up!</title>
+
+</head>
+<body>
+
+<pre>
+
+              _""^^"-.
+            /  /   \  \
+            |  |.-""-.|        ___ ___ _____ _____ ___ ___
+           ////`.;;;;.`\      | _ \ __|_   _|_   _| __| _ \\
+          |||; ::/  \:: ;     |   / _|  | |   | | | _||   /
+          |||; ::\__/:: ;     |_|_\___| |_|   |_| |___|_|_\\
+           \\\\ ';;;;' /      Cryptography & Security moves fast. Keep up!
+            `==':-..-'`
+
+                       http://maciejczyzewski.me/retter
+
+                             By: M. A. Czyzewski
+                             Date:    25/10/2015
+
+            This code is explicitly placed into the public domain.
+</pre>
+
+<!-- EXTERNAL -->
+
+<div class="TC">
+  <iframe src="https://ghbtns.com/github-btn.html?user=maciejczyzewski&repo=retter&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+
+  <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://maciejczyzewski.me/retter" data-via="_czyzewski">Tweet</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</div>
+
+<!-- EXTERNAL -->
+
+<p class="TC">[<a href="#courses">COURSES</a> |
+<a href="#libraries">LIBRARIES</a> |
+<a href="#tools">TOOLS</a> |
+<a href="#algorithms">ALGORITHMS</a> |
+<a href="#conferences">CONFERENCES</a> |
+<a href="#cryptographers">CRYPTOGRAPHERS</a> |
+<a href="#organizations-groups">ORGANIZATIONS & GROUPS</a>]</p>
+
+<blockquote><b>NOTE</b>: If you see mistakes, expired links or would like to expand the list with your own bookmarks. Feel free to <a href="https://github.com/maciejczyzewski/retter">contribute</a> to this project! If you want to know more about this project, please read the <a href="https://github.com/maciejczyzewski/retter#readme">README</a>. List below is still in the process of creation...</blockquote>
+
+<h4 id="courses">Courses</h4>
+
+<ol class="IB">
+
+  <li>
+    <a href="http://www.cs.bris.ac.uk/Research/CryptographySecurity/knowledge.html">52 Things People Should Know To Do Cryptography</a>
+    <p>Cryptography is a highly interdiscplinary area; calling on expertise in Pure Mathematics, Computer Science and Electronic Engineering. At Bristol we cover the full range of these topics and as such our students come with a variety of backgrounds and need to understand a diverse range of topics.</p>
+  </li>
+
+  <li>
+    <a href="https://crypto.stanford.edu/~dabo/cryptobook/">A Graduate Course in Applied Cryptography</a>
+    <p>This book is about exactly that; constructing practical cryptosystems for which we can argue security under plausible assumptions. The book covers many constructions for different tasks in cryptography.</p>
+  </li>
+
+  <li>
+    <a href="http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-876j-advanced-topics-in-cryptography-spring-2003/">Advanced Topics in Cryptography</a>
+    <p>The topics covered in this course include interactive proofs, zero-knowledge proofs, zero-knowledge proofs of knowledge, non-interactive zero-knowledge proofs, secure protocols, two-party secure computation, multiparty secure computation, and chosen-ciphertext security.</p>
+  </li>
+
+  <li>
+    <a href="http://inst.eecs.berkeley.edu/~cs161/archives.html">Berkeley's Computer Security</a>
+    <p>Good for beginners course on computer security basics.</p>
+  </li>
+
+  <li>
+    <a href="https://www.crypto101.io/">CRYPTO101 - Introductory Course</a>
+    <p>Is an introductory course on cryptography, freely available for programmers of all ages and skill levels.</p>
+  </li>
+
+  <li>
+    <a href="https://gist.github.com/tqbf/be58d2d39690c3b366ad">Cryptographic Right Answers from Thomas Ptacek</a>
+    <p>A short note on the topics of security and cryptography.</p>
+  </li>
+
+  <li>
+    <a href="http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-875-cryptography-and-cryptanalysis-spring-2005/">Cryptography and Cryptanalysis</a>
+    <p>This course features a rigorous introduction to modern cryptography, with an emphasis on the fundamental cryptographic primitives of public-key encryption, digital signatures, pseudo-random number generation, and basic protocols and their computational complexity requirements.</p>
+  </li>
+
+  <li>
+    <a href="https://www.coursera.org/course/crypto">Dan Boneh's Coursera Cryptography Course</a>
+    <p>Cryptography is an indispensable tool for protecting information in computer systems. This course explains the inner workings of cryptographic primitives and how to correctly use them. Students will learn how to reason about the security of cryptographic constructions and how to apply this knowledge to real-world applications.</p>
+  </li>
+
+  <li>
+    <a href="http://cacr.uwaterloo.ca/hac/index.html">Handbook of Applied Cryptography</a>
+    <p>This site provides order information, updates, errata, supplementary information, chapter bibliographies, and other information for the Handbook of Applied Cryptography by Menezes, van Oorschot and Vanstone.</p>
+  </li>
+
+  <li>
+    <a href="http://courses.cs.washington.edu/courses/csep590/06wi/lectures/">Practical Aspects of Modern Cryptography</a>
+    <p>Course include an extensive range of knowledge about modern cryptography.</p>
+  </li>
+
+  <li>
+    <a href="http://cryptopals.com/">The Matasano Crypto Challenges</a>
+    <p>This is a different way to learn about crypto than taking a class or reading a book. Course give you problems to solve. They're derived from weaknesses in real-world systems and modern cryptographic constructions.</p>
+  </li>
+
+  <li>
+    <a href="http://saweis.net/crypto.html">Theory and Practice of Cryptography Mini-Course</a>
+    <p>This mini-course was taught in 2007 at Google. It is intended to be a brief survey for a general technical audience.</p>
+  </li>
+
+</ol>
+
+<h4 id="libraries">Libraries</h4>
+
+<ol class="IB">
+
+  <li>
+    C
+    <ul>
+    
+      
+    
+      
+        <li><a href="https://github.com/cantora/avr-crypto-lib">avr-crypto-lib</a>: Is a set of implementations of different cryptographic primitives. Due to the special limitations of microcontrollers.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://www.cryptlib.com/">cryptlib</a>: An open source cross-platform software security toolkit library.</li>
+      
+    
+      
+    
+      
+        <li><a href="https://github.com/B-Con/crypto-algorithms">crypto-algorithms</a>: Basic implementations of standard cryptography algorithms, like AES and SHA-1.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://www.gnu.org/software/libgcrypt/">Libgcrypt</a>: Is a cryptographic library developed as a separated module of GnuPG. It provides functions for all cryptograhic building blocks, own multiple precision arithmetic implementation.</li>
+      
+    
+      
+        <li><a href="https://github.com/jedisct1/libsodium">libsodium</a>: A modern and easy-to-use crypto library.</li>
+      
+    
+      
+    
+      
+        <li><a href="http://www.lysator.liu.se/~nisse/nettle/">Nettle</a>: A cryptographic library that is designed to fit easily in more or less any context.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://github.com/rhash/RHash">RHash</a>: Great utility for computing hash sums.</li>
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://github.com/maandree/sha3sum">sha3sum</a>: SHA-3 and Keccak checksum utility.</li>
+      
+    
+      
+    
+    </ul>
+    <br/>
+  </li>
+
+  <li>
+    C++
+    <ul>
+    
+      
+    
+      
+    
+      
+        <li><a href="http://botan.randombit.net/">Botan</a>: It provides a wide variety of cryptographic algorithms, formats, and protocols, e.g. SSL and TLS.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://www.cryptopp.com/">Crypto++</a>: Is a free and open source C++ class library of cryptographic algorithms and schemes.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://github.com/shaih/HElib">HElib</a>: An Implementation of homomorphic encryption.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://nacl.cr.yp.to/">NaCl</a>: High-speed software library for network communication, encryption, decryption, signatures, etc.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    </ul>
+    <br/>
+  </li>
+
+  <li>
+    C# / .NET
+    <ul>
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://github.com/brandondahler/Data.HashFunction">Data.HashFunction</a>: Common interface library to non-cryptographic hash functions with numerous implementations.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://github.com/AArnott/PCLCrypto">PCLCrypto</a>: Portable Class Library that invokes native implementations of cryptographic functions on Microsoft .NET, Mono, Silverlight, WinRT, Windows Phone, iOS and Android.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    </ul>
+    <br/>
+  </li>
+
+  <li>
+    PYTHON
+    <ul>
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://github.com/pyca/cryptography">cryptography</a>: A package designed to expose cryptographic primitives and recipes to Python developers.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://www.dlitz.net/software/pycrypto/">pycrypto</a>: Widely used package containing various cryptographic modules and functions.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    </ul>
+    <br/>
+  </li>
+
+  <li>
+    JAVASCRIPT
+    <ul>
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://github.com/gwjjeff/cryptojs">cryptojs</a>: Provide standard and secure cryptographic algorithms for NodeJS.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://gist.github.com/macton/1743087">hmacsha1.js</a>: A JavaScript implementation of the Secure Hash Algorithm, SHA-1, as defined.</li>
+      
+    
+      
+        <li><a href="https://github.com/clipperz/javascript-crypto-library">javascript-crypto-library</a>: Provides web developers with an extensive and efficient set of cryptographic functions.</li>
+      
+    
+      
+        <li><a href="https://github.com/h2non/jshashes">jsHashes</a>: Pure JavaScript implementation of the most extended hash algorithms.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://bitwiseshiftleft.github.io/sjcl/">sjcl</a>: Is a project by the Stanford Computer Security Lab to build a secure, powerful, fast, small, easy-to-use, cross-browser library for cryptography in Javascript.</li>
+      
+    
+    </ul>
+    <br/>
+  </li>
+
+  <li>
+    CLOJURE
+    <ul>
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://github.com/xsc/pandect">pandect</a>: Fast and easy-to-use Message Digest, Checksum and HMAC library for Clojure.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    </ul>
+    <br/>
+  </li>
+
+  <li>
+    ACTIONSCRIPT
+    <ul>
+    
+      
+        <li><a href="https://github.com/mikechambers/as3corelib">as3corelib</a>: An ActionScript 3 Library that contains a number of classes and utilities.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    </ul>
+    <br/>
+  </li>
+
+  <li>
+    RUBY
+    <ul>
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://github.com/cryptosphere/rbnacl">rbnacl</a>: Ruby binding to the Networking and Cryptography (NaCl) library.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    </ul>
+    <br/>
+  </li>
+
+  <li>
+    OBJECTIVE-C
+    <ul>
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://github.com/kelp404/CocoaSecurity">CocoaSecurity</a>: AES, MD5, SHA1, SHA224, SHA256, SHA384, SHA512, Base64, Hex</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://github.com/RNCryptor/RNCryptor">RNCryptor</a>: CCCryptor (AES encryption) wrappers for iOS and Mac.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+    </ul>
+    <br/>
+  </li>
+
+  <li>
+    RUST
+    <ul>
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://github.com/DaGenix/rust-crypto">rust-crypto</a>: A (mostly) pure-Rust implementation of various cryptographic algorithms.</li>
+      
+    
+      
+    
+      
+    
+    </ul>
+    <br/>
+  </li>
+
+  <li>
+    HASKELL
+    <ul>
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://hackage.haskell.org/package/cryptonite">cryptonite</a>: A collection of cryptographic primitives including AES, RSA, ChaCha20, Poly1305, Ed25519 and SCrypt.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    </ul>
+    <br/>
+  </li>
+
+  <li>
+    JAVA
+    <ul>
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://bouncycastle.org/">Bouncy Castle</a>: A collection of APIs used in cryptography. It includes APIs for both the Java and the C# programming languages.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    </ul>
+    <br/>
+  </li>
+
+</ol>
+
+<h4 id="tools">Tools</h4>
+
+<ol class="IB">
+
+  <li>
+    PENETRATION DISTRIBUTIONS & FRAMEWORKS
+    <ul>
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://www.backbox.org/">BackBox</a>: Ubuntu-based distribution for penetration tests and security assessments.</li>
+      
+    
+      
+    
+      
+        <li><a href="https://github.com/beefproject/beef">beef</a>: The Browser Exploitation Framework Project.</li>
+      
+    
+      
+        <li><a href="http://www.blackarch.org/">BlackArch</a>: Arch Linux-based distribution for penetration testers and security researchers.</li>
+      
+    
+      
+    
+      
+        <li><a href="http://portswigger.net/burp/">Burp Suite</a>: An integrated platform for performing security testing of web applications.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://exploitpack.com/">ExploitPack</a>: Graphical tool for penetration testing with a bunch of exploits.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://www.kali.org/">Kali</a>: A Linux distribution designed for digital forensics and penetration testing.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://www.metasploit.com/">Metasploit Framework</a>: World's most used penetration testing software.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://networksecuritytoolkit.org/">NST</a>: Network Security Toolkit distribution.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://www.pentoo.ch/">Pentoo</a>:  Security-focused livecd based on Gentoo.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://github.com/SpiderLabs/Responder">Responder</a>: Is a LLMNR, NBT-NS and MDNS poisoner, with built-in HTTP/SMB/MSSQL/FTP/LDAP rogue authentication server.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    </ul>
+    <br/>
+  </li>
+
+  <li>
+    NETWORK
+    <ul>
+    
+      
+    
+      
+        <li><a href="https://code.google.com/p/airbourne/">airbourne</a>: Script features a shell menu with many options handling network interfaces, injections, wireless monitoring, deauthentication, wep statistical crack, wep ptw method, wpa password list method, wpa john the ripper method.</li>
+      
+    
+      
+        <li><a href="http://www.aircrack-ng.org/">Aircrack-ng</a>: A set of tools for auditing wireless network.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://github.com/kamorin/DHCPig">DHCPig</a>: DHCP exhaustion script written in python using scapy network library.</li>
+      
+    
+      
+    
+      
+        <li><a href="http://dirtbags.net/py-pcap.html">Dirtbags py-pcap</a>: Read pcap files without libpcap.</li>
+      
+    
+      
+        <li><a href="https://github.com/DanMcInerney/dnsspoof">dnsspoof</a>: DNS spoofer. Drops DNS responses from the router and replaces it with the spoofed DNS response.</li>
+      
+    
+      
+        <li><a href="https://github.com/kbandla/dpkt">dpkt</a>: Fast, simple packet creation/parsing, with definitions for the basic TCP/IP protocols.</li>
+      
+    
+      
+        <li><a href="http://www.monkey.org/~dugsong/dsniff/">dsniff</a>: Is a collection of tools for network auditing and penetration testing. dsniff, filesnarf, mailsnarf, msgsnarf, urlsnarf, and webspy passively monitor a network for interesting data (passwords, e-mail, files, etc.).</li>
+      
+    
+      
+        <li><a href="https://github.com/rndc/etherwall">etherwall</a>: Is a free and open source network security tool that prevents Man in The Middle (MITM) through ARP Spoofing/Poisoning attacks.</li>
+      
+    
+      
+        <li><a href="https://github.com/Ettercap/ettercap">ettercap</a>: Is a comprehensive suite for man in the middle attacks. It features sniffing of live connections, content filtering on the fly and many other interesting tricks.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://monkey.org/~jose/software/flowgrep/">flowgrep</a>: Grep through packet payloads using regular expressions.</li>
+      
+    
+      
+    
+      
+        <li><a href="http://funkload.nuxeo.org/">FunkLoad</a>: Functional and load web tester.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://kismetwireless.net/">Kismet</a>: Wireless network detector, sniffer, and IDS.</li>
+      
+    
+      
+        <li><a href="https://github.com/guelfoweb/knock">Knock Subdomain Scan</a>: Enumerate subdomains on a target domain through a wordlist.</li>
+      
+    
+      
+        <li><a href="https://github.com/DanMcInerney/LANs.py">LANs.py</a>: Inject code, jam wifi, and spy on wifi users.</li>
+      
+    
+      
+        <li><a href="http://code.google.com/p/libdnet/">libdnet</a>: Low-level networking routines, including interface lookup and Ethernet frame transmission.</li>
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://github.com/lunixbochs/lorcon">lorcon</a>: A common injection and control library for wireless packet crafting.</li>
+      
+    
+      
+    
+      
+        <li><a href="https://bitbucket.org/IntrepidusGroup/mallory">Mallory</a>: Extensible TCP/UDP man-in-the-middle proxy, supports modifying non-standard protocols on the fly.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://github.com/byt3bl33d3r/MITMf">MITMf</a>: Framework for Man-In-The-Middle attacks.</li>
+      
+    
+      
+        <li><a href="http://mitmproxy.org/">mitmproxy</a>: SSL-capable, intercepting HTTP proxy. Console interface allows traffic flows to be inspected and edited on the fly.</li>
+      
+    
+      
+    
+      
+        <li><a href="https://github.com/DanMcInerney/net-creds">net-creds</a>: Sniffs sensitive data from interface or pcap.</li>
+      
+    
+      
+        <li><a href="https://github.com/netsniff-ng/netsniff-ng">netsniff-ng</a>: A Swiss army knife for for network sniffing.</li>
+      
+    
+      
+    
+      
+        <li><a href="http://network-tools.com/">Network Tools</a>: Different network tools: ping, lookup, whois, etc.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://nmap.org/">nmap</a>: Free Security Scanner For Network Exploration & Security Audits.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://pathod.net/">pathod</a>: Pathological daemon/client for tormenting HTTP clients and servers.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://www.isecpartners.com/tools/application-security/proxmon.aspx">ProxMon</a>: Processes proxy logs and reports discovered issues.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://jon.oberheide.org/pynids/">pynids</a>: Libnids wrapper offering sniffing, IP defragmentation, TCP stream reassembly and port scan detection.</li>
+      
+    
+      
+    
+      
+        <li><a href="http://code.google.com/p/pypcap/">pypcap</a>: Python bindings for libpcap.</li>
+      
+    
+      
+        <li><a href="http://pytbull.sourceforge.net/">Pytbull</a>: Flexible IDS/IPS testing framework (shipped with more than 300 tests).</li>
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://code.google.com/p/reaver-wps/">Reaver</a>: Brute force attack against Wifi Protected Setup.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://secdev.org/projects/scapy">Scapy</a>: Send, sniff and dissect and forge network packets. Usable interactively or as a library.</li>
+      
+    
+      
+    
+      
+        <li><a href="http://www.securiteam.com/tools/5QP0I2AC0I.html">Seringe</a>: Is a tool that intercepts ARP requests and replies with his own hardware address.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://sparta.secforce.com/">SPARTA</a>: Network Infrastructure Penetration Testing Tool.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://github.com/TheRook/subbrute">SubBrute</a>: Fast subdomain enumeration tool.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://www.tcpdump.org/">tcpdump</a>: A common packet analyzer that runs under the command line.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://www.getwindmill.com/">Windmill</a>: Web testing tool designed to let you painlessly automate and debug your web application.</li>
+      
+    
+      
+    
+      
+        <li><a href="http://www.wireshark.org/">Wireshark</a>: A network protocol analyzer for Unix and Windows.</li>
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://www.isecpartners.com/tools/application-security/wsmap.aspx">WSMap</a>: Find web service endpoints and discovery files.</li>
+      
+    
+      
+    
+      
+        <li><a href="https://zmap.io/">zmap</a>: Is an open-source network scanner that enables researchers to easily perform Internet-wide network studies.</li>
+      
+    
+    </ul>
+    <br/>
+  </li>
+
+  <li>
+    SSL ANALYSIS
+    <ul>
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://www.thoughtcrime.org/software/sslstrip/">sslstrip</a>: A demonstration of the HTTPS stripping attacks.</li>
+      
+    
+      
+        <li><a href="https://github.com/nabla-c0d3/sslyze">SSLyze</a>: SSL configuration scanner.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    </ul>
+    <br/>
+  </li>
+
+  <li>
+    CRACKERS
+    <ul>
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://github.com/juuso/BozoCrack">BozoCrack</a>: A silly & effective MD5 cracker in Ruby.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://github.com/vanhauser-thc/thc-hydra">hydra</a>: Is a brute force password cracking tool.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://www.openwall.com/john/">John the Ripper</a>: Fast password cracker.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    </ul>
+    <br/>
+  </li>
+
+  <li>
+    DOS & DDOS
+    <ul>
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://metacortexsecurity.com/tools/anon/LOIC/LOICv1.html">JS LOIC</a>: JavaScript in-browser version of LOIC.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://github.com/NewEraCracker/LOIC/">LOIC</a>: An open source network stress tool for Windows.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://github.com/Andy-Maclachlan/mass-deauth">mass-deauth</a>: A script for 802.11 mass-deauthentication.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://gist.github.com/maciejczyzewski/896470035c42eaba96b1">nkiller2</a>: A TCP exhaustion/stressing tool.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://code.google.com/p/r-u-dead-yet/">r-u-dead-yet</a>: Implements the generic HTTP DoS attack via long form field submissions.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://code.google.com/p/slowhttptest/">slowhttptest</a>: Is a highly configurable tool that simulates some Application Layer Denial of Service attacks.</li>
+      
+    
+      
+        <li><a href="http://valhalla.bofh.pl/~jacke/misc/slowloris.pl">slowloris</a>: The low bandwidth, yet greedy and poisonous HTTP client.</li>
+      
+    
+      
+        <li><a href="https://github.com/defuse/sockstress">sockstress</a>: Is (TCP DoS) implementation.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://github.com/dotfighter/torshammer">torshammer</a>: Tor's hammer. Slow post DDOS tool written in python.</li>
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://github.com/epsylon/ufonet">ufonet</a>: Is a tool designed to launch DDoS attacks against a target, using "Open Redirect" vectors on third party web applications, like botnet.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://github.com/DanMcInerney/wifijammer">wifijammer</a>: Continuously jam all wifi clients/routers.</li>
+      
+    
+      
+        <li><a href="https://github.com/roglew/wifikill">wifikill</a>: A python program to kick people off of wifi.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    </ul>
+    <br/>
+  </li>
+
+  <li>
+    ANONIMITY
+    <ul>
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://geti2p.net">I2P</a>: The Invisible Internet Project.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://www.torproject.org/">Tor</a>: The free software for enabling onion routing online anonymity.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    </ul>
+    <br/>
+  </li>
+
+  <li>
+    REVERSE ENGINEERING
+    <ul>
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://www.codef00.com/projects#debugger">Evan's Debugger</a>: OllyDbg-like debugger for Linux.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://www.hex-rays.com/products/ida/support/download_freeware.shtml">IDA Free</a>: The freeware version of IDA v5.0.</li>
+      
+    
+      
+        <li><a href="https://www.hex-rays.com/products/ida/">IDA Pro</a>: A Windows, Linux or Mac OS X hosted multi-processor disassembler and debugger.</li>
+      
+    
+      
+        <li><a href="http://debugger.immunityinc.com/">Immunity Debugger</a>: A powerful new way to write exploits and analyze malware.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://www.ollydbg.de/">OllyDbg</a>: An x86 debugger that emphasizes binary code analysis.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://rada.re/r/index.html">Radare2</a>: Opensource, crossplatform reverse engineering framework.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://msdn.microsoft.com/en-us/windows/hardware/hh852365.aspx">WDK</a>: Windows Driver Kit and WinDbg.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://x64dbg.com/">x64_dbg</a>: An open-source x64/x32 debugger for windows.</li>
+      
+    
+      
+    
+    </ul>
+    <br/>
+  </li>
+
+  <li>
+    FUZZING
+    <ul>
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://antiparser.sourceforge.net/">antiparser</a>: Fuzz testing and fault injection API.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://construct.readthedocs.org/">Construct</a>: Library for parsing and building of data structures (binary or textual). Define your data structures in a declarative manner.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://isecpartners.com/tools/application-security/forensic-fuzzing-tools.aspx">Forensic Fuzzing Tools</a>: Generate fuzzed files, fuzzed file systems, and file systems containing fuzzed files in order to test the robustness of forensics tools and examination systems.</li>
+      
+    
+      
+    
+      
+        <li><a href="http://fusil.readthedocs.org/">Fusil</a>: Python library used to write fuzzing programs.</li>
+      
+    
+      
+        <li><a href="https://isecpartners.com/tools/application-security/fuzzbox.aspx">Fuzzbox</a>: Multi-codec media fuzzer.</li>
+      
+    
+      
+        <li><a href="http://sites.google.com/site/felipeandresmanzano/fuzzer.py?attredirects=0">fuzzer.py (feliam)</a>: simple fuzzer by Felipe Andres Manzano.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://www.packetstormsecurity.org/fuzzer/mistress.rar">Mistress</a>: Probe file formats on the fly and protocols with malformed data, based on pre-defined patterns.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://peachfuzz.sourceforge.net/">Peach Fuzzing Platform</a>: Extensible fuzzing framework for generation and mutation based fuzzing (v2 was written in Python).</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://www.powerfuzzer.com/">Powerfuzzer</a>: Highly automated and fully customizable web fuzzer (HTTP protocol based application fuzzer).</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://github.com/sqlmapproject/sqlmap">sqlmap</a>: Automatic SQL injection and database takeover tool.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://github.com/OpenRCE/sulley">Sulley</a>: Fuzzer development and fuzz testing framework consisting of multiple extensible components.</li>
+      
+    
+      
+        <li><a href="http://sourceforge.net/projects/taof/">TAOF</a>: (The Art of Fuzzing) including ProxyFuzz, a man-in-the-middle non-deterministic network fuzzer.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://isecpartners.com/tools/application-security/windows-ipc-fuzzing-tools.aspx">Windows IPC Fuzzing Tools</a>: Tools used to fuzz applications that use Windows Interprocess Communication mechanisms.</li>
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://www.isecpartners.com/tools/application-security/wsbang.aspx">WSBang</a>: Perform automated security testing of SOAP based web services.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+    </ul>
+    <br/>
+  </li>
+
+  <li>
+    FORENSICS
+    <ul>
+    
+      
+        <li><a href="http://code.google.com/p/aft/">aft</a>: Android forensic toolkit.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://code.google.com/p/libforensics/">LibForensics</a>: Library for developing digital forensics applications.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://www.rekall-forensic.com">Rekall</a>: Memory analysis framework developed by Google.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://mark0.net/code-tridlib-e.html">TrIDLib</a>: Identify file types from their binary signatures. Now includes Python binding.</li>
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://www.volatilityfoundation.org/">Volatility</a>: Extract digital artifacts from volatile memory (RAM) samples.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    </ul>
+    <br/>
+  </li>
+
+  <li>
+    MALWARE & VULNERABILITY ANALYSIS
+    <ul>
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://github.com/omriher/CapTipper">CapTipper</a>: Analyse, explore and revive HTTP malicious traffic from PCAP file.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://www.decalage.info/exefilter">Exefilter</a>: Filter file formats in e-mails, web pages or files. Detects many common file formats and can remove active content.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://github.com/urule99/jsunpack-n">jsunpack-n</a>: Generic JavaScript unpacker; emulates browser functionality to detect exploits that target browser and browser plug-in vulnerabilities.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://www.tenable.com/products/nessus">Nessus</a>: Vulnerability, configuration, and compliance assessment.</li>
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://www.netsparker.com/communityedition/">Netsparker</a>: Web Application Security Scanner.</li>
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://www.rapid7.com/products/nexpose/">Nexpose</a>: Vulnerability Management & Risk Management Software.</li>
+      
+    
+      
+        <li><a href="https://cirt.net/nikto2">Nikto</a>: Web application vulnerability scanner.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://www.openvas.org/">OpenVAS</a>: Open Source vulnerability scanner and manager.</li>
+      
+    
+      
+        <li><a href="https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project">OWASP Zed Attack Proxy</a>: Penetration testing tool for web applications.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://github.com/honeynet/phoneyc">phoneyc</a>: Pure Python honeyclient implementation.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://github.com/joxeankoret/pyew">pyew</a>: Command line hexadecimal editor and disassembler, mainly to analyze malware.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://secapps.com/">Secapps</a>: Integrated web application security testing environment.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://github.com/andresriancho/w3af">w3af</a>: Web application attack and audit framework.</li>
+      
+    
+      
+        <li><a href="http://wapiti.sourceforge.net/">Wapiti</a>: Web application vulnerability scanner.</li>
+      
+    
+      
+    
+      
+        <li><a href="http://www.webreaver.com/">WebReaver</a>: Web application vulnerability scanner for Mac OS X.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://github.com/wpscanteam/wpscan">WPScan</a>: Is a black box WordPress vulnerability scanner.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    </ul>
+    <br/>
+  </li>
+
+  <li>
+    OTHERS
+    <ul>
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://www.crummy.com/software/BeautifulSoup/">Beautiful Soup</a>: HTML parser optimized for screen-scraping.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://www.phy.duke.edu/~rgb/General/dieharder.php">dieharder</a>: A Random Number Test Suite.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://corelabs.coresecurity.com/index.php?module=Wiki&action=view&type=tool&name=Exomind">Exomind</a>: Framework for building decorated graphs and developing open-source intelligence modules and ideas, centered on social network services, search engines and instant messaging.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://github.com/byt3bl33d3r/gcat">gcat</a>: A fully featured backdoor that uses Gmail as a C&C server.</li>
+      
+    
+      
+        <li><a href="https://gist.github.com/cmartinbaughman/5877945">GoogleHackMasterList</a>: The definitive super list for "Google Hacking"...</li>
+      
+    
+      
+        <li><a href="https://bitbucket.org/haypo/hachoir/wiki/Home">Hachoir</a>: View and edit a binary stream field by field.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://lxml.de/">lxml</a>: Most feature-rich and easy-to-use library for working with XML and HTML in the Python language.</li>
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://matplotlib.sourceforge.net/">matplotlib</a>: Make 2D plots of arrays.</li>
+      
+    
+      
+        <li><a href="http://code.enthought.com/projects/mayavi/">Mayavi</a>: 3D scientific data visualization and plotting.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://networkx.lanl.gov/">NetworkX</a>: Graph library (edges, nodes).</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://pandas.pydata.org/">Pandas</a>: Library providing high-performance, easy-to-use data structures and data analysis tools.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://github.com/pexpect/pexpect">Pexpect</a>: Control and automate other programs, similar to Don Libes "Expect" system.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://code.google.com/p/pymangle/">py-mangle</a>: Command line tool and a python library used to create word lists for use with other penetration testing tools.</li>
+      
+    
+      
+    
+      
+        <li><a href="http://code.google.com/p/pymangle/">PyMangle</a>: Command line tool and a python library used to create word lists for use with other penetration testing tools.</li>
+      
+    
+      
+    
+      
+        <li><a href="http://pyparsing.wikispaces.com/">pyparsing</a>: General parsing module.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://www.securityfocus.com/tools/3851">RevHosts</a>: Enumerate virtual hosts for a given IP address.</li>
+      
+    
+      
+        <li><a href="http://www.secdev.org/projects/rtgraph3d/">RTGraph3D</a>: Create dynamic graphs in 3D.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://github.com/simplejson/simplejson/">simplejson</a>: JSON encoder/decoder, e.g. to use Google's AJAX API.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://fedorahosted.org/suds/">Suds</a>: Lightweight SOAP client for consuming Web Services.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://www.iro.umontreal.ca/~simardr/testu01/tu01.html">TestU01</a>: Is a software library, implemented in the ANSI C language, and offering a collection of utilities for the empirical statistical testing of uniform random number generators.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="http://twistedmatrix.com/">Twisted</a>: Event-driven networking engine.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li><a href="https://bitbucket.org/mchaput/whoosh/">Whoosh</a>: Fast, featureful full-text indexing and searching library implemented in pure Python.</li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    </ul>
+    <br/>
+  </li>
+
+</ol>
+
+<h4 id="algorithms">Algorithms</h4>
+
+<p>The list below is a little outdated and confused. However, if you know some interesting algorithm, or you are the creator of it. You can add here a few information.</p>
+
+<blockquote>See comparison of <a href="https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions">cryptographic hash functions</a> or <a href="http://programmers.stackexchange.com/questions/49550/which-hashing-algorithm-is-best-for-uniqueness-and-speed">list of the best for uniqueness and speed hashing algorithms</a>.</blockquote>
+
+<ol class="IB">
+
+  <li>
+  CHECKSUMS
+  <ul>
+    
+    <li><a href="#adler-32">Adler-32</a>: [!] 1995</li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li><a href="#damm-algorithm">Damm Algorithm</a>: [+] 2004</li>
+    
+    
+    
+    
+    
+    <li><a href="#fletcher">Fletcher</a>: [~] 1970</li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li><a href="#jenkins-hash-function">Jenkins Hash Function</a>: [+] 1997</li>
+    
+    
+    
+    
+    
+    <li><a href="#luhn-algorithm">Luhn Algorithm</a>: [+] 1954</li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li><a href="#verhoeff-algorithm">Verhoeff Algorithm</a>: [+] 1969</li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </ul>
+  <br/>
+  </li>
+
+  <li>
+  CYCLIC REDUNDANCY CHECKS
+  <ul>
+    
+    <li><a href="#adler-32">Adler-32</a>: [!] 1995</li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li><a href="#bsd">BSD</a>: [+] </li>
+    
+    
+    
+    
+    
+    <li><a href="#crc">CRC</a>: [+] 1961</li>
+    
+    
+    
+    
+    
+    
+    
+    <li><a href="#fletcher">Fletcher</a>: [~] 1970</li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li><a href="#sysv">SYSV</a>: [~] </li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </ul>
+  <br/>
+  </li>
+
+  <li>
+  HASH FUNCTIONS (MDCS)
+  <ul>
+    
+    
+    
+    
+    
+    
+    
+    <li><a href="#blake">BLAKE</a>: [+] 2008</li>
+    
+    
+    
+    
+    
+    <li><a href="#cityhash">CityHash</a>: [~] 2010</li>
+    
+    
+    
+    
+    
+    
+    
+    <li><a href="#ecoh">ECOH</a>: [-] 2008</li>
+    
+    
+    
+    <li><a href="#fletcher">Fletcher</a>: [~] 1970</li>
+    
+    
+    
+    <li><a href="#fowlernollvo-hash-function">Fowler–Noll–Vo Hash Function</a>: [+] 1991</li>
+    
+    
+    
+    <li><a href="#fsb">FSB</a>: [+] 2003</li>
+    
+    
+    
+    <li><a href="#gost">GOST</a>: [!] 1994</li>
+    
+    
+    
+    <li><a href="#grstl">Grøstl</a>: [+] 2008</li>
+    
+    
+    
+    <li><a href="#has-160">HAS-160</a>: [+] 2002</li>
+    
+    
+    
+    <li><a href="#haval">HAVAL</a>: [!] 1992</li>
+    
+    
+    
+    
+    
+    <li><a href="#jenkins-hash-function">Jenkins Hash Function</a>: [+] 1997</li>
+    
+    
+    
+    <li><a href="#jh">JH</a>: [+] October 2008</li>
+    
+    
+    
+    
+    
+    <li><a href="#md2">MD2</a>: [!] August 1989</li>
+    
+    
+    
+    <li><a href="#md4">MD4</a>: [!] October 1990</li>
+    
+    
+    
+    <li><a href="#md5">MD5</a>: [!] April 1992</li>
+    
+    
+    
+    <li><a href="#md6">MD6</a>: [+] 2008</li>
+    
+    
+    
+    
+    
+    <li><a href="#murmurhash">MurmurHash</a>: [+] 2008</li>
+    
+    
+    
+    <li><a href="#pearson-hashing">Pearson Hashing</a>: [+] 1990</li>
+    
+    
+    
+    <li><a href="#radiogatun">RadioGatún</a>: [-] 2006</li>
+    
+    
+    
+    
+    
+    <li><a href="#ripemd">RIPEMD</a>: [+] 1996</li>
+    
+    
+    
+    
+    
+    <li><a href="#sha-1">SHA-1</a>: [!] 1995</li>
+    
+    
+    
+    <li><a href="#sha-2">SHA-2</a>: [!] 2001</li>
+    
+    
+    
+    <li><a href="#sha-3">SHA-3</a>: [+] 2012</li>
+    
+    
+    
+    
+    
+    <li><a href="#skein">Skein</a>: [!] 2010</li>
+    
+    
+    
+    <li><a href="#snefru">Snefru</a>: [+] 1990</li>
+    
+    
+    
+    <li><a href="#spectral-hash">Spectral Hash</a>: [+] 2009</li>
+    
+    
+    
+    <li><a href="#swifft">SWIFFT</a>: [!] 2008</li>
+    
+    
+    
+    <li><a href="#sysv">SYSV</a>: [~] </li>
+    
+    
+    
+    <li><a href="#tiger">Tiger</a>: [!] 1996</li>
+    
+    
+    
+    <li><a href="#verhoeff-algorithm">Verhoeff Algorithm</a>: [+] 1969</li>
+    
+    
+    
+    <li><a href="#whirlpool">Whirlpool</a>: [+] 2000</li>
+    
+    
+    
+    
+    
+    
+    
+    <li><a href="#xxhash">xxHash</a>: [+] 2012</li>
+    
+    
+    
+    </ul>
+  <br/>
+  </li>
+
+  <li>
+  HASH FUNCTIONS (MACS)
+  <ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li><a href="#md6">MD6</a>: [+] 2008</li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li><a href="#sha-1">SHA-1</a>: [!] 1995</li>
+    
+    
+    
+    <li><a href="#sha-2">SHA-2</a>: [!] 2001</li>
+    
+    
+    
+    <li><a href="#sha-3">SHA-3</a>: [+] 2012</li>
+    
+    
+    
+    <li><a href="#siphash">SipHash</a>: [+] 2012</li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </ul>
+  <br/>
+  </li>
+
+  <li>
+  BLOCK CIPHERS
+  <ul>
+    
+    
+    
+    <li><a href="#aes">AES</a>: [~] 1998</li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </ul>
+  <br/>
+  </li>
+
+  <li>
+  STREAM CIPHERS
+  <ul>
+    
+    
+    
+    
+    
+    <li><a href="#b-b-s">B.B.S.</a>: [+] 1986</li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li><a href="#isaac">ISAAC</a>: [~] 1996</li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li><a href="#rc4">RC4</a>: [-] 1987</li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </ul>
+  <br/>
+  </li>
+
+  <li>
+  PUBLIC-KEY CIPHERS
+  <ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li><a href="#rsa">RSA</a>: [+] 1977</li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </ul>
+  <br/>
+  </li>
+
+  <li>
+  PSEUDORANDOM GENERATORS
+  <ul>
+    
+    
+    
+    
+    
+    <li><a href="#b-b-s">B.B.S.</a>: [+] 1986</li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li><a href="#isaac">ISAAC</a>: [~] 1996</li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li><a href="#mersenne-twister">Mersenne Twister</a>: [+] 1997</li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li><a href="#siphash">SipHash</a>: [+] 2012</li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li><a href="#wichmann-hill">Wichmann-Hill</a>: [?] 1982</li>
+    
+    
+    
+    <li><a href="#xorshift">Xorshift</a>: [+] July 2003</li>
+    
+    
+    
+    
+    
+    </ul>
+  <br/>
+  </li>
+
+  <li>
+  PSEUDORANDOM FUNCTION FAMILY
+  <ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li><a href="#siphash">SipHash</a>: [+] 2012</li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </ul>
+  <br/>
+  </li>
+
+</ol>
+
+NOTES
+
+<p>Below is a list of notes to algorithms including: description, implementations, cryptoanalysis and materials. It should be a summary of the most important information, with an emphasis on attacks and interesting bookmarks. (in catalogs should be placed useful scripts)</p>
+
+<ol class="IB">
+
+  <li>
+    <fieldset id="adler-32" style="display: inline-block">
+      <legend><b>Adler-32</b></legend>
+        <p>Compared to a cyclic redundancy check of the same length, it trades reliability for speed. Adler-32 is more reliable than Fletcher-16, and slightly less reliable than Fletcher-32.</p>
+        <p><u><mark> Jonathan Stone discovered in 2001 that Adler-32 has a weakness for very short messages. He wrote "Briefly, the problem is that, for very short packets, Adler-32 is guaranteed to give poor coverage of the available bits. Don't take my word for it, ask Mark Adler :-)"</mark></u></p>
+        
+          Authors: Mark Adler<br/>
+          <br/>
+        
+
+        
+          Published: 1995<br/>
+        
+          Structure: Rolling Sums<br/>
+        
+          Sizes: 32 Bits<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="http://tools.ietf.org/html/rfc1950">ZLIB Compressed Data Format Specification version 3.3</a></li>
+          
+            <li><a href="http://www.zlib.net/maxino06_fletcher-adler.pdf">Revisiting Fletcher and Adler Checksums</a></li>
+          
+          </ul>
+        
+
+        <br/>[Cyclic Redundancy Checks, Checksums]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="aes" style="display: inline-block">
+      <legend><b>AES</b></legend>
+        <p>AES is based on the Rijndael cipher developed by two Belgian cryptographers, Joan Daemen and Vincent Rijmen, who submitted a proposal to NIST during the AES selection process. Rijndael is a family of ciphers with different key and block sizes.</p>
+        <p><u><mark>Until May 2009, the only successful published attacks against the full AES were side-channel attacks on some specific implementations.</mark></u></p>
+        
+          Authors: Joan Daemen, Vincent Rijmen<br/>
+          <br/>
+        
+
+        
+          Structure: Substitution-Permutation Network<br/>
+        
+          Published: 1998<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="http://embeddedsw.net/Cipher_Reference_Home.html">256bit Ciphers - AES Reference implementation and derived code</a></li>
+          
+            <li><a href="http://www.formaestudio.com/rijndaelinspector/archivos/Rijndael_Animation_v4_eng.swf">Animation of Rijndael</a></li>
+          
+            <li><a href="http://www.theinquirer.net/inquirer/news/2102435/aes-encryption-cracked">AES encryption is cracked</a></li>
+          
+          </ul>
+        
+
+        <br/>[Symmetric-Key Primitives, Block Ciphers]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="b-b-s" style="display: inline-block">
+      <legend><b>B.B.S.</b></legend>
+        <p>Blum Blum Shub is a pseudorandom number generator proposed in 1986 by Lenore Blum, Manuel Blum and Michael Shub that is derived from Michael O. Rabin's oblivious transfer mapping.</p>
+        <p><u><mark>There is a proof reducing its security to the computational difficulty of solving the Quadratic residuosity problem. A serious problem is very slow computing.</mark></u></p>
+        
+          Authors: Lenore Blum, Manuel Blum, Michael Shub<br/>
+          <br/>
+        
+
+        
+          Published: 1986<br/>
+        
+          Structure: Transfer Mapping<br/>
+        
+          Sizes: Arbitrary<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="http://cstheory.stackexchange.com/questions/10779/how-to-find-the-exact-period-of-blum-blum-shub-random-number-generator">How to find the exact period of Blum-Blum-Shub random number generator?</a></li>
+          
+            <li><a href="http://www.ciphersbyritter.com/NEWS2/TESTSBBS.HTM">Randomness Tests</a></li>
+          
+            <li><a href="http://www.win.tue.nl/~berry/papers/ima05bbs.pdf">Concrete Security of the Blum-Blum-Shub Pseudorandom Generator</a></li>
+          
+          </ul>
+        
+
+        <br/>[Symmetric-Key Primitives, Stream Ciphers, Pseudorandom Generators]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="blake" style="display: inline-block">
+      <legend><b>BLAKE</b></legend>
+        <p> It is based on Dan Bernstein's ChaCha stream cipher, but a permuted copy of the input block, XORed with some round constants, is added before each ChaCha round.</p>
+        <p><u><mark></mark></u></p>
+        
+          Authors: Jean-Philippe Aumasson, Luca Henzen, Willi Meier, Raphael C.-W. Phan<br/>
+          <br/>
+        
+
+        
+          Series: Blake, Blake2<br/>
+        
+          Published: 2008<br/>
+        
+          Rounds: 14 Or 16<br/>
+        
+          Structure: Haifa Structure<br/>
+        
+          Sizes: 224, 256, 384 Or 512 Bits<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="https://131002.net/blake/">BLAKE website</a></li>
+          
+            <li><a href="https://blake2.net/">BLAKE2 website</a></li>
+          
+          </ul>
+        
+
+        <br/>[Unkeyed Primitives, Hash Functions (MDCs)]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="bsd" style="display: inline-block">
+      <legend><b>BSD</b></legend>
+        <p> The BSD checksum algorithm is a commonly used, legacy checksum algorithm. It has been implemented in BSD and is also available through the GNU sum command line utility.</p>
+        <p><u><mark></mark></u></p>
+        
+
+        
+          Structure: Crc<br/>
+        
+          Sizes: 16 Bits<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="http://svnweb.freebsd.org/base/stable/9/usr.bin/cksum/sum1.c?revision=225736&view=markup">BSD source code</a></li>
+          
+          </ul>
+        
+
+        <br/>[Cyclic Redundancy Checks]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="cityhash" style="display: inline-block">
+      <legend><b>CityHash</b></legend>
+        <p> CityHash provides hash functions for strings.</p>
+        <p><u><mark> It has been superseded by FarmHash. Further updates to CityHash are fairly unlikely.</mark></u></p>
+        
+          Authors: Geoff Pike and Jyrki Alakuijala<br/>
+          <br/>
+        
+
+        
+          Published: 2010<br/>
+        
+          Structure: Product/Rotation<br/>
+        
+          Sizes: 64, 128, Or 256 Bits<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="https://code.google.com/p/cityhash/">The CityHash family of hash functions</a></li>
+          
+            <li><a href="http://google-opensource.blogspot.com/2011/04/introducing-cityhash.html">Introducing CityHash</a></li>
+          
+          </ul>
+        
+
+        <br/>[Unkeyed Primitives, Hash Functions (MDCs)]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="crc" style="display: inline-block">
+      <legend><b>CRC</b></legend>
+        <p> A cyclic redundancy check (CRC) is an error-detecting code commonly used in digital networks and storage devices to detect accidental changes to raw data.</p>
+        <p><u><mark></mark></u></p>
+        
+          Authors: W. Wesley Peterson<br/>
+          <br/>
+        
+
+        
+          Series: Crc-(Number)<br/>
+        
+          Published: 1961<br/>
+        
+          Structure: Cyclic Codes<br/>
+        
+          Sizes: 8, 16, 32, 64 Bits<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="http://sar.informatik.hu-berlin.de/research/publications/SAR-PR-2006-05/SAR-PR-2006-05_.pdf">Reversing CRC – Theory and Practice</a></li>
+          
+            <li><a href="http://www.ciphersbyritter.com/ARTS/CRCMYST.HTM">The Great CRC Mystery</a></li>
+          
+            <li><a href="http://einstein.informatik.uni-oldenburg.de/papers/CRC-BitfilterEng.pdf">CRC Cyclic Redundancy Check Analysing and Correcting Errors</a></li>
+          
+            <li><a href="http://www.cosc.canterbury.ac.nz/greg.ewing/essays/CRC-Reverse-Engineering.html">Reverse-Engineering a CRC Algorithm</a></li>
+          
+          </ul>
+        
+
+        <br/>[Cyclic Redundancy Checks]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="damm-algorithm" style="display: inline-block">
+      <legend><b>Damm Algorithm</b></legend>
+        <p> In error detection, the Damm algorithm is a check digit algorithm that detects all single-digit errors and all adjacent transposition errors.</p>
+        <p><u><mark></mark></u></p>
+        
+          Authors: H. Michael Damm<br/>
+          <br/>
+        
+
+        
+          Published: 2004<br/>
+        
+          Structure: Quasigroup Operation<br/>
+        
+          Sizes: 1 Decimal Digit<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="http://archiv.ub.uni-marburg.de/diss/z2004/0516/pdf/dhmd.pdf">Total anti-symmetrische Quasigruppen</a></li>
+          
+            <li><a href="http://www.md-software.de/math/DAMM_Quasigruppen.txt">DAMM tables</a></li>
+          
+          </ul>
+        
+
+        <br/>[Checksums]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="ecoh" style="display: inline-block">
+      <legend><b>ECOH</b></legend>
+        <p> The elliptic curve only hash (ECOH) algorithm was submitted as a candidate for SHA-3 in the NIST hash function competition.</p>
+        <p><u><mark>However, it was rejected in the beginning of the competition since a second pre-image attack was found.</mark></u></p>
+        
+          Authors: Daniel R. L. Brown, Matt Campagna, Rene Struik<br/>
+          <br/>
+        
+
+        
+          Published: 2008<br/>
+        
+          Structure: Hash<br/>
+        
+          Sizes: 224, 256, 384 Or 512 Bits<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="http://ehash.iaik.tugraz.at/uploads/a/a5/Ecoh.pdf">ECOH: the Elliptic Curve Only Hash</a></li>
+          
+          </ul>
+        
+
+        <br/>[Unkeyed Primitives, Hash Functions (MDCs)]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="fletcher" style="display: inline-block">
+      <legend><b>Fletcher</b></legend>
+        <p> The Fletcher checksum is an algorithm for computing a position-dependent checksum. The objective of the Fletcher checksum was to provide error-detection properties approaching those of a cyclic redundancy check but with the lower computational effort associated with summation techniques.</p>
+        <p><u><mark> The Fletcher checksum cannot distinguish between blocks of all 0 bits and blocks of all 1 bits. For example, if a 16-bit block in the data word changes from 0x0000 to 0xFFFF, the Fletcher-32 checksum remains the same. This also means a sequence of all 00 bytes has the same checksum as a sequence (of the same size) of all FF bytes.</mark></u></p>
+        
+          Authors: John Gould Fletcher<br/>
+          <br/>
+        
+
+        
+          Published: 1970<br/>
+        
+          Structure: Sum<br/>
+        
+          Sizes: 4, 8, 16, 32 Bits<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="http://tools.ietf.org/html/rfc905">ISO Transport Protocol Specification</a></li>
+          
+            <li><a href="http://tools.ietf.org/html/rfc1146">TCP Alternate Checksum Options</a></li>
+          
+            <li><a href="http://users.ece.cmu.edu/~koopman/pubs/maxino09_checksums.pdf">The Effectiveness of Checksums for Embedded Control Networks</a></li>
+          
+          </ul>
+        
+
+        <br/>[Unkeyed Primitives, Hash Functions (MDCs), Checksums, Cyclic Redundancy Checks]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="fowlernollvo-hash-function" style="display: inline-block">
+      <legend><b>Fowler–Noll–Vo Hash Function</b></legend>
+        <p> The basis of the FNV hash algorithm was taken from an idea sent as reviewer comments to the IEEE POSIX P1003.2 committee by Glenn Fowler and Phong Vo in 1991. In a subsequent ballot round, Landon Curt Noll improved on their algorithm.</p>
+        <p><u><mark></mark></u></p>
+        
+          Authors: Glenn Fowler, Landon Curt Noll, Phong Vo<br/>
+          <br/>
+        
+
+        
+          Published: 1991<br/>
+        
+          Structure: Xor/Product Or Product/Xor<br/>
+        
+          Sizes: 32, 64, 128, 256, 512, Or 1024 Bits<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="http://www.isthe.com/chongo/tech/comp/fnv/index.html">FNV Hash</a></li>
+          
+          </ul>
+        
+
+        <br/>[Unkeyed Primitives, Hash Functions (MDCs)]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="fsb" style="display: inline-block">
+      <legend><b>FSB</b></legend>
+        <p> In cryptography, the Fast Syndrome-based hash Functions (FSB) are a family of cryptographic hash functions introduced in 2003 by Daniel Augot, Matthieu Finiasz, and Nicolas Sendrier.</p>
+        <p><u><mark></mark></u></p>
+        
+          Authors: Daniel Augot, Matthieu Finiasz, Nicolas Sendrier<br/>
+          <br/>
+        
+
+        
+          Published: 2003<br/>
+        
+          Structure: Hash<br/>
+        
+          Sizes: 160 To 512 Bits<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="http://eprint.iacr.org/2003/230.pdf">A Fast Provably Secure Cryptographic Hash Function</a></li>
+          
+            <li><a href="http://www.sersc.org/journals/IJAST/vol35/6.pdf">S-FSB: An Improved Variant of the FSB Hash Family</a></li>
+          
+            <li><a href="https://www.rocq.inria.fr/secret/CBCrypto/index.php?pg=fsb">FSB website</a></li>
+          
+          </ul>
+        
+
+        <br/>[Unkeyed Primitives, Hash Functions (MDCs)]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="gost" style="display: inline-block">
+      <legend><b>GOST</b></legend>
+        <p> The GOST hash function, defined in the standards GOST R 34.11-94 and GOST 34.311-95, is a 256-bit cryptographic hash function. It was initially defined in the Russian national standard GOST R 34.11-94 Information Technology - Cryptographic Information Security - Hash Function. The equivalent standard used by other member-states of the CIS is GOST 34.311-95.</p>
+        <p><u><mark> In 2008, an attack was published that breaks the full-round GOST hash function. The paper presents a collision attack in 2^105 time, and first and second preimage attacks in 2^192 time (2^n time refers to the approximate number of times the algorithm was calculated in the attack).</mark></u></p>
+        
+          Authors: FAPSI<br/>
+          <br/>
+        
+
+        
+          Published: 1994<br/>
+        
+          Rounds: 32<br/>
+        
+          Structure: Hash<br/>
+        
+          Sizes: 256 Bits<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="http://tools.ietf.org/html/rfc5831">GOST R 34.11-94: Hash Function Algorithm</a></li>
+          
+            <li><a href="http://ehash.iaik.tugraz.at/wiki/GOST">The GOST Hash Function Ecrypt page</a></li>
+          
+          </ul>
+        
+
+        <br/>[Unkeyed Primitives, Hash Functions (MDCs)]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="grstl" style="display: inline-block">
+      <legend><b>Grøstl</b></legend>
+        <p> Grøstl is a cryptographic hash function submitted to the NIST hash function competition by Praveen Gauravaram, Lars Knudsen, Krystian Matusiewicz, Florian Mendel, Christian Rechberger, Martin Schläffer, and Søren S. Thomsen. Grøstl was chosen as one of the five finalists of the competition. It uses the same S-box as AES in a custom construction. The authors claim speeds of up to 21.4 cycles per byte on an Intel Core 2 Duo.</p>
+        <p><u><mark></mark></u></p>
+        
+          Authors: Praveen Gauravaram, Lars Knudsen, Krystian Matusiewicz, Florian Mendel, Christian Rechberger, Martin Schläffer, and Søren S. Thomsen<br/>
+          <br/>
+        
+
+        
+          Published: 2008<br/>
+        
+          Rounds: 10 And 14<br/>
+        
+          Structure: Hash<br/>
+        
+          Sizes: 256 And 512 Bits<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="http://www.groestl.info/">Grøstl  website</a></li>
+          
+          </ul>
+        
+
+        <br/>[Unkeyed Primitives, Hash Functions (MDCs)]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="has-160" style="display: inline-block">
+      <legend><b>HAS-160</b></legend>
+        <p> HAS-160 is a cryptographic hash function designed for use with the Korean KCDSA digital signature algorithm. It is derived from SHA-1, with assorted changes intended to increase its security. It produces a 160-bit output.</p>
+        <p><u><mark></mark></u></p>
+        
+          Authors: Korean<br/>
+          <br/>
+        
+
+        
+          Published: 2002<br/>
+        
+          Rounds: 80<br/>
+        
+          Structure: Hash<br/>
+        
+          Sizes: 160 Bits<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="http://www.randombit.net/has160.html">A description of HAS-160, and some test vectors.</a></li>
+          
+          </ul>
+        
+
+        <br/>[Unkeyed Primitives, Hash Functions (MDCs)]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="haval" style="display: inline-block">
+      <legend><b>HAVAL</b></legend>
+        <p> HAVAL is a cryptographic hash function. Unlike MD5, but like most modern cryptographic hash functions, HAVAL can produce hashes of different lengths. HAVAL can produce hashes in lengths of 128 bits, 160 bits, 192 bits, 224 bits, and 256 bits. HAVAL also allows users to specify the number of rounds (3, 4, or 5) to be used to generate the hash.</p>
+        <p><u><mark> Research has uncovered weaknesses which make further use of HAVAL (at least the variant with 128 bits and 3 passes with 2^6 operations) questionable. On 17 August 2004, collisions for HAVAL (128 bits, 3 passes) were announced by Xiaoyun Wang, Dengguo Feng, Xuejia Lai, and Hongbo Yu.</mark></u></p>
+        
+          Authors: Yuliang Zheng, Josef Pieprzyk, and Jennifer Seberry<br/>
+          <br/>
+        
+
+        
+          Published: 1992<br/>
+        
+          Rounds: 4<br/>
+        
+          Structure: Hash<br/>
+        
+          Sizes: 128 To 256 Bits<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="http://labs.calyptix.com/files/haval-paper.pdf">HAVAL — A One-Way Hashing Algorithm with Variable Length of Output</a></li>
+          
+            <li><a href="http://eprint.iacr.org/2004/199.pdf">Collisions for Hash Functions MD4, MD5, HAVAL-128 and RIPEMD</a></li>
+          
+            <li><a href="http://labs.calyptix.com/haval.php">HAVAL website</a></li>
+          
+          </ul>
+        
+
+        <br/>[Unkeyed Primitives, Hash Functions (MDCs)]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="isaac" style="display: inline-block">
+      <legend><b>ISAAC</b></legend>
+        <p>ISAAC is a cryptographically secure pseudorandom number generator and a stream cipher. The algorithm has similarities with RC4.</p>
+        <p><u><mark>Marina Pudovkina attack (2001) can recover the initial state with a complexity that is approximated to be less than the time needed for searching through the square root of all possible initial states.</mark></u></p>
+        
+          Authors: Robert J. Jenkins Jr.<br/>
+          <br/>
+        
+
+        
+          Published: 1996<br/>
+        
+          Structure: Indirection, Shift, Accumulate, Add, And Count<br/>
+        
+          Sizes: Arbitrary<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="http://www.burtleburtle.net/bob/rand/isaacafa.html">ISAAC: a fast cryptographic random number generator</a></li>
+          
+          </ul>
+        
+
+        <br/>[Symmetric-Key Primitives, Stream Ciphers, Pseudorandom Generators]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="jenkins-hash-function" style="display: inline-block">
+      <legend><b>Jenkins Hash Function</b></legend>
+        <p> The Jenkins hash functions are a collection of (non-cryptographic) hash functions for multi-byte. They can be used also as checksums to detect accidental data corruption or detect identical records in a database.</p>
+        <p><u><mark></mark></u></p>
+        
+          Authors: Bob Jenkins<br/>
+          <br/>
+        
+
+        
+          Published: 1997<br/>
+        
+          Structure: Xor/Addition<br/>
+        
+          Sizes: 32 Or 64 Bits<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="http://www.burtleburtle.net/bob/hash/doobs.html">Dr. Dobbs article</a></li>
+          
+          </ul>
+        
+
+        <br/>[Unkeyed Primitives, Hash Functions (MDCs), Checksums]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="jh" style="display: inline-block">
+      <legend><b>JH</b></legend>
+        <p> JH is a cryptographic hash function submitted to the NIST hash function competition by Hongjun Wu. JH has a 1024-bit state, and works on 512-bit input blocks.</p>
+        <p><u><mark></mark></u></p>
+        
+          Authors: Hongjun Wu<br/>
+          <br/>
+        
+
+        
+          Published: October 2008<br/>
+        
+          Structure: Hash<br/>
+        
+          Sizes: 224, 256, 384, 512 Bits<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="http://www3.ntu.edu.sg/home/wuhj/research/jh/jh_round3.pdf">The Hash Function JH</a></li>
+          
+            <li><a href="http://www3.ntu.edu.sg/home/wuhj/research/jh/index.html">JH website</a></li>
+          
+          </ul>
+        
+
+        <br/>[Unkeyed Primitives, Hash Functions (MDCs)]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="luhn-algorithm" style="display: inline-block">
+      <legend><b>Luhn Algorithm</b></legend>
+        <p> The Luhn algorithm or Luhn formula, also known as the "modulus 10" or "mod 10" algorithm, is a simple checksum formula used to validate a variety of identification numbers, such as credit card numbers, IMEI numbers, National Provider Identifier numbers in US and Canadian Social Insurance Numbers.</p>
+        <p><u><mark></mark></u></p>
+        
+          Authors: Hans Peter Luhn<br/>
+          <br/>
+        
+
+        
+          Published: 1954<br/>
+        
+          Structure: Sum<br/>
+        
+          Sizes: 4 Bits<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="https://wiki.openmrs.org/display/docs/Check+Digit+Algorithm">Check Digit Algorithm</a></li>
+          
+          </ul>
+        
+
+        <br/>[Checksums]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="md2" style="display: inline-block">
+      <legend><b>MD2</b></legend>
+        <p> The MD2 Message-Digest Algorithm is a cryptographic hash function. The algorithm is optimized for 8-bit computers. Although MD2 is no longer considered secure, even as of 2014, it remains in use in public key infrastructures as part of certificates generated with MD2 and RSA.</p>
+        <p><u><mark> Rogier and Chauvaud (1997) described collisions of MD2's compression function, although they were unable to extend the attack to the full MD2. In 2009, security updates were issued disabling MD2 in OpenSSL, GnuTLS, and Network Security Services.</mark></u></p>
+        
+          Authors: Ronald Rivest<br/>
+          <br/>
+        
+
+        
+          Series: Md2, Md4, Md5, Md6<br/>
+        
+          Published: August 1989<br/>
+        
+          Rounds: 18<br/>
+        
+          Structure: Hash<br/>
+        
+          Sizes: 128 Bits<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="http://tools.ietf.org/html/rfc1319">The MD2 Message-Digest Algorithm</a></li>
+          
+            <li><a href="https://crypto.stackexchange.com/questions/11935/how-is-the-md2-hash-function-s-table-constructed-from-pi">How is the MD2 hash function S-table constructed from Pi?</a></li>
+          
+          </ul>
+        
+
+        <br/>[Unkeyed Primitives, Hash Functions (MDCs)]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="md4" style="display: inline-block">
+      <legend><b>MD4</b></legend>
+        <p> The MD4 Message-Digest Algorithm is a cryptographic hash function. The digest length is 128 bits. The algorithm has influenced later designs, such as the MD5, SHA-1 and RIPEMD algorithms.</p>
+        <p><u><mark> The security of MD4 has been severely compromised. The first full collision attack against MD4 was published in 1995 and several newer attacks have been published since then. As of 2007, an attack can generate collisions in less than 2 hash operations. A theoretical preimage attack also exists.</mark></u></p>
+        
+          Authors: Ronald Rivest<br/>
+          <br/>
+        
+
+        
+          Series: Md2, Md4, Md5, Md6<br/>
+        
+          Published: October 1990<br/>
+        
+          Rounds: 3<br/>
+        
+          Structure: Merkle–Damgård Construction<br/>
+        
+          Sizes: 128 Bits<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="http://tools.ietf.org/html/rfc1320">The MD4 Message-Digest Algorithm</a></li>
+          
+            <li><a href="http://www.bishopfox.com/resources/tools/other-free-tools/md4md5-collision-code/">Fast MD4 Collision Generator</a></li>
+          
+          </ul>
+        
+
+        <br/>[Unkeyed Primitives, Hash Functions (MDCs)]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="md5" style="display: inline-block">
+      <legend><b>MD5</b></legend>
+        <p> The MD5 message-digest algorithm is a widely used cryptographic hash function producing a 128-bit (16-byte) hash value, typically expressed in text format as a 32 digit hexadecimal number. MD5 has been utilized in a wide variety of cryptographic applications, and is also commonly used to verify data integrity.</p>
+        <p><u><mark> A 2013 attack by Xie Tao, Fanbao Liu, and Dengguo Feng breaks MD5 collision resistance in 2^18 time. This attack runs in less than a second on a regular computer.</mark></u></p>
+        
+          Authors: Ronald Rivest<br/>
+          <br/>
+        
+
+        
+          Series: Md2, Md4, Md5, Md6<br/>
+        
+          Published: April 1992<br/>
+        
+          Rounds: 4<br/>
+        
+          Structure: Merkle–Damgård Construction<br/>
+        
+          Sizes: 128 Bits<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="https://www.ietf.org/rfc/rfc1321.txt">The MD5 Message-Digest Algorithm</a></li>
+          
+            <li><a href="http://2012.sharcs.org/slides/stevens.pdf">Cryptanalysis of MD5 and SHA-1 (SHARCS 2012)</a></li>
+          
+            <li><a href="http://merlot.usc.edu/csac-f06/papers/Wang05a.pdf">How to Break MD5 and Other Hash Functions</a></li>
+          
+          </ul>
+        
+
+        <br/>[Unkeyed Primitives, Hash Functions (MDCs)]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="md6" style="display: inline-block">
+      <legend><b>MD6</b></legend>
+        <p> The MD6 Message-Digest Algorithm is a cryptographic hash function. It uses a Merkle tree-like structure to allow for immense parallel computation of hashes for very long inputs. Authors claim a performance of 28 cycles per byte for MD6-256 on an Intel Core 2 Duo and provable resistance against differential cryptanalysis.</p>
+        <p><u><mark></mark></u></p>
+        
+          Authors: Ronald Rivest, Benjamin Agre, Dan Bailey, Sarah Cheng, Christopher Crutchfield, Yevgeniy Dodis, Kermin Fleming, Asif Khan, Jayant Krishnamurthy, Yuncheng Lin, Leo Reyzin, Emily Shen, Jim Sukha, Eran Tromer, Yiqun Lisa Yin<br/>
+          <br/>
+        
+
+        
+          Series: Md2, Md4, Md5, Md6<br/>
+        
+          Published: 2008<br/>
+        
+          Structure: Merkle Tree<br/>
+        
+          Sizes: 128 Bits<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="http://groups.csail.mit.edu/cis/md6/submitted-2008-10-27/Supporting_Documentation/md6_report.pdf">The MD6 hash function A proposal to NIST for SHA-3</a></li>
+          
+            <li><a href="http://groups.csail.mit.edu/cis/md6/">MD6 website</a></li>
+          
+          </ul>
+        
+
+        <br/>[Unkeyed Primitives, Hash Functions (MDCs), Symmetric-Key Primitives, Hash Functions (MACs)]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="mersenne-twister" style="display: inline-block">
+      <legend><b>Mersenne Twister</b></legend>
+        <p>The Mersenne Twister is a pseudorandom number generator (PRNG). Its name derives from the fact that its period length is chosen to be a Mersenne prime.</p>
+        <p><u><mark></mark></u></p>
+        
+          Authors: Makoto Matsumoto, Takuji Nishimura<br/>
+          <br/>
+        
+
+        
+          Published: 1997<br/>
+        
+          Period: (2^19937)-1<br/>
+        
+          Structure: Mersenne Primes<br/>
+        
+          Sizes: 64 Bits<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/emt.html">Mersenne Twister Home Page</a></li>
+          
+            <li><a href="http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/ARTICLES/earticles.html">Papers on random number generation</a></li>
+          
+          </ul>
+        
+
+        <br/>[Pseudorandom Generators]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="murmurhash" style="display: inline-block">
+      <legend><b>MurmurHash</b></legend>
+        <p> MurmurHash is a non-cryptographic hash function suitable for general hash-based lookup.</p>
+        <p><u><mark></mark></u></p>
+        
+          Authors: Austin Appleby<br/>
+          <br/>
+        
+
+        
+          Published: 2008<br/>
+        
+          Structure: Product/Rotation<br/>
+        
+          Sizes: 32, 64, Or 128 Bits<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="http://tanjent.livejournal.com/756623.html">MurmurHash first announcement</a></li>
+          
+            <li><a href="https://code.google.com/p/smhasher/wiki/MurmurHash1">MurmurHash1</a></li>
+          
+            <li><a href="https://code.google.com/p/smhasher/wiki/MurmurHash2">MurmurHash2</a></li>
+          
+            <li><a href="https://code.google.com/p/smhasher/wiki/MurmurHash3">MurmurHash3</a></li>
+          
+          </ul>
+        
+
+        <br/>[Unkeyed Primitives, Hash Functions (MDCs), Random Sequences]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="pearson-hashing" style="display: inline-block">
+      <legend><b>Pearson Hashing</b></legend>
+        <p> Pearson hashing is a hash function designed for fast execution on processors with 8-bit registers.</p>
+        <p><u><mark></mark></u></p>
+        
+          Authors: Peter K. Pearson<br/>
+          <br/>
+        
+
+        
+          Published: 1990<br/>
+        
+          Structure: Xor/Table<br/>
+        
+          Sizes: 8 Bits<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="http://epaperpress.com/vbhash/download/p677-pearson.pdf">Fast Hashing of Variable Length Text Strings</a></li>
+          
+          </ul>
+        
+
+        <br/>[Unkeyed Primitives, Hash Functions (MDCs)]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="radiogatun" style="display: inline-block">
+      <legend><b>RadioGatún</b></legend>
+        <p> RadioGatún is a cryptographic hash primitive created by Guido Bertoni, Joan Daemen, Michaël Peeters, and Gilles Van Assche. It was first publicly presented at the NIST Second Cryptographic Hash Workshop, held in Santa Barbara, California, on August 24–25, 2006, as part of the NIST hash function competition.</p>
+        <p><u><mark>The most effective attack against the algorithm with a complexity of 2^11 is given in the paper "Cryptanalysis of RadioGatun" by Thomas Fuhr and Thomas Peyrin. While more effective than the other attacks this attack still does not break the security claim.</mark></u></p>
+        
+          Authors: Guido Bertoni, Joan Daemen, Michaël Peeters, Gilles Van Assche<br/>
+          <br/>
+        
+
+        
+          Published: 2006<br/>
+        
+          Structure: Hash<br/>
+        
+          Sizes: Up To 1216 Bits<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="http://radiogatun.noekeon.org/">RadioGatún</a></li>
+          
+          </ul>
+        
+
+        <br/>[Unkeyed Primitives, Hash Functions (MDCs)]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="rc4" style="display: inline-block">
+      <legend><b>RC4</b></legend>
+        <p>In cryptography, RC4 (Rivest Cipher 4 also known as ARC4 or ARCFOUR meaning Alleged RC4, see below) is a stream cipher.</p>
+        <p><u><mark>RC4 does not take a separate nonce alongside the key. This means that if a single long-term key is to be used to securely encrypt multiple streams, the protocol must specify how to combine the nonce and the long-term key to generate the stream key for RC4.</mark></u></p>
+        
+          Authors: Ron Rivest<br/>
+          <br/>
+        
+
+        
+          Published: 1987<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="http://www.imperva.com/docs/hii_attacking_ssl_when_using_rc4.pdf">Attacking SSL when using RC4</a></li>
+          
+            <li><a href="http://cypherpunks.venona.com/archive/1994/09/msg00304.html">Original posting of RC4 algorithm to Cypherpunks mailing list</a></li>
+          
+            <li><a href="http://www.isaac.cs.berkeley.edu/isaac/wep-faq.html">(in)Security of the WEP algorithm</a></li>
+          
+          </ul>
+        
+
+        <br/>[Symmetric-Key Primitives, Stream Ciphers]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="ripemd" style="display: inline-block">
+      <legend><b>RIPEMD</b></legend>
+        <p> RIPEMD (RACE Integrity Primitives Evaluation Message Digest) is a family of cryptographic hash functions developed in Leuven, Belgium, by Hans Dobbertin, Antoon Bosselaers and Bart Preneel at the COSIC research group at the Katholieke Universiteit Leuven, and first published in 1996. RIPEMD was based upon the design principles used in MD4, and is similar in performance to the more popular SHA-1.</p>
+        <p><u><mark></mark></u></p>
+        
+          Authors: Hans Dobbertin, Antoon Bosselaers and Bart Preneel<br/>
+          <br/>
+        
+
+        
+          Published: 1996<br/>
+        
+          Structure: Hash<br/>
+        
+          Sizes: 128, 160, 256, 320 Bits<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="http://homes.esat.kuleuven.be/~bosselae/ripemd160.html">The hash function RIPEMD-160</a></li>
+          
+            <li><a href="http://ehash.iaik.tugraz.at/wiki/RIPEMD-160">RIPEMD-160 website</a></li>
+          
+          </ul>
+        
+
+        <br/>[Unkeyed Primitives, Hash Functions (MDCs)]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="rsa" style="display: inline-block">
+      <legend><b>RSA</b></legend>
+        <p>RSA is one of the first practical public-key cryptosystems and is widely used for secure data transmission. In such a cryptosystem, the encryption key is public and differs from the decryption key which is kept secret.</p>
+        <p><u><mark></mark></u></p>
+        
+          Authors: Ron Rivest, Adi Shamir, Leonard Adleman<br/>
+          <br/>
+        
+
+        
+          Structure: Factoring Problem<br/>
+        
+          Published: 1977<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="http://www.emc.com/emc-plus/rsa-labs/standards-initiatives/pkcs-rsa-cryptography-standard.htm">RSA Cryptography Standard</a></li>
+          
+          </ul>
+        
+
+        <br/>[Public-Key Primitives, Public-Key Ciphers]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="sha-1" style="display: inline-block">
+      <legend><b>SHA-1</b></legend>
+        <p> In cryptography, SHA-1 is a cryptographic hash function designed by the United States National Security Agency and is a U.S. Federal Information Processing Standard published by the United States NIST.</p>
+        <p><u><mark> As of 2012, the most efficient attack against SHA-1 is considered to be the one by Marc Stevens with an estimated cost of $2.77M to break a single hash value by renting CPU power from cloud servers. Stevens developed this attack in a project called HashClash, implementing a differential path attack. On 8 November 2010, he claimed he had a fully working near-collision attack against full SHA-1 working with an estimated complexity equivalent to 2^57.5 SHA-1 compressions. He estimates this attack can be extended to a full collision with a complexity around 2^61.</mark></u></p>
+        
+          Authors: National Security Agency<br/>
+          <br/>
+        
+
+        
+          Series: Sha-1, Sha-2, Sha-3<br/>
+        
+          Published: 1995<br/>
+        
+          Rounds: 80<br/>
+        
+          Structure: Merkle–Damgård Construction<br/>
+        
+          Sizes: 160 Bits<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="http://tools.ietf.org/html/rfc3174">US Secure Hash Algorithm 1 (SHA1)</a></li>
+          
+            <li><a href="https://marc-stevens.nl/research/papers/PhD%20Thesis%20Marc%20Stevens%20-%20Attacks%20on%20Hash%20Functions%20and%20Applications.pdf">Attacks on Hash Functions and Applications</a></li>
+          
+          </ul>
+        
+
+        <br/>[Unkeyed Primitives, Hash Functions (MDCs), Symmetric-Key Primitives, Hash Functions (MACs)]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="sha-2" style="display: inline-block">
+      <legend><b>SHA-2</b></legend>
+        <p> SHA-2 is a set of cryptographic hash functions designed by the NSA (U.S. National Security Agency). SHA stands for Secure Hash Algorithm.</p>
+        <p><u><mark>Currently, the best public attacks break preimage resistance 52 rounds of SHA-256 or 57 rounds of SHA-512, and collision resistance for 46 rounds of SHA-256.</mark></u></p>
+        
+          Authors: National Security Agency<br/>
+          <br/>
+        
+
+        
+          Series: Sha-1, Sha-2, Sha-3<br/>
+        
+          Published: 2001<br/>
+        
+          Rounds: 64 Or 80<br/>
+        
+          Structure: Merkle–Damgård Construction<br/>
+        
+          Sizes: 224, 256, 384, Or 512 Bits<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="http://tools.ietf.org/html/rfc3874">A 224-bit One-way Hash Function: SHA-224</a></li>
+          
+            <li><a href="http://fse2012.inria.fr/SLIDES/67.pdf">Converting MITM Preimage Attack into Pseudo Collision Attack: Application to SHA-2</a></li>
+          
+            <li><a href="http://eprint.iacr.org/2008/270.pdf">New Collision attacks Against Up To 24-step SHA-2</a></li>
+          
+          </ul>
+        
+
+        <br/>[Unkeyed Primitives, Hash Functions (MDCs), Symmetric-Key Primitives, Hash Functions (MACs)]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="sha-3" style="display: inline-block">
+      <legend><b>SHA-3</b></legend>
+        <p> SHA-3, a subset of the cryptographic primitive family Keccak. SHA-3 uses the sponge construction, in which message blocks are XORed into a subset of the state, which is then transformed as a whole. In the version used in SHA-3, the state consists of a 5×5 array of 64-bit words, 1600 bits total.</p>
+        <p><u><mark></mark></u></p>
+        
+          Authors: Guido Bertoni, Joan Daemen, Michaël Peeters, and Gilles Van Assche<br/>
+          <br/>
+        
+
+        
+          Series: Sha-1, Sha-2, Sha-3<br/>
+        
+          Published: 2012<br/>
+        
+          Structure: Sponge Construction<br/>
+        
+          Sizes: Arbitrary<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="http://keccak.noekeon.org/Keccak-reference-3.0.pdf">The Keccak reference</a></li>
+          
+            <li><a href="http://keccak.noekeon.org/">SHA-3/Keccak website</a></li>
+          
+          </ul>
+        
+
+        <br/>[Unkeyed Primitives, Hash Functions (MDCs), Symmetric-Key Primitives, Hash Functions (MACs)]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="siphash" style="display: inline-block">
+      <legend><b>SipHash</b></legend>
+        <p> SipHash is an Add-Rotate-Xor (ARX) based family of pseudorandom functions created by Jean-Philippe Aumasson and Daniel J. Bernstein in 2012.</p>
+        <p><u><mark></mark></u></p>
+        
+          Authors: Jean-Philippe Aumasson, Daniel J. Bernstein<br/>
+          <br/>
+        
+
+        
+          Published: 2012<br/>
+        
+          Structure: Non-Collision-Resistant Prf<br/>
+        
+          Sizes: 64 Bits<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="https://131002.net/siphash/">SipHash website</a></li>
+          
+            <li><a href="https://github.com/veorq/SipHash">High-speed pseudorandom function</a></li>
+          
+          </ul>
+        
+
+        <br/>[Symmetric-Key Primitives, Hash Functions (MACs), Pseudorandom Sequences, Pseudorandom Function Family, Pseudorandom Generators]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="skein" style="display: inline-block">
+      <legend><b>Skein</b></legend>
+        <p> Skein is a cryptographic hash function and one of five finalists in the NIST hash function competition. Entered as a candidate to become the SHA-3 standard, the successor of SHA-1 and SHA-2, it ultimately lost to NIST hash candidate Keccak.</p>
+        <p><u><mark> In October 2010, an attack that combines rotational cryptanalysis with the rebound attack was published. The attack finds rotational collisions for 53 of 72 rounds in Threefish-256, and 57 of 72 rounds in Threefish-512. It also affects the Skein hash function. This is a follow-up to the earlier attack published in February, which breaks 39 and 42 rounds respectively.</mark></u></p>
+        
+          Authors: Bruce Schneier, Niels Ferguson<br/>
+          <br/>
+        
+
+        
+          Published: 2010<br/>
+        
+          Structure: Unique Block Iteration<br/>
+        
+          Sizes: Arbitrary<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="http://www.skein-hash.info/sites/default/files/skein1.3.pdf">The Skein Hash Function Family</a></li>
+          
+            <li><a href="http://www.skein-hash.info/">Skein website</a></li>
+          
+          </ul>
+        
+
+        <br/>[Unkeyed Primitives, Hash Functions (MDCs)]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="snefru" style="display: inline-block">
+      <legend><b>Snefru</b></legend>
+        <p> Snefru is a cryptographic hash function which supports 128-bit and 256-bit output. It was named after the Egyptian Pharaoh Sneferu, continuing the tradition of the Khufu and Khafre block ciphers.</p>
+        <p><u><mark></mark></u></p>
+        
+          Authors: Ralph Merkle<br/>
+          <br/>
+        
+
+        
+          Published: 1990<br/>
+        
+          Structure: Hash<br/>
+        
+          Sizes: 128 Or 256 Bits<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="http://ehash.iaik.tugraz.at/wiki/Snefru-n">Snefru Website</a></li>
+          
+            <li><a href="ftp://ftp.kfki.hu/pub/packages/security/COAST/crypto/snefru/">Source Code</a></li>
+          
+          </ul>
+        
+
+        <br/>[Unkeyed Primitives, Hash Functions (MDCs)]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="spectral-hash" style="display: inline-block">
+      <legend><b>Spectral Hash</b></legend>
+        <p> Spectral hash is a new family of hash functions using the discrete Fourier transform and a nonlinear transformation constructed via data dependent permutations. DFT is a well-known cryptographic primitive perfect for generating diﬀusion and confusion.</p>
+        <p><u><mark></mark></u></p>
+        
+          Authors: Gokay Saldamlı, Cevahir Demirkıran, Megan Maguire, Carl Minden, Jacob Topper, Alex Troesch, Cody Walker, Çetin Kaya Koç<br/>
+          <br/>
+        
+
+        
+          Published: 2009<br/>
+        
+          Structure: Wide Pipe Merkle-Damgård Construction<br/>
+        
+          Sizes: 512 Bits<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="http://csrc.nist.gov/groups/ST/hash/sha-3/Round1/Feb2009/documents/spectral-koc.pdf">Spectral Hash</a></li>
+          
+            <li><a href="http://cs.ucsb.edu/~koc/shash/index.html">Spectral Hash website</a></li>
+          
+          </ul>
+        
+
+        <br/>[Unkeyed Primitives, Hash Functions (MDCs)]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="swifft" style="display: inline-block">
+      <legend><b>SWIFFT</b></legend>
+        <p> In cryptography, SWIFFT is a collection of provably secure hash functions. It is based on the concept of the Fast Fourier Transform (FFT). SWIFFT is not the first hash function based on FFT, but it sets itself apart by providing a mathematical proof of its security. It also uses the LLL basis reduction algorithm.</p>
+        <p><u><mark> Known working attacks are: Generalized Birthday Attack, which takes 2^106 operations and inversion attacks which takes 2^448 operations for a standard parameter choice. This is usually considered to be enough to render an attack by an adversary infeasible.</mark></u></p>
+        
+          Authors: Vadim Lyubashevsky, Daniele Micciancio, Chris Peikert, Alon Rosen<br/>
+          <br/>
+        
+
+        
+          Published: 2008<br/>
+        
+          Structure: Hash<br/>
+        
+          Sizes: 512 Bits<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="http://www.eecs.harvard.edu/~alon/PAPERS/lattices/swifft.pdf">SWIFFT: A Modest Proposal for FFT Hashing</a></li>
+          
+          </ul>
+        
+
+        <br/>[Unkeyed Primitives, Hash Functions (MDCs)]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="sysv" style="display: inline-block">
+      <legend><b>SYSV</b></legend>
+        <p> The SYSV checksum algorithm is commonly used, legacy checksum algorithms. It has been implemented in UNIX System V and is also available through the GNU sum command line utility.</p>
+        <p><u><mark> Re-arranging the same bytes in another order does not change the checksum. Increasing one byte and decreasing another byte by the same amount does not change the checksum. Adding or removing zero bytes does not change the checksum.</mark></u></p>
+        
+
+        
+          Structure: Crc<br/>
+        
+          Sizes: 16 Bits<br/>
+        
+
+        
+
+        <br/>[Unkeyed Primitives, Hash Functions (MDCs), Cyclic Redundancy Checks]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="tiger" style="display: inline-block">
+      <legend><b>Tiger</b></legend>
+        <p> In cryptography, Tiger is a cryptographic hash function designed by Ross Anderson and Eli Biham in 1995 for efficiency on 64-bit platforms. The size of a Tiger hash value is 192 bits. Truncated versions (known as Tiger/128 and Tiger/160) can be used for compatibility with protocols assuming a particular hash size. Unlike the SHA-2 family, no distinguishing initialization values are defined; they are simply prefixes of the full Tiger/192 hash value.</p>
+        <p><u><mark> John Kelsey and Stefan Lucks have found a collision-finding attack on 16-round Tiger with a time complexity equivalent to about 2^44 compression function invocations and another attack that finds pseudo-near collisions in 20-round Tiger with work less than that of 2^48 compression function invocations. Florian Mendel et al. have improved upon these attacks by describing a collision attack spanning 19 rounds of Tiger, and a 22-round pseudo-near-collision attack. These attacks require a work effort equivalent to about 2^62 and 2^44 evaluations of the Tiger compression function, respectively.</mark></u></p>
+        
+          Authors: Ross Anderson and Eli Biham<br/>
+          <br/>
+        
+
+        
+          Published: 1996<br/>
+        
+          Rounds: 24<br/>
+        
+          Structure: Merkle-Damgård Construction<br/>
+        
+          Sizes: 192 Bits<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="http://th.informatik.uni-mannheim.de/People/Lucks/papers/Tiger_FSE_v10.pdf">Collisions and Near-Collisions for Reduced-Round Tiger</a></li>
+          
+            <li><a href="http://www.cs.technion.ac.il/~biham/Reports/Tiger/tiger/tiger.html">Tiger: A Fast New Hash Function</a></li>
+          
+            <li><a href="http://www.cs.technion.ac.il/~biham/Reports/Tiger/">Tiger website</a></li>
+          
+          </ul>
+        
+
+        <br/>[Unkeyed Primitives, Hash Functions (MDCs)]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="verhoeff-algorithm" style="display: inline-block">
+      <legend><b>Verhoeff Algorithm</b></legend>
+        <p> It was the first decimal check digit algorithm which detects all single-digit errors, and all transposition errors involving two adjacent digits, which was at the time thought impossible with such a code.</p>
+        <p><u><mark></mark></u></p>
+        
+          Authors: Jacobus Verhoeff<br/>
+          <br/>
+        
+
+        
+          Published: 1969<br/>
+        
+          Structure: Sum<br/>
+        
+          Sizes: 4 Bits<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="http://www.cs.utsa.edu/~wagner/laws/verhoeff.html">The Laws of Cryptography: Verhoeff's Decimal Error Detection</a></li>
+          
+            <li><a href="http://www.augustana.ab.ca/~mohrj/algorithms/checkdigit.html">Check Digits</a></li>
+          
+          </ul>
+        
+
+        <br/>[Unkeyed Primitives, Hash Functions (MDCs), Checksums]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="whirlpool" style="display: inline-block">
+      <legend><b>Whirlpool</b></legend>
+        <p> In computer science and cryptography, Whirlpool (sometimes styled WHIRLPOOL) is a cryptographic hash function. It was designed by Vincent Rijmen (co-creator of the Advanced Encryption Standard) and Paulo S. L. M. Barreto, who first described it in 2000.</p>
+        <p><u><mark></mark></u></p>
+        
+          Authors: Vincent Rijmen, Paulo S. L. M. Barreto<br/>
+          <br/>
+        
+
+        
+          Published: 2000<br/>
+        
+          Rounds: 10<br/>
+        
+          Structure: Miyaguchi-Preneel<br/>
+        
+          Sizes: 512 Bits<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="http://www.cosic.esat.kuleuven.be/nessie/reports/phase2/whirlpool-20030311.pdf">On the diffusion matrix employed in the Whirlpool hashing function</a></li>
+          
+            <li><a href="https://www.cosic.esat.kuleuven.be/fse2009/slides/2402_1150_Schlaeffer.pdf">The Rebound Attack: Cryptanalysis of Reduced Whirlpool and Grøstl</a></li>
+          
+            <li><a href="http://www.larc.usp.br/~pbarreto/WhirlpoolPage.html">Whirlpool website</a></li>
+          
+          </ul>
+        
+
+        <br/>[Unkeyed Primitives, Hash Functions (MDCs)]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="wichmann-hill" style="display: inline-block">
+      <legend><b>Wichmann-Hill</b></legend>
+        <p> Wichmann-Hill is a pseudorandom number generator. In its core, numbers are generated by taking the fractional part of a sum of rectangularly distributed numbers from imperfect algorithms.</p>
+        <p><u><mark></mark></u></p>
+        
+          Authors: Brian Wichmann, David Hill<br/>
+          <br/>
+        
+
+        
+          Structure: Fractional<br/>
+        
+          Published: 1982<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="http://wwwf.imperial.ac.uk/~ayoung/m3s9/wichmannhill.pdf">Algorithm AS 183: An Efficient and Portable Pseudo-Random Number Generator</a></li>
+          
+          </ul>
+        
+
+        <br/>[Pseudorandom Generators]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="xorshift" style="display: inline-block">
+      <legend><b>Xorshift</b></legend>
+        <p>Xorshift random number generators are a class of pseudorandom number generators that was discovered by George Marsaglia.</p>
+        <p><u><mark>They are a subclass of linear feedback shift registers, but their simple implementation typically makes them faster and use less space.</mark></u></p>
+        
+          Authors: George Marsaglia<br/>
+          <br/>
+        
+
+        
+          Published: July 2003<br/>
+        
+          Structure: Xor/Shift<br/>
+        
+          Sizes: 16, 32, 64, 128 Bits<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="http://www.jstatsoft.org/v08/i14/paper">Xorshift RNGs</a></li>
+          
+            <li><a href="http://maths-people.anu.edu.au/~brent/pub/pub224.html">Some Long-Period Random Number Generators using Shifts and Xors</a></li>
+          
+          </ul>
+        
+
+        <br/>[Pseudorandom Generators]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="xxhash" style="display: inline-block">
+      <legend><b>xxHash</b></legend>
+        <p> xxHash is an Extremely fast Hash algorithm, running at RAM speed limits.</p>
+        <p><u><mark></mark></u></p>
+        
+          Authors: Yann Collet<br/>
+          <br/>
+        
+
+        
+          Published: 2012<br/>
+        
+          Sizes: 32, 64 Bits<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="https://code.google.com/p/xxhash/wiki/xxh32">Test suite evaluating Hash quality</a></li>
+          
+            <li><a href="https://code.google.com/p/xxhash/">xxHash website</a></li>
+          
+          </ul>
+        
+
+        <br/>[Unkeyed Primitives, Hash Functions (MDCs), Random Sequences]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+  <li>
+    <fieldset id="zobrist-hashing" style="display: inline-block">
+      <legend><b>Zobrist Hashing</b></legend>
+        <p> Zobrist hashing is a hash function construction used in computer programs that play abstract board games, such as chess and Go, to implement transposition tables, a special kind of hash table that is indexed by a board position and used to avoid analyzing the same position more than once.</p>
+        <p><u><mark></mark></u></p>
+        
+          Authors: Albert Lindsey Zobrist<br/>
+          <br/>
+        
+
+        
+          Published: 1969<br/>
+        
+          Structure: Xor<br/>
+        
+          Sizes: Variable<br/>
+        
+
+        
+          <br/>
+          Materials:
+          <ul>
+          
+            <li><a href="http://research.cs.wisc.edu/techreports/1970/TR88.pdf">A new hashing method with application for game playing</a></li>
+          
+            <li><a href="http://web.archive.org/web/20070822204038/http://www.seanet.com/~brucemo/topics/zobrist.htm">Zobrist keys</a></li>
+          
+          </ul>
+        
+
+        <br/>[Symmetric-Key Primitives, Signatures, Identification Primitives]
+    </fieldset>
+    <br/><br/>
+  </li>
+
+</ol>
+
+<h4 id="conferences">Conferences</h4>
+
+<p>Mihir Bellare conducts <a href="http://cseweb.ucsd.edu/~mihir/confs.html">calendar</a>, which is often updated, also worth a look at <a href="http://www.ieee-security.org/Calendar/cipher-hypercalendar.html">IEEE Cipher's</a>.</p>
+
+<blockquote>See current list of <a href="http://www.uclouvain.be/crypto/callforpapers/forthcoming">call for papers</a>.</blockquote>
+
+<p>[<a href="http://www.meetup.com/find/?allMeetups=false&keywords=security&radius=Infinity&sort=default">security</a> |
+<a href="http://www.meetup.com/find/?allMeetups=false&keywords=crypto&radius=Infinity&sort=default">crypto</a> |
+<a href="http://www.meetup.com/find/?allMeetups=false&keywords=hack&radius=Infinity&sort=default">hack</a>]</p>
+
+
+
+MAJOR
+
+<ul>
+
+  
+
+  
+    <li><a href="http://www.iacr.org/meetings/asiacrypt/">ASIACRYPT</a>: International Conference on the Theory and Application of Cryptology and Information Security</li>
+  
+
+  
+
+  
+    <li><a href="http://www.iacr.org/meetings/crypto/">CRYPTO</a>: International Cryptology Conference</li>
+  
+
+  
+    <li><a href="http://www.iacr.org/meetings/eurocrypt/">EUROCRYPT</a>: Annual International Conference on the Theory and Applications of Cryptographic Techniques</li>
+  
+
+  
+
+  
+
+  
+
+  
+    <li><a href="http://indocrypt.org/">INDOCRYPT</a>: Annual International Cryptography</li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</ul>
+
+
+
+MEETING
+
+<ul>
+
+  
+    <li><a href="http://icsd.i2r.a-star.edu.sg/staff/jianying/acns_home/">ACNS</a>: Applied Cryptography and Network Security</li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <li><a href="http://conferenze.dei.polimi.it/FDTC15/">FDTC</a>: Fault Diagnosis and Tolerance in Cryptography</li>
+  
+
+  
+
+  
+    <li><a href="http://icics2015.org/">ICICS</a>: International Conference on Information and Communications Security</li>
+  
+
+  
+
+  
+    <li><a href="http://www.wisdom.weizmann.ac.il/~naor/itcs2015_main.html">ITCS</a>: Innovations in Theoretical Computer Science</li>
+  
+
+  
+
+  
+    <li><a href="http://www.rsaconference.com/">RSA Conference</a>: Cryptography, Standards & Public Policy</li>
+  
+
+  
+    <li><a href="http://sacconference.org/">SAC</a>: Selected Areas in Cryptography</li>
+  
+
+  
+    <li><a href="http://cse.iitkgp.ac.in/conf/SPACE2015/">SPACE</a>: International Conference on Security, Privacy, and Applied Cryptography Engineering</li>
+  
+
+  
+
+</ul>
+
+
+
+WORKSHOP
+
+<ul>
+
+  
+
+  
+
+  
+    <li><a href="http://www.iacr.org/meetings/ches/">CHES</a>: Cryptographic Hardware and Embedded Systems</li>
+  
+
+  
+
+  
+
+  
+
+  
+    <li><a href="http://www.iacr.org/meetings/fse/">FSE</a>: Fast Software Encryption</li>
+  
+
+  
+
+  
+
+  
+
+  
+    <li><a href="http://www.iacr.org/meetings/pkc/">PKC</a>: Public Key Cryptography</li>
+  
+
+  
+
+  
+
+  
+
+  
+    <li><a href="http://www.iacr.org/meetings/tcc/">TCC</a>: Theory of Cryptography Conference</li>
+  
+
+</ul>
+
+
+
+<h4 id="cryptographers">Cryptographers</h4>
+
+<ol class="TC">
+
+  <li><a href="http://www.cypherspace.org/adam/eternity/">Adam Back</a></li>
+
+  <li><a href="http://www.homeport.org/~adam/">Adam Shostack</a></li>
+
+  <li><a href="http://amturing.acm.org/award_winners/shamir_2327856.cfm">Adi Shamir</a></li>
+
+  <li><a href="http://www.csee.umbc.edu/~sherman/">Alan Theodore Sherman</a></li>
+
+  <li><a href="http://www.cs.engr.uky.edu/~klapper/">Andy Klapper</a></li>
+
+  <li><a href="http://7h3ram.github.io/about/">Ankur Tyagi</a></li>
+
+  <li><a href="https://www.rocq.inria.fr/secret/Anne.Canteaut/">Anne Canteaut</a></li>
+
+  <li><a href="http://crypto.cs.mcgill.ca/~stiglic/">Anton Stiglic</a></li>
+
+  <li><a href="http://homes.esat.kuleuven.be/~bosselae/">Antoon Bosselaers</a></li>
+
+  <li><a href="http://www.arnoud.engelfriet.net/">Arnoud Engelfriet</a></li>
+
+  <li><a href="http://www.cs.cmu.edu/~avrim/">Avrim Blum</a></li>
+
+  <li><a href="http://homes.esat.kuleuven.be/~preneel/">Bart Preneel</a></li>
+
+  <li><a href="http://www.bennetyee.org/ucsd-pages/">Bennet Yee</a></li>
+
+  <li><a href="http://burtleburtle.net/bob/">Bob Jenkins</a></li>
+
+  <li><a href="http://www.farcaster.com/">Brian LaMacchia</a></li>
+
+  <li><a href="https://www.schneier.com/">Bruce Schneier</a></li>
+
+  <li><a href="http://world.std.com/~cme/">Carl Ellison</a></li>
+
+  <li><a href="http://www.zurich.ibm.com/~cca/">Christian Cachin</a></li>
+
+  <li><a href="http://www.cs.mcgill.ca/~crepeau/">Claude Crepeau</a></li>
+
+  <li><a href="http://clifford.neuman.name/">Clifford Neuman</a></li>
+
+  <li><a href="http://www.cs.ust.hk/faculty/cding/">Cunsheng Ding</a></li>
+
+  <li><a href="http://cr.yp.to/djb.html">D. J. Bernstein</a></li>
+
+  <li><a href="http://cristal.inria.fr/~doligez/">Damien Doligez</a></li>
+
+  <li><a href="http://theory.stanford.edu/~dabo/">Dan Boneh</a></li>
+
+  <li><a href="https://cseweb.ucsd.edu/~daniele/">Daniele Micciancio</a></li>
+
+  <li><a href="http://www.mindspring.com/~dmcgrew/dam.htm">David A. McGrew</a></li>
+
+  <li><a href="http://www.chaum.com/">David Chaum</a></li>
+
+  <li><a href="http://www.cs.berkeley.edu/~daw/">David Wagner</a></li>
+
+  <li><a href="http://web.mit.edu/warlord/">Derek Atkins</a></li>
+
+  <li><a href="http://world.std.com/~dtd/">Don Davis</a></li>
+
+  <li><a href="http://cacr.uwaterloo.ca/~dstinson/">Doug Stinson</a></li>
+
+  <li><a href="http://www.cs.berkeley.edu/~tygar/">Doug Tygar</a></li>
+
+  <li><a href="http://egorhomakov.com/">Egor Homakov</a></li>
+
+  <li><a href="http://www.cs.technion.ac.il/~biham/">Eli Biham</a></li>
+
+  <li><a href="http://www.cs.technion.ac.il/~eyalk/">Eyal Kushilevitz</a></li>
+
+  <li><a href="http://www.cl.cam.ac.uk/~fms27/">Frank Stajano</a></li>
+
+  <li><a href="https://pantherfile.uwm.edu/davida/www/">George Davida</a></li>
+
+  <li><a href="http://www.iro.umontreal.ca/~brassard/">Gilles Brassard</a></li>
+
+  <li><a href="http://www.di.unisa.it/~giuper/">Giuseppe Persiano</a></li>
+
+  <li><a href="https://uwaterloo.ca/electrical-computer-engineering/people-profiles/gordon-b-agnew-peng">Gordon B. Agnew</a></li>
+
+  <li><a href="http://kodu.ut.ee/~lipmaa/">Helger Lipmaa</a></li>
+
+  <li><a href="https://math.berkeley.edu/~hwl/">Hendrik W. Lenstra</a></li>
+
+  <li><a href="http://jim.com/">James Donald</a></li>
+
+  <li><a href="http://www.imada.sdu.dk/~joan/">Joan Boyar</a></li>
+
+  <li><a href="http://www.cs.yale.edu/homes/jf/home.html">Joan Feigenbaum</a></li>
+
+  <li><a href="http://www.nada.kth.se/~johanh/">Johan Hastad</a></li>
+
+  <li><a href="http://www.math.brown.edu/~jhs/">Joseph H. Silverman</a></li>
+
+  <li><a href="http://mccurley.org/">Kevin McCurley</a></li>
+
+  <li><a href="http://www2.mat.dtu.dk/people/Lars.R.Knudsen/">Lars R. Knudsen</a></li>
+
+  <li><a href="http://www.demailly.com/~dl/">Laurent Demailly</a></li>
+
+  <li><a href="http://www.usc.edu/dept/molecular-science/fm-adleman.htm">Leonard Adleman</a></li>
+
+  <li><a href="http://student.ulb.ac.be/~llerman/">Liran Lerman</a></li>
+
+  <li><a href="http://maciejczyzewski.me/">Maciej A. Czyzewski</a></li>
+
+  <li><a href="http://www.markus-jakobsson.com/">Markus Jakobsson</a></li>
+
+  <li><a href="http://www.cl.cam.ac.uk/~mgk25/">Markus Kuhn</a></li>
+
+  <li><a href="http://www.crypto.com/">Matt Blaze</a></li>
+
+  <li><a href="http://web.cs.ucdavis.edu/~franklin/">Matt Franklin</a></li>
+
+  <li><a href="http://cseweb.ucsd.edu/~mihir/">Mihir Bellare</a></li>
+
+  <li><a href="https://justmikejust.wordpress.com/">Mike Just</a></li>
+
+  <li><a href="http://www1.icsi.berkeley.edu/~luby/">Mike Luby</a></li>
+
+  <li><a href="http://www.wisdom.weizmann.ac.il/~naor/index.html">Moni Naor</a></li>
+
+  <li><a href="http://www.cs.columbia.edu/~moti/">Moti Yung</a></li>
+
+  <li><a href="http://www.wisdom.weizmann.ac.il/~oded/">Oded Goldreich</a></li>
+
+  <li><a href="http://www.cryptography.com/company/profiles/paul-kocher.html">Paul Kocher</a></li>
+
+  <li><a href="https://www.cs.auckland.ac.nz/~pgut001/">Peter Gutmann</a></li>
+
+  <li><a href="http://www.csl.sri.com/users/neumann/">Peter Neumann</a></li>
+
+  <li><a href="http://www.ka9q.net/">Phil Karn</a></li>
+
+  <li><a href="http://web.cs.ucdavis.edu/~rogaway/">Phillip Rogaway</a></li>
+
+  <li><a href="http://www.cl.cam.ac.uk/~pb22/">Piete Brooks</a></li>
+
+  <li><a href="http://web.cs.ucla.edu/~rafail/">Rafail Ostrovsky</a></li>
+
+  <li><a href="http://www.merkle.com/">Ralph C. Merkle</a></li>
+
+  <li><a href="http://www.cs.tau.ac.il/~canetti/">Ran Canetti</a></li>
+
+  <li><a href="http://www.systems.caltech.edu/EE/Faculty/rjm/">Robert J. McEliece</a></li>
+
+  <li><a href="http://www.rogerclarke.com/">Roger Clarke</a></li>
+
+  <li><a href="http://people.csail.mit.edu/rivest/">Ronald L. Rivest</a></li>
+
+  <li><a href="http://www.cl.cam.ac.uk/~rja14/">Ross Anderson</a></li>
+
+  <li><a href="http://cseweb.ucsd.edu/~russell/">Russell Impagliazzo</a></li>
+
+  <li><a href="http://www.isg.rhul.ac.uk/~sean/">Sean Murphy</a></li>
+
+  <li><a href="http://people.csail.mit.edu/shafi/">Shafi Goldwasser</a></li>
+
+  <li><a href="http://people.csail.mit.edu/shaih/">Shai Halevi</a></li>
+
+  <li><a href="http://www.ma.rhul.ac.uk/sblackburn">Simon R. Blackburn</a></li>
+
+  <li><a href="http://www.ics.uci.edu/~stasio/">Stanislaw Jarecki</a></li>
+
+  <li><a href="http://saweis.net/index.html">Stephen A. Weis</a></li>
+
+  <li><a href="http://www.hyperelliptic.org/tanja/">Tanja Lange</a></li>
+
+  <li><a href="http://www.anagram.com/berson/">Tom Berson</a></li>
+
+  <li><a href="http://trevorjim.com/">Trevor Jim</a></li>
+
+  <li><a href="http://www.crypto.ethz.ch/~maurer/">Ueli Maurer</a></li>
+
+  <li><a href="http://www.shoup.net/">Victor Shoup</a></li>
+
+  <li><a href="http://www.offshore.com.ai/vince/">Vince Cate</a></li>
+
+  <li><a href="http://www.weidai.com/">Wei Dai</a></li>
+
+  <li><a href="http://www.ccs.neu.edu/home/yiannis/">Yiannis Tsiounis</a></li>
+
+  <li><a href="http://www0.cs.ucl.ac.uk/staff/y.desmedt/">Yvo G. Desmedt</a></li>
+
+</ol>
+
+<h4 id="organizations-groups">Organizations & Groups</h4>
+
+<ul>
+
+  <li>
+    <a href="http://hackerspaces.org/">Hackerspaces - Community-operated Physical Places</a>
+    <p>Places where people share their interest in tinkering with technology, meet and work on their projects, and learn from each other.</p>
+    <ul>
+    
+      <li><a href="https://wiki.hackerspaces.org/List_of_Hacker_Spaces">List of all active Spaces/Places</a></li>
+    
+    </ul>
+    <br/>
+  </li>
+
+  <li>
+    <a href="http://www.iacr.org/">IACR - International Association for Cryptologic Research</a>
+    <p>Is a non-profit scientific organization whose purpose is to further research in cryptology and related fields. Cryptology is the science and practice of designing computation and communication systems which are secure in the presence of adversaries.</p>
+    <ul>
+    
+      <li><a href="http://eprint.iacr.org/">Cryptology ePrint Archive</a></li>
+    
+      <li><a href="http://www.iacr.org/meetings/">Conferences and Workshops</a></li>
+    
+      <li><a href="http://www.iacr.org/iacrmem/">Membership Services</a></li>
+    
+    </ul>
+    <br/>
+  </li>
+
+  <li>
+    <a href="https://www.ietf.org/">IETF - Internet Engineering Task Force</a>
+    <p>The mission of the IETF is to make the Internet work better by producing high quality, relevant technical documents that influence the way people design, use, and manage the Internet.</p>
+    <ul>
+    
+      <li><a href="https://www.ietf.org/newcomers.html">Getting Started in the IETF</a></li>
+    
+      <li><a href="http://www.faqs.org/rfcs/">Archives - Request for Comments (RFC)</a></li>
+    
+      <li><a href="https://tools.ietf.org/">Tools Pages</a></li>
+    
+    </ul>
+    <br/>
+  </li>
+
+  <li>
+    <a href="https://www.usenix.org/">USENIX - Advanced Computing Systems Association</a>
+    <p>Since 1975, the USENIX Association has brought together the community of engineers, system administrators, scientists, and technicians working on the cutting edge of the computing world.</p>
+    <ul>
+    
+      <li><a href="https://www.usenix.org/conferences">Conferences and Workshops</a></li>
+    
+      <li><a href="https://www.usenix.org/publications">Archives - Publications</a></li>
+    
+      <li><a href="https://www.usenix.org/membership-services">Membership Services</a></li>
+    
+    </ul>
+    <br/>
+  </li>
+
+</ul>
+
+<p class="TC">#crypto & #security</p>
+
+</body>
+</html>

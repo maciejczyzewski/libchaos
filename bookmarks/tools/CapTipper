@@ -1,0 +1,4 @@
+name: CapTipper
+description: Analyse, explore and revive HTTP malicious traffic from PCAP file.
+website: https://github.com/omriher/CapTipper
+labels: Malware & Vulnerability Analysis

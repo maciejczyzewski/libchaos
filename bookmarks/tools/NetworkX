@@ -1,0 +1,4 @@
+name: NetworkX
+description: Graph library (edges, nodes).
+website: http://networkx.lanl.gov/
+labels: Others

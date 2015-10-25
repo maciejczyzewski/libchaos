@@ -1,0 +1,4 @@
+name: Dirtbags py-pcap
+description: Read pcap files without libpcap.
+website: http://dirtbags.net/py-pcap.html
+labels: Network

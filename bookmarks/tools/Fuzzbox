@@ -1,0 +1,4 @@
+name: Fuzzbox
+description: Multi-codec media fuzzer.
+website: https://isecpartners.com/tools/application-security/fuzzbox.aspx
+labels: Fuzzing

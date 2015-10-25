@@ -1,0 +1,23 @@
+name: MD4
+description: ' The MD4 Message-Digest Algorithm is a cryptographic hash function.
+  The digest length is 128 bits. The algorithm has influenced later designs, such
+  as the MD5, SHA-1 and RIPEMD algorithms.'
+information:
+  published: October 1990
+  rounds: '3'
+  series: MD2, MD4, MD5, MD6
+  sizes: 128 bits
+  structure: !!python/str "Merkle\u2013Damg\xE5rd construction"
+authors:
+- Ronald Rivest
+labels: Unkeyed Primitives, Hash Functions (MDCs)
+cryptanalysis: ' The security of MD4 has been severely compromised. The first full
+  collision attack against MD4 was published in 1995 and several newer attacks have
+  been published since then. As of 2007, an attack can generate collisions in less
+  than 2 hash operations. A theoretical preimage attack also exists.'
+materials:
+- title: The MD4 Message-Digest Algorithm
+  url: http://tools.ietf.org/html/rfc1320
+- title: Fast MD4 Collision Generator
+  url: http://www.bishopfox.com/resources/tools/other-free-tools/md4md5-collision-code/
+secure: '!'

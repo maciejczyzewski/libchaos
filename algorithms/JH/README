@@ -1,0 +1,17 @@
+name: JH
+description: ' JH is a cryptographic hash function submitted to the NIST hash function
+  competition by Hongjun Wu. JH has a 1024-bit state, and works on 512-bit input blocks.'
+information:
+  published: October 2008
+  sizes: 224, 256, 384, 512 bits
+  structure: hash
+authors:
+- Hongjun Wu
+labels: Unkeyed Primitives, Hash Functions (MDCs)
+cryptanalysis: ''
+materials:
+- title: The Hash Function JH
+  url: http://www3.ntu.edu.sg/home/wuhj/research/jh/jh_round3.pdf
+- title: JH website
+  url: http://www3.ntu.edu.sg/home/wuhj/research/jh/index.html
+secure: +

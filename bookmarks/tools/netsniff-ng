@@ -1,0 +1,4 @@
+name: netsniff-ng
+description: A Swiss army knife for for network sniffing.
+website: https://github.com/netsniff-ng/netsniff-ng
+labels: Network

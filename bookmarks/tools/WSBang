@@ -1,0 +1,4 @@
+name: WSBang
+description: Perform automated security testing of SOAP based web services.
+website: https://www.isecpartners.com/tools/application-security/wsbang.aspx
+labels: Fuzzing

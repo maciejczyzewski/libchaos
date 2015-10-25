@@ -1,0 +1,26 @@
+name: Spectral Hash
+description: !!python/str " Spectral hash is a new family of hash functions using\
+  \ the discrete Fourier transform and a nonlinear transformation constructed via\
+  \ data dependent permutations. DFT is a well-known cryptographic primitive perfect\
+  \ for generating di\uFB00usion and confusion."
+information:
+  published: '2009'
+  sizes: 512 bits
+  structure: !!python/str "Wide Pipe Merkle-Damg\xE5rd construction"
+authors:
+- !!python/str "Gokay Saldaml\u0131"
+- !!python/str "Cevahir Demirk\u0131ran"
+- Megan Maguire
+- Carl Minden
+- Jacob Topper
+- Alex Troesch
+- Cody Walker
+- !!python/str "\xC7etin Kaya Ko\xE7"
+labels: Unkeyed Primitives, Hash Functions (MDCs)
+cryptanalysis: ''
+materials:
+- title: Spectral Hash
+  url: http://csrc.nist.gov/groups/ST/hash/sha-3/Round1/Feb2009/documents/spectral-koc.pdf
+- title: Spectral Hash website
+  url: http://cs.ucsb.edu/~koc/shash/index.html
+secure: +

@@ -1,0 +1,3 @@
+name: A Graduate Course in Applied Cryptography
+description: This book is about exactly that; constructing practical cryptosystems for which we can argue security under plausible assumptions. The book covers many constructions for different tasks in cryptography.
+website: https://crypto.stanford.edu/~dabo/cryptobook/

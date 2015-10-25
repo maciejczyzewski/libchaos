@@ -1,0 +1,21 @@
+name: RIPEMD
+description: ' RIPEMD (RACE Integrity Primitives Evaluation Message Digest) is a family
+  of cryptographic hash functions developed in Leuven, Belgium, by Hans Dobbertin,
+  Antoon Bosselaers and Bart Preneel at the COSIC research group at the Katholieke
+  Universiteit Leuven, and first published in 1996. RIPEMD was based upon the design
+  principles used in MD4, and is similar in performance to the more popular SHA-1.'
+information:
+  published: '1996'
+  sizes: 128, 160, 256, 320 bits
+  structure: hash
+authors:
+- Hans Dobbertin
+- Antoon Bosselaers and Bart Preneel
+labels: Unkeyed Primitives, Hash Functions (MDCs)
+cryptanalysis: ''
+materials:
+- title: The hash function RIPEMD-160
+  url: http://homes.esat.kuleuven.be/~bosselae/ripemd160.html
+- title: RIPEMD-160 website
+  url: http://ehash.iaik.tugraz.at/wiki/RIPEMD-160
+secure: +

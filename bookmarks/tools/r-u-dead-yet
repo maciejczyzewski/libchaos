@@ -1,0 +1,4 @@
+name: r-u-dead-yet
+description: Implements the generic HTTP DoS attack via long form field submissions.
+website: https://code.google.com/p/r-u-dead-yet/
+labels: DoS & DDoS

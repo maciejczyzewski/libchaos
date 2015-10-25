@@ -1,0 +1,5 @@
+name: slowhttptest
+description: Is a highly configurable tool that simulates some Application Layer Denial
+  of Service attacks.
+website: https://code.google.com/p/slowhttptest/
+labels: DoS & DDoS

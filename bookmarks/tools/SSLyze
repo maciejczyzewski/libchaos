@@ -1,0 +1,4 @@
+name: SSLyze
+description: SSL configuration scanner.
+website: https://github.com/nabla-c0d3/sslyze
+labels: SSL Analysis

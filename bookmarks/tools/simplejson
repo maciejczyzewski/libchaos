@@ -1,0 +1,4 @@
+name: simplejson
+description: JSON encoder/decoder, e.g. to use Google's AJAX API.
+website: https://github.com/simplejson/simplejson/
+labels: Others

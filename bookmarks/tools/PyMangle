@@ -1,0 +1,5 @@
+name: PyMangle
+description: Command line tool and a python library used to create word lists for
+  use with other penetration testing tools.
+website: http://code.google.com/p/pymangle/
+labels: Others

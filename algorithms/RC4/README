@@ -1,0 +1,16 @@
+name: RC4
+description: 'In cryptography, RC4 (Rivest Cipher 4 also known as ARC4 or ARCFOUR meaning Alleged RC4, see below) is a stream cipher.'
+information:
+  published: "1987"
+authors:
+- Ron Rivest
+labels: Symmetric-Key Primitives, Stream Ciphers
+cryptanalysis: 'RC4 does not take a separate nonce alongside the key. This means that if a single long-term key is to be used to securely encrypt multiple streams, the protocol must specify how to combine the nonce and the long-term key to generate the stream key for RC4.'
+materials:
+- title: Attacking SSL when using RC4
+  url: http://www.imperva.com/docs/hii_attacking_ssl_when_using_rc4.pdf
+- title: Original posting of RC4 algorithm to Cypherpunks mailing list
+  url: http://cypherpunks.venona.com/archive/1994/09/msg00304.html
+- title: (in)Security of the WEP algorithm
+  url: http://www.isaac.cs.berkeley.edu/isaac/wep-faq.html
+secure: "-"

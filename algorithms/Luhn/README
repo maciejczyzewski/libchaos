@@ -1,0 +1,17 @@
+name: Luhn Algorithm
+description: ' The Luhn algorithm or Luhn formula, also known as the "modulus 10"
+  or "mod 10" algorithm, is a simple checksum formula used to validate a variety of
+  identification numbers, such as credit card numbers, IMEI numbers, National Provider
+  Identifier numbers in US and Canadian Social Insurance Numbers.'
+information:
+  published: '1954'
+  sizes: 4 bits
+  structure: sum
+authors:
+- Hans Peter Luhn
+labels: Checksums
+cryptanalysis: ''
+materials:
+- title: Check Digit Algorithm
+  url: https://wiki.openmrs.org/display/docs/Check+Digit+Algorithm
+secure: +

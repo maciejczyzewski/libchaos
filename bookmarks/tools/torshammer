@@ -1,0 +1,4 @@
+name: torshammer
+description: Tor's hammer. Slow post DDOS tool written in python.
+website: https://github.com/dotfighter/torshammer
+labels: DoS & DDoS

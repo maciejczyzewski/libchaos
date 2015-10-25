@@ -1,0 +1,4 @@
+name: avr-crypto-lib
+description: Is a set of implementations of different cryptographic primitives. Due to the special limitations of microcontrollers.
+website: https://github.com/cantora/avr-crypto-lib
+labels: C

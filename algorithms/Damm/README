@@ -1,0 +1,17 @@
+name: Damm Algorithm
+description: ' In error detection, the Damm algorithm is a check digit algorithm that
+  detects all single-digit errors and all adjacent transposition errors.'
+information:
+  published: '2004'
+  sizes: 1 decimal digit
+  structure: Quasigroup operation
+authors:
+- H. Michael Damm
+labels: Checksums
+cryptanalysis: ''
+materials:
+- title: Total anti-symmetrische Quasigruppen
+  url: http://archiv.ub.uni-marburg.de/diss/z2004/0516/pdf/dhmd.pdf
+- title: DAMM tables
+  url: http://www.md-software.de/math/DAMM_Quasigruppen.txt
+secure: +

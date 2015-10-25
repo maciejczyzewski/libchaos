@@ -1,0 +1,3 @@
+name: Cryptography and Cryptanalysis
+description: This course features a rigorous introduction to modern cryptography, with an emphasis on the fundamental cryptographic primitives of public-key encryption, digital signatures, pseudo-random number generation, and basic protocols and their computational complexity requirements.
+website: http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-875-cryptography-and-cryptanalysis-spring-2005/

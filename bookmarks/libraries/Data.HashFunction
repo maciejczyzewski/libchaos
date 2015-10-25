@@ -1,0 +1,5 @@
+name: Data.HashFunction
+description: Common interface library to non-cryptographic hash functions with numerous
+  implementations.
+website: https://github.com/brandondahler/Data.HashFunction
+labels: C# / .NET

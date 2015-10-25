@@ -1,0 +1,4 @@
+name: Burp Suite
+description: An integrated platform for performing security testing of web applications.
+website: http://portswigger.net/burp/
+labels: Penetration Distributions & Frameworks

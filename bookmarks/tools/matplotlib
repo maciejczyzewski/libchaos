@@ -1,0 +1,4 @@
+name: matplotlib
+description: Make 2D plots of arrays.
+website: http://matplotlib.sourceforge.net/
+labels: Others

@@ -1,0 +1,5 @@
+name: ettercap
+description: Is a comprehensive suite for man in the middle attacks. It features sniffing
+  of live connections, content filtering on the fly and many other interesting tricks.
+website: https://github.com/Ettercap/ettercap
+labels: Network

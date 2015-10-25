@@ -1,0 +1,24 @@
+name: MD2
+description: ' The MD2 Message-Digest Algorithm is a cryptographic hash function.
+  The algorithm is optimized for 8-bit computers. Although MD2 is no longer considered
+  secure, even as of 2014, it remains in use in public key infrastructures as part
+  of certificates generated with MD2 and RSA.'
+information:
+  published: August 1989
+  rounds: '18'
+  series: MD2, MD4, MD5, MD6
+  sizes: 128 bits
+  structure: hash
+authors:
+- Ronald Rivest
+labels: Unkeyed Primitives, Hash Functions (MDCs)
+cryptanalysis: ' Rogier and Chauvaud (1997) described collisions of MD2''s compression
+  function, although they were unable to extend the attack to the full MD2. In 2009,
+  security updates were issued disabling MD2 in OpenSSL, GnuTLS, and Network Security
+  Services.'
+materials:
+- title: The MD2 Message-Digest Algorithm
+  url: http://tools.ietf.org/html/rfc1319
+- title: How is the MD2 hash function S-table constructed from Pi?
+  url: https://crypto.stackexchange.com/questions/11935/how-is-the-md2-hash-function-s-table-constructed-from-pi
+secure: '!'

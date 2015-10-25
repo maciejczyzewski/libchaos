@@ -1,0 +1,26 @@
+name: !!python/str "Gr\xF8stl"
+description: !!python/str " Gr\xF8stl is a cryptographic hash function submitted to\
+  \ the NIST hash function competition by Praveen Gauravaram, Lars Knudsen, Krystian\
+  \ Matusiewicz, Florian Mendel, Christian Rechberger, Martin Schl\xE4ffer, and S\xF8\
+  ren S. Thomsen. Gr\xF8stl was chosen as one of the five finalists of the competition.\
+  \ It uses the same S-box as AES in a custom construction. The authors claim speeds\
+  \ of up to 21.4 cycles per byte on an Intel Core 2 Duo."
+information:
+  published: '2008'
+  rounds: 10 and 14
+  sizes: 256 and 512 bits
+  structure: hash
+authors:
+- Praveen Gauravaram
+- Lars Knudsen
+- Krystian Matusiewicz
+- Florian Mendel
+- Christian Rechberger
+- !!python/str "Martin Schl\xE4ffer"
+- !!python/str "and S\xF8ren S. Thomsen"
+labels: Unkeyed Primitives, Hash Functions (MDCs)
+cryptanalysis: ''
+materials:
+- title: !!python/str "Gr\xF8stl  website"
+  url: http://www.groestl.info/
+secure: +

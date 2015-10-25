@@ -1,0 +1,6 @@
+name: dsniff
+description: Is a collection of tools for network auditing and penetration testing.
+  dsniff, filesnarf, mailsnarf, msgsnarf, urlsnarf, and webspy passively monitor a
+  network for interesting data (passwords, e-mail, files, etc.).
+website: http://www.monkey.org/~dugsong/dsniff/
+labels: Network

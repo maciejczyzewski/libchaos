@@ -1,0 +1,4 @@
+name: Knock Subdomain Scan
+description: Enumerate subdomains on a target domain through a wordlist.
+website: https://github.com/guelfoweb/knock
+labels: Network

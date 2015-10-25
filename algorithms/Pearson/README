@@ -1,0 +1,15 @@
+name: Pearson Hashing
+description: ' Pearson hashing is a hash function designed for fast execution on processors
+  with 8-bit registers.'
+information:
+  published: '1990'
+  sizes: 8 bits
+  structure: xor/table
+authors:
+- Peter K. Pearson
+labels: Unkeyed Primitives, Hash Functions (MDCs)
+cryptanalysis: ''
+materials:
+- title: Fast Hashing of Variable Length Text Strings
+  url: http://epaperpress.com/vbhash/download/p677-pearson.pdf
+secure: +

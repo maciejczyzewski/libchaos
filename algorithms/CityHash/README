@@ -1,0 +1,17 @@
+name: CityHash
+description: ' CityHash provides hash functions for strings.'
+information:
+  published: '2010'
+  sizes: 64, 128, or 256 bits
+  structure: product/rotation
+authors:
+- Geoff Pike and Jyrki Alakuijala
+labels: Unkeyed Primitives, Hash Functions (MDCs)
+cryptanalysis: ' It has been superseded by FarmHash. Further updates to CityHash are
+  fairly unlikely.'
+materials:
+- title: The CityHash family of hash functions
+  url: https://code.google.com/p/cityhash/
+- title: Introducing CityHash
+  url: http://google-opensource.blogspot.com/2011/04/introducing-cityhash.html
+secure: '~'

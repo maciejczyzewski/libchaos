@@ -1,0 +1,4 @@
+name: sockstress
+description: Is (TCP DoS) implementation.
+website: https://github.com/defuse/sockstress
+labels: DoS & DDoS

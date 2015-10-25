@@ -1,0 +1,5 @@
+name: dpkt
+description: Fast, simple packet creation/parsing, with definitions for the basic
+  TCP/IP protocols.
+website: https://github.com/kbandla/dpkt
+labels: Network

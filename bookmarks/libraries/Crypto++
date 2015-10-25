@@ -1,0 +1,5 @@
+name: Crypto++
+description: Is a free and open source C++ class library of cryptographic algorithms
+  and schemes.
+website: http://www.cryptopp.com/
+labels: C++

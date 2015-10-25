@@ -1,0 +1,4 @@
+name: rust-crypto
+description: A (mostly) pure-Rust implementation of various cryptographic algorithms.
+website: https://github.com/DaGenix/rust-crypto
+labels: Rust
