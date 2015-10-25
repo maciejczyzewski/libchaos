@@ -1,0 +1,21 @@
+name: Adler-32
+description: 'Compared to a cyclic redundancy check of the same length, it trades
+  reliability for speed. Adler-32 is more reliable than Fletcher-16, and slightly
+  less reliable than Fletcher-32.'
+information:
+  published: '1995'
+  sizes: 32 bits
+  structure: Rolling Sums
+authors:
+- Mark Adler
+labels: Cyclic Redundancy Checks, Checksums
+cryptanalysis: ' Jonathan Stone discovered in 2001 that Adler-32 has a weakness for
+  very short messages. He wrote "Briefly, the problem is that, for very short packets,
+  Adler-32 is guaranteed to give poor coverage of the available bits. Don''t take
+  my word for it, ask Mark Adler :-)"'
+materials:
+- title: ZLIB Compressed Data Format Specification version 3.3
+  url: http://tools.ietf.org/html/rfc1950
+- title: Revisiting Fletcher and Adler Checksums
+  url: http://www.zlib.net/maxino06_fletcher-adler.pdf
+secure: '!'

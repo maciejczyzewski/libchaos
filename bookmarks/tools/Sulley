@@ -1,0 +1,5 @@
+name: Sulley
+description: Fuzzer development and fuzz testing framework consisting of multiple
+  extensible components.
+website: https://github.com/OpenRCE/sulley
+labels: Fuzzing

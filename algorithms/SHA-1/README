@@ -1,0 +1,27 @@
+name: SHA-1
+description: ' In cryptography, SHA-1 is a cryptographic hash function designed by
+  the United States National Security Agency and is a U.S. Federal Information Processing
+  Standard published by the United States NIST.'
+information:
+  published: '1995'
+  rounds: '80'
+  series: SHA-1, SHA-2, SHA-3
+  sizes: 160 bits
+  structure: !!python/str "Merkle\u2013Damg\xE5rd construction"
+authors:
+- National Security Agency
+labels: Unkeyed Primitives, Hash Functions (MDCs), Symmetric-Key Primitives, Hash Functions (MACs)
+cryptanalysis: ' As of 2012, the most efficient attack against SHA-1 is considered
+  to be the one by Marc Stevens with an estimated cost of $2.77M to break a single
+  hash value by renting CPU power from cloud servers. Stevens developed this attack
+  in a project called HashClash, implementing a differential path attack. On 8 November
+  2010, he claimed he had a fully working near-collision attack against full SHA-1
+  working with an estimated complexity equivalent to 2^57.5 SHA-1 compressions. He
+  estimates this attack can be extended to a full collision with a complexity around
+  2^61.'
+materials:
+- title: US Secure Hash Algorithm 1 (SHA1)
+  url: http://tools.ietf.org/html/rfc3174
+- title: Attacks on Hash Functions and Applications
+  url: https://marc-stevens.nl/research/papers/PhD%20Thesis%20Marc%20Stevens%20-%20Attacks%20on%20Hash%20Functions%20and%20Applications.pdf
+secure: '!'

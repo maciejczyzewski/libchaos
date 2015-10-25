@@ -1,0 +1,6 @@
+name: TestU01
+description: Is a software library, implemented in the ANSI C language, and offering
+  a collection of utilities for the empirical statistical testing of uniform random
+  number generators.
+website: http://www.iro.umontreal.ca/~simardr/testu01/tu01.html
+labels: Others

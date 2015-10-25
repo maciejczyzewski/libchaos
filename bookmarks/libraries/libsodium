@@ -1,0 +1,4 @@
+name: libsodium
+description: A modern and easy-to-use crypto library.
+website: https://github.com/jedisct1/libsodium
+labels: C

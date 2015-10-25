@@ -1,0 +1,4 @@
+name: OWASP Zed Attack Proxy
+description: Penetration testing tool for web applications.
+website: https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project
+labels: Malware & Vulnerability Analysis

@@ -1,0 +1,4 @@
+name: Immunity Debugger
+description: A powerful new way to write exploits and analyze malware.
+website: http://debugger.immunityinc.com/
+labels: Reverse Engineering

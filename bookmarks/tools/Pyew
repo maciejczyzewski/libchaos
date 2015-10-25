@@ -1,0 +1,4 @@
+name: pyew
+description: Command line hexadecimal editor and disassembler, mainly to analyze malware.
+website: https://github.com/joxeankoret/pyew
+labels: Malware & Vulnerability Analysis

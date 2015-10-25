@@ -1,0 +1,5 @@
+name: PCLCrypto
+description: Portable Class Library that invokes native implementations of cryptographic
+  functions on Microsoft .NET, Mono, Silverlight, WinRT, Windows Phone, iOS and Android.
+website: https://github.com/AArnott/PCLCrypto
+labels: C# / .NET

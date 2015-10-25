@@ -1,0 +1,24 @@
+name: Whirlpool
+description: ' In computer science and cryptography, Whirlpool (sometimes styled WHIRLPOOL)
+  is a cryptographic hash function. It was designed by Vincent Rijmen (co-creator
+  of the Advanced Encryption Standard) and Paulo S. L. M. Barreto, who first described
+  it in 2000.'
+information:
+  published: '2000'
+  rounds: '10'
+  sizes: 512 bits
+  structure: Miyaguchi-Preneel
+authors:
+- Vincent Rijmen
+- Paulo S. L. M. Barreto
+labels: Unkeyed Primitives, Hash Functions (MDCs)
+cryptanalysis: ''
+materials:
+- title: On the diffusion matrix employed in the Whirlpool hashing function
+  url: http://www.cosic.esat.kuleuven.be/nessie/reports/phase2/whirlpool-20030311.pdf
+- title: !!python/str "The Rebound Attack: Cryptanalysis of Reduced Whirlpool and\
+    \ Gr\xF8stl"
+  url: https://www.cosic.esat.kuleuven.be/fse2009/slides/2402_1150_Schlaeffer.pdf
+- title: Whirlpool website
+  url: http://www.larc.usp.br/~pbarreto/WhirlpoolPage.html
+secure: +

@@ -1,0 +1,25 @@
+name: Fletcher
+description: ' The Fletcher checksum is an algorithm for computing a position-dependent
+  checksum. The objective of the Fletcher checksum was to provide error-detection
+  properties approaching those of a cyclic redundancy check but with the lower computational
+  effort associated with summation techniques.'
+information:
+  published: '1970'
+  sizes: 4, 8, 16, 32 bits
+  structure: sum
+authors:
+- John Gould Fletcher
+labels: Unkeyed Primitives, Hash Functions (MDCs), Checksums, Cyclic Redundancy Checks
+cryptanalysis: ' The Fletcher checksum cannot distinguish between blocks of all 0
+  bits and blocks of all 1 bits. For example, if a 16-bit block in the data word changes
+  from 0x0000 to 0xFFFF, the Fletcher-32 checksum remains the same. This also means
+  a sequence of all 00 bytes has the same checksum as a sequence (of the same size)
+  of all FF bytes.'
+materials:
+- title: ISO Transport Protocol Specification
+  url: http://tools.ietf.org/html/rfc905
+- title: TCP Alternate Checksum Options
+  url: http://tools.ietf.org/html/rfc1146
+- title: The Effectiveness of Checksums for Embedded Control Networks
+  url: http://users.ece.cmu.edu/~koopman/pubs/maxino09_checksums.pdf
+secure: '~'

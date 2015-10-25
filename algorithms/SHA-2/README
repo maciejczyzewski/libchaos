@@ -1,0 +1,22 @@
+name: SHA-2
+description: ' SHA-2 is a set of cryptographic hash functions designed by the NSA
+  (U.S. National Security Agency). SHA stands for Secure Hash Algorithm.'
+information:
+  published: '2001'
+  rounds: 64 or 80
+  series: SHA-1, SHA-2, SHA-3
+  sizes: 224, 256, 384, or 512 bits
+  structure: !!python/str "Merkle\u2013Damg\xE5rd construction"
+authors:
+- National Security Agency
+labels: Unkeyed Primitives, Hash Functions (MDCs), Symmetric-Key Primitives, Hash Functions (MACs)
+cryptanalysis: 'Currently, the best public attacks break preimage resistance 52 rounds of SHA-256 or 57 rounds of SHA-512, and collision resistance for 46 rounds of SHA-256.'
+materials:
+- title: 'A 224-bit One-way Hash Function: SHA-224'
+  url: http://tools.ietf.org/html/rfc3874
+- title: 'Converting MITM Preimage Attack into Pseudo Collision Attack: Application
+    to SHA-2'
+  url: http://fse2012.inria.fr/SLIDES/67.pdf
+- title: New Collision attacks Against Up To 24-step SHA-2
+  url: http://eprint.iacr.org/2008/270.pdf
+secure: "!"

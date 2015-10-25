@@ -1,0 +1,23 @@
+name: BLAKE
+description: ' It is based on Dan Bernstein''s ChaCha stream cipher, but a permuted
+  copy of the input block, XORed with some round constants, is added before each ChaCha
+  round.'
+information:
+  published: '2008'
+  rounds: 14 or 16
+  series: BLAKE, BLAKE2
+  sizes: 224, 256, 384 or 512 bits
+  structure: HAIFA structure
+authors:
+- Jean-Philippe Aumasson
+- Luca Henzen
+- Willi Meier
+- Raphael C.-W. Phan
+labels: Unkeyed Primitives, Hash Functions (MDCs)
+cryptanalysis: ''
+materials:
+- title: BLAKE website
+  url: https://131002.net/blake/
+- title: BLAKE2 website
+  url: https://blake2.net/
+secure: +

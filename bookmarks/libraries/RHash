@@ -1,0 +1,4 @@
+name: RHash
+description: Great utility for computing hash sums.
+website: https://github.com/rhash/RHash
+labels: C

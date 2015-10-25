@@ -1,0 +1,6 @@
+name: airbourne
+description: Script features a shell menu with many options handling network interfaces,
+  injections, wireless monitoring, deauthentication, wep statistical crack, wep ptw
+  method, wpa password list method, wpa john the ripper method.
+website: https://code.google.com/p/airbourne/
+labels: Network

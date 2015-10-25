@@ -1,0 +1,16 @@
+name: Xorshift
+description: 'Xorshift random number generators are a class of pseudorandom number generators that was discovered by George Marsaglia.'
+information:
+  published: July 2003
+  sizes: 16, 32, 64, 128 bits
+  structure: xor/shift
+authors:
+- George Marsaglia
+labels: Pseudorandom Generators
+cryptanalysis: 'They are a subclass of linear feedback shift registers, but their simple implementation typically makes them faster and use less space.'
+materials:
+- title: Xorshift RNGs
+  url: http://www.jstatsoft.org/v08/i14/paper
+- title: Some Long-Period Random Number Generators using Shifts and Xors
+  url: http://maths-people.anu.edu.au/~brent/pub/pub224.html
+secure: +

@@ -1,0 +1,4 @@
+name: pypcap
+description: Python bindings for libpcap.
+website: http://code.google.com/p/pypcap/
+labels: Network

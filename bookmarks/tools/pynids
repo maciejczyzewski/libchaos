@@ -1,0 +1,5 @@
+name: pynids
+description: Libnids wrapper offering sniffing, IP defragmentation, TCP stream reassembly
+  and port scan detection.
+website: http://jon.oberheide.org/pynids/
+labels: Network

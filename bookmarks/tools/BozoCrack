@@ -1,0 +1,4 @@
+name: BozoCrack
+description: A silly & effective MD5 cracker in Ruby.
+website: https://github.com/juuso/BozoCrack
+labels: Crackers

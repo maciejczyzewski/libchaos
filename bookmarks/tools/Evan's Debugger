@@ -1,0 +1,4 @@
+name: Evan's Debugger
+description: OllyDbg-like debugger for Linux.
+website: http://www.codef00.com/projects#debugger
+labels: Reverse Engineering

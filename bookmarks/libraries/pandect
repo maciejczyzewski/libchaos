@@ -1,0 +1,4 @@
+name: pandect
+description: Fast and easy-to-use Message Digest, Checksum and HMAC library for Clojure.
+website: https://github.com/xsc/pandect
+labels: Clojure

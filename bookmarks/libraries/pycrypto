@@ -1,0 +1,4 @@
+name: pycrypto
+description: Widely used package containing various cryptographic modules and functions.
+website: https://www.dlitz.net/software/pycrypto/
+labels: Python

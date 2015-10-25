@@ -1,0 +1,42 @@
+
+              _""^^"-.
+            /  /   \  \
+            |  |.-""-.|        ___ ___ _____ _____ ___ ___
+           ////`.;;;;.`\      | _ \ __|_   _|_   _| __| _ \\
+          |||; ::/  \:: ;     |   / _|  | |   | | | _||   /
+          |||; ::\__/:: ;     |_|_\___| |_|   |_| |___|_|_\\
+           \\\\ ';;;;' /      Cryptography & Security moves fast. Keep up!
+            `==':-..-'`
+
+                       http://maciejczyzewski.me/retter
+
+                             By: M. A. Czyzewski
+                             Date: April 3, 2011
+
+            This code is explicitly placed into the public domain.
+
+=== WHAT IS RETTER? ===========================================================
+
+    The purpose of this project is to promote and develop cryptography.
+
+    It includes the collection of known tools, libraries, articles, materials,
+    hash functions, and ciphers. Also it's a place for people who share an
+    interest in security & cryptography and want to discuss about it.
+
+    --------------------------------------------------------------------------
+    | If you invent a new hash function or ciphers, or write a paper related |
+    | to cryptography just add it here. That is the right place...           |
+    --------------------------------------------------------------------------
+
+    See CONTRIBUTING file in main directory.
+
+=== HOW DO I BUILD RETTER? ====================================================
+
+    The retter code has been tested on Debian Linux, using the Python 2.7.
+
+    ./bootstrap.sh build
+
+=== WHERE CAN I FIND UPDATES? =================================================
+
+    Find more information and updates at: github.com/maciejczyzewski/retter
+

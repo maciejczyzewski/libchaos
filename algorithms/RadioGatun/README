@@ -1,0 +1,21 @@
+name: !!python/str "RadioGat\xFAn"
+description: !!python/str " RadioGat\xFAn is a cryptographic hash primitive created\
+  \ by Guido Bertoni, Joan Daemen, Micha\xEBl Peeters, and Gilles Van Assche. It was\
+  \ first publicly presented at the NIST Second Cryptographic Hash Workshop, held\
+  \ in Santa Barbara, California, on August 24\u201325, 2006, as part of the NIST\
+  \ hash function competition."
+information:
+  published: '2006'
+  sizes: Up to 1216 bits
+  structure: hash
+authors:
+- Guido Bertoni
+- Joan Daemen
+- !!python/str "Micha\xEBl Peeters"
+- Gilles Van Assche
+labels: Unkeyed Primitives, Hash Functions (MDCs)
+cryptanalysis: 'The most effective attack against the algorithm with a complexity of 2^11 is given in the paper "Cryptanalysis of RadioGatun" by Thomas Fuhr and Thomas Peyrin. While more effective than the other attacks this attack still does not break the security claim.'
+materials:
+- title: !!python/str "RadioGat\xFAn"
+  url: http://radiogatun.noekeon.org/
+secure: "-"

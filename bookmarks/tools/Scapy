@@ -1,0 +1,5 @@
+name: Scapy
+description: Send, sniff and dissect and forge network packets. Usable interactively
+  or as a library.
+website: http://secdev.org/projects/scapy
+labels: Network

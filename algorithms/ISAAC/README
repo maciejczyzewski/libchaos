@@ -1,0 +1,14 @@
+name: ISAAC
+description: 'ISAAC is a cryptographically secure pseudorandom number generator and a stream cipher. The algorithm has similarities with RC4.'
+information:
+  published: "1996"
+  sizes: arbitrary
+  structure: indirection, shift, accumulate, add, and count
+authors:
+- Robert J. Jenkins Jr.
+labels: Symmetric-Key Primitives, Stream Ciphers, Pseudorandom Generators
+cryptanalysis: 'Marina Pudovkina attack (2001) can recover the initial state with a complexity that is approximated to be less than the time needed for searching through the square root of all possible initial states.'
+materials:
+- title: "ISAAC: a fast cryptographic random number generator"
+  url: http://www.burtleburtle.net/bob/rand/isaacafa.html
+secure: "~"

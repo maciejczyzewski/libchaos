@@ -1,0 +1,5 @@
+name: Exefilter
+description: Filter file formats in e-mails, web pages or files. Detects many common
+  file formats and can remove active content.
+website: http://www.decalage.info/exefilter
+labels: Malware & Vulnerability Analysis

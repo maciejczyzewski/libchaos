@@ -1,0 +1,4 @@
+name: FunkLoad
+description: Functional and load web tester.
+website: http://funkload.nuxeo.org/
+labels: Network

@@ -1,0 +1,4 @@
+name: IDA Free
+description: The freeware version of IDA v5.0.
+website: https://www.hex-rays.com/products/ida/support/download_freeware.shtml
+labels: Reverse Engineering

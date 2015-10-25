@@ -1,0 +1,4 @@
+name: Nikto
+description: Web application vulnerability scanner.
+website: https://cirt.net/nikto2
+labels: Malware & Vulnerability Analysis

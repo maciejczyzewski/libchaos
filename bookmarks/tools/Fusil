@@ -1,0 +1,4 @@
+name: Fusil
+description: Python library used to write fuzzing programs.
+website: http://fusil.readthedocs.org/
+labels: Fuzzing

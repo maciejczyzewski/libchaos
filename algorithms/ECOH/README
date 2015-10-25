@@ -1,0 +1,17 @@
+name: ECOH
+description: ' The elliptic curve only hash (ECOH) algorithm was submitted as a candidate
+  for SHA-3 in the NIST hash function competition.'
+information:
+  published: '2008'
+  sizes: 224, 256, 384 or 512 bits
+  structure: hash
+authors:
+- Daniel R. L. Brown
+- Matt Campagna
+- Rene Struik
+labels: Unkeyed Primitives, Hash Functions (MDCs)
+cryptanalysis: 'However, it was rejected in the beginning of the competition since a second pre-image attack was found.'
+materials:
+- title: 'ECOH: the Elliptic Curve Only Hash'
+  url: http://ehash.iaik.tugraz.at/uploads/a/a5/Ecoh.pdf
+secure: "-"

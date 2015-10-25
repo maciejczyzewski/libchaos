@@ -1,0 +1,4 @@
+name: WPScan
+description: Is a black box WordPress vulnerability scanner.
+website: https://github.com/wpscanteam/wpscan
+labels: Malware & Vulnerability Analysis

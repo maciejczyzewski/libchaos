@@ -1,0 +1,5 @@
+name: Bouncy Castle
+description: A collection of APIs used in cryptography. It includes APIs for both
+  the Java and the C# programming languages.
+website: http://bouncycastle.org/
+labels: Java

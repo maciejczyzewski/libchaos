@@ -1,0 +1,14 @@
+name: BSD
+description: ' The BSD checksum algorithm is a commonly used, legacy checksum algorithm.
+  It has been implemented in BSD and is also available through the GNU sum command
+  line utility.'
+information:
+  sizes: 16 bits
+  structure: CRC
+authors: []
+labels: Cyclic Redundancy Checks
+cryptanalysis: ''
+materials:
+- title: BSD source code
+  url: http://svnweb.freebsd.org/base/stable/9/usr.bin/cksum/sum1.c?revision=225736&view=markup
+secure: +

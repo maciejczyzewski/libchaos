@@ -1,0 +1,22 @@
+name: FSB
+description: ' In cryptography, the Fast Syndrome-based hash Functions (FSB) are a
+  family of cryptographic hash functions introduced in 2003 by Daniel Augot, Matthieu
+  Finiasz, and Nicolas Sendrier.'
+information:
+  published: '2003'
+  sizes: 160 to 512 bits
+  structure: hash
+authors:
+- Daniel Augot
+- Matthieu Finiasz
+- Nicolas Sendrier
+labels: Unkeyed Primitives, Hash Functions (MDCs)
+cryptanalysis: ''
+materials:
+- title: A Fast Provably Secure Cryptographic Hash Function
+  url: http://eprint.iacr.org/2003/230.pdf
+- title: 'S-FSB: An Improved Variant of the FSB Hash Family'
+  url: http://www.sersc.org/journals/IJAST/vol35/6.pdf
+- title: FSB website
+  url: https://www.rocq.inria.fr/secret/CBCrypto/index.php?pg=fsb
+secure: +

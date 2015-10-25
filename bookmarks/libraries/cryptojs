@@ -1,0 +1,4 @@
+name: cryptojs
+description: Provide standard and secure cryptographic algorithms for NodeJS.
+website: https://github.com/gwjjeff/cryptojs
+labels: Javascript

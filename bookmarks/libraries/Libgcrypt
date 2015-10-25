@@ -1,0 +1,4 @@
+name: Libgcrypt
+description: Is a cryptographic library developed as a separated module of GnuPG. It provides functions for all cryptograhic building blocks, own multiple precision arithmetic implementation.
+website: https://www.gnu.org/software/libgcrypt/
+labels: C

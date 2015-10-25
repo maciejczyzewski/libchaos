@@ -1,0 +1,23 @@
+name: CRC
+description: ' A cyclic redundancy check (CRC) is an error-detecting code commonly
+  used in digital networks and storage devices to detect accidental changes to raw
+  data.'
+information:
+  published: '1961'
+  series: CRC-(number)
+  sizes: 8, 16, 32, 64 bits
+  structure: cyclic codes
+authors:
+- W. Wesley Peterson
+labels: Cyclic Redundancy Checks
+cryptanalysis: ''
+materials:
+- title: !!python/str "Reversing CRC \u2013 Theory and Practice"
+  url: http://sar.informatik.hu-berlin.de/research/publications/SAR-PR-2006-05/SAR-PR-2006-05_.pdf
+- title: The Great CRC Mystery
+  url: http://www.ciphersbyritter.com/ARTS/CRCMYST.HTM
+- title: CRC Cyclic Redundancy Check Analysing and Correcting Errors
+  url: http://einstein.informatik.uni-oldenburg.de/papers/CRC-BitfilterEng.pdf
+- title: Reverse-Engineering a CRC Algorithm
+  url: http://www.cosc.canterbury.ac.nz/greg.ewing/essays/CRC-Reverse-Engineering.html
+secure: +

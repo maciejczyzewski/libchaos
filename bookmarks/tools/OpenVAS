@@ -1,0 +1,4 @@
+name: OpenVAS
+description: Open Source vulnerability scanner and manager.
+website: http://www.openvas.org/
+labels: Malware & Vulnerability Analysis

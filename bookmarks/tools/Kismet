@@ -1,0 +1,4 @@
+name: Kismet
+description: Wireless network detector, sniffer, and IDS.
+website: https://kismetwireless.net/
+labels: Network

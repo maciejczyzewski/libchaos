@@ -1,0 +1,4 @@
+name: LibForensics
+description: Library for developing digital forensics applications.
+website: http://code.google.com/p/libforensics/
+labels: Forensics

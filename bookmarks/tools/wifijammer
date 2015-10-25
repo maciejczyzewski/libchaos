@@ -1,0 +1,4 @@
+name: wifijammer
+description: Continuously jam all wifi clients/routers.
+website: https://github.com/DanMcInerney/wifijammer
+labels: DoS & DDoS

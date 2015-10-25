@@ -1,0 +1,34 @@
+name: MD6
+description: ' The MD6 Message-Digest Algorithm is a cryptographic hash function.
+  It uses a Merkle tree-like structure to allow for immense parallel computation of
+  hashes for very long inputs. Authors claim a performance of 28 cycles per byte for
+  MD6-256 on an Intel Core 2 Duo and provable resistance against differential cryptanalysis.'
+information:
+  published: '2008'
+  series: MD2, MD4, MD5, MD6
+  sizes: 128 bits
+  structure: Merkle tree
+authors:
+- Ronald Rivest
+- Benjamin Agre
+- Dan Bailey
+- Sarah Cheng
+- Christopher Crutchfield
+- Yevgeniy Dodis
+- Kermin Fleming
+- Asif Khan
+- Jayant Krishnamurthy
+- Yuncheng Lin
+- Leo Reyzin
+- Emily Shen
+- Jim Sukha
+- Eran Tromer
+- Yiqun Lisa Yin
+labels: Unkeyed Primitives, Hash Functions (MDCs), Symmetric-Key Primitives, Hash Functions (MACs)
+cryptanalysis: ''
+materials:
+- title: The MD6 hash function A proposal to NIST for SHA-3
+  url: http://groups.csail.mit.edu/cis/md6/submitted-2008-10-27/Supporting_Documentation/md6_report.pdf
+- title: MD6 website
+  url: http://groups.csail.mit.edu/cis/md6/
+secure: +

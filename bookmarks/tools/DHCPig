@@ -1,0 +1,4 @@
+name: DHCPig
+description: DHCP exhaustion script written in python using scapy network library.
+website: https://github.com/kamorin/DHCPig
+labels: Network

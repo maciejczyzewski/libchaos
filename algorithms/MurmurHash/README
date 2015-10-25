@@ -1,0 +1,21 @@
+name: MurmurHash
+description: ' MurmurHash is a non-cryptographic hash function suitable for general
+  hash-based lookup.'
+information:
+  published: '2008'
+  sizes: 32, 64, or 128 bits
+  structure: product/rotation
+authors:
+- Austin Appleby
+labels: Unkeyed Primitives, Hash Functions (MDCs), Random Sequences
+cryptanalysis: ''
+materials:
+- title: MurmurHash first announcement
+  url: http://tanjent.livejournal.com/756623.html
+- title: MurmurHash1
+  url: https://code.google.com/p/smhasher/wiki/MurmurHash1
+- title: MurmurHash2
+  url: https://code.google.com/p/smhasher/wiki/MurmurHash2
+- title: MurmurHash3
+  url: https://code.google.com/p/smhasher/wiki/MurmurHash3
+secure: +

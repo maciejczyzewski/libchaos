@@ -1,0 +1,5 @@
+name: Responder
+description: Is a LLMNR, NBT-NS and MDNS poisoner, with built-in HTTP/SMB/MSSQL/FTP/LDAP
+  rogue authentication server.
+website: https://github.com/SpiderLabs/Responder
+labels: Penetration Distributions & Frameworks

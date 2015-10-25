@@ -1,0 +1,4 @@
+name: sjcl
+description: Is a project by the Stanford Computer Security Lab to build a secure, powerful, fast, small, easy-to-use, cross-browser library for cryptography in Javascript.
+website: http://bitwiseshiftleft.github.io/sjcl/
+labels: Javascript

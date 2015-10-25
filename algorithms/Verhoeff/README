@@ -1,0 +1,18 @@
+name: Verhoeff Algorithm
+description: ' It was the first decimal check digit algorithm which detects all single-digit
+  errors, and all transposition errors involving two adjacent digits, which was at
+  the time thought impossible with such a code.'
+information:
+  published: '1969'
+  sizes: 4 bits
+  structure: sum
+authors:
+- Jacobus Verhoeff
+labels: Unkeyed Primitives, Hash Functions (MDCs), Checksums
+cryptanalysis: ''
+materials:
+- title: 'The Laws of Cryptography: Verhoeff''s Decimal Error Detection'
+  url: http://www.cs.utsa.edu/~wagner/laws/verhoeff.html
+- title: Check Digits
+  url: http://www.augustana.ab.ca/~mohrj/algorithms/checkdigit.html
+secure: +

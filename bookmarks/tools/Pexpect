@@ -1,0 +1,4 @@
+name: Pexpect
+description: Control and automate other programs, similar to Don Libes "Expect" system.
+website: https://github.com/pexpect/pexpect
+labels: Others

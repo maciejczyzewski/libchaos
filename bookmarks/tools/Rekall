@@ -1,0 +1,4 @@
+name: Rekall
+description: Memory analysis framework developed by Google.
+website: http://www.rekall-forensic.com
+labels: Forensics

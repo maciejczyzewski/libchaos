@@ -1,0 +1,5 @@
+name: Mistress
+description: Probe file formats on the fly and protocols with malformed data, based
+  on pre-defined patterns.
+website: http://www.packetstormsecurity.org/fuzzer/mistress.rar
+labels: Fuzzing

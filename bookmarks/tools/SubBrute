@@ -1,0 +1,4 @@
+name: SubBrute
+description: Fast subdomain enumeration tool.
+website: https://github.com/TheRook/subbrute
+labels: Network

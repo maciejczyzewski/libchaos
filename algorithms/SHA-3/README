@@ -1,0 +1,24 @@
+name: SHA-3
+description: !!python/str " SHA-3, a subset of the cryptographic primitive family\
+  \ Keccak. SHA-3 uses the sponge construction, in which message blocks are XORed\
+  \ into a subset of the state, which is then transformed as a whole. In the version\
+  \ used in SHA-3, the state consists of a 5\xD75 array of 64-bit words, 1600 bits\
+  \ total."
+information:
+  published: '2012'
+  series: SHA-1, SHA-2, SHA-3
+  sizes: arbitrary
+  structure: sponge construction
+authors:
+- Guido Bertoni
+- Joan Daemen
+- !!python/str "Micha\xEBl Peeters"
+- and Gilles Van Assche
+labels: Unkeyed Primitives, Hash Functions (MDCs), Symmetric-Key Primitives, Hash Functions (MACs)
+cryptanalysis: ''
+materials:
+- title: The Keccak reference
+  url: http://keccak.noekeon.org/Keccak-reference-3.0.pdf
+- title: SHA-3/Keccak website
+  url: http://keccak.noekeon.org/
+secure: +

@@ -1,0 +1,5 @@
+name: Whoosh
+description: Fast, featureful full-text indexing and searching library implemented
+  in pure Python.
+website: https://bitbucket.org/mchaput/whoosh/
+labels: Others

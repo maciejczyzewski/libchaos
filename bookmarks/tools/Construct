@@ -1,0 +1,5 @@
+name: Construct
+description: Library for parsing and building of data structures (binary or textual).
+  Define your data structures in a declarative manner.
+website: http://construct.readthedocs.org/
+labels: Fuzzing

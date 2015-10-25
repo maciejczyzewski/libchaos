@@ -1,0 +1,5 @@
+name: mitmproxy
+description: SSL-capable, intercepting HTTP proxy. Console interface allows traffic
+  flows to be inspected and edited on the fly.
+website: http://mitmproxy.org/
+labels: Network

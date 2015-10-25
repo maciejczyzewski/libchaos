@@ -1,0 +1,4 @@
+name: RNCryptor
+description: CCCryptor (AES encryption) wrappers for iOS and Mac.
+website: https://github.com/RNCryptor/RNCryptor
+labels: Objective-c

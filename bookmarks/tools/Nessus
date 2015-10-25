@@ -1,0 +1,4 @@
+name: Nessus
+description: Vulnerability, configuration, and compliance assessment.
+website: http://www.tenable.com/products/nessus
+labels: Malware & Vulnerability Analysis

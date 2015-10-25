@@ -1,0 +1,4 @@
+name: sqlmap
+description: Automatic SQL injection and database takeover tool.
+website: https://github.com/sqlmapproject/sqlmap
+labels: Fuzzing

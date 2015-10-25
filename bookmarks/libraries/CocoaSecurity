@@ -1,0 +1,4 @@
+name: CocoaSecurity
+description: AES, MD5, SHA1, SHA224, SHA256, SHA384, SHA512, Base64, Hex
+website: https://github.com/kelp404/CocoaSecurity
+labels: Objective-c

@@ -1,0 +1,4 @@
+name: Volatility
+description: Extract digital artifacts from volatile memory (RAM) samples.
+website: http://www.volatilityfoundation.org/
+labels: Forensics

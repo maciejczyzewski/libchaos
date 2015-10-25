@@ -1,0 +1,5 @@
+name: jsunpack-n
+description: Generic JavaScript unpacker; emulates browser functionality to detect
+  exploits that target browser and browser plug-in vulnerabilities.
+website: https://github.com/urule99/jsunpack-n
+labels: Malware & Vulnerability Analysis

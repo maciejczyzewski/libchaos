@@ -1,0 +1,4 @@
+name: sslstrip
+description: A demonstration of the HTTPS stripping attacks.
+website: http://www.thoughtcrime.org/software/sslstrip/
+labels: SSL Analysis

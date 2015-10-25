@@ -1,0 +1,4 @@
+name: jsHashes
+description: Pure JavaScript implementation of the most extended hash algorithms.
+website: https://github.com/h2non/jshashes
+labels: Javascript

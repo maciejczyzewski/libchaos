@@ -1,0 +1,18 @@
+name: AES
+description: 'AES is based on the Rijndael cipher developed by two Belgian cryptographers, Joan Daemen and Vincent Rijmen, who submitted a proposal to NIST during the AES selection process. Rijndael is a family of ciphers with different key and block sizes.'
+information:
+  published: "1998"
+  structure: Substitution-permutation network
+authors:
+- Joan Daemen
+- Vincent Rijmen
+labels: Symmetric-Key Primitives, Block Ciphers
+cryptanalysis: 'Until May 2009, the only successful published attacks against the full AES were side-channel attacks on some specific implementations.'
+materials:
+- title: 256bit Ciphers - AES Reference implementation and derived code
+  url: http://embeddedsw.net/Cipher_Reference_Home.html
+- title: Animation of Rijndael
+  url: http://www.formaestudio.com/rijndaelinspector/archivos/Rijndael_Animation_v4_eng.swf
+- title: AES encryption is cracked
+  url: http://www.theinquirer.net/inquirer/news/2102435/aes-encryption-cracked
+secure: "~"

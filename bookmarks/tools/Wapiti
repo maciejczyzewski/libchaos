@@ -1,0 +1,4 @@
+name: Wapiti
+description: Web application vulnerability scanner.
+website: http://wapiti.sourceforge.net/
+labels: Malware & Vulnerability Analysis

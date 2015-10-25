@@ -1,0 +1,4 @@
+name: slowloris
+description: The low bandwidth, yet greedy and poisonous HTTP client.
+website: http://valhalla.bofh.pl/~jacke/misc/slowloris.pl
+labels: DoS & DDoS

@@ -1,0 +1,209 @@
+<html>
+<head>
+
+<style>pre { width: 617px; margin: 0 auto; line-height: 18px; margin-bottom: 2em; } blockquote { background: #eee; padding: 10px; } ol { -webkit-column-count: 1; -moz-column-count: 1; column-count: 1; } ol.IB > li { display: inline-block; width: 100%; } h4 { border-bottom: 2px solid black; } .TC { text-align: center; } @media (min-width: 750px) { ol { -webkit-column-count: 3; -moz-column-count: 3; column-count: 3; } } fieldset { border: 2px solid black; border-style: dashed; }</style>
+
+<meta charset="utf-8" />
+
+<title>RETTER: Cryptography & Security moves fast. Keep up!</title>
+
+</head>
+<body>
+
+<pre>
+
+              _""^^"-.
+            /  /   \  \
+            |  |.-""-.|        ___ ___ _____ _____ ___ ___
+           ////`.;;;;.`\      | _ \ __|_   _|_   _| __| _ \\
+          |||; ::/  \:: ;     |   / _|  | |   | | | _||   /
+          |||; ::\__/:: ;     |_|_\___| |_|   |_| |___|_|_\\
+           \\\\ ';;;;' /      Cryptography & Security moves fast. Keep up!
+            `==':-..-'`
+
+                       http://maciejczyzewski.me/retter
+
+                             By: M. A. Czyzewski
+                             Date:    {{ helpers.date }}
+
+            This code is explicitly placed into the public domain.
+</pre>
+
+<!-- EXTERNAL -->
+
+<div class="TC">
+  <iframe src="https://ghbtns.com/github-btn.html?user=maciejczyzewski&repo=retter&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+
+  <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://maciejczyzewski.me/retter" data-via="_czyzewski">Tweet</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</div>
+
+<!-- EXTERNAL -->
+
+<p class="TC">[<a href="#courses">COURSES</a> |
+<a href="#libraries">LIBRARIES</a> |
+<a href="#tools">TOOLS</a> |
+<a href="#algorithms">ALGORITHMS</a> |
+<a href="#conferences">CONFERENCES</a> |
+<a href="#cryptographers">CRYPTOGRAPHERS</a> |
+<a href="#organizations-groups">ORGANIZATIONS & GROUPS</a>]</p>
+
+<blockquote><b>NOTE</b>: If you see mistakes, expired links or would like to expand the list with your own bookmarks. Feel free to <a href="https://github.com/maciejczyzewski/retter">contribute</a> to this project! If you want to know more about this project, please read the <a href="https://github.com/maciejczyzewski/retter#readme">README</a>. List below is still in the process of creation...</blockquote>
+
+<h4 id="courses">Courses</h4>
+
+<ol class="IB">
+{% for course in bookmarks.courses %}
+  <li>
+    <a href="{{ course.website }}">{{ course.name }}</a>
+    <p>{{ course.description }}</p>
+  </li>
+{% endfor %}
+</ol>
+
+<h4 id="libraries">Libraries</h4>
+
+<ol class="IB">
+{% for language in helpers.libraries %}
+  <li>
+    {{ language.upper() }}
+    <ul>
+    {% for library in bookmarks.libraries %}
+      {% if library.labels == language %}
+        <li><a href="{{ library.website }}">{{ library.name }}</a>: {{ library.description }}</li>
+      {% endif %}
+    {% endfor %}
+    </ul>
+    <br/>
+  </li>
+{% endfor %}
+</ol>
+
+<h4 id="tools">Tools</h4>
+
+<ol class="IB">
+{% for category in helpers.tools %}
+  <li>
+    {{ category.upper() }}
+    <ul>
+    {% for tool in bookmarks.tools %}
+      {% if tool.labels == category %}
+        <li><a href="{{ tool.website }}">{{ tool.name }}</a>: {{ tool.description }}</li>
+      {% endif %}
+    {% endfor %}
+    </ul>
+    <br/>
+  </li>
+{% endfor %}
+</ol>
+
+<h4 id="algorithms">Algorithms</h4>
+
+<p>The list below is a little outdated and confused. However, if you know some interesting algorithm, or you are the creator of it. You can add here a few information.</p>
+
+<blockquote>See comparison of <a href="https://en.wikipedia.org/wiki/Comparison_of_cryptographic_hash_functions">cryptographic hash functions</a> or <a href="http://programmers.stackexchange.com/questions/49550/which-hashing-algorithm-is-best-for-uniqueness-and-speed">list of the best for uniqueness and speed hashing algorithms</a>.</blockquote>
+
+<ol class="IB">
+{% for category in helpers.taxonomy %}
+  <li>
+  {{ category.upper() }}
+  <ul>{% for algorithm in algorithms %}
+    {% if category in algorithm.labels  %}
+    <li><a href="#{{ algorithm.id }}">{{ algorithm.name }}</a>: [{{ algorithm.secure }}] {{ algorithm.information.published }}</li>
+    {% endif %}
+    {% endfor %}</ul>
+  <br/>
+  </li>
+{% endfor %}
+</ol>
+
+NOTES
+
+<p>Below is a list of notes to algorithms including: description, implementations, cryptoanalysis and materials. It should be a summary of the most important information, with an emphasis on attacks and interesting bookmarks. (in catalogs should be placed useful scripts)</p>
+
+<ol class="IB">
+{% for algorithm in algorithms %}
+  <li>
+    <fieldset id="{{ algorithm.id }}" style="display: inline-block">
+      <legend><b>{{ algorithm.name }}</b></legend>
+        <p>{{ algorithm.description }}</p>
+        <p><u><mark>{{ algorithm.cryptanalysis }}</mark></u></p>
+        {% if algorithm.authors != [] %}
+          Authors: {{ algorithm.authors|join(', ') }}<br/>
+          <br/>
+        {% endif %}
+
+        {% for key, value in algorithm.information.items() %}
+          {{ key.title() }}: {{ value.title() }}<br/>
+        {% endfor %}
+
+        {% if algorithm.materials != [] %}
+          <br/>
+          Materials:
+          <ul>
+          {% for link in algorithm.materials %}
+            <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+          {% endfor %}
+          </ul>
+        {% endif %}
+
+        <br/>[{{ algorithm.labels|join(', ') }}]
+    </fieldset>
+    <br/><br/>
+  </li>
+{% endfor %}
+</ol>
+
+<h4 id="conferences">Conferences</h4>
+
+<p>Mihir Bellare conducts <a href="http://cseweb.ucsd.edu/~mihir/confs.html">calendar</a>, which is often updated, also worth a look at <a href="http://www.ieee-security.org/Calendar/cipher-hypercalendar.html">IEEE Cipher's</a>.</p>
+
+<blockquote>See current list of <a href="http://www.uclouvain.be/crypto/callforpapers/forthcoming">call for papers</a>.</blockquote>
+
+<p>[<a href="http://www.meetup.com/find/?allMeetups=false&keywords=security&radius=Infinity&sort=default">security</a> |
+<a href="http://www.meetup.com/find/?allMeetups=false&keywords=crypto&radius=Infinity&sort=default">crypto</a> |
+<a href="http://www.meetup.com/find/?allMeetups=false&keywords=hack&radius=Infinity&sort=default">hack</a>]</p>
+
+{% for type in helpers.meetups %}
+
+{{ type.upper() }}
+
+<ul>
+{% for meetup in bookmarks.meetups %}
+  {% if meetup.labels == type %}
+    <li><a href="{{ meetup.website }}">{{ meetup.abbreviation }}</a>: {{ meetup.name }}</li>
+  {% endif %}
+{% endfor %}
+</ul>
+
+{% endfor %}
+
+<h4 id="cryptographers">Cryptographers</h4>
+
+<ol class="TC">
+{% for person in bookmarks.people %}
+  <li><a href="{{ person.website }}">{{ person.name }}</a></li>
+{% endfor %}
+</ol>
+
+<h4 id="organizations-groups">Organizations & Groups</h4>
+
+<ul>
+{% for group in bookmarks.groups %}
+  <li>
+    <a href="{{ group.website }}">{{ group.abbreviation }} - {{ group.name }}</a>
+    <p>{{ group.description }}</p>
+    <ul>
+    {% for link in group.links %}
+      <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+    {% endfor %}
+    </ul>
+    <br/>
+  </li>
+{% endfor %}
+</ul>
+
+<p class="TC">#crypto & #security</p>
+
+</body>
+</html>

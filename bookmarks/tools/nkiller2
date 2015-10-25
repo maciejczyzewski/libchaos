@@ -1,0 +1,4 @@
+name: nkiller2
+description: A TCP exhaustion/stressing tool.
+website: https://gist.github.com/maciejczyzewski/896470035c42eaba96b1
+labels: DoS & DDoS

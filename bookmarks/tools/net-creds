@@ -1,0 +1,4 @@
+name: net-creds
+description: Sniffs sensitive data from interface or pcap.
+website: https://github.com/DanMcInerney/net-creds
+labels: Network

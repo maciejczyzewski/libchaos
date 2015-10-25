@@ -1,0 +1,5 @@
+name: TrIDLib
+description: Identify file types from their binary signatures. Now includes Python
+  binding.
+website: http://mark0.net/code-tridlib-e.html
+labels: Forensics
