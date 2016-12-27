@@ -1,0 +1,441 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Chaos Machines &#8212; libchaos 0.0.1-dev documentation</title>
+    
+    <link rel="stylesheet" href="_static/master.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.1-dev',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within libchaos 0.0.1-dev documentation"
+          href="_static/opensearch.xml"/>
+    <link rel="top" title="libchaos 0.0.1-dev documentation" href="index.html" />
+    <link rel="next" title="Pseudo-Random Number Generator" href="generators.html" />
+    <link rel="prev" title="Quickstart" href="quickstart.html" /> 
+  </head>
+  <body role="document">  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="chaos-machines">
+<span id="id1"></span><h1>Chaos Machines<a class="headerlink" href="#chaos-machines" title="Permalink to this headline">¶</a></h1>
+<p>In mathematics, a chaos machine is a class of algorithms constructed on the base of chaos theory (mainly deterministic chaos) to produce <strong>pseudo-random oracle</strong>. It presents the idea to create a universal scheme with modular design and customizable parameters, that can be applied where <strong>randomness</strong> and <strong>sensitiveness</strong> is needed.</p>
+<p>It was designed specifically to combine the benefits of hash function and pseudo-random function. However, it can be used to implement many cryptographic primitives, including cryptographic hashes, message authentication codes and randomness extractors.</p>
+<div class="section" id="list-of-engines">
+<h2>List of Engines<a class="headerlink" href="#list-of-engines" title="Permalink to this headline">¶</a></h2>
+<p>There is an empty template for chaos machine, read <a class="reference external" href="https://github.com/maciejczyzewski/libchaos/blob/master/src/engines/empty.cc">source code</a> from repository.</p>
+<div class="section" id="naive-czyzewski-generator">
+<h3>Naive Czyzewski Generator<a class="headerlink" href="#naive-czyzewski-generator" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt>
+<code class="descname">chaos::engines::ncg</code></dt>
+<dd></dd></dl>
+
+<p><a class="reference external" href="https://eprint.iacr.org/2016/468">https://eprint.iacr.org/2016/468</a> <a class="reference external" href="https://github.com/maciejczyzewski/libchaos/blob/master/docs/paper/document.pdf">(latest version)</a></p>
+<p><strong>Purpose:</strong> randomness extractor, cryptographic primitives</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="52%" />
+<col width="48%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><img alt="rank-it plot of dist." class="first last" src="_images/ncg-distribution-rankit.png" />
+</td>
+<td><img alt="benchmark of push function" class="first last" src="_images/ncg-speed-benchmark.png" />
+</td>
+</tr>
+<tr class="row-even"><td>Compare with these ones discussed on <a class="reference external" href="https://www.reddit.com/r/crypto/comments/2d4m1v/how_random_is_your_data_on_interpreting_diehard/">Reddit</a>.</td>
+<td>Push is very slow on big space parameter.</td>
+</tr>
+</tbody>
+</table>
+<p>Emphasis has been placed on period that is calculable, but also on high sensitivity to initial conditions
+and quality of output. Algorithm passes all the Dieharder, NIST and TestU01 test sets. In addition, it shows resistance to common cryptographic attacks.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="8%" />
+<col width="8%" />
+<col width="4%" />
+<col width="24%" />
+<col width="14%" />
+<col width="14%" />
+<col width="28%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Input</th>
+<th class="head">Output</th>
+<th class="head">BPS</th>
+<th class="head">Period</th>
+<th class="head">Security</th>
+<th class="head">Quality</th>
+<th class="head">Speed</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>uint32_t</td>
+<td>uint32_t</td>
+<td>4</td>
+<td><span class="math">\([2^{16m}, 2^{32m}]\)</span></td>
+<td><span class="okay">high</span></td>
+<td><span class="okay">high</span></td>
+<td><span class="poor">medium</span> <a class="footnote-reference" href="#ncg-drawback" id="id2">[1]</a></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="ncg-drawback" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[1]</a></td><td>The drawback is the limited quantity of the machine parameters. On each push action, it engages all possible states from buffer space. Therefore, hashing for huge buffers does not make sense (computation complexity increase).</td></tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="xorspace">
+<h3>Xorspace<a class="headerlink" href="#xorspace" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt>
+<code class="descname">chaos::engines::xorspace</code></dt>
+<dd></dd></dl>
+
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="10%" />
+<col width="5%" />
+<col width="28%" />
+<col width="16%" />
+<col width="16%" />
+<col width="16%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Input</th>
+<th class="head">Output</th>
+<th class="head">BPS</th>
+<th class="head">Period</th>
+<th class="head">Security</th>
+<th class="head">Quality</th>
+<th class="head">Speed</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>uint8_t</td>
+<td>uint8_t</td>
+<td>1</td>
+<td>???</td>
+<td><span class="vbad">low</span></td>
+<td><span class="poor">medium</span></td>
+<td><span class="okay">high</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="adapter-s-interface">
+<h2>Adapter&#8217;s Interface<a class="headerlink" href="#adapter-s-interface" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt>
+<code class="descname">chaos::machine</code></dt>
+<dd></dd></dl>
+
+<p>This module is a universal adapter for different types of chaos machine algorithms. It&#8217;s compatible with
+<a class="reference external" href="http://en.cppreference.com/w/cpp/numeric/random">STL pseudo-random number engines</a>.</p>
+<div class="highlight-c++"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;chaos.h&gt;</span><span class="cp"></span>
+
+<span class="c1">// case #1: with default starting variable</span>
+<span class="n">chaos</span><span class="o">::</span><span class="n">machine</span><span class="o">&lt;</span><span class="n">chaos</span><span class="o">::</span><span class="n">engines</span><span class="o">::</span><span class="n">ncg</span><span class="o">&gt;</span> <span class="n">x</span><span class="p">;</span> <span class="c1">// ncg.__default_key</span>
+
+<span class="c1">// case #2: using shortcut (same way as case #1)</span>
+<span class="n">CHAOS_MACHINE_NCG</span> <span class="n">y</span><span class="p">;</span> <span class="c1">// ncg.__default_key</span>
+
+<span class="c1">// case #3: with initial secret key (vector of machine::size_cell)</span>
+<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">CHAOS_MACHINE_NCG</span><span class="o">::</span><span class="n">size_cell</span><span class="o">&gt;</span> <span class="n">secret_key</span> <span class="o">=</span> <span class="p">{</span><span class="mh">0x11</span><span class="p">,</span> <span class="mh">0x22</span><span class="p">};</span>
+<span class="n">CHAOS_MACHINE_NCG</span> <span class="nf">z</span><span class="p">(</span><span class="n">secret_key</span><span class="p">);</span>
+</pre></div>
+</div>
+<div class="section" id="parameters-settings">
+<h3>Parameters Settings<a class="headerlink" href="#parameters-settings" title="Permalink to this headline">¶</a></h3>
+<p>Selection of parameters provides preferred properties and security level. Therefore, machine contains three external variables: <em>initial secret key</em>, <em>time parameter</em>, and <em>space parameter</em>.</p>
+<p>They can be controlled using functions listed below. Changing parameters, change properties for <a class="reference external" href="#list-of-engines">specific engine</a> (e.g. provide extra period or space-hardness).</p>
+<dl class="function">
+<dt id="machine.set_key">
+<code class="descclassname">machine.</code><code class="descname">set_key</code><span class="sig-paren">(</span><em>std::vector&lt;uint8_t&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#machine.set_key" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p><strong>Initial Secret Key</strong> (Starting Variable). Is a fixed-size input to a chaos machine that is typically required to be random or pseudo-random. Setting the initial secret key is an example of using machine as the <a class="reference external" href="https://en.wikipedia.org/wiki/Message_authentication_code">MAC algorithm</a>.</p>
+<div class="highlight-c++"><div class="highlight"><pre><span></span><span class="n">x</span><span class="p">.</span><span class="n">set_key</span><span class="p">({</span><span class="mh">0x11</span><span class="p">,</span> <span class="mh">0x22</span><span class="p">,</span> <span class="mh">0x33</span><span class="p">,</span> <span class="mh">0x44</span><span class="p">});</span>
+</pre></div>
+</div>
+<dl class="function">
+<dt id="machine.set_space">
+<code class="descclassname">machine.</code><code class="descname">set_space</code><span class="sig-paren">(</span><em>size_t</em><span class="sig-paren">)</span><a class="headerlink" href="#machine.set_space" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p><strong>Space Parameter</strong> (Memory Cost). Defines the number of dynamical systems to be used in the machine. Concomitantly indicates how many bytes of working space the buffer will require during its computation, because each system needs his own space.</p>
+<div class="highlight-c++"><div class="highlight"><pre><span></span><span class="n">x</span><span class="p">.</span><span class="n">set_space</span><span class="p">(</span><span class="mi">8</span><span class="p">);</span>
+</pre></div>
+</div>
+<dl class="function">
+<dt id="machine.set_time">
+<code class="descclassname">machine.</code><code class="descname">set_time</code><span class="sig-paren">(</span><em>size_t</em><span class="sig-paren">)</span><a class="headerlink" href="#machine.set_time" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p><strong>Time Parameter</strong> (Time Cost). That determines the number of rounds of computation that machine performs. The larger the time parameter, the longer the output computation will take. As computational power increases, users can increase this time parameter to keep the number of wall-clock seconds required to compute each sequence near-constant.</p>
+<div class="highlight-c++"><div class="highlight"><pre><span></span><span class="n">x</span><span class="p">.</span><span class="n">set_time</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="input-interface">
+<h3>Input Interface<a class="headerlink" href="#input-interface" title="Permalink to this headline">¶</a></h3>
+<p>Push function is primarily the input function of the machine, it absorbs bit string and uses in system changes. The results are used later by the pull function. The push procedure is a collection of operations which aims to control evolution functions. It modifies inflicted systems, based on initial secret key and input.</p>
+<dl class="function">
+<dt id="machine.push">
+<code class="descclassname">machine.</code><code class="descname">push</code><span class="sig-paren">(</span><em>machine::size_push</em><span class="sig-paren">)</span><a class="headerlink" href="#machine.push" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<div class="highlight-c++"><div class="highlight"><pre><span></span><span class="n">x</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="mh">0x11</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="output-interface">
+<h3>Output Interface<a class="headerlink" href="#output-interface" title="Permalink to this headline">¶</a></h3>
+<p>The output of pull function is a bit string of fixed length, sequences of pseudo-random numbers that are unique and sensitive to the initial conditions.</p>
+<dl class="function">
+<dt id="machine.pull">
+<code class="descclassname">machine.</code><code class="descname">pull</code><span class="sig-paren">(</span><em>void</em><span class="sig-paren">)</span> &rarr; machine::size_pull<a class="headerlink" href="#machine.pull" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<div class="highlight-c++"><div class="highlight"><pre><span></span><span class="kt">uint8_t</span> <span class="n">y_result</span> <span class="o">=</span> <span class="n">x</span><span class="p">.</span><span class="n">pull</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="resetting-to-initial-state">
+<h3>Resetting to Initial State<a class="headerlink" href="#resetting-to-initial-state" title="Permalink to this headline">¶</a></h3>
+<dl class="function">
+<dt id="machine.reset">
+<code class="descclassname">machine.</code><code class="descname">reset</code><span class="sig-paren">(</span><em>void</em><span class="sig-paren">)</span><a class="headerlink" href="#machine.reset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>This function clears the memory, but holds last used parameters. After this, operation machine is in the initial state.</p>
+<div class="highlight-c++"><div class="highlight"><pre><span></span><span class="n">x</span><span class="p">.</span><span class="n">reset</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="sample-applications">
+<h2>Sample Applications<a class="headerlink" href="#sample-applications" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="pseudo-random-function-family">
+<h3>Pseudo-random Function Family<a class="headerlink" href="#pseudo-random-function-family" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-c++"><div class="highlight"><pre><span></span><span class="cm">/*</span>
+<span class="cm">#include &lt;ctime&gt;</span>
+<span class="cm">#include &lt;iostream&gt;</span>
+
+<span class="cm">#include &lt;chaos.h&gt; // library header</span>
+
+<span class="cm">// create seed on the base of time</span>
+<span class="cm">uint8_t seed = static_cast&lt;uint8_t&gt;(time(NULL));</span>
+
+<span class="cm">// initialize chaos machine using NCG algorithm/engine</span>
+<span class="cm">chaos::machine&lt;chaos::engines::ncg&gt; x_machine;</span>
+
+<span class="cm">int main(void) {</span>
+<span class="cm">	// configure machine with parameters (t=2, m=256)</span>
+<span class="cm">	x_machine.set_time(2); x_machine.set_space(256);</span>
+
+<span class="cm">	// initialize with seed (still pseudo-randomness)</span>
+<span class="cm">	x_machine.push(seed); // can be anything</span>
+
+<span class="cm">	// serve like /dev/random</span>
+<span class="cm">	while (true)</span>
+<span class="cm">		putc_unlocked(x_machine.pull(), stdout);</span>
+<span class="cm">}</span>
+<span class="cm">*/</span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;ctime&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;chaos.h&gt;  // library header</span><span class="cp"></span>
+
+<span class="c1">// create seed on the base of time</span>
+<span class="n">CHAOS_MACHINE_NCG</span><span class="o">::</span><span class="n">size_push</span> <span class="n">seed</span> <span class="o">=</span>
+		<span class="k">static_cast</span><span class="o">&lt;</span><span class="n">CHAOS_MACHINE_NCG</span><span class="o">::</span><span class="n">size_push</span><span class="o">&gt;</span><span class="p">(</span><span class="n">time</span><span class="p">(</span><span class="nb">NULL</span><span class="p">));</span>
+
+<span class="c1">// initialize chaos machine using NCG algorithm/engine</span>
+<span class="n">CHAOS_MACHINE_NCG</span> <span class="n">x_machine</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
+	<span class="c1">// configure machine with parameters (t=2, m=256)</span>
+	<span class="n">x_machine</span><span class="p">.</span><span class="n">set_time</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span> <span class="n">x_machine</span><span class="p">.</span><span class="n">set_space</span><span class="p">(</span><span class="mi">256</span><span class="p">);</span>
+
+	<span class="c1">// initialize with seed (still pseudo-randomness)</span>
+	<span class="n">x_machine</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">seed</span><span class="p">);</span>  <span class="c1">// can be anything</span>
+
+	<span class="c1">// serve like /dev/random</span>
+	<span class="k">while</span> <span class="p">(</span><span class="nb">true</span><span class="p">)</span> <span class="n">putc_unlocked</span><span class="p">(</span><span class="n">x_machine</span><span class="p">.</span><span class="n">pull</span><span class="p">(),</span> <span class="n">stdout</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Execute and stop after 1024 octets:</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="gp">$</span> ./fake_dev_random <span class="p">|</span> xxd -l 1024
+</pre></div>
+</div>
+</div>
+<div class="section" id="cryptographic-hash-function">
+<h3>Cryptographic Hash Function<a class="headerlink" href="#cryptographic-hash-function" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-c++"><div class="highlight"><pre><span></span><span class="cm">/*</span>
+<span class="cm">#include &lt;iostream&gt;</span>
+<span class="cm">#include &lt;string&gt;</span>
+<span class="cm">#include &lt;vector&gt;</span>
+
+<span class="cm">#include &lt;chaos.h&gt; // library header</span>
+
+<span class="cm">// allocate std::vector (our starting variable)</span>
+<span class="cm">std::vector&lt;uint8_t&gt; y_secret = {0x14, 0x15, 0x92, 0x65,</span>
+<span class="cm">																 0x35, 0x89, 0x79, 0x32};</span>
+
+<span class="cm">// initialize chaos machine using NCG algorithm/engine</span>
+<span class="cm">chaos::machine&lt;chaos::engines::ncg&gt; x_machine(y_secret);</span>
+
+<span class="cm">int main(int argc, char** argv) {</span>
+<span class="cm">	// allocate std::vector (our message/bitstrings)</span>
+<span class="cm">	std::string y_string = argv[1]; // &quot;Lorem ipsum dolor sit...&quot;</span>
+<span class="cm">	std::vector&lt;uint8_t&gt; y_vector(y_string.begin(), y_string.end());</span>
+
+<span class="cm">	// make use of chaos machine (push/pull interface)</span>
+<span class="cm">	x_machine.message(y_vector);                           // push</span>
+<span class="cm">	std::vector&lt;uint8_t&gt; y_result = x_machine.digest(256); // pull</span>
+
+<span class="cm">	// print values in hexadecimal format</span>
+<span class="cm">	for (size_t i = 0; i &lt; y_result.size(); i++)</span>
+<span class="cm">		printf(&quot;%02x&quot;, y_result[i]);</span>
+<span class="cm">}</span>
+<span class="cm">*/</span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;algorithm&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;string&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;chaos.h&gt;  // library header</span><span class="cp"></span>
+
+<span class="c1">// allocate std::vector (our starting variable)</span>
+<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">CHAOS_MACHINE_NCG</span><span class="o">::</span><span class="n">size_cell</span><span class="o">&gt;</span> <span class="n">y_secret</span> <span class="o">=</span> <span class="p">{</span><span class="mh">0x14</span><span class="p">,</span> <span class="mh">0x15</span><span class="p">,</span> <span class="mh">0x92</span><span class="p">,</span> <span class="mh">0x65</span><span class="p">,</span>
+																											<span class="mh">0x35</span><span class="p">,</span> <span class="mh">0x89</span><span class="p">,</span> <span class="mh">0x79</span><span class="p">,</span> <span class="mh">0x32</span><span class="p">};</span>
+
+<span class="c1">// initialize chaos machine using NCG algorithm/engine</span>
+<span class="n">CHAOS_MACHINE_NCG</span> <span class="nf">x_machine</span><span class="p">(</span><span class="n">y_secret</span><span class="p">);</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">**</span> <span class="n">argv</span><span class="p">)</span> <span class="p">{</span>
+	<span class="c1">// allocate std::vector (our message/bitstrings)</span>
+	<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">y_string</span> <span class="o">=</span> <span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>  <span class="c1">// &quot;Lorem ipsum dolor sit...&quot;</span>
+	<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">CHAOS_MACHINE_NCG</span><span class="o">::</span><span class="n">size_push</span><span class="o">&gt;</span> <span class="n">y_vector</span><span class="p">(</span><span class="n">y_string</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span>
+																										 <span class="n">y_string</span><span class="p">.</span><span class="n">end</span><span class="p">());</span>
+
+	<span class="c1">// [@1] push</span>
+	<span class="k">for</span> <span class="p">(</span><span class="kt">size_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">y_vector</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="n">x_machine</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">y_vector</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+
+	<span class="c1">// [@2] pull</span>
+	<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">CHAOS_MACHINE_NCG</span><span class="o">::</span><span class="n">size_pull</span><span class="o">&gt;</span> <span class="n">y_result</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+	<span class="n">std</span><span class="o">::</span><span class="n">generate</span><span class="p">(</span><span class="n">y_result</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">y_result</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span>
+								<span class="p">[</span><span class="o">&amp;</span><span class="n">x_machine</span><span class="p">]</span> <span class="p">{</span> <span class="k">return</span> <span class="n">x_machine</span><span class="p">.</span><span class="n">pull</span><span class="p">();</span> <span class="p">});</span>
+
+	<span class="c1">// print values in hexadecimal format</span>
+	<span class="k">for</span> <span class="p">(</span><span class="kt">size_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">y_result</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="n">printf</span><span class="p">(</span><span class="s">&quot;%08x&quot;</span><span class="p">,</span> <span class="n">y_result</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Simple comparison to check <a class="reference external" href="https://en.wikipedia.org/wiki/Avalanche_effect">avalanche effect</a>:</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="gp">$</span> cmp -bl &lt;<span class="o">(</span>./fake_hash_function <span class="s2">&quot;Lorem ipsum dolor sit...&quot;</span><span class="o">)</span> <span class="se">\</span>
+<span class="go">					&lt;(./fake_hash_function &quot;Lorem ipsum bolor sit...&quot;)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/libchaos.svg" alt="Logo"/>
+            </a></p>
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Chaos Machines</a><ul>
+<li><a class="reference internal" href="#list-of-engines">List of Engines</a><ul>
+<li><a class="reference internal" href="#naive-czyzewski-generator">Naive Czyzewski Generator</a></li>
+<li><a class="reference internal" href="#xorspace">Xorspace</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#adapter-s-interface">Adapter&#8217;s Interface</a><ul>
+<li><a class="reference internal" href="#parameters-settings">Parameters Settings</a></li>
+<li><a class="reference internal" href="#input-interface">Input Interface</a></li>
+<li><a class="reference internal" href="#output-interface">Output Interface</a></li>
+<li><a class="reference internal" href="#resetting-to-initial-state">Resetting to Initial State</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sample-applications">Sample Applications</a><ul>
+<li><a class="reference internal" href="#pseudo-random-function-family">Pseudo-random Function Family</a></li>
+<li><a class="reference internal" href="#cryptographic-hash-function">Cryptographic Hash Function</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="quickstart.html"
+                        title="previous chapter">Quickstart</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="generators.html"
+                        title="next chapter">Pseudo-Random Number Generator</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/machines.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="search" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016, Libchaos Authors.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.5a0.
+    </div>
+  </body>
+</html>

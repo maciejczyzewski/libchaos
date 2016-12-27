@@ -1,0 +1,17 @@
+.DS_Store
+
+# API
+api/js/
+
+# Cmake build system
+CMakeCache.txt
+CMakeFiles/
+build/
+
+# Sphinx documentation
+docs/.doctrees/
+docs/.buildinfo
+docs/build/
+
+# Teax build environment
+.teax

@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Pseudo-Random Number Generator &#8212; libchaos 0.0.1-dev documentation</title>
+    
+    <link rel="stylesheet" href="_static/master.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.1-dev',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within libchaos 0.0.1-dev documentation"
+          href="_static/opensearch.xml"/>
+    <link rel="top" title="libchaos 0.0.1-dev documentation" href="index.html" />
+    <link rel="prev" title="Chaos Machines" href="machines.html" /> 
+  </head>
+  <body role="document">  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="pseudo-random-number-generator">
+<span id="prngs"></span><h1>Pseudo-Random Number Generator<a class="headerlink" href="#pseudo-random-number-generator" title="Permalink to this headline">¶</a></h1>
+<p>PRNG is an algorithm for <strong>generating a sequence of numbers</strong> whose properties approximate the properties of sequences of random numbers. Generated sequence is <strong>not truly random</strong>, because it is completely determined by a relatively small set of initial values, called the seed.</p>
+<div class="section" id="list-of-generators">
+<h2>List of Generators<a class="headerlink" href="#list-of-generators" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="abyssinian">
+<h3>Abyssinian<a class="headerlink" href="#abyssinian" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt>
+<code class="descname">chaos::generators::abyssinian</code></dt>
+<dd></dd></dl>
+
+<table border="1" class="docutils">
+<colgroup>
+<col width="27%" />
+<col width="13%" />
+<col width="23%" />
+<col width="19%" />
+<col width="19%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Seed</th>
+<th class="head">Output</th>
+<th class="head">Period</th>
+<th class="head">Quality</th>
+<th class="head">Speed</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>uint32_t, uint32_t</td>
+<td>uint32_t</td>
+<td><span class="math">\(2^{126}\)</span></td>
+<td><span class="okay">high</span></td>
+<td><span class="okay">high</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="xoroshiro128">
+<h3>Xoroshiro128+<a class="headerlink" href="#xoroshiro128" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt>
+<code class="descname">chaos::generators::xoroshiro128plus</code></dt>
+<dd></dd></dl>
+
+<table border="1" class="docutils">
+<colgroup>
+<col width="15%" />
+<col width="15%" />
+<col width="26%" />
+<col width="22%" />
+<col width="22%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Seed</th>
+<th class="head">Output</th>
+<th class="head">Period</th>
+<th class="head">Quality</th>
+<th class="head">Speed</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>uint64_t</td>
+<td>uint64_t</td>
+<td><span class="math">\(2^{128}\)</span></td>
+<td><span class="okay">high</span></td>
+<td><span class="okay">high</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="xoroshiro1024">
+<h3>Xoroshiro1024*<a class="headerlink" href="#xoroshiro1024" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt>
+<code class="descname">chaos::generators::xoroshiro1024star</code></dt>
+<dd></dd></dl>
+
+<table border="1" class="docutils">
+<colgroup>
+<col width="15%" />
+<col width="15%" />
+<col width="27%" />
+<col width="21%" />
+<col width="21%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Seed</th>
+<th class="head">Output</th>
+<th class="head">Period</th>
+<th class="head">Quality</th>
+<th class="head">Speed</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>uint64_t</td>
+<td>uint64_t</td>
+<td><span class="math">\(2^{1024}\)</span></td>
+<td><span class="okay">high</span></td>
+<td><span class="okay">high</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="kiss">
+<h3>KISS<a class="headerlink" href="#kiss" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt>
+<code class="descname">chaos::generators::kiss</code></dt>
+<dd></dd></dl>
+
+<p><a class="reference external" href="https://eprint.iacr.org/2011/007.pdf">https://eprint.iacr.org/2011/007.pdf</a></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="13%" />
+<col width="25%" />
+<col width="18%" />
+<col width="18%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Seed</th>
+<th class="head">Output</th>
+<th class="head">Period</th>
+<th class="head">Quality</th>
+<th class="head">Speed</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>uint32_t, uint32_t</td>
+<td>uint32_t</td>
+<td><span class="math">\(2^{119.5}\)</span></td>
+<td><span class="okay">high</span></td>
+<td><span class="okay">high</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="adapters-interface">
+<h2>Adapter’s Interface<a class="headerlink" href="#adapters-interface" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="typical-case">
+<h3>Typical Case<a class="headerlink" href="#typical-case" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-c++"><div class="highlight"><pre><span></span><span class="n">CHAOS_PRNG_XOROSHIRO128PLUS</span> <span class="n">gen</span><span class="p">;</span> <span class="c1">// shortcut (default seed)</span>
+<span class="n">chaos</span><span class="o">::</span><span class="n">prng</span><span class="o">&lt;</span><span class="n">chaos</span><span class="o">::</span><span class="n">generators</span><span class="o">::</span><span class="n">xoroshiro128plus</span><span class="o">&gt;</span> <span class="n">gen_class</span><span class="p">;</span>
+<span class="c1">// above: gen == gen_class</span>
+
+<span class="c1">// seeding is optional</span>
+<span class="n">gen</span><span class="p">.</span><span class="n">seed</span><span class="p">(</span><span class="mh">0x8a5cd789635d2dff</span><span class="p">);</span>
+
+<span class="n">gen</span><span class="p">.</span><span class="n">next</span><span class="p">();</span> <span class="c1">// return number</span>
+<span class="n">gen</span><span class="p">.</span><span class="n">next</span><span class="p">();</span> <span class="c1">// and another...</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="advanced-example">
+<h3>Advanced Example<a class="headerlink" href="#advanced-example" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-c++"><div class="highlight"><pre><span></span><span class="n">CHAOS_PRNG_KISS</span> <span class="n">gen</span><span class="p">;</span>
+
+<span class="n">CHAOS_PRNG_KISS</span><span class="o">::</span><span class="n">size_next</span> <span class="n">out</span><span class="p">;</span> <span class="c1">// for @3</span>
+<span class="c1">// uint32_t == CHAOS_PRNG_KISS::size_next</span>
+
+<span class="c1">// seed</span>
+<span class="n">gen</span><span class="p">.</span><span class="n">seed</span><span class="p">(</span><span class="mh">0x11223344</span><span class="p">);</span> <span class="c1">// @1</span>
+<span class="n">gen</span> <span class="o">&lt;&lt;</span> <span class="mh">0x11223344</span><span class="p">;</span>    <span class="c1">// @2</span>
+
+<span class="c1">// next</span>
+<span class="n">gen</span><span class="p">.</span><span class="n">next</span><span class="p">();</span>           <span class="c1">// @1</span>
+<span class="n">gen</span><span class="p">();</span>                <span class="c1">// @2</span>
+<span class="n">gen</span> <span class="o">&gt;&gt;</span> <span class="n">out</span><span class="p">;</span>           <span class="c1">// @3</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/libchaos.svg" alt="Logo"/>
+            </a></p>
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Pseudo-Random Number Generator</a><ul>
+<li><a class="reference internal" href="#list-of-generators">List of Generators</a><ul>
+<li><a class="reference internal" href="#abyssinian">Abyssinian</a></li>
+<li><a class="reference internal" href="#xoroshiro128">Xoroshiro128+</a></li>
+<li><a class="reference internal" href="#xoroshiro1024">Xoroshiro1024*</a></li>
+<li><a class="reference internal" href="#kiss">KISS</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#adapters-interface">Adapter’s Interface</a><ul>
+<li><a class="reference internal" href="#typical-case">Typical Case</a></li>
+<li><a class="reference internal" href="#advanced-example">Advanced Example</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="machines.html"
+                        title="previous chapter">Chaos Machines</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/generators.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="search" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016, Libchaos Authors.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.5a0.
+    </div>
+  </body>
+</html>

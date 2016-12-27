@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Quickstart &#8212; libchaos 0.0.1-dev documentation</title>
+    
+    <link rel="stylesheet" href="_static/master.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.1-dev',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within libchaos 0.0.1-dev documentation"
+          href="_static/opensearch.xml"/>
+    <link rel="top" title="libchaos 0.0.1-dev documentation" href="index.html" />
+    <link rel="next" title="Chaos Machines" href="machines.html" />
+    <link rel="prev" title="Installation" href="installation.html" /> 
+  </head>
+  <body role="document">  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="quickstart">
+<h1>Quickstart<a class="headerlink" href="#quickstart" title="Permalink to this headline">¶</a></h1>
+<p>This page gives a good introduction to libchaos. It assumes you already have library installed. If you do not, head over to the <a class="reference internal" href="installation.html#installation"><span class="std std-ref">Installation</span></a> section.</p>
+<div class="section" id="a-minimal-program">
+<h2>A Minimal Program<a class="headerlink" href="#a-minimal-program" title="Permalink to this headline">¶</a></h2>
+<p>The library is very simple to use. As a short example, this is how it could be used to initialize chaos machine, sent and receive some bytes, and finally analyze it:</p>
+<div class="highlight-c++"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;string&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;chaos.h&gt; // library header</span><span class="cp"></span>
+									 <span class="c1">// namespace chaos::*</span>
+
+<span class="c1">// allocate std::vector (our starting variable)</span>
+<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">uint8_t</span><span class="o">&gt;</span> <span class="n">y_secret</span> <span class="o">=</span> <span class="p">{</span><span class="mh">0x14</span><span class="p">,</span> <span class="mh">0x15</span><span class="p">,</span> <span class="mh">0x92</span><span class="p">,</span> <span class="mh">0x65</span><span class="p">,</span>
+																 <span class="mh">0x35</span><span class="p">,</span> <span class="mh">0x89</span><span class="p">,</span> <span class="mh">0x79</span><span class="p">,</span> <span class="mh">0x32</span><span class="p">};</span>
+
+<span class="c1">// initialize chaos machine using NCG algorithm/engine</span>
+<span class="n">chaos</span><span class="o">::</span><span class="n">machine</span><span class="o">&lt;</span><span class="n">chaos</span><span class="o">::</span><span class="n">engines</span><span class="o">::</span><span class="n">ncg</span><span class="o">&gt;</span> <span class="n">x_machine</span><span class="p">(</span><span class="n">y_secret</span><span class="p">);</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
+	<span class="c1">// allocate std::vector (our message/bitstrings)</span>
+	<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">y_string</span> <span class="o">=</span> <span class="s">&quot;Lorem ipsum dolor sit...&quot;</span><span class="p">;</span>
+	<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">uint8_t</span><span class="o">&gt;</span> <span class="n">y_vector</span><span class="p">(</span><span class="n">y_string</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">y_string</span><span class="p">.</span><span class="n">end</span><span class="p">());</span>
+
+	<span class="c1">// make use of chaos machine (push/pull interface)</span>
+	<span class="n">x_machine</span><span class="p">.</span><span class="n">message</span><span class="p">(</span><span class="n">y_vector</span><span class="p">);</span>                           <span class="c1">// push</span>
+	<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">uint8_t</span><span class="o">&gt;</span> <span class="n">y_result</span> <span class="o">=</span> <span class="n">x_machine</span><span class="p">.</span><span class="n">digest</span><span class="p">(</span><span class="mi">256</span><span class="p">);</span> <span class="c1">// pull</span>
+	<span class="n">std</span><span class="o">::</span><span class="n">sort</span><span class="p">(</span><span class="n">y_result</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">y_result</span><span class="p">.</span><span class="n">end</span><span class="p">());</span>           <span class="c1">// sort</span>
+
+	<span class="c1">// print sorted for rank-it plot (analysis)</span>
+	<span class="k">for</span> <span class="p">(</span><span class="kt">size_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">y_result</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+		<span class="n">printf</span><span class="p">(</span><span class="s">&quot;%zu, %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">y_result</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>That code can be compiled simply by linking our library:</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="gp">$</span> g++ example.cpp -std<span class="o">=</span>c++11 -lchaos -o example
+</pre></div>
+</div>
+<p>Libchaos only provides data and results. So we need data visualation tool to see it readable. We can use <a class="reference external" href="http://www.gnuplot.info/">gnuplot</a> (portable command-line driven graphing utility). Simple code to generate <a class="reference external" href="https://en.wikipedia.org/wiki/Rankit">rank-it plot</a>:</p>
+<div class="highlight-gnuplot"><div class="highlight"><pre><span></span><span class="c"># filename: rankit.plt</span>
+
+<span class="k">set</span> <span class="nb">terminal</span> <span class="n">svg</span>
+<span class="k">set</span> <span class="nb">output</span> <span class="s">&#39;result.svg&#39;</span>
+
+<span class="k">set</span> <span class="nb">xrange</span> <span class="p">[</span><span class="mi">0</span><span class="o">:</span><span class="mi">256</span><span class="p">]</span>
+<span class="k">set</span> <span class="nb">yrange</span> <span class="p">[</span><span class="mi">0</span><span class="o">:</span><span class="mi">256</span><span class="p">]</span>
+
+<span class="k">plot</span> <span class="n">x</span> <span class="n">linecolor</span> <span class="n">rgb</span> <span class="s">&quot;red&quot;</span> <span class="nb">notitle</span>
+<span class="k">plot</span> <span class="s">&#39;points_x_y.csv&#39;</span> <span class="nb">using</span> <span class="mi">1</span><span class="o">:</span><span class="mi">2</span> <span class="nb">with</span> <span class="n">points</span> <span class="nb">notitle</span>
+</pre></div>
+</div>
+<p>Then we use command-line utilities:</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="gp">$</span> ./example &gt; points_x_y.csv
+<span class="gp">$</span> gnuplot rankit.plt
+</pre></div>
+</div>
+<p>Final result (data visualization):</p>
+<a class="reference internal image-reference" href="_images/ncg_basic_rankit.svg"><img alt="_images/ncg_basic_rankit.svg" src="_images/ncg_basic_rankit.svg" width="100%" /></a>
+</div>
+<div class="section" id="testing-benchmarking">
+<h2>Testing &amp; Benchmarking<a class="headerlink" href="#testing-benchmarking" title="Permalink to this headline">¶</a></h2>
+<p>Project uses <a class="reference external" href="https://github.com/google/googletest">Google Test</a> and <a class="reference external" href="https://github.com/google/benchmark">Google Benchmark</a>. To execute tests you need to build library manualy with option <code class="docutils literal"><span class="pre">-DLIBCHAOS_ENABLE_TESTING=ON</span></code>.</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="go">tests/</span>
+<span class="go">	- b_&lt;filename&gt;.cc  # for benchmarking    |  BENCHMARK(TEST_NAME)</span>
+<span class="go">	- t_&lt;filename&gt;.cc  # for testing         |  TEST(TEST_NAME, CASE_NAME)</span>
+</pre></div>
+</div>
+<p>After <code class="docutils literal"><span class="pre">make</span> <span class="pre">build</span></code>, repository should contains programs named as: <code class="docutils literal"><span class="pre">bchaos</span></code> and <code class="docutils literal"><span class="pre">tchaos</span></code> (separately for benchmark and test), because tests are <em>required</em> while benchmarks are <em>optional</em>.</p>
+</div>
+<div class="section" id="contributing-to-project">
+<h2>Contributing To Project<a class="headerlink" href="#contributing-to-project" title="Permalink to this headline">¶</a></h2>
+<p>Our work flow is a <a class="reference external" href="https://guides.github.com/introduction/flow/index.html">typical GitHub flow</a>, where contributors fork the <a class="reference external" href="https://github.com/maciejczyzewski/libchaos">libchaos repository</a>, make their changes on branch, and submit a <a class="reference external" href="https://help.github.com/articles/using-pull-requests">Pull Request</a> (a.k.a. &#8220;PR&#8221;). Pull requests should usually be targeted at the <cite>master</cite> branch.</p>
+<p>Please include a nice description of your changes when you submit your PR; if we have to read the whole diff to figure out why you&#8217;re contributing in the first place, you&#8217;re less likely to get feedback and have your change merged in.</p>
+<p>Life will be a lot easier for you if you follow this pattern (i.e. fork, named branch, submit PR). If you use your fork&#8217;s <cite>master</cite> branch directly, things can get messy.</p>
+<p>Before wrapping up a PR, you should be sure to:</p>
+<ul class="simple">
+<li>Write tests to cover any functional changes.</li>
+<li>Update documentation for any changed public APIs.</li>
+<li>Add to the <a class="reference external" href="https://raw.githubusercontent.com/maciejczyzewski/libchaos/master/CHANGELOG.md">CHANGELOG.md</a> file describing any major changes.</li>
+</ul>
+<div class="section" id="future-ideas">
+<h3>Future Ideas<a class="headerlink" href="#future-ideas" title="Permalink to this headline">¶</a></h3>
+<p>If you are starting to work on a particular area, feel free to submit a PR that highlights your work in progress (and note in the PR title that it&#8217;s not ready to merge). These early PRs are welcome and will help in getting visibility for your fix, allow others to comment early on the changes and also let others know that you are currently working on something.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/libchaos.svg" alt="Logo"/>
+            </a></p>
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Quickstart</a><ul>
+<li><a class="reference internal" href="#a-minimal-program">A Minimal Program</a></li>
+<li><a class="reference internal" href="#testing-benchmarking">Testing &amp; Benchmarking</a></li>
+<li><a class="reference internal" href="#contributing-to-project">Contributing To Project</a><ul>
+<li><a class="reference internal" href="#future-ideas">Future Ideas</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="installation.html"
+                        title="previous chapter">Installation</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="machines.html"
+                        title="next chapter">Chaos Machines</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/quickstart.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="search" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016, Libchaos Authors.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.5a0.
+    </div>
+  </body>
+</html>

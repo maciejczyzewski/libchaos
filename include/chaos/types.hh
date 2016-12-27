@@ -1,0 +1,14 @@
+#ifndef CHAOS_TYPES_HH
+#define CHAOS_TYPES_HH
+
+#include <iostream>
+#include <stdexcept>
+#include <vector>
+
+namespace chaos { //::chaos ////////////////////////////////////////////////////
+
+// future
+
+} //::chaos ////////////////////////////////////////////////////////////////////
+
+#endif // CHAOS_TYPES_HH

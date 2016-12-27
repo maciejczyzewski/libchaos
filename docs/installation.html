@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Installation &#8212; libchaos 0.0.1-dev documentation</title>
+    
+    <link rel="stylesheet" href="_static/master.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.1-dev',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within libchaos 0.0.1-dev documentation"
+          href="_static/opensearch.xml"/>
+    <link rel="top" title="libchaos 0.0.1-dev documentation" href="index.html" />
+    <link rel="next" title="Quickstart" href="quickstart.html" />
+    <link rel="prev" title="libchaos: randomization, hashing and statistical analysis" href="index.html" /> 
+  </head>
+  <body role="document">  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="installation">
+<span id="id1"></span><h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<p>Library needs C++ compiler that supports C++11. You will need <em>g++ 4.7</em> or newer to get started, so be sure to have an up-to-date compiler.</p>
+<div class="admonition-todo admonition" id="index-0">
+<p class="first admonition-title">Todo</p>
+<p class="last">Add this library to <a class="reference external" href="http://brew.sh/">Homebrew</a>. Then simply <code class="docutils literal"><span class="pre">$</span> <span class="pre">brew</span> <span class="pre">install</span> <span class="pre">libchaos</span></code> to install this package on OS X. This is future idea, when library will have stable version.</p>
+</div>
+<div class="section" id="basic-installation">
+<h2>Basic Installation<a class="headerlink" href="#basic-installation" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="gp">$</span> git clone git@github.com:maciejczyzewski/libchaos.git
+<span class="gp">$</span> <span class="nb">cd</span> libchaos <span class="o">&amp;&amp;</span> ./install.sh
+</pre></div>
+</div>
+</div>
+<div class="section" id="manual-installation">
+<h2>Manual Installation<a class="headerlink" href="#manual-installation" title="Permalink to this headline">¶</a></h2>
+<p>We welcome patches. If you plan to contribute a patch, you need to build libchaos and its own tests, which has further requirements:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/google/googletest">Google Test</a> and <a class="reference external" href="https://github.com/google/benchmark">Google Benchmark</a> (automatically downloaded as submodule)</li>
+<li><a class="reference external" href="https://cmake.org/">CMake</a> in version <em>2.8.7</em> (library uses <a class="reference external" href="http://www.stroustrup.com/C++11FAQ.html">C++11</a>)</li>
+</ul>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="gp">$</span> git clone --recursive git@github.com:maciejczyzewski/libchaos.git
+<span class="gp">$</span> mkdir libchaos/build <span class="o">&amp;&amp;</span> <span class="nb">cd</span> <span class="s2">&quot;</span><span class="nv">$_</span><span class="s2">&quot;</span>
+<span class="gp">$</span> cmake -DLIBCHAOS_ENABLE_TESTING<span class="o">=</span>ON ..
+<span class="gp">$</span> make <span class="o">&amp;&amp;</span> make install
+</pre></div>
+</div>
+</div>
+<div class="section" id="uninstalling-library">
+<h2>Uninstalling Library<a class="headerlink" href="#uninstalling-library" title="Permalink to this headline">¶</a></h2>
+<p>CMake creates a file called <code class="docutils literal"><span class="pre">install_manifest.txt</span></code> when executing the install target. This contains a list of all installed files.</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="gp">$</span> make uninstall <span class="c1"># where is install_manifest.txt</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/libchaos.svg" alt="Logo"/>
+            </a></p>
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Installation</a><ul>
+<li><a class="reference internal" href="#basic-installation">Basic Installation</a></li>
+<li><a class="reference internal" href="#manual-installation">Manual Installation</a></li>
+<li><a class="reference internal" href="#uninstalling-library">Uninstalling Library</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">libchaos: randomization, hashing and statistical analysis</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="quickstart.html"
+                        title="next chapter">Quickstart</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/installation.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="search" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016, Libchaos Authors.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.5a0.
+    </div>
+  </body>
+</html>

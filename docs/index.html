@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>libchaos: randomization, hashing and statistical analysis &#8212; libchaos 0.0.1-dev documentation</title>
+    
+    <link rel="stylesheet" href="_static/master.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.1-dev',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within libchaos 0.0.1-dev documentation"
+          href="_static/opensearch.xml"/>
+    <link rel="top" title="libchaos 0.0.1-dev documentation" href="#" />
+    <link rel="next" title="Installation" href="installation.html" /> 
+  </head>
+  <body role="document">  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="libchaos-randomization-hashing-and-statistical-analysis">
+<h1>libchaos: randomization, hashing and statistical analysis<a class="headerlink" href="#libchaos-randomization-hashing-and-statistical-analysis" title="Permalink to this headline">¶</a></h1>
+<p>Libchaos is a computing library written in C++ language to help with the development of software for scientific research. The library tries to be as general as possible, modern and easy-to-use.</p>
+<p>Project implements wide range of <a class="reference internal" href="machines.html#chaos-machines"><span class="std std-ref">chaos machines</span></a>, which presents the idea to create a universal scheme with modular design and customizable parameters, that can be applied where <em>randomness</em> and <em>sensitiveness</em> is needed.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><img alt="lorenz_3d" src="_images/lorenz_3d.svg" /></td>
+<td><img alt="lorenz_time" src="_images/lorenz_time.svg" /></td>
+</tr>
+</tbody>
+</table>
+<p>A summary of core features:</p>
+<div class="list-features container">
+<ul class="simple">
+<li><a class="reference internal" href="machines.html#chaos-machines"><span class="std std-ref">Chaos machines</span></a></li>
+<li><a class="reference internal" href="generators.html#prngs"><span class="std std-ref">Pseudo-random number generators</span></a></li>
+<li><em>Probability distributions</em></li>
+<li><em>Randomness extractors</em></li>
+<li><em>Statistical functions</em></li>
+<li><em>Gnuplot utilities</em></li>
+</ul>
+</div>
+<p>&#8212;</p>
+<p><strong>Getting Help</strong></p>
+<p>If you have questions about the library, please be sure to check out the <a class="reference external" href="/">API documentation</a>. If you still have questions, reach out to us on IRC or post a question on <a class="reference external" href="http://stackoverflow.com/questions/tagged/libchaos">StackOverflow</a> (with the <code class="docutils literal"><span class="pre">libchaos</span></code> tag).</p>
+<p><strong>Reporting Bugs</strong></p>
+<p>Please open a <a class="reference external" href="https://github.com/maciejczyzewski/libchaos/issues">GitHub Issue</a> and include as much information as possible. If possible, provide sample code that illustrates the problem you&#8217;re seeing. If you&#8217;re seeing a bug only on a specific repository, please provide a link to it if possible.</p>
+<p><em>We ask that you not open a GitHub Issue for help, only for bug reports.</em></p>
+<div class="section" id="user-s-guide">
+<h2>User&#8217;s Guide<a class="headerlink" href="#user-s-guide" title="Permalink to this headline">¶</a></h2>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p>This project is at an early stage of development, every piece of hardware and software is in alpha version, if you are an adventurer this is a place for you!</p>
+<p class="last">The list of core features is not ready. You need to dive into source code to find out what is working properly. If you have some ideas, feel free to contribute.</p>
+</div>
+<p>This part of the documentation, which is mostly prose, begins with some background information about libchaos, then focuses on step-by-step instructions for working with libchaos.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#basic-installation">Basic Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#manual-installation">Manual Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#uninstalling-library">Uninstalling Library</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="quickstart.html#a-minimal-program">A Minimal Program</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quickstart.html#testing-benchmarking">Testing &amp; Benchmarking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quickstart.html#contributing-to-project">Contributing To Project</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="machines.html">Chaos Machines</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="machines.html#list-of-engines">List of Engines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="machines.html#adapter-s-interface">Adapter&#8217;s Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="machines.html#sample-applications">Sample Applications</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="generators.html">Pseudo-Random Number Generator</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="generators.html#list-of-generators">List of Generators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generators.html#adapters-interface">Adapter’s Interface</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="#">
+              <img class="logo" src="_static/libchaos.svg" alt="Logo"/>
+            </a></p><h3>About Libchaos</h3>
+
+<p>An advanced library for randomization, hashing and statistical analysis.</p>
+
+<p><code class="docutils literal"><span class="pre">#libchaos</span></code> on freenode.net</p>
+
+<p><iframe src="https://ghbtns.com/github-btn.html?user=maciejczyzewski&repo=libchaos&type=star&count=true" frameborder="0" scrolling="0" width="95px" height="20px"></iframe><a href="https://github.com/maciejczyzewski/libchaos/releases"><img src="https://img.shields.io/github/release/maciejczyzewski/libchaos.svg" alt="release" style="float:right"/></a></p>
+
+<h3>Useful Links</h3>
+
+<ul>
+  <li><a href="http://github.com/maciejczyzewski/libchaos">Repository @ GitHub</a></li>
+	<li><a href="https://github.com/maciejczyzewski/libchaos/releases">Releases @ GitHub</a></li>
+  <li><a href="http://github.com/maciejczyzewski/libchaos/issues">Issue Tracker</a></li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="search" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016, Libchaos Authors.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.5a0.
+    </div>
+  </body>
+</html>
