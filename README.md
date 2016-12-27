@@ -113,7 +113,7 @@ PRNGs are algorithms for **generating a sequence of numbers** whose properties a
 </tr>
 <tr>
 <td><code>CHAOS_PRNG_KISS</code></td>
-<td>uint32_t, uint32_t</td>
+<td>uint32_t [2]</td>
 <td>uint32_t</td>
 <td>2<sup>119.5</sup></td>
 <td>high</td>
@@ -121,7 +121,7 @@ PRNGs are algorithms for **generating a sequence of numbers** whose properties a
 </tr>
 <tr>
 <td><code>CHAOS_PRNG_ABYSSINIAN</code></td>
-<td>uint32_t, uint32_t</td>
+<td>uint32_t [2]</td>
 <td>uint32_t</td>
 <td>2<sup>126</sup></td>
 <td>high</td>
@@ -142,6 +142,14 @@ PRNGs are algorithms for **generating a sequence of numbers** whose properties a
 <td>2<sup>1024</sup></td>
 <td>high</td>
 <td>165.289M items/s</td>
+</tr>
+<tr>
+<td><code>CHAOS_PRNG_XORSHF96</code></td>
+<td>uint32_t [3]</td>
+<td>uint32_t</td>
+<td>2<sup>96</sup> - 1</td>
+<td>high</td>
+<td>185.148M items/s</td>
 </tr>
 </table>
 

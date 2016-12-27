@@ -9,8 +9,8 @@ namespace generators { //::chaos::generators ///////////////////////////////////
 // @1: typical next/round for abyssinian
 #define R(x, y)                                                                \
 	{                                                                            \
-		x = (uint64_t)0xfffd21a7 * (uint32_t)x + (uint32_t)(x >> 32);                             \
-		y = (uint64_t)0xfffd1361 * (uint32_t)y + (uint32_t)(y >> 32);                             \
+		x = (uint64_t)0xfffd21a7 * (uint32_t)x + (uint32_t)(x >> 32);              \
+		y = (uint64_t)0xfffd1361 * (uint32_t)y + (uint32_t)(y >> 32);              \
 	}
 
 class abyssinian {

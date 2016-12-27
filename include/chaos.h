@@ -23,5 +23,6 @@
 #include <chaos/generators/linear.hh> // FIXME: move to mixins
 #include <chaos/generators/xoroshiro.hh>
 #include <chaos/generators/xorshift.hh> // FIXME: move to mixins
+#include <chaos/generators/xorshf96.hh>
 
 #endif // CHAOS_H

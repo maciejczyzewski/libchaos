@@ -64,6 +64,7 @@ B_PRNG(CHAOS_PRNG_KISS)
 B_PRNG(CHAOS_PRNG_ABYSSINIAN)
 B_PRNG(CHAOS_PRNG_XOROSHIRO128PLUS)
 B_PRNG(CHAOS_PRNG_XOROSHIRO1024STAR)
+B_PRNG(CHAOS_PRNG_XORSHF96)
 
 /// stl ////////////////////////////////////////////////////////////////////////
 

@@ -27,3 +27,4 @@
 [XXX] Xoroshiro (plus & star)
 [XXX] KISS
 [   ] Rule 30
+[XXX] Xorshf96
