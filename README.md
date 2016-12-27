@@ -289,270 +289,15 @@ $ make uninstall # where is install_manifest.txt
 Quick Start
 ===========
 
-This page gives a good introduction to libchaos. It assumes you already have library installed. If you do not, head over to the [installation](#installation) section.
-
-**A Minimal Program**
-
-```C++
-#include <iostream>
-#include <chaos.h>  // library header
-
-// initialize chaos machine (64-bit version)
-CHAOS_MACHINE_XORRING64 machine;
-
-int main(void) {
-  machine.set_space(100000);  // 2^6400000 period length
-  machine << 0x8a5cd789635d2dff; // initialize with seed
-  while (true) putc_unlocked(machine.pull(), stdout);
-}
-```
-
-**Interface: Chaos Machine**
-
-```C++
-#include <chaos.h>
-
-CHAOS_MACHINE_XORRING64 machine;
-
-int main(void) {
-  uint64_t a = 0x84242f96eca9c41d, b = 0xa3c65b8776f96855, c;
-
-  // PUSH
-  machine.push(a);
-  machine << b;
-
-  // PULL
-  machine.pull();
-  c << machine;
-  machine();
-}
-```
-
-**Interface: Pseudo-Random Number Generator**
-
-```C++
-#include <chaos.h>
-
-CHAOS_PRNG_XOROSHIRO128PLUS prng;
-
-int main(void) {
-  uint64_t a = 0x84242f96eca9c41d, b = 0xa3c65b8776f96855, c;
-
-  // SEED
-  prng.seed(a);
-  prng << b;
-
-  // NEXT
-  prng.next();
-  c << prng;
-  prng();
-}
-```
-
-**Normal Distribution**
-
-```C++
-#include <cmath>
-#include <iomanip>
-#include <iostream>
-#include <map>
-#include <random>
-
-#include <chaos.h>
-
-CHAOS_MACHINE_NCG gen;
-
-int main(void) {
-  std::normal_distribution<> d(5, 2);
-  std::map<int, int> hist;
-
-  for (int n = 0; n < 5 * 10000; ++n) ++hist[std::round(d(gen))];
-
-  for (auto p : hist)
-    std::cout << std::fixed << std::setprecision(1) << std::setw(2) << p.first
-              << ' ' << std::string(p.second / 200, '*') << '\n';
-}
-```
-
-**Truely Random**
-
-```C++
-#include <chaos.h>
-
-chaos::truely<CHAOS_MACHINE_XORRING64, std::random_device> gen;
-
-int main(void) {
-  for (size_t i = 0; i < 30; i += 3)
-    printf("%p\t%p\t\%p\n", gen(), gen(), gen());
-}
-```
-
-**File Checksum**
-
-```C++
-#include <fstream>
-#include <iostream>
-#include <iterator>
-#include <vector>
-
-#include <chaos.h>
-
-CHAOS_MACHINE_XORRING64 gen;
-
-void READ(const char* filename) {
-  std::ifstream ifs(filename);
-  std::vector<CHAOS_MACHINE_XORRING64::size_push> vec;
-
-  vec.assign((std::istreambuf_iterator<char>(ifs)),
-             (std::istreambuf_iterator<char>()));
-
-  for (auto block : vec) gen.push(block);
-}
-
-int main(int argc, char* argv[]) {
-  if (argc < 2) {
-    printf("%s [filename]\n", argv[0]);
-    return 1;
-  }
-
-  gen.set_time(4);
-  gen.set_space(1000); // signed with secret key
-  gen.set_key({0x84242f96eca9c41d, 0xa3c65b8776f96855, 0x5b34a39f070b5837,
-               0x4489affce4f31a1e, 0x2ffeeb0a48316f40, 0xdc2d9891fe68c022,
-               0x3659132bb12fea70, 0xaac17d8efa43cab8, 0xc4cb815590989b13,
-               0x5ee975283d71c93b, 0x691548c86c1bd540, 0x7910c41d10a1e6a5,
-               0x0b5fc64563b3e2a8, 0x047f7684e9fc949d, 0xb99181f2d8f685ca});
-
-  READ(argv[1]);
-
-  for (size_t i = 0; i < 5 * 3; i += 3)
-    printf("%p\t%p\t%p\n", gen.pull(), gen.pull(), gen.pull());
-
-  return 0;
-}
-```
-
-**Libchaos: Battery**
-
-```C++
-#include <chaos.h>
-#include <iostream>
-
-// Chaos Machines
-
-CHAOS_MACHINE_NCG x_0;
-CHAOS_MACHINE_XORRING64 x_1;
-
-// Pseudo-Random Number Generators
-
-chaos::generators::xorshift<uint32_t, 1, 3, 10> x_2;
-CHAOS_PRNG_ABYSSINIAN x_3;
-chaos::generators::lcg<uint32_t, 48271, 0, 2147483647> x_4;
-CHAOS_PRNG_KISS x_5;
-
-// Adapters (double is universal in this case)
-
-double UNIF01_NEXT_ADAPTER0() { return CHAOS_DOUBLE_U32(x_0.pull()); }
-double UNIF01_NEXT_ADAPTER1() { return CHAOS_DOUBLE_U64(x_1.pull()); }
-double UNIF01_NEXT_ADAPTER2() { return CHAOS_DOUBLE_U32(x_2.next()); }
-double UNIF01_NEXT_ADAPTER3() { return CHAOS_DOUBLE_U32(x_3.next()); }
-double UNIF01_NEXT_ADAPTER4() { return CHAOS_DOUBLE_U32(x_4.next()); }
-double UNIF01_NEXT_ADAPTER5() { return CHAOS_DOUBLE_U32(x_5.next()); }
-
-int main(void) {
-  std::cout << "=== XORRING ==================================================="
-            << std::endl;
-  chaos::analysis gen1(UNIF01_NEXT_ADAPTER1);
-  gen1.raport();
-  std::cout << "=== XORSHIFT =================================================="
-            << std::endl;
-  chaos::analysis gen2(UNIF01_NEXT_ADAPTER2);
-  gen2.raport();
-  std::cout << "=== ABYSSINIAN ================================================"
-            << std::endl;
-  chaos::analysis gen3(UNIF01_NEXT_ADAPTER3);
-  gen3.raport();
-  std::cout << "=== KISS ======================================================"
-            << std::endl;
-  chaos::analysis gen5(UNIF01_NEXT_ADAPTER5);
-  gen5.raport();
-  std::cout << "=== LCG ======================================================="
-            << std::endl;
-  chaos::analysis gen4(UNIF01_NEXT_ADAPTER4);
-  gen4.raport();
-  std::cout << "=== NCG ======================================================="
-            << std::endl;
-  chaos::analysis gen0(UNIF01_NEXT_ADAPTER0);
-  gen0.raport();
-}
-```
-
-**TestU01: Battery**
-
-```C++
-#include <chaos.h>
-#include <iostream>
-
-extern "C" {
-#include "bbattery.h"
-#include "smarsa.h"
-#include "unif01.h"
-#include "util.h"
-}
-
-// Chaos Machines
-
-CHAOS_MACHINE_NCG x_0;
-CHAOS_MACHINE_XORRING64 x_1;
-
-// Pseudo-Random Number Generators
-
-chaos::generators::xorshift<uint32_t, 1, 3, 10> x_2;
-CHAOS_PRNG_ABYSSINIAN x_3;
-chaos::generators::lcg<uint32_t, 48271, 0, 2147483647> x_4;
-CHAOS_PRNG_KISS x_5;
-
-// Adapters (double is universal in this case)
-
-double UNIF01_NEXT_ADAPTER0() { return CHAOS_DOUBLE_U32(x_0.pull()); }
-double UNIF01_NEXT_ADAPTER1() { return CHAOS_DOUBLE_U64(x_1.pull()); }
-double UNIF01_NEXT_ADAPTER2() { return CHAOS_DOUBLE_U32(x_2.next()); }
-double UNIF01_NEXT_ADAPTER3() { return CHAOS_DOUBLE_U32(x_3.next()); }
-double UNIF01_NEXT_ADAPTER4() { return CHAOS_DOUBLE_U32(x_4.next()); }
-double UNIF01_NEXT_ADAPTER5() { return CHAOS_DOUBLE_U32(x_5.next()); }
-
-int main(void) {
-	unif01_Gen *gen;
-	gen = unif01_CreateExternGen01(CHAOS_META_NAME(CHAOS_MACHINE_XORRING64),
-	                               UNIF01_NEXT_ADAPTER1);
-
-	// smarsa_BirthdaySpacings(gen, NULL, 1, 1000, 0, 10000, 2, 1);
-	// smarsa_BirthdaySpacings(gen, NULL, 1, 10000, 0, 1000000, 2, 1);
-
-	// smarsa_BirthdaySpacings(gen, NULL, 3, 200000, 14, 256, 8, 1);
-	// smarsa_BirthdaySpacings(gen, NULL, 3, 20000000, 14, 256, 8, 1);
-
-	// bbattery_BlockAlphabit(gen, 1024 * 1024, 0, 8);
-	// bbattery_Alphabit(gen, 1024 * 1024, 0, 8);
-
-	// bbattery_FIPS_140_2(gen);
-	// bbattery_Rabbit(gen, 10000000);
-	bbattery_pseudoDIEHARD(gen);
-
-	// bbattery_SmallCrush(gen);
-	// bbattery_Crush(gen);
-	// bbattery_BigCrush(gen);
-
-	unif01_DeleteExternGenBits(gen);
-}
-```
+This page gives a good introduction to libchaos. It assumes you already have library installed. If you do not, head over to the [installation](#installation) section. More complicated examples are in [`examples/` directory](https://github.com/maciejczyzewski/libchaos/tree/master/examples).
 
 User Guide
 ==========
 
 > **Warning.** This project is at an early stage of development, every piece of hardware and software is in alpha version, if you are an adventurer this is a place for you! The list of core features is not ready. You need to dive into source code to find out what is working properly. If you have some ideas, feel free to contribute.
 
-**Structure**
+Structure
+---------
 
 Directory structure and contents:
 
@@ -564,6 +309,69 @@ Directory structure and contents:
 | `include/chaos/generators/` | Implementations of pseudo-random number generators.                           |
 | `include/chaos/`            | Core library abstractions.                                                    |
 | `tests`                     | Benchmarks and tests (using [Google Test](https://github.com/google/googletest) and [Google Benchmark](https://github.com/google/benchmark)). |
+
+Algorithms
+----------
+
+List of implemented algorithms is in the `ALGORITHMS.md` file.
+
+```C++
+CHAOS_PRNG_* gen;    // @2: for PRNGS
+CHAOS_MACHINE_* gen; // @1: for CMs
+```
+
+**Pseudo-Random Number Generators**
+
+For seeding:
+
+```C++
+gen.seed(a); // @1: using function (fastest)
+gen << a;    // @2: using operator
+```
+
+For getting a number:
+
+```C++
+gen.next();  // @1: using function (fastest)
+gen >> a;    // @2: using operator
+gen();       // @3: STL style (for API)
+```
+
+**Chaos Machines**
+
+Settings:
+
+```C++
+gen.set_time(4);      // time parameter
+gen.set_space(1000);  // memory parameter (period length)
+                      // initial secret key
+gen.set_key({0x84242f96eca9c41d, 0xa3c65b8776f96855, 0x5b34a39f070b5837,
+             0x4489affce4f31a1e, 0x2ffeeb0a48316f40, 0xdc2d9891fe68c022,
+             0x3659132bb12fea70, 0xaac17d8efa43cab8, 0xc4cb815590989b13,
+             0x5ee975283d71c93b, 0x691548c86c1bd540, 0x7910c41d10a1e6a5,
+             0x0b5fc64563b3e2a8, 0x047f7684e9fc949d, 0xb99181f2d8f685ca});
+```
+
+For pushing a blob:
+
+```C++
+gen.push(a); // @1: using function (fastest)
+gen << a;    // @2: using operator
+```
+
+For getting a block:
+
+```C++
+gen.pull();  // @1: using function (fastest)
+gen >> a;    // @2: using operator
+gen();       // @3: STL style (for API)
+```
+
+For clearing to initial state:
+
+```C++
+gen.reset();
+```
 
 Contributing
 ============
@@ -601,4 +409,4 @@ If you are starting to work on a particular area, feel free to submit a PR that 
 License
 =======
 
-See LICENSE file in this repository.
+See `LICENSE` file in this repository.
