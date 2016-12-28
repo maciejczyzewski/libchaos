@@ -23,9 +23,7 @@ uint32_t xorring32::pull(void) {
 	return (a + b + 1) * c;
 }
 
-void xorring32::__reset(void) {
-	buffer.clear();
-}
+void xorring32::__reset(void) {}
 
 // metadata
 const std::string xorring64::name = "xorring64";
@@ -47,9 +45,7 @@ uint64_t xorring64::pull(void) {
 	return (a + b + 1) * c;
 }
 
-void xorring64::__reset(void) {
-	buffer.clear();
-}
+void xorring64::__reset(void) {}
 
 } //::chaos::engines ///////////////////////////////////////////////////////////
 } //::chaos ////////////////////////////////////////////////////////////////////

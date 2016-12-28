@@ -17,14 +17,6 @@
 namespace chaos { //::chaos ////////////////////////////////////////////////////
 namespace engines { //::chaos::engines /////////////////////////////////////////
 
-#define CHAOS_TRIPLE_MASK(size_cell, buffer, key, cost_space, prng)            \
-	std::vector<size_cell> _buffer(buffer.begin(), buffer.end());                \
-	std::vector<size_cell> mask(cost_space), _value;                             \
-	std::generate(mask.begin(), mask.end(), [&prng] { return prng.next(); });    \
-	_value = chaos::triple_mask<size_cell>(_buffer, key, mask);                  \
-	buffer.resize(_value.size());                                                \
-	std::copy(_value.begin(), _value.end(), buffer.begin());
-
 class xorring32 {
 public:
 	// metadata
@@ -52,17 +44,15 @@ protected:
 	size_t __cost_space = 0, __cost_time = 0;
 
 	// methods
-	virtual void __set_key(std::vector<size_cell> value) {
+	virtual void __set_key(std::vector<size_cell> value, size_t begin = 0) {
 		// set starting variable
-		chaos::prng<chaos::generators::xorshift<size_cell, 3, 13, 7>> prng;
-		CHAOS_TRIPLE_MASK(size_cell, this->buffer, value, this->__cost_space, prng);
+		std::copy(value.begin(), value.end(), this->buffer.begin() + begin);
 	}
 	virtual void __set_space(size_t value) {
 		// set new space parameter
 		this->__cost_space = value;
 		// resize machine spaces if needed
-		chaos::prng<chaos::generators::xorshift<size_cell, 3, 13, 7>> prng;
-		CHAOS_TRIPLE_MASK(size_cell, this->buffer, {}, this->__cost_space, prng);
+		this->buffer.resize(this->__cost_space);
 	}
 	virtual void __set_time(size_t value) {
 		// set new time parameter
@@ -102,17 +92,15 @@ protected:
 	size_t __cost_space = 0, __cost_time = 0;
 
 	// methods
-	virtual void __set_key(std::vector<size_cell> value) {
+	virtual void __set_key(std::vector<size_cell> value, size_t begin = 0) {
 		// set starting variable
-		chaos::prng<chaos::generators::xorshift<size_cell, 4, 9, 13>> prng;
-		CHAOS_TRIPLE_MASK(size_cell, this->buffer, value, this->__cost_space, prng);
+		std::copy(value.begin(), value.end(), this->buffer.begin() + begin);
 	}
 	virtual void __set_space(size_t value) {
 		// set new space parameter
 		this->__cost_space = value;
 		// resize machine spaces if needed
-		chaos::prng<chaos::generators::xorshift<size_cell, 4, 9, 13>> prng;
-		CHAOS_TRIPLE_MASK(size_cell, this->buffer, {}, this->__cost_space, prng);
+		this->buffer.resize(this->__cost_space);
 	}
 	virtual void __set_time(size_t value) {
 		// set new time parameter

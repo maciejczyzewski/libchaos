@@ -2,13 +2,20 @@
 #define CHAOS_MACHINE_HH
 
 #include <iostream>
+#include <limits>
 #include <stdexcept>
 #include <vector>
-#include <limits>
 
+#include "chaos/macros.hh"
+#include "chaos/seed.hh"
 #include "chaos/types.hh"
 
 namespace chaos { //::chaos ////////////////////////////////////////////////////
+
+#define CHAOS_BUFFER_MASK(key, length)                                         \
+	this->__set_key(                                                             \
+	    chaos::keystream<typename engine::size_cell>(key, length - key.size()),  \
+	    key.size());
 
 template <class engine> class machine : public virtual engine {
 private:
@@ -73,6 +80,9 @@ template <class engine> void machine<engine>::set_time(size_t value) {
 
 template <class engine> void machine<engine>::set_space(size_t value) {
 	this->__set_space(value); // pass via algorithm
+	// if needs additional mask
+	if (this->key.size() < value)
+		CHAOS_BUFFER_MASK(this->key, value)
 };
 
 template <class engine> void machine<engine>::reset(void) {
@@ -80,6 +90,9 @@ template <class engine> void machine<engine>::reset(void) {
 	this->__reset();
 	// replace memory with our key
 	this->__set_key(this->key);
+	// if needs additional mask
+	if (this->key.size() < this->__cost_space)
+		CHAOS_BUFFER_MASK(this->key, this->__cost_space)
 }
 
 } //::chaos ////////////////////////////////////////////////////////////////////

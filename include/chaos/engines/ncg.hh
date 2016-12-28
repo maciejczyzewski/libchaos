@@ -17,7 +17,7 @@ public:
 	static const std::string name, authors;
 
 	// typename
-	typedef uint8_t size_cell;
+	typedef uint32_t size_cell;
 	typedef uint32_t size_push;
 	typedef uint32_t size_pull;
 
@@ -30,22 +30,22 @@ public:
 
 	// defaults
 	const size_t __default_space = 8, __default_time = 1;
-	const std::vector<size_cell> __default_key = {0x14, 0x15, 0x92, 0x65,
-	                                              0x35, 0x89, 0x79, 0x32};
+	const std::vector<size_cell> __default_key = {
+	    0xd76aa478, 0xe8c7b756, 0x242070db, 0xc1bdceee,
+	    0xf57c0faf, 0x4787c62a, 0xa8304613, 0xfd469501};
 
 protected:
 	// costs
 	size_t __cost_space = 0, __cost_time = 0;
 
 	// methods
-	virtual void __set_key(std::vector<size_cell> value) {
-		// resize key if needed
-		value.resize(this->__cost_space);
+	virtual void __set_key(std::vector<size_cell> value, size_t begin = 0) {
 		// set starting variable
-		for (std::vector<size_cell>::size_type i = 0; i != value.size(); i++) {
+		for (std::vector<size_cell>::size_type i = begin, j = 0; j != value.size();
+		     i++, j++) {
 			// in NCG one hybrid system is build upon two cells in buffer
-			this->buffer[i * 2] = (value[i] >> 4) & 0x0F;
-			this->buffer[i * 2 + 1] = (value[i] >> 0) & 0x0F;
+			this->buffer[i * 2] = value[j] >> 16;
+			this->buffer[i * 2 + 1] = value[j] & 0xFFFF;
 		}
 	}
 	virtual void __set_space(size_t value) {

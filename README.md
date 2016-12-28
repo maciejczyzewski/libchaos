@@ -27,6 +27,11 @@ Project goal is to *implement & analyze* various algorithms for randomization an
 
 The library implements wide range of [chaos machines](#chaos-machines-theorypdf), which present the idea of creating a universal scheme with modular design and customizable parameters, which can be applied wherever *randomness* and *sensitiveness* is needed (pseudo-random oracle).
 
+```C++
+std::string hash = chaos::password<CHAOS_MACHINE_XORRING64, 175, 25, 95>("my password", "private salt");
+// hash == "720CCE0BE01CF10A9FB60C24BDA6254204948A47DFC81FCE821633C623C508A966D7F4164070484584876DE9DF"
+```
+
 It turns out that a pseudo-random function can be easily enriched by a [chaotic system](https://en.wikipedia.org/wiki/Chaos_theory), creating something completely new. What's interesting is that this scheme allows specification by three parameters: *execution time*, *period/memory required*, *initial secret key*.
 
 **Getting Help**
@@ -372,6 +377,30 @@ For clearing to initial state:
 
 ```C++
 gen.reset();
+```
+
+**Password Salting**
+
+For salting passwords:
+
+```C++
+
+std::string hash =
+    chaos::password<
+        CHAOS_MACHINE_XORRING64,   // machine algorithm
+        time_parameter,            // computational consumption
+        space_parameter,           // memory required/space-hardness
+        output_size                // length of hashed password
+    >(password, salt);
+
+```
+
+Example usage:
+
+```C++
+std::string hash = chaos::password<CHAOS_MACHINE_XORRING64, 175, 25, 40>(
+    "some secret password", "my private salt");
+// hash == "E604CF87D61A4379859F9D8E3AE41C10CC0E9527"
 ```
 
 Contributing

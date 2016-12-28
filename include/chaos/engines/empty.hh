@@ -37,11 +37,9 @@ protected:
 	size_t __cost_space = 0, __cost_time = 0;
 
 	// methods
-	virtual void __set_key(std::vector<size_cell> value) {
-		// resize key if needed
-		value.resize(this->__cost_space);
+	virtual void __set_key(std::vector<size_cell> value, size_t begin = 0) {
 		// set starting variable
-		this->buffer = value;
+		std::copy(value.begin(), value.end(), this->buffer.begin() + begin);
 	}
 	virtual void __set_space(size_t value) {
 		// set new space parameter
