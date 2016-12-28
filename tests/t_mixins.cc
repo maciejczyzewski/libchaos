@@ -24,7 +24,7 @@ TEST(MIXINS, T__CHAOS_TRUELY__AdapterInitialization) {
 	EXPECT_NE(a, b);
 }
 
-TEST(MIXINS, T__CHAOS_PASSWORD__DifferentTime) {
+TEST(MIXINS, T__CHAOS_PASSWORD__AvalancheTime) {
 	std::string a, b, c, d;
 
 	a = chaos::password<CHAOS_MACHINE_XORRING32, 30, 10, 40>("OMG AAA OMG1",
@@ -42,7 +42,7 @@ TEST(MIXINS, T__CHAOS_PASSWORD__DifferentTime) {
 	EXPECT_STREQ(d.c_str(), "DF7FC0FC8E0C43FA7A1BFB16D95DB012161A5C50");
 }
 
-TEST(MIXINS, T__CHAOS_PASSWORD__DifferentSpace) {
+TEST(MIXINS, T__CHAOS_PASSWORD__AvalancheSpace) {
 	std::string a, b, c, d;
 
 	a = chaos::password<CHAOS_MACHINE_XORRING64, 30, 10, 40>("OMG AAA OMG1",
@@ -60,7 +60,7 @@ TEST(MIXINS, T__CHAOS_PASSWORD__DifferentSpace) {
 	EXPECT_STREQ(d.c_str(), "3E5D290055E81F15F449464044042AF8119DB606");
 }
 
-TEST(MIXINS, T__CHAOS_PASSWORD__DifferentPass) {
+TEST(MIXINS, T__CHAOS_PASSWORD__AvalanchePassword) {
 	std::string a, b, c, d;
 
 	a = chaos::password<CHAOS_MACHINE_XORRING64, 30, 10, 40>("OMG AAA OMG1",
@@ -78,7 +78,7 @@ TEST(MIXINS, T__CHAOS_PASSWORD__DifferentPass) {
 	EXPECT_STREQ(d.c_str(), "6757C8B0B2C2DCB8986E5ADA9E6629837D70F463");
 }
 
-TEST(MIXINS, T__CHAOS_PASSWORD__DifferentSalt) {
+TEST(MIXINS, T__CHAOS_PASSWORD__AvalancheSalt) {
 	std::string a, b, c, d;
 
 	a = chaos::password<CHAOS_MACHINE_XORRING64, 30, 10, 40>("OMG AAA OMG1",

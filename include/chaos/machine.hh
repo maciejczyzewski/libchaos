@@ -70,8 +70,11 @@ template <class engine>
 void machine<engine>::set_key(std::vector<typename engine::size_cell> key) {
 	// check if received key is not empty
 	this->key = key.size() != 0 ? key : this->__default_key;
-	this->set_space(this->key.size()); // set new space parameter
-	this->__set_key(key);              // pass via algorithm
+	if (this->key.size() > this->__cost_space)
+		this->set_space(this->key.size()); // set new space parameter
+	else                                 // if needs additional mask
+		CHAOS_BUFFER_MASK(this->key, this->__cost_space)
+	this->__set_key(this->key); // pass via algorithm
 };
 
 template <class engine> void machine<engine>::set_time(size_t value) {
@@ -79,9 +82,8 @@ template <class engine> void machine<engine>::set_time(size_t value) {
 };
 
 template <class engine> void machine<engine>::set_space(size_t value) {
-	this->__set_space(value); // pass via algorithm
-	// if needs additional mask
-	if (this->key.size() < value)
+	this->__set_space(value);     // pass via algorithm
+	if (this->key.size() < value) // if needs additional mask
 		CHAOS_BUFFER_MASK(this->key, value)
 };
 
