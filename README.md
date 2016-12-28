@@ -2,6 +2,7 @@
     <img src="http://maciejczyzewski.me/libchaos/_static/libchaos.svg" alt="libchaos"
          title="libchaos" align="right" width="100" height="100" />
 </a>
+[![Current Release](https://img.shields.io/github/release/maciejczyzewski/libchaos.svg)](https://github.com/maciejczyzewski/libchaos/releases)
 [![Build Status](https://travis-ci.org/maciejczyzewski/libchaos.svg?branch=master)](https://travis-ci.org/maciejczyzewski/libchaos)
 
 [Overview](#overview) |
