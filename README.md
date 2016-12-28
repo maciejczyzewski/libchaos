@@ -34,6 +34,8 @@ std::string hash = chaos::password<CHAOS_MACHINE_XORRING64, 175, 25, 95>("my pas
 
 It turns out that a pseudo-random function can be easily enriched by a [chaotic system](https://en.wikipedia.org/wiki/Chaos_theory), creating something completely new. What's interesting is that this scheme allows specification by three parameters: *execution time*, *period/memory required*, *initial secret key*.
 
+---
+
 **Getting Help**
 
 If you have questions about the library, please be sure to check out the [API documentation](#). If you still have questions, reach out to us on [IRC](https://webchat.freenode.net/?channels=#libchaos) or post a question on [stackoverflow](http://stackoverflow.com/questions/tagged/libchaos) (using the ``libchaos`` tag).
