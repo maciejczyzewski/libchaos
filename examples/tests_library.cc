@@ -23,28 +23,28 @@ double UNIF01_NEXT_ADAPTER4() { return CHAOS_DOUBLE_U32(x_4.next()); }
 double UNIF01_NEXT_ADAPTER5() { return CHAOS_DOUBLE_U32(x_5.next()); }
 
 int main(void) {
-  std::cout << "=== XORRING ==================================================="
-            << std::endl;
-  chaos::analysis gen1(UNIF01_NEXT_ADAPTER1);
-  gen1.raport();
-  std::cout << "=== XORSHIFT =================================================="
-            << std::endl;
-  chaos::analysis gen2(UNIF01_NEXT_ADAPTER2);
-  gen2.raport();
-  std::cout << "=== ABYSSINIAN ================================================"
-            << std::endl;
-  chaos::analysis gen3(UNIF01_NEXT_ADAPTER3);
-  gen3.raport();
-  std::cout << "=== KISS ======================================================"
-            << std::endl;
-  chaos::analysis gen5(UNIF01_NEXT_ADAPTER5);
-  gen5.raport();
-  std::cout << "=== LCG ======================================================="
-            << std::endl;
-  chaos::analysis gen4(UNIF01_NEXT_ADAPTER4);
-  gen4.raport();
-  std::cout << "=== NCG ======================================================="
-            << std::endl;
-  chaos::analysis gen0(UNIF01_NEXT_ADAPTER0);
-  gen0.raport();
+	std::cout << "=== XORRING ==================================================="
+	          << std::endl;
+	chaos::analysis gen1(UNIF01_NEXT_ADAPTER1);
+	gen1.raport();
+	std::cout << "=== XORSHIFT =================================================="
+	          << std::endl;
+	chaos::analysis gen2(UNIF01_NEXT_ADAPTER2);
+	gen2.raport();
+	std::cout << "=== ABYSSINIAN ================================================"
+	          << std::endl;
+	chaos::analysis gen3(UNIF01_NEXT_ADAPTER3);
+	gen3.raport();
+	std::cout << "=== KISS ======================================================"
+	          << std::endl;
+	chaos::analysis gen5(UNIF01_NEXT_ADAPTER5);
+	gen5.raport();
+	std::cout << "=== LCG ======================================================="
+	          << std::endl;
+	chaos::analysis gen4(UNIF01_NEXT_ADAPTER4);
+	gen4.raport();
+	std::cout << "=== NCG ======================================================="
+	          << std::endl;
+	chaos::analysis gen0(UNIF01_NEXT_ADAPTER0);
+	gen0.raport();
 }
