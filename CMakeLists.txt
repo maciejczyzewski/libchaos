@@ -56,6 +56,20 @@ CONFIGURE_FILE(
 ADD_CUSTOM_TARGET(uninstall
 	COMMAND ${CMAKE_COMMAND} -P ${CMAKE_CURRENT_BINARY_DIR}/cmake_uninstall.cmake)
 
+# == DISTRIBUTION ==============================================================
+
+# Tarball information.
+SET(CPACK_PACKAGE_NAME ${PACKAGE_NAME})
+SET(CPACK_PACKAGE_VERSION ${PACKAGE_VERSION})
+SET(CPACK_SOURCE_PACKAGE_FILE_NAME ${PACKAGE_TARNAME})
+SET(CPACK_PACKAGE_INSTALL_REGISTRY_KEY ${PACKAGE_STRING})
+SET(CPACK_SOURCE_IGNORE_FILES "/build/;/.bzr/;~$;${CPACK_SOURCE_IGNORE_FILES}")
+
+# Package generator.
+INCLUDE(CPack)
+
+ADD_CUSTOM_TARGET(dist COMMAND ${CMAKE_MAKE_PROGRAM} package_source)
+
 # == FLAGS =====================================================================
 
 ADD_COMPILE_OPTIONS(
