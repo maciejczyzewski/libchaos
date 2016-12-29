@@ -8,7 +8,6 @@
 [Overview](#overview) |
 [Features](#features) |
 [Installation](#installation) |
-[Quick Start](#quick-start) |
 [User Guide](#user-guide) |
 [Contributing](#contributing) |
 [License](#license)
@@ -294,15 +293,10 @@ CMake creates a file called ``install_manifest.txt`` when executing the install 
 $ make uninstall # where is install_manifest.txt
 ```
 
-Quick Start
-===========
-
-This page gives a good introduction to libchaos. It assumes you already have library installed. If you do not, head over to the [installation](#installation) section. More complicated examples are in [`examples/` directory](https://github.com/maciejczyzewski/libchaos/tree/master/examples).
-
 User Guide
 ==========
 
-> **Warning.** This project is at an early stage of development, every piece of hardware and software is in alpha version, if you are an adventurer this is a place for you! The list of core features is not ready. You need to dive into source code to find out what is working properly. If you have some ideas, feel free to contribute.
+This page gives a good introduction to libchaos. It assumes you already have library installed. If you do not, head over to the [installation](#installation) section. More complicated examples are in [`examples/` directory](https://github.com/maciejczyzewski/libchaos/tree/master/examples).
 
 Structure
 ---------
