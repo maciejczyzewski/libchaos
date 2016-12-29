@@ -14,7 +14,7 @@
 
 **Got a question?** Join us on [stackoverflow](http://stackoverflow.com/questions/tagged/libchaos) or chat on [IRC](https://webchat.freenode.net/?channels=#libchaos).
 
-*An advanced library for randomization, hashing and statistical analysis (devoted to [chaos machines](#chaos-machines-theorypdf)).*
+*Advanced library for randomization, hashing and statistical analysis (devoted to [chaos machines](#chaos-machines-theorypdf)).*
 
 ---
 
