@@ -59,6 +59,7 @@ ADD_CUSTOM_TARGET(uninstall
 # == DISTRIBUTION ==============================================================
 
 # Tarball information.
+SET(CPACK_SOURCE_GENERATOR "ZIP;TGZ")
 SET(CPACK_PACKAGE_NAME ${PACKAGE_NAME})
 SET(CPACK_PACKAGE_VERSION ${PACKAGE_VERSION})
 SET(CPACK_SOURCE_PACKAGE_FILE_NAME ${PACKAGE_TARNAME})
@@ -174,7 +175,7 @@ EXPORT(TARGETS chaos FILE ChaosConfig.cmake)
 ## == FINAL ====================================================================
 
 # Show build configuration overview.
-MESSAGE("\n[${PACKAGE_NAME} ${PACKAGE_VERSION}]\n
+MESSAGE("\n[${PACKAGE_NAME} v${PACKAGE_VERSION}]\n
 ##       compiler | ${CMAKE_CXX_COMPILER_ID} ${CMAKE_CXX_COMPILER_VERSION}
 ##          flags | ${CMAKE_CXX_FLAGS}
 ##      build dir | ${CMAKE_BINARY_DIR}
