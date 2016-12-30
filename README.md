@@ -296,6 +296,8 @@ User Guide
 
 This page gives a good introduction to libchaos. It assumes you already have library installed. If you do not, head over to the [installation](#installation) section. More complicated examples are in [`examples/` directory](https://github.com/maciejczyzewski/libchaos/tree/master/examples).
 
+> **Warning.** This project is at an early stage of development. The list of core features is not ready. Only main modules are documented. If you have some ideas, feel free to contribute.
+
 Structure
 ---------
 
