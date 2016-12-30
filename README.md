@@ -14,7 +14,7 @@
 
 **Got a question?** Join us on [stackoverflow](http://stackoverflow.com/questions/tagged/libchaos) or chat on [IRC](https://webchat.freenode.net/?channels=#libchaos).
 
-*Advanced library for randomization, hashing and statistical analysis (devoted to [chaos machines](#chaos-machines-theorypdf)).*
+*Advanced library for randomization, hashing and statistical analysis (devoted to [chaos machines](https://en.wikipedia.org/wiki/Chaos_machine)).*
 
 ---
 
@@ -47,8 +47,6 @@ Please open a [GitHub Issue](https://github.com/maciejczyzewski/libchaos/issues)
 
 Overview
 ========
-
-<img src="http://maciejczyzewski.me/libchaos/_images/ncg-distribution-rankit.png" width="50%" /><img src="http://maciejczyzewski.me/libchaos/_images/ncg-speed-benchmark.png" width="50%" />
 
 A lot of research has gone into chaos and randomness theory. Development in computer software and applications continues to be very dynamic. Each software problem requires different tools and algorithms to solve it effectively and achieve best results. As a consequence, we witness the announcement of new projects in quick succession with multiple updates. *Engineer's problem is how to decide which method will suit his needs best.*
 
@@ -103,6 +101,54 @@ Notice that you can use <code>CHAOS_PRNG_*</code> and <code>CHAOS_MACHINE_*</cod
 </td>
 </tr>
 </table>
+
+Chaos Machines [(theory/pdf)](https://eprint.iacr.org/2016/468)
+--------------
+
+In mathematics, a chaos machine is a class of algorithms constructed on the base of chaos theory (mainly deterministic chaos) to produce **pseudo-random oracle**. It was designed specifically to combine the benefits of *hash function* and *pseudo-random function*.
+
+<table width="100%">
+<tr>
+<th rowspan="2" width="100%">Name</th>
+<th rowspan="2">Input</th>
+<th rowspan="2">Output</th>
+<th rowspan="2">Period</th>
+<th rowspan="2">Quality</th>
+<th colspan="2">Speed</th>
+</tr>
+<tr>
+<th>Push</th><th>Pull</th>
+</tr>
+<tr>
+<td><code>CHAOS_MACHINE_NCG</code> proof of concept</td>
+<td>uint32_t</td>
+<td>uint32_t</td>
+<td>(2<sup>16n</sup>,2<sup>32n</sup>)</td>
+<td>high</td>
+<td>4.38007M<br>items/s</td>
+<td>3.49098M<br>items/s</td>
+</tr>
+<tr>
+<td><code>CHAOS_MACHINE_XORRING32</code></td>
+<td>uint32_t</td>
+<td>uint32_t</td>
+<td>2<sup>32n</sup></td>
+<td>high</td>
+<td>33.0828M<br>items/s</td>
+<td>48.938M<br>items/s</td>
+</tr>
+<tr>
+<td><code>CHAOS_MACHINE_XORRING64</code></td>
+<td>uint64_t</td>
+<td>uint64_t</td>
+<td>2<sup>64n</sup></td>
+<td>high</td>
+<td>31.6051M<br>items/s</td>
+<td>41.6355M<br>items/s</td>
+</tr>
+</table>
+
+Machines can be used to implement many cryptographic primitives, including cryptographic hashes, message authentication codes and randomness extractors.
 
 Pseudo-Random Number Generators
 -------------------------------
@@ -174,54 +220,6 @@ B__STL_RANLUX24__Next                 2326 us       2327 us        295   214.828
 B__STL_RANLUX48__Next               118524 us     118598 us          6   67.4546MB/s   2.10796M items/s
 B__STL_KNUTH_B__Next                  1083 us       1084 us        641   461.418MB/s   14.4193M items/s
 ```
-
-Chaos Machines [(theory/pdf)](https://eprint.iacr.org/2016/468)
---------------
-
-In mathematics, a chaos machine is a class of algorithms constructed on the base of chaos theory (mainly deterministic chaos) to produce **pseudo-random oracle**. It was designed specifically to combine the benefits of *hash function* and *pseudo-random function*.
-
-<table width="100%">
-<tr>
-<th rowspan="2" width="100%">Name</th>
-<th rowspan="2">Input</th>
-<th rowspan="2">Output</th>
-<th rowspan="2">Period</th>
-<th rowspan="2">Quality</th>
-<th colspan="2">Speed</th>
-</tr>
-<tr>
-<th>Push</th><th>Pull</th>
-</tr>
-<tr>
-<td><code>CHAOS_MACHINE_NCG</code> proof of concept</td>
-<td>uint32_t</td>
-<td>uint32_t</td>
-<td>(2<sup>16n</sup>,2<sup>32n</sup>)</td>
-<td>high</td>
-<td>4.38007M<br>items/s</td>
-<td>3.49098M<br>items/s</td>
-</tr>
-<tr>
-<td><code>CHAOS_MACHINE_XORRING32</code></td>
-<td>uint32_t</td>
-<td>uint32_t</td>
-<td>2<sup>32n</sup></td>
-<td>high</td>
-<td>33.0828M<br>items/s</td>
-<td>48.938M<br>items/s</td>
-</tr>
-<tr>
-<td><code>CHAOS_MACHINE_XORRING64</code></td>
-<td>uint64_t</td>
-<td>uint64_t</td>
-<td>2<sup>64n</sup></td>
-<td>high</td>
-<td>31.6051M<br>items/s</td>
-<td>41.6355M<br>items/s</td>
-</tr>
-</table>
-
-Machines can be used to implement many cryptographic primitives, including cryptographic hashes, message authentication codes and randomness extractors.
 
 Features
 ========
@@ -318,25 +316,8 @@ Algorithms
 List of implemented algorithms is in the `ALGORITHMS.md` file.
 
 ```C++
-CHAOS_PRNG_* gen;    // @2: for PRNGS
 CHAOS_MACHINE_* gen; // @1: for CMs
-```
-
-**Pseudo-Random Number Generators**
-
-For seeding:
-
-```C++
-gen.seed(a); // @1: using function (fastest)
-gen << a;    // @2: using operator
-```
-
-For getting a number:
-
-```C++
-gen.next();  // @1: using function (fastest)
-gen >> a;    // @2: using operator
-gen();       // @3: STL style (for API)
+CHAOS_PRNG_* gen;    // @2: for PRNGS
 ```
 
 **Chaos Machines**
@@ -373,6 +354,23 @@ For clearing to initial state:
 
 ```C++
 gen.reset();
+```
+
+**Pseudo-Random Number Generators**
+
+For seeding:
+
+```C++
+gen.seed(a); // @1: using function (fastest)
+gen << a;    // @2: using operator
+```
+
+For getting a number:
+
+```C++
+gen.next();  // @1: using function (fastest)
+gen >> a;    // @2: using operator
+gen();       // @3: STL style (for API)
 ```
 
 **Password Salting**
