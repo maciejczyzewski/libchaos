@@ -127,10 +127,10 @@ FILE(COPY ${CMAKE_CURRENT_SOURCE_DIR}/docs DESTINATION ${CMAKE_BINARY_DIR})
 # Tests
 FILE(COPY ${CMAKE_CURRENT_SOURCE_DIR}/tests DESTINATION ${CMAKE_BINARY_DIR})
 
-#################################################################################
- add_executable(_testu01 src/_testu01.cpp) ######################################
- target_link_libraries (_testu01 chaos testu01 probdist mylib m) ################
-#################################################################################
+##################################################################################
+# add_executable(_testu01 src/_testu01.cpp) ######################################
+# target_link_libraries (_testu01 chaos testu01 probdist mylib m) ################
+##################################################################################
 
 ##################################################################################
 # add_executable(_sandbox src/_sandbox.cpp) ######################################
