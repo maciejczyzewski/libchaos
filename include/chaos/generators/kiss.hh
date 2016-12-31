@@ -20,8 +20,7 @@ protected:
 
 public:
 	// metadata
-	const std::string name = "KISS (Keep It Simple Stupid)",
-	                  authors = "G. Marsaglia and A. Zaman";
+	CHAOS_META_DEFINE("KISS (Keep It Simple Stupid)", "G. Marsaglia and A. Zaman");
 
 	// typename
 	typedef uint32_t size_seed;

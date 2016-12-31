@@ -22,7 +22,7 @@ protected:
 
 public:
 	// metadata
-	const std::string name = "abyssinian", authors = "???";
+	CHAOS_META_DEFINE("abyssinian", "???");
 
 	// typename
 	typedef uint32_t size_seed;

@@ -12,7 +12,7 @@ protected:
 
 public:
 	// metadata
-	const std::string name = "xorshift", authors = "George Marsaglia";
+	CHAOS_META_DEFINE("xorshift", "George Marsaglia");
 
 	// typename
 	typedef utype size_seed;

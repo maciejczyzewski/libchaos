@@ -3,10 +3,6 @@
 namespace chaos { //::chaos ////////////////////////////////////////////////////
 namespace engines { //::chaos::engines /////////////////////////////////////////
 
-// metadata
-const std::string xorring32::name = "xorring32";
-const std::string xorring32::authors = "Maciej A. Czyzewski";
-
 void xorring32::push(uint32_t block) {
 	for (size_t i = 0; i < this->__cost_time; i++) {
 		buffer.push_front(buffer.back() + block + this->pull());
@@ -25,9 +21,7 @@ uint32_t xorring32::pull(void) {
 
 void xorring32::__reset(void) {}
 
-// metadata
-const std::string xorring64::name = "xorring64";
-const std::string xorring64::authors = "Maciej A. Czyzewski";
+////////////////////////////////////////////////////////////////////////////////
 
 void xorring64::push(uint64_t block) {
 	for (size_t i = 0; i < this->__cost_time; i++) {

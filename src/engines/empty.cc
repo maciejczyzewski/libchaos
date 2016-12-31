@@ -3,10 +3,6 @@
 namespace chaos { //::chaos ////////////////////////////////////////////////////
 namespace engines { //::chaos::engines /////////////////////////////////////////
 
-// metadata
-const std::string empty::name = "Empty (Blank Template)";
-const std::string empty::authors = "Libchaos Authors";
-
 void empty::push(uint8_t block) {
 	// what to do with 8-bit block in machine?
 	(void)block;

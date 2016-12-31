@@ -20,7 +20,7 @@ namespace engines { //::chaos::engines /////////////////////////////////////////
 class xorring32 {
 public:
 	// metadata
-	static const std::string name, authors;
+	CHAOS_META_DEFINE("xorring32", "Maciej A. Czyzewski");
 
 	// typename
 	typedef uint32_t size_cell;
@@ -67,7 +67,7 @@ private:
 class xorring64 {
 public:
 	// metadata
-	static const std::string name, authors;
+	CHAOS_META_DEFINE("xorring64", "Maciej A. Czyzewski");
 
 	// typename
 	typedef uint64_t size_cell;

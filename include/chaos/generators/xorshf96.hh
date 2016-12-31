@@ -14,7 +14,7 @@ protected:
 
 public:
 	// metadata
-	const std::string name = "xorshf96", authors = "George Marsaglia";
+	CHAOS_META_DEFINE("xorshf96", "George Marsaglia");
 
 	// typename
 	typedef uint32_t size_seed;

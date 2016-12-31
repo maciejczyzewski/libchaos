@@ -14,7 +14,7 @@ namespace engines { //::chaos::engines /////////////////////////////////////////
 class empty {
 public:
 	// metadata
-	static const std::string name, authors;
+	CHAOS_META_DEFINE("Empty (Blank Template)", "Libchaos Authors");
 
 	// typename
 	typedef uint8_t size_cell;

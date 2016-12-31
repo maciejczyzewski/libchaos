@@ -14,8 +14,7 @@ protected:
 
 public:
 	// metadata
-	const std::string name = "LCG (Linear Congruential Generator)",
-	                  authors = "???";
+	CHAOS_META_DEFINE("LCG (Linear Congruential Generator)", "???");
 
 	// typename
 	typedef utype size_seed;

@@ -64,8 +64,10 @@ namespace chaos { //::chaos ////////////////////////////////////////////////////
 
 // utils for meta
 
-#define CHAOS_META_NAME(module) ({ CHAOS_STRING_TO_CHAR(module::name); })
-#define CHAOS_META_AUTHORS(module) ({ CHAOS_STRING_TO_CHAR(module::authors); })
+#define CHAOS_META_DEFINE(a, b) std::string name = a, authors = b;
+
+#define CHAOS_META_NAME(module) ({ module inst; inst.name; })
+#define CHAOS_META_AUTHORS(module) ({ module inst; inst.authors; })
 
 /// special ////////////////////////////////////////////////////////////////////
 

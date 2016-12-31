@@ -9,10 +9,6 @@ See <http://creativecommons.org/publicdomain/zero/1.0/>.  */
 namespace chaos { //::chaos ////////////////////////////////////////////////////
 namespace engines { //::chaos::engines /////////////////////////////////////////
 
-// metadata
-const std::string ncg::name = "NCG (Naive Czyzewski Generator)";
-const std::string ncg::authors = "Maciej A. Czyzewski";
-
 // @1: abbreviation for getting values from the tape
 #define M(i) ((i) % (this->__cost_space * 2))
 

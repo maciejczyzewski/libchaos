@@ -14,7 +14,7 @@ namespace engines { //::chaos::engines /////////////////////////////////////////
 class ncg {
 public:
 	// metadata
-	static const std::string name, authors;
+	CHAOS_META_DEFINE("NCG (Naive Czyzewski Generator)", "Maciej A. Czyzewski");
 
 	// typename
 	typedef uint32_t size_cell;

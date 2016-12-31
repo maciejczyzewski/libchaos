@@ -5,8 +5,8 @@
 [![Current Release](https://img.shields.io/github/release/maciejczyzewski/libchaos.svg)](https://github.com/maciejczyzewski/libchaos/releases)
 [![Build Status](https://travis-ci.org/maciejczyzewski/libchaos.svg?branch=master)](https://travis-ci.org/maciejczyzewski/libchaos)
 
-[Overview](#overview) |
 [Features](#features) |
+[Overview](#overview) |
 [Installation](#installation) |
 [User Guide](#user-guide) |
 [Contributing](#contributing) |
@@ -45,10 +45,43 @@ Please open a [GitHub Issue](https://github.com/maciejczyzewski/libchaos/issues)
 
 *Do not open a GitHub Issue for help, only for bug reports.*
 
+Features
+========
+
+<table width="100%">
+<tr>
+<th width="30%">Ready</th>
+<th width="30%">In Progress</th>
+<th width="30%">TODO</th>
+</tr>
+<tr>
+<td>Chaos machines</td>
+<td>Statistical tests & functions</td>
+<td>Entropy pools (different seeding scenarios)</td>
+</tr>
+<tr>
+<td>Pseudo-random number generators</td>
+<td>Adapter for truely random generators (dynamical reseeding)</td>
+<td>Gnuplot/R utilities & analysis</td>
+</tr>
+<tr>
+<td>Signatures for algorithms (portability on various architectures)</td>
+<td>Ranking for algorithms (speed/quality)</td>
+<td>Javascript API</td>
+</tr>
+<tr>
+<td>STL compatibility</td>
+<td>Hashdeep fork (named chaosdeep)</td>
+<td>Seed recovery (attacks)</td>
+</tr>
+</table>
+
 Overview
 ========
 
-A lot of research has gone into chaos and randomness theory. Development in computer software and applications continues to be very dynamic. Each software problem requires different tools and algorithms to solve it effectively and achieve best results. As a consequence, we witness the announcement of new projects in quick succession with multiple updates. *Engineer's problem is how to decide which method will suit his needs best.*
+![benchmark](http://maciejczyzewski.me/libchaos/_images/benchmark.svg)
+
+Each software problem requires different tools and algorithms to solve it effectively and achieve best results. *Engineer's problem is how to decide which method will suit his needs best.*
 
 <table width="100%">
 <tr>
@@ -221,37 +254,6 @@ B__STL_RANLUX48__Next               118524 us     118598 us          6   67.4546
 B__STL_KNUTH_B__Next                  1083 us       1084 us        641   461.418MB/s   14.4193M items/s
 ```
 
-Features
-========
-
-<table width="100%">
-<tr>
-<th width="30%">Ready</th>
-<th width="30%">In Progress</th>
-<th width="30%">TODO</th>
-</tr>
-<tr>
-<td>Chaos machines</td>
-<td>Statistical tests & functions</td>
-<td>Entropy pools (different seeding scenarios)</td>
-</tr>
-<tr>
-<td>Pseudo-random number generators</td>
-<td>Adapter for truely random generators (dynamical reseeding)</td>
-<td>Gnuplot utilities & analysis</td>
-</tr>
-<tr>
-<td>Signatures for algorithms (portability on various architectures)</td>
-<td>Ranking for algorithms (speed/quality)</td>
-<td>Javascript API</td>
-</tr>
-<tr>
-<td>STL compatibility</td>
-<td>Hashdeep fork (named chaosdeep)</td>
-<td>Seed recovery (attacks)</td>
-</tr>
-</table>
-
 Installation
 ============
 
@@ -380,7 +382,6 @@ gen();       // @3: STL style (for API)
 For salting passwords:
 
 ```C++
-
 std::string hash =
     chaos::password<
         CHAOS_MACHINE_XORRING64,   // machine algorithm
@@ -388,7 +389,6 @@ std::string hash =
         space_parameter,           // memory required/space-hardness
         output_size                // length of hashed password
     >(password, salt);
-
 ```
 
 Example usage:
@@ -435,4 +435,4 @@ If you are starting to work on a particular area, feel free to submit a PR that 
 License
 =======
 
-See `LICENSE` file in this repository.
+See [`LICENSE`](https://github.com/maciejczyzewski/libchaos/blob/master/LICENSE) file in this repository.

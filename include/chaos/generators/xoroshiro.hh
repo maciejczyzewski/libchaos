@@ -18,8 +18,7 @@ protected:
 
 public:
 	// metadata
-	const std::string name = "xoroshiro128+",
-	                  authors = "David Blackman and Sebastiano Vigna";
+	CHAOS_META_DEFINE("xoroshiro128+", "David Blackman and Sebastiano Vigna");
 
 	// typename
 	typedef uint64_t size_seed;
@@ -58,7 +57,7 @@ protected:
 
 public:
 	// metadata
-	const std::string name = "xoroshiro1024*", authors = "Sebastiano Vigna";
+	CHAOS_META_DEFINE("xoroshiro1024*", "David Blackman and Sebastiano Vigna");
 
 	// typename
 	typedef uint64_t size_seed;
