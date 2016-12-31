@@ -27,7 +27,7 @@ PROJECT(libchaos C CXX ASM)
 
 # Package information.
 SET(PACKAGE_NAME      "libchaos")
-SET(PACKAGE_VERSION   "1.0-dev")
+SET(PACKAGE_VERSION   "1.1-dev")
 SET(PACKAGE_STRING    "${PACKAGE_NAME} ${PACKAGE_VERSION}")
 SET(PACKAGE_TARNAME   "${PACKAGE_NAME}-${PACKAGE_VERSION}")
 SET(PACKAGE_BUGREPORT "https://github.com/maciejczyzewski/libchaos/issues")

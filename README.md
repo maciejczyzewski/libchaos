@@ -96,8 +96,9 @@ Each software problem requires different tools and algorithms to solve it effect
 CHAOS_MACHINE_XORRING64 machine;
 
 int main(void) {
-  machine.set_space(100000);  // 2^6400000 period length
-  machine &lt;&lt; 0x8a5cd789635d2dff; // initialize with seed
+  machine.set_space(100000); // 2^6400000 period length
+  machine.push(0x8a5cd789635d2dff);    // add some data
+  machine.push(0x284600e3f30e38c3);     // and other...
   while (true) putc_unlocked(machine.pull(), stdout);
 }</pre></td>
 <td>
@@ -126,7 +127,7 @@ This project offers very convenient interface for practical use, not just resear
 CHAOS_PRNG_XOROSHIRO1024STAR prng;
 
 int main(void) {
-  prng &lt;&lt; 0x8a5cd789635d2dff; // initialize with seed
+  prng.seed(0x8a5cd789635d2dff); // initialize with seed
   while (true) putc_unlocked(prng.next(), stdout);
 }</pre></td>
 <td>
@@ -317,7 +318,7 @@ Directory structure and contents:
 Algorithms
 ----------
 
-List of implemented algorithms is in the `ALGORITHMS.md` file.
+List of implemented algorithms is in the [`ALGORITHMS`](https://github.com/maciejczyzewski/libchaos/blob/master/ALGORITHMS) file.
 
 ```C++
 CHAOS_MACHINE_* gen; // @1: for CMs
