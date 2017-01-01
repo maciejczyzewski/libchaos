@@ -4,8 +4,10 @@ namespace chaos { //::chaos ////////////////////////////////////////////////////
 namespace engines { //::chaos::engines /////////////////////////////////////////
 
 void xorring32::push(uint32_t block) {
-	for (size_t i = 0; i < this->__cost_time; i++)
-		buffer.front() = this->pull() + buffer.front() + block;
+	for (size_t i = 0; i < this->__cost_time; i++) {
+		uint32_t cache = this->pull();
+		buffer.front() += cache + block;
+	}
 }
 
 uint32_t xorring32::pull(void) {
@@ -22,8 +24,10 @@ void xorring32::__reset(void) {}
 ////////////////////////////////////////////////////////////////////////////////
 
 void xorring64::push(uint64_t block) {
-	for (size_t i = 0; i < this->__cost_time; i++)
-		buffer.front() = this->pull() + buffer.front() + block;
+	for (size_t i = 0; i < this->__cost_time; i++) {
+		uint64_t cache = this->pull();
+		buffer.front() += cache + block;
+	}
 }
 
 uint64_t xorring64::pull(void) {
