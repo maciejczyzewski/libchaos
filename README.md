@@ -61,7 +61,7 @@ Features
 </tr>
 <tr>
 <td>Pseudo-random number generators</td>
-<td>Adapter for truely random generators (dynamical reseeding)</td>
+<td>Adapter for truly random generators (dynamical reseeding)</td>
 <td>Gnuplot/R utilities & analysis</td>
 </tr>
 <tr>
